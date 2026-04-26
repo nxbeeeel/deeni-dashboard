@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "refreshedAt": null,
+  "appVersion": null,
+  "buildNumber": null,
+  "sentry": {
+    "healthy": false,
+    "error": "not yet refreshed",
+    "crashFree": null,
+    "crashFreeTrend7d": [],
+    "openIssuesCount": 0,
+    "topIssues": [],
+    "latestRelease": null
+  },
+  "posthog": {
+    "healthy": false,
+    "error": "not yet refreshed",
+    "dau": null,
+    "dauTrend7d": [],
+    "topEvents24h": []
+  },
+  "github": {
+    "healthy": false,
+    "error": "not yet refreshed",
+    "commits": [],
+    "releases": [],
+    "openPRs": [],
+    "issuesOpen": [],
+    "issuesInProgress": [],
+    "issuesFixed14d": [],
+    "ciLastRun": null
+  },
+  "cdn": {},
+  "eas": {
+    "healthy": false,
+    "error": "not yet refreshed",
+    "channels": {}
+  },
+  "worklog": [],
+  "alerts": {
+    "active": [],
+    "fired": {},
+    "recent": []
+  },
+  "errors": []
+}
