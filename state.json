@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-04-28T21:12:31.818Z",
+  "refreshedAt": "2026-04-28T21:14:07.473Z",
   "appVersion": "1.5.0",
   "buildNumber": 49,
   "sentry": {
@@ -104,6 +104,20 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "7ee1549",
+        "msg": "feat(dashboard): field notes — log user-reported issues via Telegram",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-04-28T21:12:51Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7ee15494f741e913a1f5d45d5c69bdfa77e9df72"
+      },
+      {
+        "sha": "0848f84",
+        "msg": "chore(dashboard): refresh state 2026-04-28T21:12:33Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-04-28T21:12:33Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0848f8405ddb4abfc1643202e0bd8c438d694281"
+      },
       {
         "sha": "008699c",
         "msg": "chore(dashboard): refresh state 2026-04-28T21:05:14Z",
@@ -229,20 +243,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-04-28T06:39:57Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6ee8d70a85a79a36c2a496453d8d9384b149aa38"
-      },
-      {
-        "sha": "460dea8",
-        "msg": "chore(dashboard): refresh state 2026-04-28T04:00:13Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-04-28T04:00:13Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/460dea85e24d7e6d70365bf7c3a98b31f7c46ce2"
-      },
-      {
-        "sha": "c1e0266",
-        "msg": "chore(dashboard): refresh state 2026-04-27T23:59:54Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-04-27T23:59:54Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c1e02668c3b1fda94506d27327850a21cdd2f212"
       }
     ],
     "releases": [],
@@ -251,45 +251,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25077918080,
+      "id": 25077982358,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25077918080",
-      "ranAt": "2026-04-28T21:11:24Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25077982358",
+      "ranAt": "2026-04-28T21:12:56Z",
+      "durationSec": 5
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 458,
+      "latencyMs": 97,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 245,
+      "latencyMs": 201,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 492,
+      "latencyMs": 563,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 464,
+      "latencyMs": 207,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 390,
+      "latencyMs": 274,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -354,6 +354,7 @@
       "summary": "Migrated adhanPlayer + ruqyah screen from deprecated expo-av to expo-audio. Wrapped void-returning setActiveForLockScreen / clearLockScreenControls in try/catch instead of .catch(). Added optional context/repetitions/quranRefs to RuqyahVerse. bump-version.mjs now keeps semver, versionCode, buildNumber, and package.json synced in lockstep."
     }
   ],
+  "fieldNotes": [],
   "errors": [],
   "alerts": {
     "active": [],
