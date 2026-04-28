@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-04-28T21:14:07.473Z (just now)_
+_Last refresh: 2026-04-28T22:33:27.877Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.5.0 (build 49)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **10** |
+| DAU | **11** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -38,30 +38,30 @@ _None._
 ## PostHog — top events (24h)
 
 - `Application Backgrounded` — 61
-- `Application Became Active` — 31
-- `Application Opened` — 26
+- `Application Became Active` — 32
+- `Application Opened` — 27
 - `Application Installed` — 1
 
 ## GitHub — recent commits to main
 
-- `7ee1549` — feat(dashboard): field notes — log user-reported issues via Telegram · 1m ago
-- `0848f84` — chore(dashboard): refresh state 2026-04-28T21:12:33Z · 2m ago
-- `008699c` — chore(dashboard): refresh state 2026-04-28T21:05:14Z · 9m ago
-- `4325753` — chore(dashboard): refresh state 2026-04-28T21:00:47Z · 13m ago
-- `773784e` — chore(dashboard): refresh state 2026-04-28T20:55:08Z · 19m ago
-- `960969c` — fix(dashboard): add set -x diagnostics to git steps; EAS auth-only errors · 20m ago
-- `ca4852a` — chore(dashboard): refresh state 2026-04-28T20:53:53Z · 20m ago
-- `afb13d5` — chore(dashboard): refresh state 2026-04-28T20:49:17Z · 25m ago
-- `72b7671` — fix(dashboard): bulletproof commit step with cp/hard-reset; treat EAS no-updates as healthy · 26m ago
-- `13f0ca2` — chore(dashboard): refresh state 2026-04-28T20:44:32Z · 30m ago
+- `25a6b6f` — chore(dashboard): refresh state 2026-04-28T21:14:09Z · 1h ago
+- `7ee1549` — feat(dashboard): field notes — log user-reported issues via Telegram · 1h ago
+- `0848f84` — chore(dashboard): refresh state 2026-04-28T21:12:33Z · 1h ago
+- `008699c` — chore(dashboard): refresh state 2026-04-28T21:05:14Z · 1h ago
+- `4325753` — chore(dashboard): refresh state 2026-04-28T21:00:47Z · 2h ago
+- `773784e` — chore(dashboard): refresh state 2026-04-28T20:55:08Z · 2h ago
+- `960969c` — fix(dashboard): add set -x diagnostics to git steps; EAS auth-only errors · 2h ago
+- `ca4852a` — chore(dashboard): refresh state 2026-04-28T20:53:53Z · 2h ago
+- `afb13d5` — chore(dashboard): refresh state 2026-04-28T20:49:17Z · 2h ago
+- `72b7671` — fix(dashboard): bulletproof commit step with cp/hard-reset; treat EAS no-updates as healthy · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 97ms
-- OK  `rawGithub` — 200 · 201ms
-- OK  `everyayah` — 200 · 563ms
-- OK  `quranicaudio` — 200 · 207ms
-- OK  `qurancdn` — 200 · 274ms
+- OK  `jsdelivr` — 200 · 552ms
+- OK  `rawGithub` — 200 · 297ms
+- OK  `everyayah` — 200 · 535ms
+- OK  `quranicaudio` — 200 · 392ms
+- OK  `qurancdn` — 200 · 332ms
 
 ## EAS update channels
 
