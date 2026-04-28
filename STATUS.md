@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-04-28T22:33:27.877Z (just now)_
+_Last refresh: 2026-04-28T23:59:31.012Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
@@ -44,24 +44,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `25a6b6f` — chore(dashboard): refresh state 2026-04-28T21:14:09Z · 1h ago
-- `7ee1549` — feat(dashboard): field notes — log user-reported issues via Telegram · 1h ago
-- `0848f84` — chore(dashboard): refresh state 2026-04-28T21:12:33Z · 1h ago
-- `008699c` — chore(dashboard): refresh state 2026-04-28T21:05:14Z · 1h ago
-- `4325753` — chore(dashboard): refresh state 2026-04-28T21:00:47Z · 2h ago
-- `773784e` — chore(dashboard): refresh state 2026-04-28T20:55:08Z · 2h ago
-- `960969c` — fix(dashboard): add set -x diagnostics to git steps; EAS auth-only errors · 2h ago
-- `ca4852a` — chore(dashboard): refresh state 2026-04-28T20:53:53Z · 2h ago
-- `afb13d5` — chore(dashboard): refresh state 2026-04-28T20:49:17Z · 2h ago
-- `72b7671` — fix(dashboard): bulletproof commit step with cp/hard-reset; treat EAS no-updates as healthy · 2h ago
+- `a0ecf68` — chore(dashboard): refresh state 2026-04-28T22:33:29Z · 1h ago
+- `25a6b6f` — chore(dashboard): refresh state 2026-04-28T21:14:09Z · 3h ago
+- `7ee1549` — feat(dashboard): field notes — log user-reported issues via Telegram · 3h ago
+- `0848f84` — chore(dashboard): refresh state 2026-04-28T21:12:33Z · 3h ago
+- `008699c` — chore(dashboard): refresh state 2026-04-28T21:05:14Z · 3h ago
+- `4325753` — chore(dashboard): refresh state 2026-04-28T21:00:47Z · 3h ago
+- `773784e` — chore(dashboard): refresh state 2026-04-28T20:55:08Z · 3h ago
+- `960969c` — fix(dashboard): add set -x diagnostics to git steps; EAS auth-only errors · 3h ago
+- `ca4852a` — chore(dashboard): refresh state 2026-04-28T20:53:53Z · 3h ago
+- `afb13d5` — chore(dashboard): refresh state 2026-04-28T20:49:17Z · 3h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 552ms
-- OK  `rawGithub` — 200 · 297ms
-- OK  `everyayah` — 200 · 535ms
-- OK  `quranicaudio` — 200 · 392ms
-- OK  `qurancdn` — 200 · 332ms
+- OK  `jsdelivr` — 200 · 382ms
+- OK  `rawGithub` — 200 · 287ms
+- OK  `everyayah` — 200 · 550ms
+- OK  `quranicaudio` — 200 · 294ms
+- OK  `qurancdn` — 200 · 355ms
 
 ## EAS update channels
 
