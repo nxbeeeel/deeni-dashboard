@@ -1,6 +1,0 @@
-# This repo is auto-published. Don't track build artifacts or local exploration.
-.DS_Store
-Thumbs.db
-node_modules/
-*.log
-*.tmp

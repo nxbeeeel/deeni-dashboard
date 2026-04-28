@@ -3,25 +3,569 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="cache-control" content="no-cache" />
   <title>deen.in — operations</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background: #09090b; color: #e4e4e7; font-family: ui-sans-serif, system-ui, sans-serif; }
+    /* Linear-style restraint. Mono numerics, dense, dark, no animation. */
+    :root {
+      color-scheme: dark;
+      --bg: #09090b;
+      --panel: #0e0e10;
+      --panel-2: #131316;
+      --border: #1f1f23;
+      --border-2: #27272a;
+      --text: #e4e4e7;
+      --text-mute: #a1a1aa;
+      --text-dim: #71717a;
+      --text-faint: #52525b;
+      --ok: #10b981;
+      --warn: #f59e0b;
+      --bad: #ef4444;
+      --accent: #6366f1;
+    }
+    html, body { background: var(--bg); color: var(--text); }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Roboto, sans-serif; }
     .mono { font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace; }
-    .panel { background: #0e0e10; border: 1px solid #1f1f23; }
-    .cap { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #52525b; }
+    .panel { background: var(--panel); border: 1px solid var(--border); }
+    .panel-2 { background: var(--panel-2); border: 1px solid var(--border); }
+    .hairline { border-color: var(--border); }
+    .divide-hairline > * + * { border-top: 1px solid var(--border); }
+    .text-mute { color: var(--text-mute); }
+    .text-dim { color: var(--text-dim); }
+    .text-faint { color: var(--text-faint); }
+    .dot { display: inline-block; width: 6px; height: 6px; border-radius: 999px; vertical-align: middle; }
+    .dot-ok { background: var(--ok); box-shadow: 0 0 0 2px rgba(16,185,129,.12); }
+    .dot-warn { background: var(--warn); box-shadow: 0 0 0 2px rgba(245,158,11,.12); }
+    .dot-bad { background: var(--bad); box-shadow: 0 0 0 2px rgba(239,68,68,.12); }
+    .row-hover:hover { background: rgba(255,255,255,.02); }
+    .scroll-area { scrollbar-width: thin; scrollbar-color: #2a2a2e transparent; }
+    .scroll-area::-webkit-scrollbar { width: 6px; height: 6px; }
+    .scroll-area::-webkit-scrollbar-thumb { background: #2a2a2e; border-radius: 999px; }
+    /* Caps tracker label */
+    .cap { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); }
+    a { color: var(--text); }
+    a:hover { color: white; text-decoration: underline; text-decoration-color: var(--border-2); }
+    .kbd { font-family: ui-monospace, monospace; padding: 1px 5px; border-radius: 4px; border: 1px solid var(--border-2); background: var(--panel-2); font-size: 11px; }
+    [hidden] { display: none !important; }
   </style>
 </head>
-<body class="min-h-screen flex items-center justify-center px-6">
-  <div class="panel rounded-md p-6 max-w-md text-center">
-    <div class="cap mb-2">deen.in operations</div>
-    <div class="text-sm text-zinc-300 mb-4">Dashboard not yet seeded.</div>
-    <div class="text-xs text-zinc-500 leading-relaxed">
-      The first refresh from the deen.in Actions workflow will replace this
-      placeholder with the live dashboard. If you're seeing this hours
-      after enabling the workflow, check the Actions tab on the private
-      <span class="mono">deeni</span> repo for failed runs.
-    </div>
+<body class="min-h-screen">
+  <!-- Password gate ────────────────────────────────────────────────── -->
+  <div id="gate" class="min-h-screen flex items-center justify-center px-6">
+    <form id="gate-form" class="panel rounded-md p-6 w-full max-w-sm">
+      <div class="cap mb-2">deen.in operations</div>
+      <div class="text-sm text-mute mb-5">Operator-only. Enter password to continue.</div>
+      <input
+        id="gate-input"
+        type="password"
+        autocomplete="current-password"
+        class="mono w-full bg-transparent border border-zinc-800 rounded px-3 py-2 text-sm focus:outline-none focus:border-zinc-600"
+        placeholder="password"
+      />
+      <button type="submit" class="mt-3 w-full text-sm py-2 rounded bg-zinc-100 text-zinc-900 hover:bg-white">
+        Unlock
+      </button>
+      <div id="gate-error" class="mt-3 text-xs text-red-400" hidden>Incorrect password.</div>
+    </form>
   </div>
+
+  <!-- Dashboard ────────────────────────────────────────────────────── -->
+  <main id="dash" class="px-6 py-5 max-w-[1280px] mx-auto" hidden>
+    <!-- Header -->
+    <header class="flex items-center justify-between mb-4">
+      <div class="flex items-baseline gap-3">
+        <div class="text-base font-semibold tracking-tight">deen.in</div>
+        <div class="cap">operations</div>
+        <div id="version-line" class="text-xs text-faint mono"></div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div id="refresh-line" class="text-xs text-dim mono"></div>
+        <button id="reload" class="text-xs text-dim hover:text-zinc-200 mono" title="Reload state.json">↻</button>
+      </div>
+    </header>
+
+    <!-- Stale banner -->
+    <div id="stale-banner" class="mb-4 px-3 py-2 panel-2 rounded text-xs flex items-center gap-2" hidden>
+      <span class="dot dot-warn"></span>
+      <span id="stale-text">Dashboard hasn't refreshed recently.</span>
+    </div>
+
+    <!-- KPI strip -->
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+      <div class="panel rounded p-3">
+        <div class="cap mb-2">Crash-free 24h</div>
+        <div class="flex items-end justify-between">
+          <div id="kpi-crashfree" class="mono text-2xl tabular-nums">—</div>
+          <svg id="kpi-crashfree-spark" class="opacity-70" width="60" height="18"></svg>
+        </div>
+      </div>
+      <div class="panel rounded p-3">
+        <div class="cap mb-2">DAU</div>
+        <div class="flex items-end justify-between">
+          <div id="kpi-dau" class="mono text-2xl tabular-nums">—</div>
+          <svg id="kpi-dau-spark" class="opacity-70" width="60" height="18"></svg>
+        </div>
+      </div>
+      <div class="panel rounded p-3">
+        <div class="cap mb-2">Open issues</div>
+        <div class="flex items-end gap-3">
+          <div id="kpi-issues-open" class="mono text-2xl tabular-nums">—</div>
+          <div class="text-[11px] text-dim mono pb-1">
+            <span id="kpi-issues-prog">0</span> in progress ·
+            <span id="kpi-issues-fixed">0</span> fixed 14d
+          </div>
+        </div>
+      </div>
+      <div class="panel rounded p-3">
+        <div class="cap mb-2">Last deploy</div>
+        <div class="flex items-baseline gap-2">
+          <div id="kpi-deploy-version" class="mono text-2xl tabular-nums">—</div>
+          <div id="kpi-deploy-when" class="text-[11px] text-dim mono">—</div>
+        </div>
+        <div id="kpi-ci" class="mt-1 text-[11px] mono"></div>
+      </div>
+    </section>
+
+    <!-- Row 2: Sentry + GitHub -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+      <div class="panel rounded">
+        <div class="px-3 py-2 border-b hairline flex items-center justify-between">
+          <div class="cap">Sentry — top issues (24h)</div>
+          <a id="sentry-link" target="_blank" class="text-[11px] text-dim hover:text-zinc-200 mono">↗</a>
+        </div>
+        <div id="sentry-list" class="divide-hairline scroll-area max-h-[360px] overflow-y-auto"></div>
+      </div>
+
+      <div class="panel rounded">
+        <div class="px-3 py-2 border-b hairline flex items-center justify-between">
+          <div class="cap">GitHub — recent activity</div>
+          <a id="github-link" target="_blank" class="text-[11px] text-dim hover:text-zinc-200 mono">↗</a>
+        </div>
+
+        <div class="px-3 pt-2 cap">commits</div>
+        <div id="github-commits" class="divide-hairline scroll-area max-h-[180px] overflow-y-auto"></div>
+
+        <div class="px-3 pt-3 cap border-t hairline">open PRs</div>
+        <div id="github-prs" class="divide-hairline scroll-area max-h-[120px] overflow-y-auto"></div>
+      </div>
+    </section>
+
+    <!-- Row 3: CDN + EAS -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+      <div class="panel rounded">
+        <div class="px-3 py-2 border-b hairline cap">CDN probes</div>
+        <div id="cdn-list" class="divide-hairline"></div>
+      </div>
+
+      <div class="panel rounded">
+        <div class="px-3 py-2 border-b hairline cap">EAS update channels</div>
+        <div id="eas-list" class="divide-hairline"></div>
+      </div>
+    </section>
+
+    <!-- Row 4: WORKLOG + Alerts -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+      <div class="panel rounded">
+        <div class="px-3 py-2 border-b hairline cap">WORKLOG (last 14 days)</div>
+        <div id="worklog-list" class="divide-hairline scroll-area max-h-[280px] overflow-y-auto"></div>
+      </div>
+
+      <div class="panel rounded">
+        <div class="px-3 py-2 border-b hairline cap">Alerts</div>
+        <div id="alerts-active" class="divide-hairline"></div>
+        <div class="px-3 py-2 border-t hairline cap">recent</div>
+        <div id="alerts-recent" class="divide-hairline scroll-area max-h-[180px] overflow-y-auto"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-[11px] text-faint mono pt-2 pb-6 flex flex-wrap gap-x-4 gap-y-1">
+      <span id="footer-refresh">last refresh —</span>
+      <a id="footer-sentry" target="_blank" hidden>sentry ↗</a>
+      <a id="footer-posthog" href="https://us.posthog.com/" target="_blank">posthog ↗</a>
+      <a id="footer-github" target="_blank">github ↗</a>
+      <a id="footer-state" href="./state.json" target="_blank">state.json</a>
+    </footer>
+  </main>
+
+  <script>
+    // ── Embedded state (populated at build time by dashboard-html.mjs) ──
+    // The "__INJECT_*__" placeholders are replaced before deployment.
+    window.__DASHBOARD_PASSWORD_HASH__ = "dfbbff529d260ec2da18e59b74b87d588d0ca81d7caf1a6c22c6f043b328e774";
+    window.__EMBEDDED_STATE__ = {"schemaVersion":1,"refreshedAt":"2026-04-28T21:05:14.120Z","appVersion":"1.5.0","buildNumber":49,"sentry":{"healthy":true,"crashFree":100,"crashFreeTrend7d":[100,100,100,100,100,100,100,100],"openIssuesCount":4,"topIssues":[{"id":"7406195421","shortId":"REACT-NATIVE-3","title":"Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.","events24h":6,"events1h":null,"users24h":5,"lastSeen":"2026-04-25T23:45:13.038000Z","url":"https://beloop-1t.sentry.io/issues/7406195421/","release":null},{"id":"7434752222","shortId":"REACT-NATIVE-5","title":"Error: Call to function 'NativeDatabase.prepareSync' has been rejected.","events24h":2,"events1h":null,"users24h":2,"lastSeen":"2026-04-23T15:05:56.872000Z","url":"https://beloop-1t.sentry.io/issues/7434752222/","release":null},{"id":"7416393538","shortId":"REACT-NATIVE-4","title":"RuntimeException: android.os.DeadSystemException","events24h":1,"events1h":null,"users24h":1,"lastSeen":"2026-04-16T07:13:59.484000Z","url":"https://beloop-1t.sentry.io/issues/7416393538/","release":null},{"id":"7387482623","shortId":"REACT-NATIVE-2","title":"ApplicationNotResponding: ANR","events24h":1,"events1h":null,"users24h":1,"lastSeen":"2026-04-04T19:59:18.559000Z","url":"https://beloop-1t.sentry.io/issues/7387482623/","release":null}],"latestRelease":{"version":"in.deen.app@1.5.0+10","newGroups":0,"sessions":null}},"posthog":{"healthy":true,"dau":10,"dauTrend7d":[3,16,14,18,22,17,12,10],"topEvents24h":[{"event":"Application Backgrounded","count":61},{"event":"Application Became Active","count":31},{"event":"Application Opened","count":26},{"event":"Application Installed","count":1}]},"github":{"healthy":true,"commits":[{"sha":"4325753","msg":"chore(dashboard): refresh state 2026-04-28T21:00:47Z","author":"deeni-dashboard-bot","at":"2026-04-28T21:00:47Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/43257537eb770f2d9ff4c0aeacd8a79c5d48abaf"},{"sha":"773784e","msg":"chore(dashboard): refresh state 2026-04-28T20:55:08Z","author":"deeni-dashboard-bot","at":"2026-04-28T20:55:08Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/773784ed1880172d6a98255df6fc856982e87ce1"},{"sha":"960969c","msg":"fix(dashboard): add set -x diagnostics to git steps; EAS auth-only errors","author":"Mohammed Nabeel C A","at":"2026-04-28T20:53:55Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/960969c2b430218ac7da008317d69a769d10e235"},{"sha":"ca4852a","msg":"chore(dashboard): refresh state 2026-04-28T20:53:53Z","author":"deeni-dashboard-bot","at":"2026-04-28T20:53:53Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/ca4852a614ba10f86a21b23a73801d2eca201cfb"},{"sha":"afb13d5","msg":"chore(dashboard): refresh state 2026-04-28T20:49:17Z","author":"deeni-dashboard-bot","at":"2026-04-28T20:49:17Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/afb13d5c95606f54d3dff3b0ad6f3b886b87a154"},{"sha":"72b7671","msg":"fix(dashboard): bulletproof commit step with cp/hard-reset; treat EAS no-updates as healthy","author":"Mohammed Nabeel C A","at":"2026-04-28T20:48:00Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/72b7671fa3aef501e09e455e819df4f868d9d0c7"},{"sha":"13f0ca2","msg":"chore(dashboard): refresh state 2026-04-28T20:44:32Z","author":"deeni-dashboard-bot","at":"2026-04-28T20:44:32Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/13f0ca29f278efa3529f25d911215f340d8ae20a"},{"sha":"3f0ae5e","msg":"fix(dashboard): fetch+reset instead of rebase to avoid state.json conflicts; fix push trigger branch to master","author":"Mohammed Nabeel C A","at":"2026-04-28T20:43:19Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/3f0ae5e1b602db422d5983748f6f88e31fcbaff4"},{"sha":"e78db7b","msg":"fix(dashboard): auto-detect repo default_branch instead of hardcoded main","author":"Mohammed Nabeel C A","at":"2026-04-28T20:34:16Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/e78db7b918491de10c272e19c5123b8ca4e9d83b"},{"sha":"9eb4251","msg":"fix(dashboard): use configurable GH_BRANCH (default master) for commits+CI queries","author":"Mohammed Nabeel C A","at":"2026-04-28T20:29:33Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/9eb4251d5f9c9153b4586f11e6f5a3cf08720580"},{"sha":"bb23637","msg":"chore(dashboard): refresh state 2026-04-28T19:48:19Z","author":"deeni-dashboard-bot","at":"2026-04-28T19:48:19Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/bb2363749a69e116497dcd6e309a4c6b9fc19996"},{"sha":"373184f","msg":"chore(dashboard): refresh state 2026-04-28T17:54:23Z","author":"deeni-dashboard-bot","at":"2026-04-28T17:54:23Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/373184f91ee7087250ee5c7fe424c0d68be2af04"},{"sha":"b88898f","msg":"chore(dashboard): refresh state 2026-04-28T15:58:20Z","author":"deeni-dashboard-bot","at":"2026-04-28T15:58:20Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/b88898fc90162cffd9e9d4768d35685f43764ea4"},{"sha":"f48ac7b","msg":"chore(dashboard): refresh state 2026-04-28T13:15:13Z","author":"deeni-dashboard-bot","at":"2026-04-28T13:15:13Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/f48ac7b7cf977bffb67b2a69b8ab97846fb6afe4"},{"sha":"f2fc700","msg":"chore(dashboard): refresh state 2026-04-28T11:22:33Z","author":"deeni-dashboard-bot","at":"2026-04-28T11:22:33Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/f2fc700b35fb429848c74388c94a8f93b2e16b06"},{"sha":"d11c910","msg":"chore(dashboard): refresh state 2026-04-28T09:26:59Z","author":"deeni-dashboard-bot","at":"2026-04-28T09:26:59Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/d11c910a22c206550cd29106f62dd5853624e545"},{"sha":"6ee8d70","msg":"chore(dashboard): refresh state 2026-04-28T06:39:57Z","author":"deeni-dashboard-bot","at":"2026-04-28T06:39:57Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/6ee8d70a85a79a36c2a496453d8d9384b149aa38"},{"sha":"460dea8","msg":"chore(dashboard): refresh state 2026-04-28T04:00:13Z","author":"deeni-dashboard-bot","at":"2026-04-28T04:00:13Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/460dea85e24d7e6d70365bf7c3a98b31f7c46ce2"},{"sha":"c1e0266","msg":"chore(dashboard): refresh state 2026-04-27T23:59:54Z","author":"deeni-dashboard-bot","at":"2026-04-27T23:59:54Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/c1e02668c3b1fda94506d27327850a21cdd2f212"},{"sha":"951b8a8","msg":"chore(dashboard): refresh state 2026-04-27T22:57:43Z","author":"deeni-dashboard-bot","at":"2026-04-27T22:57:43Z","url":"https://github.com/nxbeeeel/Deen.in_APP/commit/951b8a8877371d6e017dc10141448147c593dead"}],"releases":[],"openPRs":[],"issuesOpen":[],"issuesInProgress":[],"issuesFixed14d":[],"ciLastRun":{"id":25077588585,"workflow":"Dashboard Refresh","status":"in_progress","conclusion":null,"branch":"master","url":"https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25077588585","ranAt":"2026-04-28T21:03:53Z","durationSec":5}},"cdn":{"jsdelivr":{"ok":true,"status":200,"latencyMs":124,"label":"jsDelivr — editions.json"},"rawGithub":{"ok":true,"status":200,"latencyMs":159,"label":"raw.githubusercontent — editions.json"},"everyayah":{"ok":true,"status":200,"latencyMs":532,"label":"everyayah — per-ayah MP3"},"quranicaudio":{"ok":true,"status":200,"latencyMs":398,"label":"quranicaudio — full surah MP3"},"qurancdn":{"ok":true,"status":200,"latencyMs":359,"label":"audio.qurancdn — word-by-word MP3"}},"eas":{"healthy":true,"channels":{"production":{"healthy":true,"version":null,"id":null,"createdAt":null},"internal":{"healthy":true,"version":null,"id":null,"createdAt":null},"preview":{"healthy":true,"version":null,"id":null,"createdAt":null},"development":{"healthy":true,"version":null,"id":null,"createdAt":null}}},"worklog":[{"date":"2026-04-25","title":"Operations dashboard scaffolded","commit":null,"summary":"Built the .dashboard/ refresher (Node stdlib, no deps), GitHub Actions workflow, public deeni-dashboard scaffold, password-gated Linear-style HTML, alert engine, and STATUS.md generator. Plan in DASHBOARD_PLAN.md. Awaiting first run after Phase 0 token setup."},{"date":"2026-04-25","title":"iOS widgets premium redesign","commit":null,"summary":"Live ticking countdown via Text(timerInterval:countsDown:), accent-rail next-prayer highlight on the Times widget, gold pull-quote treatment on Daily Dua, oversized quote-glyph backdrop on Daily Hadith. iOS 18 tinted-mode safe via widgetAccentable + widgetRenderingMode environment."},{"date":"2026-04-25","title":"iOS Next Prayer widget stuck on \"in 0:00\"","commit":"5302c33","summary":"Root cause: src/widgets/syncWidgetData.tsx returned early on iOS so App Group group.in.deen.app was never written. Widget fell back to placeholder sample, system overlaid stale-data spinner. Fix: bridge through requireNativeModule('ReactNativeWidgetExtension')'s setString + reloadAllTimelines, wire 7-day schedule sync via syncPrayerScheduleToWidget."},{"date":"2026-04-25","title":"DB + OTA hardening","commit":"73856e0","summary":"WAL journal_mode + foreign_keys=ON pragmas on every open; AppState listener that re-opens the SQLite handle on Android foreground after potential TRIM_MEMORY invalidation; runtimeVersion switched from hardcoded \"1.3.4\" to { policy: \"fingerprint\" }; Sentry tags for app.version / platform / build.number; bootstrap captureException; DB breadcrumbs in offline.ts."},{"date":"2026-04-25","title":"v1.4.0 bump + expo-audio migration","commit":"5449ae8","summary":"Migrated adhanPlayer + ruqyah screen from deprecated expo-av to expo-audio. Wrapped void-returning setActiveForLockScreen / clearLockScreenControls in try/catch instead of .catch(). Added optional context/repetitions/quranRefs to RuqyahVerse. bump-version.mjs now keeps semver, versionCode, buildNumber, and package.json synced in lockstep."}],"errors":[],"alerts":{"active":[],"fired":{},"recent":[]}};
+  </script>
+
+  <script>
+    // ── Password gate ───────────────────────────────────────────────
+    const SESSION_KEY = 'deeni-dash-unlocked';
+
+    async function sha256Hex(str) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+      return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function tryUnlock(input) {
+      const expected = (window.__DASHBOARD_PASSWORD_HASH__ || '').toLowerCase();
+      if (!expected) {
+        // No hash configured — let the dashboard through (assume operator
+        // intentionally left it open during local development).
+        return true;
+      }
+      const got = (await sha256Hex(input)).toLowerCase();
+      return got === expected;
+    }
+
+    function showDash() {
+      document.getElementById('gate').hidden = true;
+      document.getElementById('dash').hidden = false;
+      render();
+    }
+
+    function showGate() {
+      document.getElementById('gate').hidden = false;
+      document.getElementById('dash').hidden = true;
+    }
+
+    async function init() {
+      if (sessionStorage.getItem(SESSION_KEY) === '1') {
+        showDash();
+        return;
+      }
+      // No-hash escape hatch: if the build didn't inject a hash, skip the gate.
+      if (!window.__DASHBOARD_PASSWORD_HASH__) {
+        sessionStorage.setItem(SESSION_KEY, '1');
+        showDash();
+        return;
+      }
+      showGate();
+      const form = document.getElementById('gate-form');
+      const input = document.getElementById('gate-input');
+      const errBox = document.getElementById('gate-error');
+      input.focus();
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        errBox.hidden = true;
+        const ok = await tryUnlock(input.value);
+        if (ok) {
+          sessionStorage.setItem(SESSION_KEY, '1');
+          showDash();
+        } else {
+          errBox.hidden = false;
+          input.value = '';
+          input.focus();
+        }
+      });
+    }
+
+    // ── Helpers ─────────────────────────────────────────────────────
+    function fmtTimeAgo(iso) {
+      if (!iso) return '—';
+      const ms = Date.now() - new Date(iso).getTime();
+      if (!Number.isFinite(ms) || ms < 0) return '—';
+      const min = Math.round(ms / 60_000);
+      if (min < 1) return 'just now';
+      if (min < 60) return `${min}m ago`;
+      const h = Math.round(min / 60);
+      if (h < 24) return `${h}h ago`;
+      const d = Math.round(h / 24);
+      return `${d}d ago`;
+    }
+    function fmtPct(n) { return typeof n === 'number' && isFinite(n) ? `${n.toFixed(2)}%` : '—'; }
+    function fmtNum(n) { return typeof n === 'number' && isFinite(n) ? n.toLocaleString('en-US') : '—'; }
+    function el(tag, cls, html) {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (html != null) e.innerHTML = html;
+      return e;
+    }
+    function escapeHtml(s) {
+      return String(s ?? '').replace(/[&<>"']/g, (c) => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+      }[c]));
+    }
+    function dotForOk(ok) {
+      return ok === true ? '<span class="dot dot-ok"></span>'
+           : ok === false ? '<span class="dot dot-bad"></span>'
+                          : '<span class="dot dot-warn"></span>';
+    }
+    function sparkline(values, w = 60, h = 18, color = '#a1a1aa') {
+      const xs = values.filter((v) => typeof v === 'number' && isFinite(v));
+      if (xs.length < 2) return '';
+      const min = Math.min(...xs), max = Math.max(...xs);
+      const range = max - min || 1;
+      const step = w / (xs.length - 1);
+      const points = xs
+        .map((v, i) => `${(i * step).toFixed(1)},${(h - ((v - min) / range) * h).toFixed(1)}`)
+        .join(' ');
+      return `<polyline fill="none" stroke="${color}" stroke-width="1.5" points="${points}" />`;
+    }
+
+    // ── Render ──────────────────────────────────────────────────────
+    function render(state = window.__EMBEDDED_STATE__) {
+      if (!state || typeof state !== 'object') {
+        document.getElementById('refresh-line').textContent = 'no state available';
+        return;
+      }
+
+      // Header
+      document.getElementById('version-line').textContent =
+        `v${state.appVersion ?? '?'} · build ${state.buildNumber ?? '?'}`;
+      document.getElementById('refresh-line').textContent = `refreshed ${fmtTimeAgo(state.refreshedAt)}`;
+      document.getElementById('footer-refresh').textContent =
+        `last refresh ${state.refreshedAt ?? 'never'}`;
+
+      // Stale banner
+      const banner = document.getElementById('stale-banner');
+      if (state.refreshedAt) {
+        const ageMs = Date.now() - new Date(state.refreshedAt).getTime();
+        if (ageMs > 60 * 60 * 1000) {
+          banner.hidden = false;
+          document.getElementById('stale-text').textContent =
+            `Dashboard hasn't refreshed since ${fmtTimeAgo(state.refreshedAt)}. ` +
+            `The Actions workflow may have stalled.`;
+        } else {
+          banner.hidden = true;
+        }
+      }
+
+      // KPI: crash-free
+      const cf = state.sentry?.crashFree;
+      document.getElementById('kpi-crashfree').textContent = fmtPct(cf);
+      const cfTrend = state.sentry?.crashFreeTrend7d ?? [];
+      document.getElementById('kpi-crashfree-spark').innerHTML = sparkline(cfTrend, 60, 18, '#10b981');
+
+      // KPI: DAU
+      document.getElementById('kpi-dau').textContent = fmtNum(state.posthog?.dau);
+      const dauTrend = state.posthog?.dauTrend7d ?? [];
+      document.getElementById('kpi-dau-spark').innerHTML = sparkline(dauTrend, 60, 18, '#6366f1');
+
+      // KPI: issues
+      document.getElementById('kpi-issues-open').textContent = state.github?.issuesOpen?.length ?? 0;
+      document.getElementById('kpi-issues-prog').textContent = state.github?.issuesInProgress?.length ?? 0;
+      document.getElementById('kpi-issues-fixed').textContent = state.github?.issuesFixed14d?.length ?? 0;
+
+      // KPI: deploy
+      const prod = state.eas?.channels?.production;
+      document.getElementById('kpi-deploy-version').textContent = prod?.version ?? '—';
+      document.getElementById('kpi-deploy-when').textContent = fmtTimeAgo(prod?.createdAt);
+      const ci = state.github?.ciLastRun;
+      const ciNode = document.getElementById('kpi-ci');
+      if (ci) {
+        const ok = ci.conclusion === 'success';
+        ciNode.innerHTML = `${dotForOk(ok)} <span class="text-dim">CI ${escapeHtml(ci.conclusion ?? ci.status ?? '?')}</span>`;
+      } else {
+        ciNode.innerHTML = '';
+      }
+
+      // Sentry list
+      const sentryList = document.getElementById('sentry-list');
+      sentryList.innerHTML = '';
+      if (!state.sentry?.healthy) {
+        sentryList.appendChild(el('div', 'px-3 py-3 text-xs text-dim',
+          `Sentry pull failed: ${escapeHtml(state.sentry?.error ?? 'unknown')}`));
+      } else if (!state.sentry.topIssues?.length) {
+        sentryList.appendChild(el('div', 'px-3 py-3 text-xs text-dim', 'No unresolved issues.'));
+      } else {
+        for (const iss of state.sentry.topIssues) {
+          const row = el('a', 'block px-3 py-2 row-hover');
+          row.href = iss.url ?? '#';
+          row.target = '_blank';
+          row.innerHTML = `
+            <div class="flex items-baseline gap-2">
+              <span class="mono text-[11px] text-faint">${escapeHtml(iss.shortId ?? '')}</span>
+              <span class="text-xs flex-1 truncate">${escapeHtml(iss.title ?? '')}</span>
+            </div>
+            <div class="mt-1 text-[11px] text-dim mono flex gap-3">
+              <span>${iss.events24h ?? 0} ev</span>
+              <span>${iss.users24h ?? 0} usr</span>
+              <span>last ${fmtTimeAgo(iss.lastSeen)}</span>
+            </div>`;
+          sentryList.appendChild(row);
+        }
+      }
+
+      // GitHub commits
+      const commitsBox = document.getElementById('github-commits');
+      commitsBox.innerHTML = '';
+      if (!state.github?.healthy) {
+        commitsBox.appendChild(el('div', 'px-3 py-3 text-xs text-dim',
+          `GitHub pull failed: ${escapeHtml(state.github?.error ?? 'unknown')}`));
+      } else {
+        for (const c of (state.github.commits ?? []).slice(0, 12)) {
+          const row = el('a', 'block px-3 py-2 row-hover');
+          row.href = c.url ?? '#';
+          row.target = '_blank';
+          row.innerHTML = `
+            <div class="flex items-baseline gap-2 text-xs">
+              <span class="mono text-faint">${escapeHtml(c.sha ?? '')}</span>
+              <span class="flex-1 truncate">${escapeHtml(c.msg ?? '')}</span>
+              <span class="text-faint mono shrink-0">${escapeHtml(fmtTimeAgo(c.at))}</span>
+            </div>`;
+          commitsBox.appendChild(row);
+        }
+      }
+
+      // GitHub PRs
+      const prsBox = document.getElementById('github-prs');
+      prsBox.innerHTML = '';
+      const prs = state.github?.openPRs ?? [];
+      if (!prs.length) {
+        prsBox.appendChild(el('div', 'px-3 py-2 text-xs text-dim', 'No open PRs.'));
+      } else {
+        for (const p of prs) {
+          const row = el('a', 'block px-3 py-2 row-hover');
+          row.href = p.url ?? '#';
+          row.target = '_blank';
+          row.innerHTML = `
+            <div class="flex items-baseline gap-2 text-xs">
+              <span class="mono text-faint">#${p.number}</span>
+              <span class="flex-1 truncate">${escapeHtml(p.title)}</span>
+              <span class="text-faint mono shrink-0">${escapeHtml(fmtTimeAgo(p.createdAt))}</span>
+            </div>`;
+          prsBox.appendChild(row);
+        }
+      }
+
+      // CDN
+      const cdnBox = document.getElementById('cdn-list');
+      cdnBox.innerHTML = '';
+      for (const [key, p] of Object.entries(state.cdn ?? {})) {
+        const ok = p.ok;
+        const row = el('div', 'px-3 py-2 flex items-center gap-2 text-xs');
+        row.innerHTML = `
+          ${dotForOk(ok)}
+          <span class="mono text-mute w-28">${escapeHtml(key)}</span>
+          <span class="flex-1 truncate text-dim">${escapeHtml(p.label ?? '')}</span>
+          <span class="mono text-faint">${p.status ?? ''}</span>
+          <span class="mono text-faint w-14 text-right">${p.latencyMs ?? '—'}ms</span>`;
+        cdnBox.appendChild(row);
+      }
+
+      // EAS
+      const easBox = document.getElementById('eas-list');
+      easBox.innerHTML = '';
+      const channels = state.eas?.channels ?? {};
+      const order = ['production', 'internal', 'preview', 'development'];
+      for (const name of order) {
+        const c = channels[name];
+        if (!c) continue;
+        const row = el('div', 'px-3 py-2 flex items-baseline gap-3 text-xs');
+        if (!c.healthy && c.error) {
+          row.innerHTML = `
+            ${dotForOk(false)}
+            <span class="mono text-mute w-28">${escapeHtml(name)}</span>
+            <span class="flex-1 truncate text-dim">${escapeHtml(c.error)}</span>`;
+        } else {
+          const rolloutStr = typeof c.rollout === 'number' ? `${c.rollout}%` : '—';
+          row.innerHTML = `
+            ${dotForOk(true)}
+            <span class="mono text-mute w-28">${escapeHtml(name)}</span>
+            <span class="mono">${escapeHtml(c.version ?? '?')}</span>
+            <span class="mono text-faint">${escapeHtml(rolloutStr)}</span>
+            <span class="flex-1"></span>
+            <span class="mono text-faint">${escapeHtml(fmtTimeAgo(c.createdAt))}</span>`;
+        }
+        easBox.appendChild(row);
+      }
+
+      // WORKLOG
+      const wlBox = document.getElementById('worklog-list');
+      wlBox.innerHTML = '';
+      const wl = state.worklog ?? [];
+      if (!wl.length) {
+        wlBox.appendChild(el('div', 'px-3 py-3 text-xs text-dim', 'No entries yet.'));
+      } else {
+        for (const w of wl.slice(0, 30)) {
+          const row = el('div', 'px-3 py-2');
+          row.innerHTML = `
+            <div class="flex items-baseline gap-3 text-xs">
+              <span class="mono text-faint w-20">${escapeHtml(w.date ?? '')}</span>
+              <span class="flex-1">${escapeHtml(w.title ?? '')}</span>
+              <span class="mono text-faint">${escapeHtml(w.commit ?? '')}</span>
+            </div>
+            ${w.summary ? `<div class="text-[11px] text-dim mt-1 ml-[5.5rem]">${escapeHtml(w.summary)}</div>` : ''}`;
+          wlBox.appendChild(row);
+        }
+      }
+
+      // Alerts active
+      const aaBox = document.getElementById('alerts-active');
+      aaBox.innerHTML = '';
+      const active = state.alerts?.active ?? [];
+      if (!active.length) {
+        aaBox.appendChild(el('div', 'px-3 py-3 text-xs text-dim', 'No active alerts.'));
+      } else {
+        for (const a of active) {
+          const sev = a.severity === 'high' ? 'dot-bad' : 'dot-warn';
+          const row = el('div', 'px-3 py-2');
+          row.innerHTML = `
+            <div class="flex items-baseline gap-2 text-xs">
+              <span class="dot ${sev}"></span>
+              <span class="flex-1">${escapeHtml(a.title ?? '')}</span>
+              <span class="mono text-faint">${escapeHtml(fmtTimeAgo(a.firedAt))}</span>
+            </div>
+            <div class="text-[11px] text-dim mt-1 ml-3">${escapeHtml(a.body ?? '')}</div>`;
+          aaBox.appendChild(row);
+        }
+      }
+
+      // Alerts recent (resolved)
+      const arBox = document.getElementById('alerts-recent');
+      arBox.innerHTML = '';
+      const recent = state.alerts?.recent ?? [];
+      if (!recent.length) {
+        arBox.appendChild(el('div', 'px-3 py-2 text-xs text-dim', 'Nothing recent.'));
+      } else {
+        for (const a of recent.slice(0, 12)) {
+          const row = el('div', 'px-3 py-2');
+          row.innerHTML = `
+            <div class="flex items-baseline gap-2 text-xs">
+              <span class="dot dot-ok"></span>
+              <span class="flex-1">${escapeHtml(a.title ?? '')}</span>
+              <span class="mono text-faint">${escapeHtml(fmtTimeAgo(a.resolvedAt ?? a.firedAt))}</span>
+            </div>`;
+          arBox.appendChild(row);
+        }
+      }
+
+      // Footer links
+      if (state.sentry?.topIssues?.[0]?.url) {
+        const u = new URL(state.sentry.topIssues[0].url);
+        const sentryBase = `${u.origin}/organizations/`;
+        document.getElementById('footer-sentry').href = sentryBase;
+        document.getElementById('footer-sentry').hidden = false;
+      }
+      if (state.github?.releases?.[0]?.url) {
+        const m = state.github.releases[0].url.match(/(https:\/\/github\.com\/[^/]+\/[^/]+)/);
+        if (m) document.getElementById('footer-github').href = m[1];
+      }
+    }
+
+    // ── Refresh ─────────────────────────────────────────────────────
+    async function reload() {
+      try {
+        const res = await fetch('./state.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const fresh = await res.json();
+        window.__EMBEDDED_STATE__ = fresh;
+        render(fresh);
+      } catch (err) {
+        // Keep showing the embedded state if fetch fails.
+        console.warn('state.json fetch failed, using embedded state', err);
+      }
+    }
+    document.getElementById('reload').addEventListener('click', reload);
+
+    // Auto-refresh every 5 min while page is open.
+    setInterval(reload, 5 * 60 * 1000);
+
+    // ── Boot ────────────────────────────────────────────────────────
+    init().then(() => {
+      // After unlock, kick a fetch so we get the latest state if the
+      // embedded one is older than what's on disk.
+      if (!document.getElementById('dash').hidden) reload();
+    });
+  </script>
 </body>
 </html>
