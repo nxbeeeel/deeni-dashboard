@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-04-28T23:59:31.012Z (just now)_
+_Last refresh: 2026-04-29T03:57:08.707Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.5.0 (build 49)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **11** |
+| DAU | **10** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -31,37 +31,37 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 6 events · 5 users · last 3d ago
-- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 2 events · 2 users · last 5d ago
+- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 2 events · 2 users · last 6d ago
 - REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 13d ago
 - REACT-NATIVE-2 — ApplicationNotResponding: ANR · 1 events · 1 users · last 24d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 61
-- `Application Became Active` — 32
+- `Application Backgrounded` — 55
 - `Application Opened` — 27
+- `Application Became Active` — 26
 - `Application Installed` — 1
 
 ## GitHub — recent commits to main
 
-- `a0ecf68` — chore(dashboard): refresh state 2026-04-28T22:33:29Z · 1h ago
-- `25a6b6f` — chore(dashboard): refresh state 2026-04-28T21:14:09Z · 3h ago
-- `7ee1549` — feat(dashboard): field notes — log user-reported issues via Telegram · 3h ago
-- `0848f84` — chore(dashboard): refresh state 2026-04-28T21:12:33Z · 3h ago
-- `008699c` — chore(dashboard): refresh state 2026-04-28T21:05:14Z · 3h ago
-- `4325753` — chore(dashboard): refresh state 2026-04-28T21:00:47Z · 3h ago
-- `773784e` — chore(dashboard): refresh state 2026-04-28T20:55:08Z · 3h ago
-- `960969c` — fix(dashboard): add set -x diagnostics to git steps; EAS auth-only errors · 3h ago
-- `ca4852a` — chore(dashboard): refresh state 2026-04-28T20:53:53Z · 3h ago
-- `afb13d5` — chore(dashboard): refresh state 2026-04-28T20:49:17Z · 3h ago
+- `87c4593` — chore(dashboard): refresh state 2026-04-28T23:59:32Z · 4h ago
+- `a0ecf68` — chore(dashboard): refresh state 2026-04-28T22:33:29Z · 5h ago
+- `25a6b6f` — chore(dashboard): refresh state 2026-04-28T21:14:09Z · 7h ago
+- `7ee1549` — feat(dashboard): field notes — log user-reported issues via Telegram · 7h ago
+- `0848f84` — chore(dashboard): refresh state 2026-04-28T21:12:33Z · 7h ago
+- `008699c` — chore(dashboard): refresh state 2026-04-28T21:05:14Z · 7h ago
+- `4325753` — chore(dashboard): refresh state 2026-04-28T21:00:47Z · 7h ago
+- `773784e` — chore(dashboard): refresh state 2026-04-28T20:55:08Z · 7h ago
+- `960969c` — fix(dashboard): add set -x diagnostics to git steps; EAS auth-only errors · 7h ago
+- `ca4852a` — chore(dashboard): refresh state 2026-04-28T20:53:53Z · 7h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 382ms
-- OK  `rawGithub` — 200 · 287ms
-- OK  `everyayah` — 200 · 550ms
-- OK  `quranicaudio` — 200 · 294ms
-- OK  `qurancdn` — 200 · 355ms
+- OK  `jsdelivr` — 200 · 126ms
+- OK  `rawGithub` — 200 · 168ms
+- OK  `everyayah` — 200 · 337ms
+- OK  `quranicaudio` — 200 · 234ms
+- OK  `qurancdn` — 200 · 242ms
 
 ## EAS update channels
 
