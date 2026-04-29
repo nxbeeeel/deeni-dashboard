@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-04-29T13:10:07.380Z (just now)_
+_Last refresh: 2026-04-29T15:34:16.466Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.5.0 (build 49)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **11** |
+| DAU | **9** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -37,31 +37,31 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 37
-- `Application Opened` — 21
-- `Application Became Active` — 15
+- `Application Backgrounded` — 34
+- `Application Opened` — 22
+- `Application Became Active` — 13
 - `Application Installed` — 3
 
 ## GitHub — recent commits to main
 
-- `8b657d4` — chore(dashboard): refresh state 2026-04-29T11:16:58Z · 2h ago
-- `46d1a7a` — chore(dashboard): refresh state 2026-04-29T09:14:03Z · 4h ago
-- `4b2350e` — chore(dashboard): refresh state 2026-04-29T06:31:20Z · 7h ago
-- `50d6fc1` — chore(dashboard): refresh state 2026-04-29T03:57:09Z · 9h ago
-- `87c4593` — chore(dashboard): refresh state 2026-04-28T23:59:32Z · 13h ago
-- `a0ecf68` — chore(dashboard): refresh state 2026-04-28T22:33:29Z · 15h ago
-- `25a6b6f` — chore(dashboard): refresh state 2026-04-28T21:14:09Z · 16h ago
-- `7ee1549` — feat(dashboard): field notes — log user-reported issues via Telegram · 16h ago
-- `0848f84` — chore(dashboard): refresh state 2026-04-28T21:12:33Z · 16h ago
-- `008699c` — chore(dashboard): refresh state 2026-04-28T21:05:14Z · 16h ago
+- `ef168c9` — chore(dashboard): refresh state 2026-04-29T13:10:08Z · 2h ago
+- `8b657d4` — chore(dashboard): refresh state 2026-04-29T11:16:58Z · 4h ago
+- `46d1a7a` — chore(dashboard): refresh state 2026-04-29T09:14:03Z · 6h ago
+- `4b2350e` — chore(dashboard): refresh state 2026-04-29T06:31:20Z · 9h ago
+- `50d6fc1` — chore(dashboard): refresh state 2026-04-29T03:57:09Z · 12h ago
+- `87c4593` — chore(dashboard): refresh state 2026-04-28T23:59:32Z · 16h ago
+- `a0ecf68` — chore(dashboard): refresh state 2026-04-28T22:33:29Z · 17h ago
+- `25a6b6f` — chore(dashboard): refresh state 2026-04-28T21:14:09Z · 18h ago
+- `7ee1549` — feat(dashboard): field notes — log user-reported issues via Telegram · 18h ago
+- `0848f84` — chore(dashboard): refresh state 2026-04-28T21:12:33Z · 18h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 314ms
-- OK  `rawGithub` — 200 · 187ms
-- OK  `everyayah` — 200 · 383ms
-- OK  `quranicaudio` — 200 · 377ms
-- OK  `qurancdn` — 200 · 370ms
+- OK  `jsdelivr` — 200 · 312ms
+- OK  `rawGithub` — 200 · 440ms
+- OK  `everyayah` — 200 · 485ms
+- OK  `quranicaudio` — 200 · 361ms
+- OK  `qurancdn` — 200 · 483ms
 
 ## EAS update channels
 
