@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-04-30T09:20:35.492Z (just now)_
+_Last refresh: 2026-04-30T11:16:06.528Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.5.0 (build 49)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **14** |
+| DAU | **—** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,39 +30,35 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 6 events · 5 users · last 4d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 6 events · 5 users · last 5d ago
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 2 events · 2 users · last 7d ago
 - REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 14d ago
 - REACT-NATIVE-2 — ApplicationNotResponding: ANR · 1 events · 1 users · last 26d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 64
-- `Application Became Active` — 49
-- `Application Opened` — 26
-- `Application Installed` — 5
-- `Application Updated` — 1
+_PostHog pull failed: The operation was aborted due to timeout_
 
 ## GitHub — recent commits to main
 
-- `7ca7040` — chore(dashboard): refresh state 2026-04-30T06:36:58Z · 3h ago
-- `8e6c6fe` — chore(dashboard): refresh state 2026-04-30T03:58:50Z · 5h ago
-- `e325f1e` — chore(dashboard): refresh state 2026-04-30T00:00:11Z · 9h ago
-- `b7e7d21` — chore(dashboard): refresh state 2026-04-29T22:33:47Z · 11h ago
-- `863ef1b` — chore(dashboard): refresh state 2026-04-29T21:12:58Z · 12h ago
-- `e6ac58f` — chore(dashboard): refresh state 2026-04-29T19:45:09Z · 14h ago
-- `58a1254` — chore(dashboard): refresh state 2026-04-29T17:43:59Z · 16h ago
-- `e5c9484` — chore(dashboard): refresh state 2026-04-29T15:34:17Z · 18h ago
-- `ef168c9` — chore(dashboard): refresh state 2026-04-29T13:10:08Z · 20h ago
-- `8b657d4` — chore(dashboard): refresh state 2026-04-29T11:16:58Z · 22h ago
+- `7fbe4ef` — chore(dashboard): refresh state 2026-04-30T09:20:37Z · 2h ago
+- `7ca7040` — chore(dashboard): refresh state 2026-04-30T06:36:58Z · 5h ago
+- `8e6c6fe` — chore(dashboard): refresh state 2026-04-30T03:58:50Z · 7h ago
+- `e325f1e` — chore(dashboard): refresh state 2026-04-30T00:00:11Z · 11h ago
+- `b7e7d21` — chore(dashboard): refresh state 2026-04-29T22:33:47Z · 13h ago
+- `863ef1b` — chore(dashboard): refresh state 2026-04-29T21:12:58Z · 14h ago
+- `e6ac58f` — chore(dashboard): refresh state 2026-04-29T19:45:09Z · 16h ago
+- `58a1254` — chore(dashboard): refresh state 2026-04-29T17:43:59Z · 18h ago
+- `e5c9484` — chore(dashboard): refresh state 2026-04-29T15:34:17Z · 20h ago
+- `ef168c9` — chore(dashboard): refresh state 2026-04-29T13:10:08Z · 22h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 268ms
-- OK  `rawGithub` — 200 · 258ms
-- OK  `everyayah` — 200 · 559ms
-- OK  `quranicaudio` — 200 · 414ms
-- OK  `qurancdn` — 200 · 440ms
+- OK  `jsdelivr` — 200 · 339ms
+- OK  `rawGithub` — 200 · 169ms
+- OK  `everyayah` — 200 · 537ms
+- OK  `quranicaudio` — 200 · 306ms
+- OK  `qurancdn` — 200 · 302ms
 
 ## EAS update channels
 
@@ -83,3 +79,7 @@ _None._
   WAL journal_mode + foreign_keys=ON pragmas on every open; AppState listener that re-opens the SQLite handle on Android foreground after potential TRIM_MEMORY invalidation; runtimeVersion switched from hardcoded "1.3.4" to { policy: "fingerprint" }; Sentry tags for app.version / platform / build.number; bootstrap captureException; DB breadcrumbs in offline.ts.
 - 2026-04-25 — v1.4.0 bump + expo-audio migration (`5449ae8`)
   Migrated adhanPlayer + ruqyah screen from deprecated expo-av to expo-audio. Wrapped void-returning setActiveForLockScreen / clearLockScreenControls in try/catch instead of .catch(). Added optional context/repetitions/quranRefs to RuqyahVerse. bump-version.mjs now keeps semver, versionCode, buildNumber, and package.json synced in lockstep.
+
+## Refresh errors
+
+- **posthog** — The operation was aborted due to timeout
