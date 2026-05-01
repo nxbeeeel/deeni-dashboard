@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-01T20:09:14.552Z (just now)_
+_Last refresh: 2026-05-01T21:27:32.306Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.5.0 (build 49)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **16** |
+| DAU | **—** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,38 +30,35 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 7 events · 5 users · last 12h ago
-- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 4 events · 3 users · last 10h ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 7 events · 5 users · last 14h ago
+- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 4 events · 3 users · last 12h ago
 - REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 16d ago
 - REACT-NATIVE-2 — ApplicationNotResponding: ANR · 1 events · 1 users · last 27d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 169
-- `Application Became Active` — 107
-- `Application Opened` — 54
-- `Application Installed` — 9
+_PostHog pull failed: The operation was aborted due to timeout_
 
 ## GitHub — recent commits to main
 
-- `5c109a5` — chore(dashboard): refresh state 2026-05-01T18:40:41Z · 1h ago
-- `256550c` — chore(dashboard): refresh state 2026-05-01T17:03:25Z · 3h ago
-- `068d21c` — chore(dashboard): refresh state 2026-05-01T15:34:16Z · 5h ago
-- `10b06c3` — chore(dashboard): refresh state 2026-05-01T14:02:15Z · 6h ago
-- `a73ed84` — chore(dashboard): refresh state 2026-05-01T12:02:56Z · 8h ago
-- `479fad9` — chore(dashboard): refresh state 2026-05-01T10:54:12Z · 9h ago
-- `88bef8d` — chore(dashboard): refresh state 2026-05-01T09:17:54Z · 11h ago
-- `2de2075` — chore(dashboard): refresh state 2026-05-01T07:15:22Z · 13h ago
-- `c9f3945` — chore(dashboard): refresh state 2026-05-01T04:10:52Z · 16h ago
-- `9afa2fa` — chore(dashboard): refresh state 2026-04-30T23:59:31Z · 20h ago
+- `7181d9b` — chore(dashboard): refresh state 2026-05-01T20:09:15Z · 1h ago
+- `5c109a5` — chore(dashboard): refresh state 2026-05-01T18:40:41Z · 3h ago
+- `256550c` — chore(dashboard): refresh state 2026-05-01T17:03:25Z · 4h ago
+- `068d21c` — chore(dashboard): refresh state 2026-05-01T15:34:16Z · 6h ago
+- `10b06c3` — chore(dashboard): refresh state 2026-05-01T14:02:15Z · 7h ago
+- `a73ed84` — chore(dashboard): refresh state 2026-05-01T12:02:56Z · 9h ago
+- `479fad9` — chore(dashboard): refresh state 2026-05-01T10:54:12Z · 11h ago
+- `88bef8d` — chore(dashboard): refresh state 2026-05-01T09:17:54Z · 12h ago
+- `2de2075` — chore(dashboard): refresh state 2026-05-01T07:15:22Z · 14h ago
+- `c9f3945` — chore(dashboard): refresh state 2026-05-01T04:10:52Z · 17h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 163ms
-- OK  `rawGithub` — 200 · 303ms
-- OK  `everyayah` — 200 · 620ms
-- OK  `quranicaudio` — 200 · 302ms
-- OK  `qurancdn` — 200 · 685ms
+- OK  `jsdelivr` — 200 · 493ms
+- OK  `rawGithub` — 200 · 363ms
+- OK  `everyayah` — 200 · 569ms
+- OK  `quranicaudio` — 200 · 431ms
+- OK  `qurancdn` — 200 · 409ms
 
 ## EAS update channels
 
@@ -82,3 +79,7 @@ _None._
   WAL journal_mode + foreign_keys=ON pragmas on every open; AppState listener that re-opens the SQLite handle on Android foreground after potential TRIM_MEMORY invalidation; runtimeVersion switched from hardcoded "1.3.4" to { policy: "fingerprint" }; Sentry tags for app.version / platform / build.number; bootstrap captureException; DB breadcrumbs in offline.ts.
 - 2026-04-25 — v1.4.0 bump + expo-audio migration (`5449ae8`)
   Migrated adhanPlayer + ruqyah screen from deprecated expo-av to expo-audio. Wrapped void-returning setActiveForLockScreen / clearLockScreenControls in try/catch instead of .catch(). Added optional context/repetitions/quranRefs to RuqyahVerse. bump-version.mjs now keeps semver, versionCode, buildNumber, and package.json synced in lockstep.
+
+## Refresh errors
+
+- **posthog** — The operation was aborted due to timeout

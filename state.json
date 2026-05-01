@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-01T20:09:14.552Z",
+  "refreshedAt": "2026-05-01T21:27:32.306Z",
   "appVersion": "1.5.0",
   "buildNumber": 49,
   "sentry": {
@@ -70,40 +70,19 @@
     }
   },
   "posthog": {
-    "healthy": true,
-    "dau": 16,
-    "dauTrend7d": [
-      3,
-      22,
-      17,
-      12,
-      11,
-      14,
-      10,
-      15
-    ],
-    "topEvents24h": [
-      {
-        "event": "Application Backgrounded",
-        "count": 169
-      },
-      {
-        "event": "Application Became Active",
-        "count": 107
-      },
-      {
-        "event": "Application Opened",
-        "count": 54
-      },
-      {
-        "event": "Application Installed",
-        "count": 9
-      }
-    ]
+    "healthy": false,
+    "error": "The operation was aborted due to timeout"
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "7181d9b",
+        "msg": "chore(dashboard): refresh state 2026-05-01T20:09:15Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-01T20:09:15Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7181d9becf03ecdf8376d7e2fbd0d6fc6a5097f7"
+      },
       {
         "sha": "5c109a5",
         "msg": "chore(dashboard): refresh state 2026-05-01T18:40:41Z",
@@ -236,13 +215,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-04-30T09:20:37Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7fbe4efd277ec5110c92f93ab42da60be27726a3"
-      },
-      {
-        "sha": "7ca7040",
-        "msg": "chore(dashboard): refresh state 2026-04-30T06:36:58Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-04-30T06:36:58Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7ca7040f6ce1433a329f3470fb904819ac891713"
       }
     ],
     "releases": [],
@@ -251,13 +223,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25231002946,
+      "id": 25233877552,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25231002946",
-      "ranAt": "2026-05-01T20:08:02Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25233877552",
+      "ranAt": "2026-05-01T21:26:24Z",
       "durationSec": 4
     }
   },
@@ -265,31 +237,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 163,
+      "latencyMs": 493,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 303,
+      "latencyMs": 363,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 620,
+      "latencyMs": 569,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 302,
+      "latencyMs": 431,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 685,
+      "latencyMs": 409,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -355,7 +327,12 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [],
+  "errors": [
+    {
+      "source": "posthog",
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
   "alerts": {
     "active": [],
     "fired": {},
