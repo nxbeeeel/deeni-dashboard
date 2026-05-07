@@ -1,13 +1,13 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-07T10:30:36.351Z (just now)_
+_Last refresh: 2026-05-07T12:20:13.148Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **100.00%** |
+| Crash-free (24h) | **—** |
 | DAU | **15** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
@@ -30,37 +30,35 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 2d ago
-- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 5d ago
-- REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 21d ago
+_Sentry pull failed: The operation was aborted due to timeout_
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 89
-- `Application Became Active` — 65
+- `Application Backgrounded` — 88
+- `Application Became Active` — 64
 - `Application Opened` — 27
-- `Application Installed` — 4
+- `Application Installed` — 3
 
 ## GitHub — recent commits to main
 
-- `ca71966` — chore(dashboard): refresh state 2026-05-07T07:50:39Z · 3h ago
-- `3da5026` — chore(dashboard): refresh state 2026-05-07T05:00:43Z · 6h ago
-- `ef4f957` — chore(dashboard): refresh state 2026-05-07T01:19:46Z · 9h ago
-- `d336c5f` — chore(dashboard): refresh state 2026-05-06T23:29:24Z · 11h ago
-- `d7bbf46` — chore(dashboard): refresh state 2026-05-06T22:26:32Z · 12h ago
-- `5ec91c7` — chore(dashboard): refresh state 2026-05-06T21:16:00Z · 13h ago
-- `c5ae8d6` — chore(dashboard): refresh state 2026-05-06T19:53:30Z · 15h ago
-- `6d82fb9` — chore(dashboard): refresh state 2026-05-06T17:46:54Z · 17h ago
-- `8de40f3` — chore(dashboard): refresh state 2026-05-06T15:42:52Z · 19h ago
-- `f9b4380` — chore(dashboard): refresh state 2026-05-06T13:18:16Z · 21h ago
+- `a3bd546` — chore(dashboard): refresh state 2026-05-07T10:30:37Z · 2h ago
+- `ca71966` — chore(dashboard): refresh state 2026-05-07T07:50:39Z · 5h ago
+- `3da5026` — chore(dashboard): refresh state 2026-05-07T05:00:43Z · 7h ago
+- `ef4f957` — chore(dashboard): refresh state 2026-05-07T01:19:46Z · 11h ago
+- `d336c5f` — chore(dashboard): refresh state 2026-05-06T23:29:24Z · 13h ago
+- `d7bbf46` — chore(dashboard): refresh state 2026-05-06T22:26:32Z · 14h ago
+- `5ec91c7` — chore(dashboard): refresh state 2026-05-06T21:16:00Z · 15h ago
+- `c5ae8d6` — chore(dashboard): refresh state 2026-05-06T19:53:30Z · 16h ago
+- `6d82fb9` — chore(dashboard): refresh state 2026-05-06T17:46:54Z · 19h ago
+- `8de40f3` — chore(dashboard): refresh state 2026-05-06T15:42:52Z · 21h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 355ms
-- OK  `rawGithub` — 200 · 216ms
-- OK  `everyayah` — 200 · 591ms
-- OK  `quranicaudio` — 200 · 335ms
-- OK  `qurancdn` — 200 · 431ms
+- OK  `jsdelivr` — 200 · 186ms
+- OK  `rawGithub` — 200 · 197ms
+- OK  `everyayah` — 200 · 439ms
+- OK  `quranicaudio` — 200 · 347ms
+- OK  `qurancdn` — 200 · 418ms
 
 ## EAS update channels
 
@@ -81,3 +79,7 @@ _None._
   WAL journal_mode + foreign_keys=ON pragmas on every open; AppState listener that re-opens the SQLite handle on Android foreground after potential TRIM_MEMORY invalidation; runtimeVersion switched from hardcoded "1.3.4" to { policy: "fingerprint" }; Sentry tags for app.version / platform / build.number; bootstrap captureException; DB breadcrumbs in offline.ts.
 - 2026-04-25 — v1.4.0 bump + expo-audio migration (`5449ae8`)
   Migrated adhanPlayer + ruqyah screen from deprecated expo-av to expo-audio. Wrapped void-returning setActiveForLockScreen / clearLockScreenControls in try/catch instead of .catch(). Added optional context/repetitions/quranRefs to RuqyahVerse. bump-version.mjs now keeps semver, versionCode, buildNumber, and package.json synced in lockstep.
+
+## Refresh errors
+
+- **sentry** — The operation was aborted due to timeout
