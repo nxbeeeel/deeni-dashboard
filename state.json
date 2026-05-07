@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-07T19:16:44.564Z",
+  "refreshedAt": "2026-05-07T20:49:32.828Z",
   "appVersion": "1.5.0",
   "buildNumber": 49,
   "sentry": {
@@ -16,7 +16,7 @@
       100,
       100
     ],
-    "openIssuesCount": 3,
+    "openIssuesCount": 4,
     "topIssues": [
       {
         "id": "7406195421",
@@ -41,6 +41,17 @@
         "release": null
       },
       {
+        "id": "7466361903",
+        "shortId": "REACT-NATIVE-6",
+        "title": "App Hanging: App hanging for at least 2000 ms.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-07T20:21:35.247189Z",
+        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
+        "release": null
+      },
+      {
         "id": "7416393538",
         "shortId": "REACT-NATIVE-4",
         "title": "RuntimeException: android.os.DeadSystemException",
@@ -54,7 +65,7 @@
     ],
     "latestRelease": {
       "version": "in.deen.app@1.5.0+10",
-      "newGroups": 0,
+      "newGroups": 1,
       "sessions": null
     }
   },
@@ -62,14 +73,14 @@
     "healthy": true,
     "dau": 14,
     "dauTrend7d": [
-      4,
+      2,
       16,
       15,
       16,
       10,
       8,
       14,
-      12
+      13
     ],
     "topEvents24h": [
       {
@@ -78,21 +89,28 @@
       },
       {
         "event": "Application Became Active",
-        "count": 80
+        "count": 79
       },
       {
         "event": "Application Opened",
-        "count": 31
+        "count": 33
       },
       {
         "event": "Application Installed",
-        "count": 2
+        "count": 3
       }
     ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "7bd337c",
+        "msg": "chore(dashboard): refresh state 2026-05-07T19:16:45Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-07T19:16:45Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7bd337c1c829508f47e8e06c987dc36819c6626d"
+      },
       {
         "sha": "4db5a79",
         "msg": "chore(dashboard): refresh state 2026-05-07T17:18:53Z",
@@ -225,13 +243,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-05T23:55:05Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6eaa0ce7fba4b4b9bce1f53aa57bc585604a7628"
-      },
-      {
-        "sha": "43fa952",
-        "msg": "chore(dashboard): refresh state 2026-05-05T22:32:49Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-05T22:32:49Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/43fa952e0bb656002523da8063dd9a70ed9daa47"
       }
     ],
     "releases": [],
@@ -240,45 +251,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25516806801,
+      "id": 25521236843,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25516806801",
-      "ranAt": "2026-05-07T19:15:37Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25521236843",
+      "ranAt": "2026-05-07T20:48:16Z",
+      "durationSec": 12
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 147,
+      "latencyMs": 116,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 174,
+      "latencyMs": 191,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 389,
+      "latencyMs": 536,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 214,
+      "latencyMs": 196,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 223,
+      "latencyMs": 186,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
