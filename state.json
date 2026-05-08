@@ -1,17 +1,79 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-08T14:02:39.925Z",
+  "refreshedAt": "2026-05-08T16:00:36.013Z",
   "appVersion": "1.5.0",
   "buildNumber": 49,
   "sentry": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "crashFree": 100,
+    "crashFreeTrend7d": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "openIssuesCount": 4,
+    "topIssues": [
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 8,
+        "events1h": null,
+        "users24h": 6,
+        "lastSeen": "2026-05-05T08:33:22.908000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      },
+      {
+        "id": "7434752222",
+        "shortId": "REACT-NATIVE-5",
+        "title": "Error: Call to function 'NativeDatabase.prepareSync' has been rejected.",
+        "events24h": 6,
+        "events1h": null,
+        "users24h": 4,
+        "lastSeen": "2026-05-02T01:33:14.746000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7434752222/",
+        "release": null
+      },
+      {
+        "id": "7466361903",
+        "shortId": "REACT-NATIVE-6",
+        "title": "App Hanging: App hanging for at least 2000 ms.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-07T20:21:35.247189Z",
+        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
+        "release": null
+      },
+      {
+        "id": "7416393538",
+        "shortId": "REACT-NATIVE-4",
+        "title": "RuntimeException: android.os.DeadSystemException",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-04-16T07:13:59.484000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7416393538/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app@1.5.0+10",
+      "newGroups": 1,
+      "sessions": null
+    }
   },
   "posthog": {
     "healthy": true,
-    "dau": 12,
+    "dau": 10,
     "dauTrend7d": [
-      12,
+      11,
       15,
       16,
       11,
@@ -23,15 +85,15 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 71
-      },
-      {
-        "event": "Application Became Active",
-        "count": 39
+        "count": 59
       },
       {
         "event": "Application Opened",
-        "count": 35
+        "count": 33
+      },
+      {
+        "event": "Application Became Active",
+        "count": 28
       },
       {
         "event": "Application Installed",
@@ -42,6 +104,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "434cfc0",
+        "msg": "chore(dashboard): refresh state 2026-05-08T14:02:40Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-08T14:02:40Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/434cfc0df7ca0a44c7eef3dbc10534d3256d1b90"
+      },
       {
         "sha": "8969318",
         "msg": "chore(dashboard): refresh state 2026-05-08T11:55:51Z",
@@ -174,13 +243,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-06T22:26:32Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d7bbf467315a84611a97266944cbb326360a8bf6"
-      },
-      {
-        "sha": "5ec91c7",
-        "msg": "chore(dashboard): refresh state 2026-05-06T21:16:00Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-06T21:16:00Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5ec91c7166112bd978b969662e897e913f6bf411"
       }
     ],
     "releases": [],
@@ -189,45 +251,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25559841553,
+      "id": 25565620230,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25559841553",
-      "ranAt": "2026-05-08T14:01:30Z",
-      "durationSec": 5
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25565620230",
+      "ranAt": "2026-05-08T15:59:19Z",
+      "durationSec": 12
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 166,
+      "latencyMs": 105,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 223,
+      "latencyMs": 182,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 525,
+      "latencyMs": 736,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 285,
+      "latencyMs": 178,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 251,
+      "latencyMs": 208,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -293,12 +355,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "sentry",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},
