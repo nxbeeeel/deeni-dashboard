@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-09T22:54:05.831Z",
+  "refreshedAt": "2026-05-09T23:55:44.048Z",
   "appVersion": "1.5.0",
   "buildNumber": 49,
   "sentry": {
@@ -73,7 +73,6 @@
     "healthy": true,
     "dau": 14,
     "dauTrend7d": [
-      2,
       16,
       11,
       9,
@@ -105,6 +104,118 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "6e442ea",
+        "msg": "fix(widgets): convert updateActivity/endActivity to AsyncFunction",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T23:17:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6e442eaa7c79e90368fee0943b545acf9673187f"
+      },
+      {
+        "sha": "7684acf",
+        "msg": "fix(sentry): guard ExpoLocation cleanup + offline.ts sync DB calls",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T23:15:51Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7684acf78b80b17ca26c8d5537cec40eeedb73aa"
+      },
+      {
+        "sha": "d619cf7",
+        "msg": "perf(quran): use sliced selectors in surah reader to avoid 10Hz re-renders",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T23:10:16Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d619cf730abffd6236be7af3c125e94f6e75c56c"
+      },
+      {
+        "sha": "100782c",
+        "msg": "fix(quran): word-timing Hermes compatibility, cache bounds, full-surah mode",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T22:06:02Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/100782c4937d58483eca8dfd42b35b0595b865b1"
+      },
+      {
+        "sha": "fca4bd0",
+        "msg": "feat(quran): word-by-word audio synchronisation",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T22:02:20Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fca4bd0245860ca198d4474f6e559f521c1ec799"
+      },
+      {
+        "sha": "1eec253",
+        "msg": "feat(ios-widgets): visual polish pass — GlassSurface parity",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:54:39Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1eec253947a77002bbc6312112de4770ac4c1ac2"
+      },
+      {
+        "sha": "2a3a5bb",
+        "msg": "fix(widgets): resolve iOS bridge null-module visibility + Live Activity race condition",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:49:27Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2a3a5bb6cb0f15c683c1c22cca25efb3ad6fa7b5"
+      },
+      {
+        "sha": "0a234f2",
+        "msg": "fix(perf): extract inline style arrays in SurahListItem; drop unused width dep from panResponder",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:44:25Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0a234f245c2e663895a6c49e7ab77f4aef050f06"
+      },
+      {
+        "sha": "792aeec",
+        "msg": "perf(quran): reduce re-renders in Quran screens with memo/useCallback/useMemo",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:40:25Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/792aeecad0e7e640df76b107c9f325021113ee35"
+      },
+      {
+        "sha": "a09f6ea",
+        "msg": "fix(reciters): correct and remove broken fullSurahSlug values (live URL audit)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:30:48Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a09f6ead284ba2cf150a2bd52517d83ccbcee632"
+      },
+      {
+        "sha": "0f9cb09",
+        "msg": "fix(notifications): remove invalid iOS permission option allowDisplayInNotificationCenter",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:19:24Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0f9cb09d38f8d5439791049913779d1c5bbba67f"
+      },
+      {
+        "sha": "6554627",
+        "msg": "fix(notifications): add iOS timeSensitive interruption level + explicit permission options",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:18:11Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/655462717294cec5c62e02816613bb5e5706894e"
+      },
+      {
+        "sha": "03358cf",
+        "msg": "fix(mushaf): continue audio across surah boundary on multi-surah pages",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:16:34Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/03358cf6d70890d23119ac9b567ff5cf02b1ba77"
+      },
+      {
+        "sha": "e00eb09",
+        "msg": "fix(audio): add pauseRequested race guard; store AppState subscription",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:14:41Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e00eb09397eba203617465583f1a263a8b00119c"
+      },
+      {
+        "sha": "f923e86",
+        "msg": "fix(audio): always update isPlaying on pause regardless of player state",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T21:13:10Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f923e86f5d8ddd16cc0cc09d4d90571e2f2ef4a3"
+      },
+      {
+        "sha": "4e66577",
+        "msg": "chore(dashboard): refresh state 2026-05-09T22:54:06Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-09T22:54:06Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4e6657792867d36f35a4f14dd8ca0933818f174c"
+      },
+      {
         "sha": "9faaa2e",
         "msg": "chore(dashboard): refresh state 2026-05-09T21:56:13Z",
         "author": "deeni-dashboard-bot",
@@ -131,118 +242,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-09T19:59:26Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/043dabe04baf42626683e63ed815e8c1bb01b40e"
-      },
-      {
-        "sha": "5ccd352",
-        "msg": "chore(dashboard): refresh state 2026-05-09T18:33:14Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T18:33:14Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5ccd352ee07a09511327dc8d071a31bd999add7b"
-      },
-      {
-        "sha": "d177e96",
-        "msg": "chore(dashboard): refresh state 2026-05-09T17:01:34Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T17:01:34Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d177e962781e3ae58f056d68741437e44d2516e1"
-      },
-      {
-        "sha": "d1c8261",
-        "msg": "chore(dashboard): refresh state 2026-05-09T15:31:22Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T15:31:22Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d1c826184a63179065069dc5df92b805f7bd6b2f"
-      },
-      {
-        "sha": "188ef27",
-        "msg": "chore(dashboard): refresh state 2026-05-09T14:19:18Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T14:19:18Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/188ef27876d455dad7056d416554450fa594375c"
-      },
-      {
-        "sha": "5879199",
-        "msg": "chore(dashboard): refresh state 2026-05-09T12:35:14Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T12:35:14Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5879199fbaeb062f985791d7a2946f598ba83154"
-      },
-      {
-        "sha": "31b1106",
-        "msg": "chore(dashboard): refresh state 2026-05-09T11:27:29Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T11:27:29Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/31b1106380204767c6c8907ca5e5ffcc5e0a6905"
-      },
-      {
-        "sha": "d3be238",
-        "msg": "chore(dashboard): refresh state 2026-05-09T10:16:14Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T10:16:14Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d3be23898722955ff12b67e79af38f5e18ca1de6"
-      },
-      {
-        "sha": "0f376c5",
-        "msg": "chore(dashboard): refresh state 2026-05-09T09:01:10Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T09:01:10Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0f376c535aa48a5e6d651e0b91562f5913cfc2fd"
-      },
-      {
-        "sha": "73c82e8",
-        "msg": "chore(dashboard): refresh state 2026-05-09T07:12:24Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T07:12:24Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/73c82e86217851d5d4b7fad909bc68532cb53dca"
-      },
-      {
-        "sha": "9ac3596",
-        "msg": "chore(dashboard): refresh state 2026-05-09T04:52:20Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T04:52:20Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9ac35961858a8b092f125771d1a6e72df13be1a4"
-      },
-      {
-        "sha": "e643e89",
-        "msg": "chore(dashboard): refresh state 2026-05-09T01:19:08Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T01:19:08Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e643e89be42a1e33439b4257f50aaacbcc5e657e"
-      },
-      {
-        "sha": "01b173f",
-        "msg": "chore(dashboard): refresh state 2026-05-08T23:30:47Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-08T23:30:47Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/01b173f57e110b3172c185bc52d0f220a658ccf2"
-      },
-      {
-        "sha": "0993410",
-        "msg": "chore(dashboard): refresh state 2026-05-08T22:02:52Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-08T22:02:52Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/099341032413b4d89a209923478948dce090283f"
-      },
-      {
-        "sha": "53c34c9",
-        "msg": "chore(dashboard): refresh state 2026-05-08T20:36:31Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-08T20:36:31Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/53c34c9d1ae96528e4ad4a1a9c48108a218bb1e0"
-      },
-      {
-        "sha": "25a85e1",
-        "msg": "chore(dashboard): refresh state 2026-05-08T19:27:11Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-08T19:27:11Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/25a85e141833f558a38f6fc1a231b3b4bc0a8bbe"
-      },
-      {
-        "sha": "c37d027",
-        "msg": "chore(dashboard): refresh state 2026-05-08T17:42:04Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-08T17:42:04Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c37d02769d1e4820ea4533d51304f03033cf00ea"
       }
     ],
     "releases": [],
@@ -251,45 +250,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25613868011,
+      "id": 25614944080,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25613868011",
-      "ranAt": "2026-05-09T22:52:57Z",
-      "durationSec": 5
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25614944080",
+      "ranAt": "2026-05-09T23:54:35Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 125,
+      "latencyMs": 103,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 137,
+      "latencyMs": 215,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 533,
+      "latencyMs": 466,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 551,
+      "latencyMs": 367,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 515,
+      "latencyMs": 367,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },

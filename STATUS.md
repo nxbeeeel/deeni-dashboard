@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-09T22:54:05.831Z (just now)_
+_Last refresh: 2026-05-09T23:55:44.048Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
@@ -44,24 +44,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `9faaa2e` — chore(dashboard): refresh state 2026-05-09T21:56:13Z · 58m ago
-- `21daddb` — chore(dashboard): refresh state 2026-05-09T20:57:36Z · 2h ago
-- `72f5d95` — fix: restore audio session after adhan; schedule notifications 7 days ahead · 2h ago
-- `043dabe` — chore(dashboard): refresh state 2026-05-09T19:59:26Z · 3h ago
-- `5ccd352` — chore(dashboard): refresh state 2026-05-09T18:33:14Z · 4h ago
-- `d177e96` — chore(dashboard): refresh state 2026-05-09T17:01:34Z · 6h ago
-- `d1c8261` — chore(dashboard): refresh state 2026-05-09T15:31:22Z · 7h ago
-- `188ef27` — chore(dashboard): refresh state 2026-05-09T14:19:18Z · 9h ago
-- `5879199` — chore(dashboard): refresh state 2026-05-09T12:35:14Z · 10h ago
-- `31b1106` — chore(dashboard): refresh state 2026-05-09T11:27:29Z · 11h ago
+- `6e442ea` — fix(widgets): convert updateActivity/endActivity to AsyncFunction · 38m ago
+- `7684acf` — fix(sentry): guard ExpoLocation cleanup + offline.ts sync DB calls · 40m ago
+- `d619cf7` — perf(quran): use sliced selectors in surah reader to avoid 10Hz re-renders · 45m ago
+- `100782c` — fix(quran): word-timing Hermes compatibility, cache bounds, full-surah mode · 2h ago
+- `fca4bd0` — feat(quran): word-by-word audio synchronisation · 2h ago
+- `1eec253` — feat(ios-widgets): visual polish pass — GlassSurface parity · 2h ago
+- `2a3a5bb` — fix(widgets): resolve iOS bridge null-module visibility + Live Activity race condition · 2h ago
+- `0a234f2` — fix(perf): extract inline style arrays in SurahListItem; drop unused width dep from panResponder · 2h ago
+- `792aeec` — perf(quran): reduce re-renders in Quran screens with memo/useCallback/useMemo · 2h ago
+- `a09f6ea` — fix(reciters): correct and remove broken fullSurahSlug values (live URL audit) · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 125ms
-- OK  `rawGithub` — 200 · 137ms
-- OK  `everyayah` — 200 · 533ms
-- OK  `quranicaudio` — 200 · 551ms
-- OK  `qurancdn` — 200 · 515ms
+- OK  `jsdelivr` — 200 · 103ms
+- OK  `rawGithub` — 200 · 215ms
+- OK  `everyayah` — 200 · 466ms
+- OK  `quranicaudio` — 200 · 367ms
+- OK  `qurancdn` — 200 · 367ms
 
 ## EAS update channels
 
