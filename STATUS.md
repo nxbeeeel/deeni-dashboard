@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-09T04:52:19.920Z (just now)_
+_Last refresh: 2026-05-09T07:12:23.597Z (just now)_
 _App version: 1.5.0 (build 49)_
 
 ## Headline
@@ -37,31 +37,31 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 54
+- `Application Backgrounded` — 53
 - `Application Opened` — 29
 - `Application Became Active` — 27
 - `Application Installed` — 2
 
 ## GitHub — recent commits to main
 
-- `e643e89` — chore(dashboard): refresh state 2026-05-09T01:19:08Z · 4h ago
-- `01b173f` — chore(dashboard): refresh state 2026-05-08T23:30:47Z · 5h ago
-- `0993410` — chore(dashboard): refresh state 2026-05-08T22:02:52Z · 7h ago
-- `53c34c9` — chore(dashboard): refresh state 2026-05-08T20:36:31Z · 8h ago
-- `25a85e1` — chore(dashboard): refresh state 2026-05-08T19:27:11Z · 9h ago
-- `c37d027` — chore(dashboard): refresh state 2026-05-08T17:42:04Z · 11h ago
-- `dea0bfc` — chore(dashboard): refresh state 2026-05-08T16:00:36Z · 13h ago
-- `434cfc0` — chore(dashboard): refresh state 2026-05-08T14:02:40Z · 15h ago
-- `8969318` — chore(dashboard): refresh state 2026-05-08T11:55:51Z · 17h ago
-- `a488592` — chore(dashboard): refresh state 2026-05-08T10:06:02Z · 19h ago
+- `9ac3596` — chore(dashboard): refresh state 2026-05-09T04:52:20Z · 2h ago
+- `e643e89` — chore(dashboard): refresh state 2026-05-09T01:19:08Z · 6h ago
+- `01b173f` — chore(dashboard): refresh state 2026-05-08T23:30:47Z · 8h ago
+- `0993410` — chore(dashboard): refresh state 2026-05-08T22:02:52Z · 9h ago
+- `53c34c9` — chore(dashboard): refresh state 2026-05-08T20:36:31Z · 11h ago
+- `25a85e1` — chore(dashboard): refresh state 2026-05-08T19:27:11Z · 12h ago
+- `c37d027` — chore(dashboard): refresh state 2026-05-08T17:42:04Z · 14h ago
+- `dea0bfc` — chore(dashboard): refresh state 2026-05-08T16:00:36Z · 15h ago
+- `434cfc0` — chore(dashboard): refresh state 2026-05-08T14:02:40Z · 17h ago
+- `8969318` — chore(dashboard): refresh state 2026-05-08T11:55:51Z · 19h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 263ms
-- OK  `rawGithub` — 200 · 261ms
-- OK  `everyayah` — 200 · 646ms
-- OK  `quranicaudio` — 200 · 242ms
-- OK  `qurancdn` — 200 · 294ms
+- OK  `jsdelivr` — 200 · 287ms
+- OK  `rawGithub` — 200 · 308ms
+- OK  `everyayah` — 200 · 686ms
+- OK  `quranicaudio` — 200 · 297ms
+- OK  `qurancdn` — 200 · 479ms
 
 ## EAS update channels
 
