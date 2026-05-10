@@ -1,7 +1,7 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T23:29:13.481Z (just now)_
-_App version: 1.7.4 (build 59)_
+_Last refresh: 2026-05-10T23:53:48.558Z (just now)_
+_App version: 1.7.4 (build 60)_
 
 ## Headline
 
@@ -13,7 +13,7 @@ _App version: 1.7.4 (build 59)_
 | In progress | **0** |
 | Fixed (14d) | **0** |
 | Last production deploy | **—** (unknown) |
-| Last CI on main | **in_progress** |
+| Last CI on main | **failure** |
 | Active alerts | **0** |
 
 ## Open bugs (`triage`)
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `d6f04bb` — chore: bump version to 1.7.4 (lock-screen audio fix on Android 14+) · 17m ago
-- `2117663` — ci: disable broken auto-OTA-on-master-push (conflicts with staged-rollout policy) · 30m ago
-- `9d72b3b` — chore(dashboard): refresh state 2026-05-10T22:12:38Z · 1h ago
+- `6f33bd8` — docs(plans): mushaf QPC font fix + layout v2 plan (research-grounded, awaiting approval) · 1m ago
+- `1add368` — feat(ci): auto-upload per-locale release notes to Play Console on tag push · 14m ago
+- `85352a7` — ci(release): use EAS-stored credentials, remove GitHub-secret-based key restore · 18m ago
+- `1aa7439` — chore(dashboard): refresh state 2026-05-10T23:29:15Z · 25m ago
+- `5b7e438` — feat(ops): wire Sentry source map upload + release markers via @sentry/react-native plugin · 25m ago
+- `d6f04bb` — chore: bump version to 1.7.4 (lock-screen audio fix on Android 14+) · 42m ago
+- `2117663` — ci: disable broken auto-OTA-on-master-push (conflicts with staged-rollout policy) · 54m ago
+- `9d72b3b` — chore(dashboard): refresh state 2026-05-10T22:12:38Z · 2h ago
 - `da8d6d6` — chore(dashboard): refresh state 2026-05-10T21:25:43Z · 2h ago
 - `9089bdf` — feat(workflow): ship the full bug-to-ship pipeline (research-grounded, Claude-toolkit-driven) · 3h ago
-- `f23972f` — docs(plan): rewrite workflow-design plan with Claude-toolkit-as-team framing · 3h ago
-- `f2e3d10` — docs: research-grounded plan for the bug-to-ship workflow · 3h ago
-- `2af4f7c` — chore(dashboard): refresh state 2026-05-10T20:01:09Z · 3h ago
-- `b5d28ae` — docs(engineering): bug-to-ship workflow + /triage slash command · 4h ago
-- `4367696` — chore(dashboard): refresh state 2026-05-10T19:42:50Z · 4h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 178ms
-- OK  `rawGithub` — 200 · 190ms
-- OK  `everyayah` — 200 · 603ms
-- OK  `quranicaudio` — 200 · 462ms
-- OK  `qurancdn` — 200 · 445ms
+- OK  `jsdelivr` — 200 · 185ms
+- OK  `rawGithub` — 200 · 338ms
+- OK  `everyayah` — 200 · 632ms
+- OK  `quranicaudio` — 200 · 439ms
+- OK  `qurancdn` — 200 · 443ms
 
 ## EAS update channels
 
