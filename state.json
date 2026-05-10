@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T21:25:41.760Z",
+  "refreshedAt": "2026-05-10T22:12:38.049Z",
   "appVersion": "1.7.3",
   "buildNumber": 58,
   "sentry": {
@@ -73,7 +73,7 @@
     "healthy": true,
     "dau": 12,
     "dauTrend7d": [
-      3,
+      2,
       11,
       9,
       14,
@@ -128,6 +128,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "da8d6d6",
+        "msg": "chore(dashboard): refresh state 2026-05-10T21:25:43Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T21:25:43Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/da8d6d6fb2eccc2034524b28b76ad34ac427146c"
+      },
       {
         "sha": "9089bdf",
         "msg": "feat(workflow): ship the full bug-to-ship pipeline (research-grounded, Claude-toolkit-driven)",
@@ -260,13 +267,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-10T19:17:32Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/587f793a599ba81b35a43c965c7e459e14025141"
-      },
-      {
-        "sha": "a9d3e66",
-        "msg": "fix(word-by-word): generation guard prevents stale audio when tapping rapidly",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:10:58Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a9d3e6648b71c41e8f4fb2644846726a667e6f70"
       }
     ],
     "releases": [
@@ -294,45 +294,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25640174476,
+      "id": 25641149405,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25640174476",
-      "ranAt": "2026-05-10T21:24:35Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25641149405",
+      "ranAt": "2026-05-10T22:11:30Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 184,
+      "latencyMs": 299,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 173,
+      "latencyMs": 250,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 509,
+      "latencyMs": 726,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 376,
+      "latencyMs": 359,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 393,
+      "latencyMs": 352,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
