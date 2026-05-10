@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T01:18:10.807Z",
+  "refreshedAt": "2026-05-10T02:18:25.775Z",
   "appVersion": "1.6.0",
   "buildNumber": 51,
   "sentry": {
@@ -64,14 +64,14 @@
       }
     ],
     "latestRelease": {
-      "version": "in.deen.app@1.6.0+51",
+      "version": "in.deen.app@1.6.0+13",
       "newGroups": 0,
       "sessions": null
     }
   },
   "posthog": {
     "healthy": true,
-    "dau": 16,
+    "dau": 17,
     "dauTrend7d": [
       15,
       11,
@@ -80,30 +80,87 @@
       13,
       10,
       14,
-      3
+      6
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 43
+        "count": 48
       },
       {
         "event": "Application Opened",
-        "count": 27
+        "count": 30
       },
       {
         "event": "Application Became Active",
-        "count": 20
+        "count": 21
       },
       {
         "event": "Application Installed",
+        "count": 6
+      },
+      {
+        "event": "feature_opened",
         "count": 5
+      },
+      {
+        "event": "prayer_marked_done",
+        "count": 1
       }
     ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "ee15f67",
+        "msg": "docs(field-notes): log Mushaf hot-fix issues for v1.6.1",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T02:17:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ee15f6796fa8ad1309d084462db4bec8e8f774eb"
+      },
+      {
+        "sha": "2e85d30",
+        "msg": "fix(ci): track v1.4.0+ feature source files (fasting, hijri, zakat, prayer-history, duas guide, offline audio)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:57:57Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2e85d30cb1a91c87af1ed6fa5840260107db298a"
+      },
+      {
+        "sha": "d8c3dcb",
+        "msg": "fix(ci): track scripts/fix-cmake-stl.cjs (referenced by postinstall)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:54:02Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d8c3dcb722d04fa6c7133c3f397bf190e2463d2b"
+      },
+      {
+        "sha": "ff5291c",
+        "msg": "chore: clean up repo root + track widget extension source",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:50:45Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ff5291c1aa70f2ce7e3e93e48499cf6f88341aa1"
+      },
+      {
+        "sha": "0d33665",
+        "msg": "feat(privacy): analytics consent toggle + iOS ATT prompt",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:48:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0d3366561d0ab9913c707cdb6a9ef22c88282aa3"
+      },
+      {
+        "sha": "67d0095",
+        "msg": "docs: structured engineering workflow + foundational docs",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:44:04Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/67d00959d39530cc3a7443e04e7218a4e8fae8d8"
+      },
+      {
+        "sha": "2d20d67",
+        "msg": "chore(dashboard): refresh state 2026-05-10T01:18:11Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T01:18:11Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2d20d678d73f2b2b5294b15bbd34fe14b20ef3f3"
+      },
       {
         "sha": "90b3e3f",
         "msg": "docs(field-notes): track 2 Play Console pre-launch warnings for v1.6.1",
@@ -194,55 +251,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-10T00:14:30Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0ef48a8a1e93a32b51ed1e429a25a9e6ce65d1fe"
-      },
-      {
-        "sha": "575be03",
-        "msg": "feat(analytics): capture product-feature events across Quran, prayer, bookmarks, downloads",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:11:30Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/575be038519e2b5fa74b281e88ef56cfbf43eaa4"
-      },
-      {
-        "sha": "b198b56",
-        "msg": "data(mushaf): regenerate Mushaf pages with verified text + layout",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:07:48Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b198b56e5cb10e9cbcb74670e69d3860bbc25f36"
-      },
-      {
-        "sha": "66dee16",
-        "msg": "feat(mushaf): add Tanzil-sourced data generator with verified Madani layout",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:07:40Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/66dee16d3ac8684e4dba7b7cb5eabb3e559dea7f"
-      },
-      {
-        "sha": "e4db8c8",
-        "msg": "feat(notifications): batch 2 — self-heal, per-prayer channels, health screen",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:06:41Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e4db8c8a5ede37f84c7453975590d7d94075d541"
-      },
-      {
-        "sha": "a58e04d",
-        "msg": "fix(notifications): foundation batch — USE_EXACT_ALARM, stable identifiers, default nudge off, remove iOS double-play",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T23:52:59Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a58e04df7ec672ef023ee2be24edce9703b97280"
-      },
-      {
-        "sha": "c9a982f",
-        "msg": "chore(dashboard): refresh state 2026-05-09T23:55:45Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T23:55:45Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c9a982f282de8626bc9556e0cddef93b0999c007"
-      },
-      {
-        "sha": "6e442ea",
-        "msg": "fix(widgets): convert updateActivity/endActivity to AsyncFunction",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T23:17:38Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6e442eaa7c79e90368fee0943b545acf9673187f"
       }
     ],
     "releases": [
@@ -258,45 +266,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25616384892,
-      "workflow": "Dashboard Refresh",
+      "id": 25617461937,
+      "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25616384892",
-      "ranAt": "2026-05-10T01:17:02Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25617461937",
+      "ranAt": "2026-05-10T02:17:17Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 496,
+      "latencyMs": 111,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 246,
+      "latencyMs": 231,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 607,
+      "latencyMs": 554,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 145,
+      "latencyMs": 322,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 213,
+      "latencyMs": 333,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -449,6 +457,38 @@
       "source": "Play Console pre-launch report",
       "resolvedAt": null,
       "notes": "Android 16 will ignore android:screenOrientation=\"PORTRAIT\" on tablets/foldables. Our UI is portrait-only by design. Fix in v1.6.1: support landscape on large screens (resize-friendly layouts), keep portrait on phones. Non-blocking for v1.6.0."
+    },
+    {
+      "status": "OPEN",
+      "description": "Mushaf: swipe-to-next-page breaks UI (everything disappears)",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "When swiping left/right to navigate pages, content disappears. Only works correctly when tapping the down arrow button. PanResponder logic likely racing with page state. Hot fix."
+    },
+    {
+      "status": "OPEN",
+      "description": "Mushaf: many ayahs missing from pages",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "After Tanzil layout migration, some pages are missing verses. Need to compare regenerated mushaf-pages.json against expected per-surah ayah counts (6,236 total). Hot fix."
+    },
+    {
+      "status": "OPEN",
+      "description": "Mushaf: book look not proper",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "Mushaf doesn't look like a printed Quran. Spacing, typography, line-height, gold accents, page borders all need polish to match Madani Mushaf print aesthetic."
+    },
+    {
+      "status": "OPEN",
+      "description": "Mushaf: reciter / player not working properly",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "Audio playback on mushaf has bugs (specifics to investigate). May be related to pageQueue logic introduced in v1.6.0."
     }
   ],
   "errors": [],

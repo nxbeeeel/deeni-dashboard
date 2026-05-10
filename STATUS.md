@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T01:18:10.807Z (just now)_
+_Last refresh: 2026-05-10T02:18:25.775Z (just now)_
 _App version: 1.6.0 (build 51)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.6.0 (build 51)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **16** |
+| DAU | **17** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -37,31 +37,33 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 43
-- `Application Opened` — 27
-- `Application Became Active` — 20
-- `Application Installed` — 5
+- `Application Backgrounded` — 48
+- `Application Opened` — 30
+- `Application Became Active` — 21
+- `Application Installed` — 6
+- `feature_opened` — 5
+- `prayer_marked_done` — 1
 
 ## GitHub — recent commits to main
 
-- `90b3e3f` — docs(field-notes): track 2 Play Console pre-launch warnings for v1.6.1 · 1m ago
-- `ea2327e` — docs(store): add combined.txt with all 8 locales in language-tag format · 4m ago
-- `eec999d` — docs(store): rename release notes to Play Store BCP-47 locale codes · 6m ago
-- `5248411` — docs(store): shorten release notes to fit Play Store 500-char limit · 8m ago
-- `439ebc7` — fix(widgets): swap .foregroundStyle() to .foregroundColor() for iOS 16 compat · 10m ago
-- `7cab299` — docs: changelog + version sync for 1.6.0 (51 / 12) · 18m ago
-- `d200262` — docs(store): release notes for 1.6.0 in 7 locales (en, ar, ur, hi, ml, tr, ms) · 21m ago
-- `22f8b70` — feat(notifications): batch 3 — skip nudge if marked done + iOS thread grouping · 38m ago
-- `8e5d093` — chore: bump version to 1.6.0 (50) · 43m ago
-- `0aabb27` — feat(quran): verse of the day — daily 6:30am notification + share screen · 48m ago
+- `ee15f67` — docs(field-notes): log Mushaf hot-fix issues for v1.6.1 · 1m ago
+- `2e85d30` — fix(ci): track v1.4.0+ feature source files (fasting, hijri, zakat, prayer-history, duas guide, offline audio) · 20m ago
+- `d8c3dcb` — fix(ci): track scripts/fix-cmake-stl.cjs (referenced by postinstall) · 24m ago
+- `ff5291c` — chore: clean up repo root + track widget extension source · 28m ago
+- `0d33665` — feat(privacy): analytics consent toggle + iOS ATT prompt · 30m ago
+- `67d0095` — docs: structured engineering workflow + foundational docs · 34m ago
+- `2d20d67` — chore(dashboard): refresh state 2026-05-10T01:18:11Z · 1h ago
+- `90b3e3f` — docs(field-notes): track 2 Play Console pre-launch warnings for v1.6.1 · 1h ago
+- `ea2327e` — docs(store): add combined.txt with all 8 locales in language-tag format · 1h ago
+- `eec999d` — docs(store): rename release notes to Play Store BCP-47 locale codes · 1h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 496ms
-- OK  `rawGithub` — 200 · 246ms
-- OK  `everyayah` — 200 · 607ms
-- OK  `quranicaudio` — 200 · 145ms
-- OK  `qurancdn` — 200 · 213ms
+- OK  `jsdelivr` — 200 · 111ms
+- OK  `rawGithub` — 200 · 231ms
+- OK  `everyayah` — 200 · 554ms
+- OK  `quranicaudio` — 200 · 322ms
+- OK  `qurancdn` — 200 · 333ms
 
 ## EAS update channels
 
