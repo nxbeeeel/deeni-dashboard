@@ -1,33 +1,95 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T14:01:38.311Z",
+  "refreshedAt": "2026-05-10T15:32:42.384Z",
   "appVersion": "1.7.0",
   "buildNumber": 54,
   "sentry": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "crashFree": 100,
+    "crashFreeTrend7d": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "openIssuesCount": 4,
+    "topIssues": [
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 8,
+        "events1h": null,
+        "users24h": 6,
+        "lastSeen": "2026-05-05T08:33:22.908000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      },
+      {
+        "id": "7434752222",
+        "shortId": "REACT-NATIVE-5",
+        "title": "Error: Call to function 'NativeDatabase.prepareSync' has been rejected.",
+        "events24h": 6,
+        "events1h": null,
+        "users24h": 4,
+        "lastSeen": "2026-05-02T01:33:14.746000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7434752222/",
+        "release": null
+      },
+      {
+        "id": "7466361903",
+        "shortId": "REACT-NATIVE-6",
+        "title": "App Hanging: App hanging for at least 2000 ms.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-07T20:21:35.247189Z",
+        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
+        "release": null
+      },
+      {
+        "id": "7416393538",
+        "shortId": "REACT-NATIVE-4",
+        "title": "RuntimeException: android.os.DeadSystemException",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-04-16T07:13:59.484000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7416393538/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app@1.6.0+13",
+      "newGroups": 0,
+      "sessions": null
+    }
   },
   "posthog": {
     "healthy": true,
     "dau": 14,
     "dauTrend7d": [
-      9,
+      6,
       11,
       9,
       14,
       13,
       10,
       14,
-      9
+      10
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 62
+        "count": 64
       },
       {
         "event": "Application Opened",
-        "count": 33
+        "count": 35
       },
       {
         "event": "quran_played",
@@ -35,7 +97,7 @@
       },
       {
         "event": "Application Became Active",
-        "count": 29
+        "count": 32
       },
       {
         "event": "surah_opened",
@@ -55,7 +117,7 @@
       },
       {
         "event": "prayer_marked_done",
-        "count": 1
+        "count": 2
       },
       {
         "event": "Application Updated",
@@ -66,6 +128,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "3299bb6",
+        "msg": "chore(dashboard): refresh state 2026-05-10T14:01:39Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T14:01:39Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/3299bb683e992300553b3b72ae3c4aea37b679d6"
+      },
       {
         "sha": "6554ae6",
         "msg": "chore: bump version to 1.7.0 (54) + release automation pipeline",
@@ -198,13 +267,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-10T12:11:46Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/533cf23afc0416b50adfec8694fbf267375608f3"
-      },
-      {
-        "sha": "b4a77cb",
-        "msg": "chore(dashboard): refresh state 2026-05-10T11:28:47Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-10T11:28:47Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b4a77cb95c6bcd108fbdc5b7fdac038a318b2840"
       }
     ],
     "releases": [
@@ -226,13 +288,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25630647976,
+      "id": 25632610597,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25630647976",
-      "ranAt": "2026-05-10T14:00:31Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25632610597",
+      "ranAt": "2026-05-10T15:31:36Z",
       "durationSec": 3
     }
   },
@@ -240,31 +302,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 145,
+      "latencyMs": 359,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 217,
+      "latencyMs": 144,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 537,
+      "latencyMs": 515,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 308,
+      "latencyMs": 345,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 529,
+      "latencyMs": 537,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -475,12 +537,7 @@
       "notes": "When playing full Quran audio, no media controls show in iOS lock screen, Android notification, or in either platform's native media center. expo-audio audioMode is set for background playback but lock screen / now-playing info isn't wired. Critical for background listening UX. May need MPNowPlayingInfoCenter (iOS) + MediaSession (Android) setup. Hot fix."
     }
   ],
-  "errors": [
-    {
-      "source": "sentry",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},
