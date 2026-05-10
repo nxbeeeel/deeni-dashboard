@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T02:18:25.775Z",
-  "appVersion": "1.6.0",
-  "buildNumber": 51,
+  "refreshedAt": "2026-05-10T02:31:19.664Z",
+  "appVersion": "1.6.1",
+  "buildNumber": 52,
   "sentry": {
     "healthy": true,
     "crashFree": 100,
@@ -70,48 +70,47 @@
     }
   },
   "posthog": {
-    "healthy": true,
-    "dau": 17,
-    "dauTrend7d": [
-      15,
-      11,
-      9,
-      14,
-      13,
-      10,
-      14,
-      6
-    ],
-    "topEvents24h": [
-      {
-        "event": "Application Backgrounded",
-        "count": 48
-      },
-      {
-        "event": "Application Opened",
-        "count": 30
-      },
-      {
-        "event": "Application Became Active",
-        "count": 21
-      },
-      {
-        "event": "Application Installed",
-        "count": 6
-      },
-      {
-        "event": "feature_opened",
-        "count": 5
-      },
-      {
-        "event": "prayer_marked_done",
-        "count": 1
-      }
-    ]
+    "healthy": false,
+    "error": "The operation was aborted due to timeout"
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "233e20d",
+        "msg": "docs(field-notes): log 3 more user-reported issues for v1.6.2",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T02:30:09Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/233e20d36de59f35a3960ff863455fc6b99d99fa"
+      },
+      {
+        "sha": "cd09bb4",
+        "msg": "docs: add comprehensive Mushaf design spec for v1.7.0 sprint",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T02:28:01Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/cd09bb41a204058b51576ffad338c78cf3311369"
+      },
+      {
+        "sha": "2a1e9e1",
+        "msg": "chore: bump version to 1.6.1 (52)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T02:23:56Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2a1e9e1309fd015875b21d7b8bad4f1f5f24e764"
+      },
+      {
+        "sha": "6300674",
+        "msg": "fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T02:22:46Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6300674e424e0e020c0716eb7a3c90ad86aafdde"
+      },
+      {
+        "sha": "22e8708",
+        "msg": "chore(dashboard): refresh state 2026-05-10T02:18:26Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T02:18:26Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/22e870874878126a4ae5ff903c75c72e6977e058"
+      },
       {
         "sha": "ee15f67",
         "msg": "docs(field-notes): log Mushaf hot-fix issues for v1.6.1",
@@ -216,44 +215,15 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-10T00:40:10Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/22f8b702717584d0201cf9f0189b8014dd2bda32"
-      },
-      {
-        "sha": "8e5d093",
-        "msg": "chore: bump version to 1.6.0 (50)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:35:29Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8e5d093d904319675a497def59e2fa81d402a8c6"
-      },
-      {
-        "sha": "0aabb27",
-        "msg": "feat(quran): verse of the day — daily 6:30am notification + share screen",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:30:31Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0aabb27498d9136a784a7f7b32b6ced598232f6c"
-      },
-      {
-        "sha": "500cb75",
-        "msg": "feat(audio): sleep timer + loop ayah/surah/page modes",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:21:17Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/500cb75310355f8d51808b862aeb5fe481911531"
-      },
-      {
-        "sha": "2e689a4",
-        "msg": "feat(hadith): standardize sources, add grades, expand widget set to 60, Friday-aware getter",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:15:30Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2e689a455a5b95a0f3591247730e991afd112ef9"
-      },
-      {
-        "sha": "0ef48a8",
-        "msg": "docs(worklog): document Sprint reliability + features (May 10)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:14:30Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0ef48a8a1e93a32b51ed1e429a25a9e6ce65d1fe"
       }
     ],
     "releases": [
+      {
+        "tag": "v1.6.1",
+        "name": "v1.6.1 — Mushaf Hot Fixes",
+        "publishedAt": "2026-05-10T02:24:13Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.6.1"
+      },
       {
         "tag": "v1.6.0",
         "name": "v1.6.0 — Reliability + Features Sprint",
@@ -266,13 +236,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25617461937,
-      "workflow": "CI/CD",
+      "id": 25617700322,
+      "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25617461937",
-      "ranAt": "2026-05-10T02:17:17Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25617700322",
+      "ranAt": "2026-05-10T02:30:12Z",
       "durationSec": 3
     }
   },
@@ -280,31 +250,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 111,
+      "latencyMs": 434,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 231,
+      "latencyMs": 173,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 554,
+      "latencyMs": 563,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 322,
+      "latencyMs": 143,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 333,
+      "latencyMs": 163,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -489,9 +459,38 @@
       "source": "User feedback (Telegram)",
       "resolvedAt": null,
       "notes": "Audio playback on mushaf has bugs (specifics to investigate). May be related to pageQueue logic introduced in v1.6.0."
+    },
+    {
+      "status": "OPEN",
+      "description": "Word-by-word: no surah picker, no next button",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "Word-by-word screen lacks navigation controls. User can't pick which surah to study, and there's no \"next\" button at the end of an ayah/surah to continue. Hot fix."
+    },
+    {
+      "status": "OPEN",
+      "description": "Surah reader mini-player: pause button doesn't work",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "On the read page (surah reader), pause button on the bottom mini-player doesn't pause audio. Pause works from the full-screen music player but not from the embedded MiniPlayer. Likely a wiring bug after recent MiniPlayer changes (sleep timer + loop modes). Hot fix."
+    },
+    {
+      "status": "OPEN",
+      "description": "Lock screen / notification media controls missing",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "When playing full Quran audio, no media controls show in iOS lock screen, Android notification, or in either platform's native media center. expo-audio audioMode is set for background playback but lock screen / now-playing info isn't wired. Critical for background listening UX. May need MPNowPlayingInfoCenter (iOS) + MediaSession (Android) setup. Hot fix."
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "source": "posthog",
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
   "alerts": {
     "active": [],
     "fired": {},
