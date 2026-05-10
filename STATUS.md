@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T17:02:18.968Z (just now)_
+_Last refresh: 2026-05-10T18:33:16.806Z (just now)_
 _App version: 1.7.0 (build 54)_
 
 ## Headline
@@ -37,10 +37,10 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 65
-- `Application Opened` — 35
+- `Application Backgrounded` — 58
 - `Application Became Active` — 33
 - `quran_played` — 32
+- `Application Opened` — 29
 - `surah_opened` — 8
 - `feature_opened` — 6
 - `Application Installed` — 4
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `fce04e6` — chore(dashboard): refresh state 2026-05-10T15:32:43Z · 2h ago
-- `3299bb6` — chore(dashboard): refresh state 2026-05-10T14:01:39Z · 3h ago
-- `6554ae6` — chore: bump version to 1.7.0 (54) + release automation pipeline · 4h ago
-- `2ca6ac2` — feat(mushaf): tap-ayah verse selection mode with action bottom sheet · 4h ago
-- `36d88f7` — feat(mushaf): printed Madani Mushaf rendering — cartouche, justified lines, medallions, gold frame · 4h ago
-- `162df28` — feat(quran): translation picker shows curated 49 featured (Browse all toggle) · 4h ago
-- `9a5b605` — feat(quran): shared SurahPicker component (search + filter + recents) · 5h ago
-- `c072721` — feat(mushaf): add SurahCartouche component (printed Mushaf style) · 5h ago
-- `b87a57e` — feat(mushaf): add HizbMarker + SajdaMarker components for margin rosettes · 5h ago
-- `82a3f0a` — feat(mushaf): add VerseMedallion component (gold-bordered verse-end glyph) · 5h ago
+- `ff1cb5e` — chore(dashboard): refresh state 2026-05-10T17:02:20Z · 2h ago
+- `fce04e6` — chore(dashboard): refresh state 2026-05-10T15:32:43Z · 3h ago
+- `3299bb6` — chore(dashboard): refresh state 2026-05-10T14:01:39Z · 5h ago
+- `6554ae6` — chore: bump version to 1.7.0 (54) + release automation pipeline · 6h ago
+- `2ca6ac2` — feat(mushaf): tap-ayah verse selection mode with action bottom sheet · 6h ago
+- `36d88f7` — feat(mushaf): printed Madani Mushaf rendering — cartouche, justified lines, medallions, gold frame · 6h ago
+- `162df28` — feat(quran): translation picker shows curated 49 featured (Browse all toggle) · 6h ago
+- `9a5b605` — feat(quran): shared SurahPicker component (search + filter + recents) · 6h ago
+- `c072721` — feat(mushaf): add SurahCartouche component (printed Mushaf style) · 6h ago
+- `b87a57e` — feat(mushaf): add HizbMarker + SajdaMarker components for margin rosettes · 6h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 110ms
-- OK  `rawGithub` — 200 · 155ms
-- OK  `everyayah` — 200 · 424ms
-- OK  `quranicaudio` — 200 · 346ms
-- OK  `qurancdn` — 200 · 352ms
+- OK  `jsdelivr` — 200 · 120ms
+- OK  `rawGithub` — 200 · 152ms
+- OK  `everyayah` — 200 · 573ms
+- OK  `quranicaudio` — 200 · 260ms
+- OK  `qurancdn` — 200 · 334ms
 
 ## EAS update channels
 
