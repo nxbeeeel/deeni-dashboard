@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T10:22:57.923Z (just now)_
+_Last refresh: 2026-05-10T11:28:46.965Z (just now)_
 _App version: 1.6.1 (build 52)_
 
 ## Headline
@@ -37,10 +37,10 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 51
-- `Application Opened` — 28
+- `Application Backgrounded` — 52
+- `Application Opened` — 29
+- `Application Became Active` — 25
 - `quran_played` — 24
-- `Application Became Active` — 24
 - `feature_opened` — 5
 - `Application Installed` — 5
 - `surah_opened` — 3
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `556696e` — chore(dashboard): refresh state 2026-05-10T08:59:00Z · 1h ago
-- `d65ba24` — chore(dashboard): refresh state 2026-05-10T06:38:15Z · 4h ago
-- `7637092` — chore(dashboard): refresh state 2026-05-10T03:48:52Z · 7h ago
-- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 8h ago
-- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 8h ago
-- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 8h ago
-- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 8h ago
-- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 8h ago
-- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 8h ago
-- `ee15f67` — docs(field-notes): log Mushaf hot-fix issues for v1.6.1 · 8h ago
+- `b78634d` — chore(dashboard): refresh state 2026-05-10T10:22:58Z · 1h ago
+- `556696e` — chore(dashboard): refresh state 2026-05-10T08:59:00Z · 3h ago
+- `d65ba24` — chore(dashboard): refresh state 2026-05-10T06:38:15Z · 5h ago
+- `7637092` — chore(dashboard): refresh state 2026-05-10T03:48:52Z · 8h ago
+- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 9h ago
+- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 9h ago
+- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 9h ago
+- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 9h ago
+- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 9h ago
+- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 9h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 180ms
-- OK  `rawGithub` — 200 · 170ms
-- OK  `everyayah` — 200 · 383ms
-- OK  `quranicaudio` — 200 · 289ms
-- OK  `qurancdn` — 200 · 374ms
+- OK  `jsdelivr` — 200 · 147ms
+- OK  `rawGithub` — 200 · 196ms
+- OK  `everyayah` — 200 · 573ms
+- OK  `quranicaudio` — 200 · 446ms
+- OK  `qurancdn` — 200 · 443ms
 
 ## EAS update channels
 
