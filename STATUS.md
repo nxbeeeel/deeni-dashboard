@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T20:01:08.520Z (just now)_
+_Last refresh: 2026-05-10T21:25:41.760Z (just now)_
 _App version: 1.7.3 (build 58)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.7.3 (build 58)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **14** |
+| DAU | **12** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,17 +30,17 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 5d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 6d ago
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 9d ago
 - REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 3d ago
 - REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 25d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 64
-- `Application Became Active` — 37
+- `Application Backgrounded` — 57
+- `Application Became Active` — 33
 - `quran_played` — 32
-- `Application Opened` — 31
+- `Application Opened` — 28
 - `surah_opened` — 8
 - `feature_opened` — 6
 - `Application Installed` — 4
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `b5d28ae` — docs(engineering): bug-to-ship workflow + /triage slash command · 9m ago
-- `4367696` — chore(dashboard): refresh state 2026-05-10T19:42:50Z · 18m ago
-- `033cbbe` — chore(bugs): audit FIELD_NOTES — close 13 stale entries, keep 3 actually-open · 20m ago
-- `e151abd` — docs(strategy): addendum — both stores already live ~2 weeks, ~200 users · 24m ago
-- `6b2e334` — docs(worklog): v1.7.3 audio hotfix + 6-part engineering uplift entries · 31m ago
-- `09ecc3b` — docs(strategy): Q3 2026 thinking memo — 3 product moves ranked by leverage · 32m ago
-- `72efb4c` — feat(claude): wire /ship slash command + typecheck-on-edit hook + plugin checklist · 35m ago
-- `1d9b660` — docs(engineering): bug-solving playbook + Claude dev ecosystem brief · 37m ago
-- `f155d13` — chore(dashboard): refresh state 2026-05-10T19:22:29Z · 39m ago
-- `f9c1da6` — chore: bump version to 1.7.3 (audio control hotfix) · 40m ago
+- `9089bdf` — feat(workflow): ship the full bug-to-ship pipeline (research-grounded, Claude-toolkit-driven) · 42m ago
+- `f23972f` — docs(plan): rewrite workflow-design plan with Claude-toolkit-as-team framing · 56m ago
+- `f2e3d10` — docs: research-grounded plan for the bug-to-ship workflow · 1h ago
+- `2af4f7c` — chore(dashboard): refresh state 2026-05-10T20:01:09Z · 1h ago
+- `b5d28ae` — docs(engineering): bug-to-ship workflow + /triage slash command · 2h ago
+- `4367696` — chore(dashboard): refresh state 2026-05-10T19:42:50Z · 2h ago
+- `033cbbe` — chore(bugs): audit FIELD_NOTES — close 13 stale entries, keep 3 actually-open · 2h ago
+- `e151abd` — docs(strategy): addendum — both stores already live ~2 weeks, ~200 users · 2h ago
+- `6b2e334` — docs(worklog): v1.7.3 audio hotfix + 6-part engineering uplift entries · 2h ago
+- `09ecc3b` — docs(strategy): Q3 2026 thinking memo — 3 product moves ranked by leverage · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 107ms
-- OK  `rawGithub` — 200 · 121ms
-- OK  `everyayah` — 200 · 426ms
-- OK  `quranicaudio` — 200 · 225ms
-- OK  `qurancdn` — 200 · 216ms
+- OK  `jsdelivr` — 200 · 184ms
+- OK  `rawGithub` — 200 · 173ms
+- OK  `everyayah` — 200 · 509ms
+- OK  `quranicaudio` — 200 · 376ms
+- OK  `qurancdn` — 200 · 393ms
 
 ## EAS update channels
 

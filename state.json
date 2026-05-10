@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T20:01:08.520Z",
+  "refreshedAt": "2026-05-10T21:25:41.760Z",
   "appVersion": "1.7.3",
   "buildNumber": 58,
   "sentry": {
@@ -71,7 +71,7 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 14,
+    "dau": 12,
     "dauTrend7d": [
       3,
       11,
@@ -85,11 +85,11 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 64
+        "count": 57
       },
       {
         "event": "Application Became Active",
-        "count": 37
+        "count": 33
       },
       {
         "event": "quran_played",
@@ -97,7 +97,7 @@
       },
       {
         "event": "Application Opened",
-        "count": 31
+        "count": 28
       },
       {
         "event": "surah_opened",
@@ -128,6 +128,34 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "9089bdf",
+        "msg": "feat(workflow): ship the full bug-to-ship pipeline (research-grounded, Claude-toolkit-driven)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T20:44:00Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9089bdf2753f56a7e1d57458fff9cf1ea217b5ad"
+      },
+      {
+        "sha": "f23972f",
+        "msg": "docs(plan): rewrite workflow-design plan with Claude-toolkit-as-team framing",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T20:29:13Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f23972f79d94be95617b4f08c59d39524641ff30"
+      },
+      {
+        "sha": "f2e3d10",
+        "msg": "docs: research-grounded plan for the bug-to-ship workflow",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T20:18:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f2e3d1054c7eb4fa4807cc12f9833fac273be22f"
+      },
+      {
+        "sha": "2af4f7c",
+        "msg": "chore(dashboard): refresh state 2026-05-10T20:01:09Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T20:01:09Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2af4f7cb62e007882cfc381faabfa5c4398a3e76"
+      },
       {
         "sha": "b5d28ae",
         "msg": "docs(engineering): bug-to-ship workflow + /triage slash command",
@@ -239,34 +267,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-10T19:10:58Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a9d3e6648b71c41e8f4fb2644846726a667e6f70"
-      },
-      {
-        "sha": "8df3516",
-        "msg": "fix(surah-reader): per-ayah play/pause button now actually toggles",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:10:25Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8df3516ad900aff631c019f8df605bbc7bd65a2c"
-      },
-      {
-        "sha": "2a26566",
-        "msg": "chore: bump version to 1.7.2 (perf + sepia)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:00:46Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2a26566192321dc64a91f2a3cff25c4cfa5b13a3"
-      },
-      {
-        "sha": "8a494a5",
-        "msg": "feat(settings): expose Sepia theme option in Appearance",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T18:57:37Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8a494a5929ed4c7e6a8f62ca17923a08347e91c0"
-      },
-      {
-        "sha": "a0a66ff",
-        "msg": "feat(theme): useThemeColors returns sepia palette when theme='sepia'",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T18:55:44Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a0a66ff991070006c625dae426769567d241c646"
       }
     ],
     "releases": [
@@ -294,13 +294,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25638358114,
+      "id": 25640174476,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25638358114",
-      "ranAt": "2026-05-10T20:00:02Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25640174476",
+      "ranAt": "2026-05-10T21:24:35Z",
       "durationSec": 3
     }
   },
@@ -308,31 +308,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 107,
+      "latencyMs": 184,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 121,
+      "latencyMs": 173,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 426,
+      "latencyMs": 509,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 225,
+      "latencyMs": 376,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 216,
+      "latencyMs": 393,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
