@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T03:48:52.079Z (just now)_
+_Last refresh: 2026-05-10T06:38:14.676Z (just now)_
 _App version: 1.6.1 (build 52)_
 
 ## Headline
@@ -37,8 +37,8 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 60
-- `Application Opened` — 36
+- `Application Backgrounded` — 51
+- `Application Opened` — 27
 - `Application Became Active` — 26
 - `quran_played` — 24
 - `Application Installed` — 6
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 1h ago
-- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 1h ago
-- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 1h ago
-- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 1h ago
-- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 1h ago
-- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 2h ago
-- `ee15f67` — docs(field-notes): log Mushaf hot-fix issues for v1.6.1 · 2h ago
-- `2e85d30` — fix(ci): track v1.4.0+ feature source files (fasting, hijri, zakat, prayer-history, duas guide, offline audio) · 2h ago
-- `d8c3dcb` — fix(ci): track scripts/fix-cmake-stl.cjs (referenced by postinstall) · 2h ago
-- `ff5291c` — chore: clean up repo root + track widget extension source · 2h ago
+- `7637092` — chore(dashboard): refresh state 2026-05-10T03:48:52Z · 3h ago
+- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 4h ago
+- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 4h ago
+- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 4h ago
+- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 4h ago
+- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 4h ago
+- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 4h ago
+- `ee15f67` — docs(field-notes): log Mushaf hot-fix issues for v1.6.1 · 4h ago
+- `2e85d30` — fix(ci): track v1.4.0+ feature source files (fasting, hijri, zakat, prayer-history, duas guide, offline audio) · 5h ago
+- `d8c3dcb` — fix(ci): track scripts/fix-cmake-stl.cjs (referenced by postinstall) · 5h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 375ms
-- OK  `rawGithub` — 200 · 332ms
-- OK  `everyayah` — 200 · 522ms
-- OK  `quranicaudio` — 200 · 238ms
-- OK  `qurancdn` — 200 · 189ms
+- OK  `jsdelivr` — 200 · 188ms
+- OK  `rawGithub` — 200 · 177ms
+- OK  `everyayah` — 200 · 445ms
+- OK  `quranicaudio` — 200 · 343ms
+- OK  `qurancdn` — 200 · 503ms
 
 ## EAS update channels
 
