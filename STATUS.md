@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T11:28:46.965Z (just now)_
+_Last refresh: 2026-05-10T12:11:46.060Z (just now)_
 _App version: 1.6.1 (build 52)_
 
 ## Headline
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `b78634d` — chore(dashboard): refresh state 2026-05-10T10:22:58Z · 1h ago
+- `b4a77cb` — chore(dashboard): refresh state 2026-05-10T11:28:47Z · 43m ago
+- `b78634d` — chore(dashboard): refresh state 2026-05-10T10:22:58Z · 2h ago
 - `556696e` — chore(dashboard): refresh state 2026-05-10T08:59:00Z · 3h ago
-- `d65ba24` — chore(dashboard): refresh state 2026-05-10T06:38:15Z · 5h ago
+- `d65ba24` — chore(dashboard): refresh state 2026-05-10T06:38:15Z · 6h ago
 - `7637092` — chore(dashboard): refresh state 2026-05-10T03:48:52Z · 8h ago
-- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 9h ago
-- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 9h ago
-- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 9h ago
-- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 9h ago
-- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 9h ago
-- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 9h ago
+- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 10h ago
+- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 10h ago
+- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 10h ago
+- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 10h ago
+- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 10h ago
 
 ## CDN probes
 
 - OK  `jsdelivr` — 200 · 147ms
-- OK  `rawGithub` — 200 · 196ms
-- OK  `everyayah` — 200 · 573ms
-- OK  `quranicaudio` — 200 · 446ms
-- OK  `qurancdn` — 200 · 443ms
+- OK  `rawGithub` — 200 · 210ms
+- OK  `everyayah` — 200 · 480ms
+- OK  `quranicaudio` — 200 · 238ms
+- OK  `qurancdn` — 200 · 489ms
 
 ## EAS update channels
 
