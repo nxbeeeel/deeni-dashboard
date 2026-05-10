@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T02:31:19.664Z (just now)_
+_Last refresh: 2026-05-10T03:48:52.079Z (just now)_
 _App version: 1.6.1 (build 52)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.6.1 (build 52)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **—** |
+| DAU | **16** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -37,28 +37,37 @@ _None._
 
 ## PostHog — top events (24h)
 
-_PostHog pull failed: The operation was aborted due to timeout_
+- `Application Backgrounded` — 60
+- `Application Opened` — 36
+- `Application Became Active` — 26
+- `quran_played` — 24
+- `Application Installed` — 6
+- `feature_opened` — 5
+- `surah_opened` — 3
+- `mushaf_opened` — 1
+- `prayer_marked_done` — 1
+- `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 1m ago
-- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 3m ago
-- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 7m ago
-- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 9m ago
-- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 13m ago
-- `ee15f67` — docs(field-notes): log Mushaf hot-fix issues for v1.6.1 · 14m ago
-- `2e85d30` — fix(ci): track v1.4.0+ feature source files (fasting, hijri, zakat, prayer-history, duas guide, offline audio) · 33m ago
-- `d8c3dcb` — fix(ci): track scripts/fix-cmake-stl.cjs (referenced by postinstall) · 37m ago
-- `ff5291c` — chore: clean up repo root + track widget extension source · 41m ago
-- `0d33665` — feat(privacy): analytics consent toggle + iOS ATT prompt · 43m ago
+- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 1h ago
+- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 1h ago
+- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 1h ago
+- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 1h ago
+- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 1h ago
+- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 2h ago
+- `ee15f67` — docs(field-notes): log Mushaf hot-fix issues for v1.6.1 · 2h ago
+- `2e85d30` — fix(ci): track v1.4.0+ feature source files (fasting, hijri, zakat, prayer-history, duas guide, offline audio) · 2h ago
+- `d8c3dcb` — fix(ci): track scripts/fix-cmake-stl.cjs (referenced by postinstall) · 2h ago
+- `ff5291c` — chore: clean up repo root + track widget extension source · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 434ms
-- OK  `rawGithub` — 200 · 173ms
-- OK  `everyayah` — 200 · 563ms
-- OK  `quranicaudio` — 200 · 143ms
-- OK  `qurancdn` — 200 · 163ms
+- OK  `jsdelivr` — 200 · 375ms
+- OK  `rawGithub` — 200 · 332ms
+- OK  `everyayah` — 200 · 522ms
+- OK  `quranicaudio` — 200 · 238ms
+- OK  `qurancdn` — 200 · 189ms
 
 ## EAS update channels
 
@@ -89,7 +98,3 @@ _PostHog pull failed: The operation was aborted due to timeout_
   expo-haptics added to: play/pause buttons (Medium impact), surah navigation (Light), bookmark add (Success notification), prayer mark-done (Success), prayer un-mark (Light), Mushaf page nav (Light), Mushaf bookmark add (Success). No haptic on tap-only interactions to avoid noise.
 - 2026-05-10 — iOS time-sensitive prayer notifications (`6554627`)
   Added `interruptionLevel: 'timeSensitive'` to both adhan + nudge notification content (iOS 15+ — bypasses Focus mode for users who grant Time Sensitive permission). Explicit iOS permission flags in `requestPermissionsAsync`: `{ ios: { allowAlert: true, allowSound: true, allowBadge: true } }`. Schedule horizon extended from "today only" to 7 days × 5 prayers = 35 notifications max (well under iOS 64-limit). Then removed invalid option `allowDisplayInNotificationCenter` (not part of expo-notifications iOS permission shape).
-
-## Refresh errors
-
-- **posthog** — The operation was aborted due to timeout

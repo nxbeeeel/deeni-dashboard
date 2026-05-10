@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T02:31:19.664Z",
+  "refreshedAt": "2026-05-10T03:48:52.079Z",
   "appVersion": "1.6.1",
   "buildNumber": 52,
   "sentry": {
@@ -70,12 +70,71 @@
     }
   },
   "posthog": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "dau": 16,
+    "dauTrend7d": [
+      15,
+      11,
+      9,
+      14,
+      13,
+      10,
+      14,
+      7
+    ],
+    "topEvents24h": [
+      {
+        "event": "Application Backgrounded",
+        "count": 60
+      },
+      {
+        "event": "Application Opened",
+        "count": 36
+      },
+      {
+        "event": "Application Became Active",
+        "count": 26
+      },
+      {
+        "event": "quran_played",
+        "count": 24
+      },
+      {
+        "event": "Application Installed",
+        "count": 6
+      },
+      {
+        "event": "feature_opened",
+        "count": 5
+      },
+      {
+        "event": "surah_opened",
+        "count": 3
+      },
+      {
+        "event": "mushaf_opened",
+        "count": 1
+      },
+      {
+        "event": "prayer_marked_done",
+        "count": 1
+      },
+      {
+        "event": "Application Updated",
+        "count": 1
+      }
+    ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "f58b410",
+        "msg": "chore(dashboard): refresh state 2026-05-10T02:31:20Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T02:31:20Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f58b410764b93b4dc60050ae8a1ce61541b4e4d9"
+      },
       {
         "sha": "233e20d",
         "msg": "docs(field-notes): log 3 more user-reported issues for v1.6.2",
@@ -208,13 +267,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-10T00:56:50Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d2002625aa31665391bb5870be2006c6b62164c4"
-      },
-      {
-        "sha": "22f8b70",
-        "msg": "feat(notifications): batch 3 — skip nudge if marked done + iOS thread grouping",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T00:40:10Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/22f8b702717584d0201cf9f0189b8014dd2bda32"
       }
     ],
     "releases": [
@@ -236,45 +288,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25617700322,
+      "id": 25619092587,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25617700322",
-      "ranAt": "2026-05-10T02:30:12Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25619092587",
+      "ranAt": "2026-05-10T03:47:44Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 434,
+      "latencyMs": 375,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 173,
+      "latencyMs": 332,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 563,
+      "latencyMs": 522,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 143,
+      "latencyMs": 238,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 163,
+      "latencyMs": 189,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -485,12 +537,7 @@
       "notes": "When playing full Quran audio, no media controls show in iOS lock screen, Android notification, or in either platform's native media center. expo-audio audioMode is set for background playback but lock screen / now-playing info isn't wired. Critical for background listening UX. May need MPNowPlayingInfoCenter (iOS) + MediaSession (Android) setup. Hot fix."
     }
   ],
-  "errors": [
-    {
-      "source": "posthog",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},
