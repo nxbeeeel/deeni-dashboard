@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-09T23:55:44.048Z (just now)_
-_App version: 1.5.0 (build 49)_
+_Last refresh: 2026-05-10T01:18:10.807Z (just now)_
+_App version: 1.6.0 (build 51)_
 
 ## Headline
 
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **14** |
+| DAU | **16** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -37,31 +37,31 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 41
-- `Application Opened` — 26
-- `Application Became Active` — 17
-- `Application Installed` — 3
+- `Application Backgrounded` — 43
+- `Application Opened` — 27
+- `Application Became Active` — 20
+- `Application Installed` — 5
 
 ## GitHub — recent commits to main
 
-- `6e442ea` — fix(widgets): convert updateActivity/endActivity to AsyncFunction · 38m ago
-- `7684acf` — fix(sentry): guard ExpoLocation cleanup + offline.ts sync DB calls · 40m ago
-- `d619cf7` — perf(quran): use sliced selectors in surah reader to avoid 10Hz re-renders · 45m ago
-- `100782c` — fix(quran): word-timing Hermes compatibility, cache bounds, full-surah mode · 2h ago
-- `fca4bd0` — feat(quran): word-by-word audio synchronisation · 2h ago
-- `1eec253` — feat(ios-widgets): visual polish pass — GlassSurface parity · 2h ago
-- `2a3a5bb` — fix(widgets): resolve iOS bridge null-module visibility + Live Activity race condition · 2h ago
-- `0a234f2` — fix(perf): extract inline style arrays in SurahListItem; drop unused width dep from panResponder · 2h ago
-- `792aeec` — perf(quran): reduce re-renders in Quran screens with memo/useCallback/useMemo · 2h ago
-- `a09f6ea` — fix(reciters): correct and remove broken fullSurahSlug values (live URL audit) · 2h ago
+- `90b3e3f` — docs(field-notes): track 2 Play Console pre-launch warnings for v1.6.1 · 1m ago
+- `ea2327e` — docs(store): add combined.txt with all 8 locales in language-tag format · 4m ago
+- `eec999d` — docs(store): rename release notes to Play Store BCP-47 locale codes · 6m ago
+- `5248411` — docs(store): shorten release notes to fit Play Store 500-char limit · 8m ago
+- `439ebc7` — fix(widgets): swap .foregroundStyle() to .foregroundColor() for iOS 16 compat · 10m ago
+- `7cab299` — docs: changelog + version sync for 1.6.0 (51 / 12) · 18m ago
+- `d200262` — docs(store): release notes for 1.6.0 in 7 locales (en, ar, ur, hi, ml, tr, ms) · 21m ago
+- `22f8b70` — feat(notifications): batch 3 — skip nudge if marked done + iOS thread grouping · 38m ago
+- `8e5d093` — chore: bump version to 1.6.0 (50) · 43m ago
+- `0aabb27` — feat(quran): verse of the day — daily 6:30am notification + share screen · 48m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 103ms
-- OK  `rawGithub` — 200 · 215ms
-- OK  `everyayah` — 200 · 466ms
-- OK  `quranicaudio` — 200 · 367ms
-- OK  `qurancdn` — 200 · 367ms
+- OK  `jsdelivr` — 200 · 496ms
+- OK  `rawGithub` — 200 · 246ms
+- OK  `everyayah` — 200 · 607ms
+- OK  `quranicaudio` — 200 · 145ms
+- OK  `qurancdn` — 200 · 213ms
 
 ## EAS update channels
 
@@ -72,13 +72,23 @@ _None._
 
 ## WORKLOG — last entries
 
-- 2026-04-25 — Operations dashboard scaffolded
-  Built the .dashboard/ refresher (Node stdlib, no deps), GitHub Actions workflow, public deeni-dashboard scaffold, password-gated Linear-style HTML, alert engine, and STATUS.md generator. Plan in DASHBOARD_PLAN.md. Awaiting first run after Phase 0 token setup.
-- 2026-04-25 — iOS widgets premium redesign
-  Live ticking countdown via Text(timerInterval:countsDown:), accent-rail next-prayer highlight on the Times widget, gold pull-quote treatment on Daily Dua, oversized quote-glyph backdrop on Daily Hadith. iOS 18 tinted-mode safe via widgetAccentable + widgetRenderingMode environment.
-- 2026-04-25 — iOS Next Prayer widget stuck on "in 0:00" (`5302c33`)
-  Root cause: src/widgets/syncWidgetData.tsx returned early on iOS so App Group group.in.deen.app was never written. Widget fell back to placeholder sample, system overlaid stale-data spinner. Fix: bridge through requireNativeModule('ReactNativeWidgetExtension')'s setString + reloadAllTimelines, wire 7-day schedule sync via syncPrayerScheduleToWidget.
-- 2026-04-25 — DB + OTA hardening (`73856e0`)
-  WAL journal_mode + foreign_keys=ON pragmas on every open; AppState listener that re-opens the SQLite handle on Android foreground after potential TRIM_MEMORY invalidation; runtimeVersion switched from hardcoded "1.3.4" to { policy: "fingerprint" }; Sentry tags for app.version / platform / build.number; bootstrap captureException; DB breadcrumbs in offline.ts.
-- 2026-04-25 — v1.4.0 bump + expo-audio migration (`5449ae8`)
-  Migrated adhanPlayer + ruqyah screen from deprecated expo-av to expo-audio. Wrapped void-returning setActiveForLockScreen / clearLockScreenControls in try/catch instead of .catch(). Added optional context/repetitions/quranRefs to RuqyahVerse. bump-version.mjs now keeps semver, versionCode, buildNumber, and package.json synced in lockstep.
+- 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
+  Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
+- 2026-05-10 — PostHog product-feature event capture (`7071a75`)
+  Previously only lifecycle events flowed (Application Opened/Backgrounded). Now captures: `quran_played` (surah, ayah, reciter, mode), `prayer_marked_done` (prayer, on_time — best-effort via cachedPrayerTimes within ±6h), `bookmark_added` (verse + page variants), `translation_downloaded` (edition, verse_count), `surah_opened`, `mushaf_opened`, `feature_opened` (home tools grid), `adhan_notification_opened` (via singleton response listener filtered on data.type='adhan'). All gated on null-safe wrapper; non-throwing.
+- 2026-05-10 — Mushaf layout migration to verified Madani source (`a113949`)
+  User-reported "many ayah ending mistakes" was a layout bug, not a text bug. Old generator used quran.com word-level `line_number` calibrated for QPC glyph fonts — when rendered as plain Uthmani text, end-of-verse markers (numerals) appeared on the line AFTER where the verse actually finishes. Sample of 30 random pages: 15/30 had at least one misplaced marker, 60 total mismatched lines. Wrote new generator using King Fahd Madani layout reference (zonetecde/mushaf-layout) for line/page boundaries, kept quran.com `text_uthmani` for verse text (text itself was correct). Regenerated `assets/data/mushaf-pages.json`: 0/30 mismatches after fix. Schema unchanged — fully backward-compatible. Added `npm run generate:mushaf:tanzil` script.
+- 2026-05-10 — Sentry production-error guards (`7684acf`)
+  Two top Sentry issues (8 events / 6 users + 6 events / 4 users in 24h) traced to missing try/catch: 1. `ExpoLocation.removeWatchAsync rejected` in qibla screen cleanup — wrapped each `.remove()` call individually so failure on one doesn't prevent the other; logs via `console.warn`, doesn't throw from cleanup. 2. `NativeDatabase.prepareSync rejected` in offline translation manager — wrapped all 5 sync DB calls (runSync, getFirstSync, getAllSync) with sensible fallbacks: `false` for isDownloaded checks, `[]` for getDownloadedEditions, `0` for verse count, structured throws for downloadTranslation so callers can surface to user. 3. Module.swift `updateActivity` and `endActivity` converted to `AsyncFunction` (matching `startActivity` from earlier commit) — eliminates fire-and-forget pattern where JS got "ended" before ActivityKit work completed.
+- 2026-05-10 — Word-by-word Quran audio synchronisation (`fca4bd0`)
+  Previously highlighting was tap-driven only — no connection to audio playback. Now: when audio is playing the displayed ayah AND the reciter is in the QDC-supported set (Mishary 7, Sudais 2, Abdul Basit 1, Husary 5), fetch per-word timing data from `api.qurancdn.com/api/qdc/audio/reciters/{id}/audio_files` (audio_segments tuples), increase `expo-audio` `updateInterval` from default 500ms to 100ms, and drive `activeWordIndex` from current playback position. Bounded-LRU cache (50 entries), Hermes-safe AbortController + setTimeout (replaced `AbortSignal.timeout` which crashes on Hermes), full-surah mode gated to prevent stale per-ayah timings during full-surah playback.
+- 2026-05-10 — iOS widget bridge + Live Activity race fix + design parity (`2a3a5bb`)
+  Bridge: `checkWidgetBridgeAvailable()` exposed for early-return guards, `__DEV__` console.warn when native module is null (was silent no-op). Live Activity `startActivity` converted from `Function` + `Task { }` (race: end-old + request-new fired in parallel, ActivityKit's 1-activity-per-app limit silently rejected the new request) to `AsyncFunction` with sequential `await` of all `activity.end()` before `Activity.request()`. Design pass: 1px white@0.12 ContainerRelativeShape stroke on NextPrayer + PrayerTimes widgets, 3-stop deeper gradient (0/0.6/1.0), gold (#E2C98B) accent for secondary text (countdown timer, location), Live Activity lock screen wrapped in ZStack with gradient bg + RoundedRectangle 16pt border.
+- 2026-05-10 — Quran screen performance pass (`792aeec`)
+  FlatList perf: extracted `SurahListItem` as top-level `memo()` component, `renderItem` and handlers wrapped in `useCallback`, `ListHeaderComponent` JSX moved into `useMemo`, fixed `directAyahMatch` raw-const dep that busted `filteredSurahs` memo every render. `[surah].tsx`: `loadVerses` useCallback with correct deps, `renderItem` useCallback, `ListFooterComponent` useMemo, all bookmark handlers memoized. `mushaf.tsx`: `pageTitle`, `currentVerseKey`, `gridSlots`, `panResponder` useMemo. Then second pass: extracted 5 inline style array literals from inside `SurahListItem` body to defeat shallow-comparison bypass; removed unused `width` dep from `panResponder` deps array. Final pass: `[surah].tsx` switched from full-store destructure to 5 sliced `useAudioStore(s => ...)` selectors so the screen doesn't re-render 10×/sec under Task 9's faster tick rate.
+- 2026-05-10 — Reciter URL audit (full-surah mode) (`a09f6ea`)
+  Live-tested all reciter URLs against quranicaudio.com/qdc CDN. 5 wrong slugs corrected (Husary murattal, Husary muallim, Minshawy murattal, Abu Bakr Shatri, Yasser Ad-Dussary). 15 reciters had no QDC entry — `fullSurahSlug` removed from those entries; they fall back cleanly to per-ayah everyayah.com (all per-ayah URLs tested clean). All 25 reciters preserved in the array.
+- 2026-05-10 — iPhone haptic feedback throughout app (`09a8044`)
+  expo-haptics added to: play/pause buttons (Medium impact), surah navigation (Light), bookmark add (Success notification), prayer mark-done (Success), prayer un-mark (Light), Mushaf page nav (Light), Mushaf bookmark add (Success). No haptic on tap-only interactions to avoid noise.
+- 2026-05-10 — iOS time-sensitive prayer notifications (`6554627`)
+  Added `interruptionLevel: 'timeSensitive'` to both adhan + nudge notification content (iOS 15+ — bypasses Focus mode for users who grant Time Sensitive permission). Explicit iOS permission flags in `requestPermissionsAsync`: `{ ios: { allowAlert: true, allowSound: true, allowBadge: true } }`. Schedule horizon extended from "today only" to 7 days × 5 prayers = 35 notifications max (well under iOS 64-limit). Then removed invalid option `allowDisplayInNotificationCenter` (not part of expo-notifications iOS permission shape).

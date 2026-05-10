@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-09T23:55:44.048Z",
-  "appVersion": "1.5.0",
-  "buildNumber": 49,
+  "refreshedAt": "2026-05-10T01:18:10.807Z",
+  "appVersion": "1.6.0",
+  "buildNumber": 51,
   "sentry": {
     "healthy": true,
     "crashFree": 100,
@@ -64,39 +64,40 @@
       }
     ],
     "latestRelease": {
-      "version": "in.deen.app@1.5.0+10",
-      "newGroups": 1,
+      "version": "in.deen.app@1.6.0+51",
+      "newGroups": 0,
       "sessions": null
     }
   },
   "posthog": {
     "healthy": true,
-    "dau": 14,
+    "dau": 16,
     "dauTrend7d": [
-      16,
+      15,
       11,
       9,
       14,
       13,
       10,
-      14
+      14,
+      3
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 41
+        "count": 43
       },
       {
         "event": "Application Opened",
-        "count": 26
+        "count": 27
       },
       {
         "event": "Application Became Active",
-        "count": 17
+        "count": 20
       },
       {
         "event": "Application Installed",
-        "count": 3
+        "count": 5
       }
     ]
   },
@@ -104,191 +105,198 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "90b3e3f",
+        "msg": "docs(field-notes): track 2 Play Console pre-launch warnings for v1.6.1",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:16:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/90b3e3f2ffea43c80c502a7f5252a52688d97f21"
+      },
+      {
+        "sha": "ea2327e",
+        "msg": "docs(store): add combined.txt with all 8 locales in language-tag format",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:14:19Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ea2327e1f7e358b8fbb2160840b1c9787e8b1c26"
+      },
+      {
+        "sha": "eec999d",
+        "msg": "docs(store): rename release notes to Play Store BCP-47 locale codes",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:11:52Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/eec999d3eff16bf9f0eb1f88182b6f599ceef4d8"
+      },
+      {
+        "sha": "5248411",
+        "msg": "docs(store): shorten release notes to fit Play Store 500-char limit",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:10:24Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/524841139bb1c3fa1f123587470c63194c7e7f42"
+      },
+      {
+        "sha": "439ebc7",
+        "msg": "fix(widgets): swap .foregroundStyle() to .foregroundColor() for iOS 16 compat",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:08:08Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/439ebc7fa8b6b0155768201987ea0e3f96a53ee9"
+      },
+      {
+        "sha": "7cab299",
+        "msg": "docs: changelog + version sync for 1.6.0 (51 / 12)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T01:00:20Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7cab29944d743f5cf2461f78a5c8fd1187f2ac44"
+      },
+      {
+        "sha": "d200262",
+        "msg": "docs(store): release notes for 1.6.0 in 7 locales (en, ar, ur, hi, ml, tr, ms)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:56:50Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d2002625aa31665391bb5870be2006c6b62164c4"
+      },
+      {
+        "sha": "22f8b70",
+        "msg": "feat(notifications): batch 3 — skip nudge if marked done + iOS thread grouping",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:40:10Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/22f8b702717584d0201cf9f0189b8014dd2bda32"
+      },
+      {
+        "sha": "8e5d093",
+        "msg": "chore: bump version to 1.6.0 (50)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:35:29Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8e5d093d904319675a497def59e2fa81d402a8c6"
+      },
+      {
+        "sha": "0aabb27",
+        "msg": "feat(quran): verse of the day — daily 6:30am notification + share screen",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:30:31Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0aabb27498d9136a784a7f7b32b6ced598232f6c"
+      },
+      {
+        "sha": "500cb75",
+        "msg": "feat(audio): sleep timer + loop ayah/surah/page modes",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:21:17Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/500cb75310355f8d51808b862aeb5fe481911531"
+      },
+      {
+        "sha": "2e689a4",
+        "msg": "feat(hadith): standardize sources, add grades, expand widget set to 60, Friday-aware getter",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:15:30Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2e689a455a5b95a0f3591247730e991afd112ef9"
+      },
+      {
+        "sha": "0ef48a8",
+        "msg": "docs(worklog): document Sprint reliability + features (May 10)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:14:30Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0ef48a8a1e93a32b51ed1e429a25a9e6ce65d1fe"
+      },
+      {
+        "sha": "575be03",
+        "msg": "feat(analytics): capture product-feature events across Quran, prayer, bookmarks, downloads",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:11:30Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/575be038519e2b5fa74b281e88ef56cfbf43eaa4"
+      },
+      {
+        "sha": "b198b56",
+        "msg": "data(mushaf): regenerate Mushaf pages with verified text + layout",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:07:48Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b198b56e5cb10e9cbcb74670e69d3860bbc25f36"
+      },
+      {
+        "sha": "66dee16",
+        "msg": "feat(mushaf): add Tanzil-sourced data generator with verified Madani layout",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:07:40Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/66dee16d3ac8684e4dba7b7cb5eabb3e559dea7f"
+      },
+      {
+        "sha": "e4db8c8",
+        "msg": "feat(notifications): batch 2 — self-heal, per-prayer channels, health screen",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T00:06:41Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e4db8c8a5ede37f84c7453975590d7d94075d541"
+      },
+      {
+        "sha": "a58e04d",
+        "msg": "fix(notifications): foundation batch — USE_EXACT_ALARM, stable identifiers, default nudge off, remove iOS double-play",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-09T23:52:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a58e04df7ec672ef023ee2be24edce9703b97280"
+      },
+      {
+        "sha": "c9a982f",
+        "msg": "chore(dashboard): refresh state 2026-05-09T23:55:45Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-09T23:55:45Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c9a982f282de8626bc9556e0cddef93b0999c007"
+      },
+      {
         "sha": "6e442ea",
         "msg": "fix(widgets): convert updateActivity/endActivity to AsyncFunction",
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-09T23:17:38Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6e442eaa7c79e90368fee0943b545acf9673187f"
-      },
-      {
-        "sha": "7684acf",
-        "msg": "fix(sentry): guard ExpoLocation cleanup + offline.ts sync DB calls",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T23:15:51Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7684acf78b80b17ca26c8d5537cec40eeedb73aa"
-      },
-      {
-        "sha": "d619cf7",
-        "msg": "perf(quran): use sliced selectors in surah reader to avoid 10Hz re-renders",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T23:10:16Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d619cf730abffd6236be7af3c125e94f6e75c56c"
-      },
-      {
-        "sha": "100782c",
-        "msg": "fix(quran): word-timing Hermes compatibility, cache bounds, full-surah mode",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T22:06:02Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/100782c4937d58483eca8dfd42b35b0595b865b1"
-      },
-      {
-        "sha": "fca4bd0",
-        "msg": "feat(quran): word-by-word audio synchronisation",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T22:02:20Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fca4bd0245860ca198d4474f6e559f521c1ec799"
-      },
-      {
-        "sha": "1eec253",
-        "msg": "feat(ios-widgets): visual polish pass — GlassSurface parity",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:54:39Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1eec253947a77002bbc6312112de4770ac4c1ac2"
-      },
-      {
-        "sha": "2a3a5bb",
-        "msg": "fix(widgets): resolve iOS bridge null-module visibility + Live Activity race condition",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:49:27Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2a3a5bb6cb0f15c683c1c22cca25efb3ad6fa7b5"
-      },
-      {
-        "sha": "0a234f2",
-        "msg": "fix(perf): extract inline style arrays in SurahListItem; drop unused width dep from panResponder",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:44:25Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0a234f245c2e663895a6c49e7ab77f4aef050f06"
-      },
-      {
-        "sha": "792aeec",
-        "msg": "perf(quran): reduce re-renders in Quran screens with memo/useCallback/useMemo",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:40:25Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/792aeecad0e7e640df76b107c9f325021113ee35"
-      },
-      {
-        "sha": "a09f6ea",
-        "msg": "fix(reciters): correct and remove broken fullSurahSlug values (live URL audit)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:30:48Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a09f6ead284ba2cf150a2bd52517d83ccbcee632"
-      },
-      {
-        "sha": "0f9cb09",
-        "msg": "fix(notifications): remove invalid iOS permission option allowDisplayInNotificationCenter",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:19:24Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0f9cb09d38f8d5439791049913779d1c5bbba67f"
-      },
-      {
-        "sha": "6554627",
-        "msg": "fix(notifications): add iOS timeSensitive interruption level + explicit permission options",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:18:11Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/655462717294cec5c62e02816613bb5e5706894e"
-      },
-      {
-        "sha": "03358cf",
-        "msg": "fix(mushaf): continue audio across surah boundary on multi-surah pages",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:16:34Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/03358cf6d70890d23119ac9b567ff5cf02b1ba77"
-      },
-      {
-        "sha": "e00eb09",
-        "msg": "fix(audio): add pauseRequested race guard; store AppState subscription",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:14:41Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e00eb09397eba203617465583f1a263a8b00119c"
-      },
-      {
-        "sha": "f923e86",
-        "msg": "fix(audio): always update isPlaying on pause regardless of player state",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T21:13:10Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f923e86f5d8ddd16cc0cc09d4d90571e2f2ef4a3"
-      },
-      {
-        "sha": "4e66577",
-        "msg": "chore(dashboard): refresh state 2026-05-09T22:54:06Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T22:54:06Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4e6657792867d36f35a4f14dd8ca0933818f174c"
-      },
-      {
-        "sha": "9faaa2e",
-        "msg": "chore(dashboard): refresh state 2026-05-09T21:56:13Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T21:56:13Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9faaa2e1be4f6c5ee1b8f164e02aede0a1b2d25f"
-      },
-      {
-        "sha": "21daddb",
-        "msg": "chore(dashboard): refresh state 2026-05-09T20:57:36Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T20:57:36Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/21daddb09c738353bd3cf66b578385da52984358"
-      },
-      {
-        "sha": "72f5d95",
-        "msg": "fix: restore audio session after adhan; schedule notifications 7 days ahead",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-09T20:55:25Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/72f5d9521b633bbdf9115656e6236b710188db23"
-      },
-      {
-        "sha": "043dabe",
-        "msg": "chore(dashboard): refresh state 2026-05-09T19:59:26Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-09T19:59:26Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/043dabe04baf42626683e63ed815e8c1bb01b40e"
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "tag": "v1.6.0",
+        "name": "v1.6.0 — Reliability + Features Sprint",
+        "publishedAt": "2026-05-10T01:00:26Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.6.0"
+      }
+    ],
     "openPRs": [],
     "issuesOpen": [],
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25614944080,
+      "id": 25616384892,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25614944080",
-      "ranAt": "2026-05-09T23:54:35Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25616384892",
+      "ranAt": "2026-05-10T01:17:02Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 103,
+      "latencyMs": 496,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 215,
+      "latencyMs": 246,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 466,
+      "latencyMs": 607,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 367,
+      "latencyMs": 145,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 367,
+      "latencyMs": 213,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -323,6 +331,78 @@
   },
   "worklog": [
     {
+      "date": "2026-05-10",
+      "title": "Notification reliability overhaul (Batch 1 + 2)",
+      "commit": "350c64c",
+      "summary": "Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported \"duplicate adhan\" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link)."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "PostHog product-feature event capture",
+      "commit": "7071a75",
+      "summary": "Previously only lifecycle events flowed (Application Opened/Backgrounded). Now captures: `quran_played` (surah, ayah, reciter, mode), `prayer_marked_done` (prayer, on_time — best-effort via cachedPrayerTimes within ±6h), `bookmark_added` (verse + page variants), `translation_downloaded` (edition, verse_count), `surah_opened`, `mushaf_opened`, `feature_opened` (home tools grid), `adhan_notification_opened` (via singleton response listener filtered on data.type='adhan'). All gated on null-safe wrapper; non-throwing."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "Mushaf layout migration to verified Madani source",
+      "commit": "a113949",
+      "summary": "User-reported \"many ayah ending mistakes\" was a layout bug, not a text bug. Old generator used quran.com word-level `line_number` calibrated for QPC glyph fonts — when rendered as plain Uthmani text, end-of-verse markers (numerals) appeared on the line AFTER where the verse actually finishes. Sample of 30 random pages: 15/30 had at least one misplaced marker, 60 total mismatched lines. Wrote new generator using King Fahd Madani layout reference (zonetecde/mushaf-layout) for line/page boundaries, kept quran.com `text_uthmani` for verse text (text itself was correct). Regenerated `assets/data/mushaf-pages.json`: 0/30 mismatches after fix. Schema unchanged — fully backward-compatible. Added `npm run generate:mushaf:tanzil` script."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "Sentry production-error guards",
+      "commit": "7684acf",
+      "summary": "Two top Sentry issues (8 events / 6 users + 6 events / 4 users in 24h) traced to missing try/catch: 1. `ExpoLocation.removeWatchAsync rejected` in qibla screen cleanup — wrapped each `.remove()` call individually so failure on one doesn't prevent the other; logs via `console.warn`, doesn't throw from cleanup. 2. `NativeDatabase.prepareSync rejected` in offline translation manager — wrapped all 5 sync DB calls (runSync, getFirstSync, getAllSync) with sensible fallbacks: `false` for isDownloaded checks, `[]` for getDownloadedEditions, `0` for verse count, structured throws for downloadTranslation so callers can surface to user. 3. Module.swift `updateActivity` and `endActivity` converted to `AsyncFunction` (matching `startActivity` from earlier commit) — eliminates fire-and-forget pattern where JS got \"ended\" before ActivityKit work completed."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "Word-by-word Quran audio synchronisation",
+      "commit": "fca4bd0",
+      "summary": "Previously highlighting was tap-driven only — no connection to audio playback. Now: when audio is playing the displayed ayah AND the reciter is in the QDC-supported set (Mishary 7, Sudais 2, Abdul Basit 1, Husary 5), fetch per-word timing data from `api.qurancdn.com/api/qdc/audio/reciters/{id}/audio_files` (audio_segments tuples), increase `expo-audio` `updateInterval` from default 500ms to 100ms, and drive `activeWordIndex` from current playback position. Bounded-LRU cache (50 entries), Hermes-safe AbortController + setTimeout (replaced `AbortSignal.timeout` which crashes on Hermes), full-surah mode gated to prevent stale per-ayah timings during full-surah playback."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "iOS widget bridge + Live Activity race fix + design parity",
+      "commit": "2a3a5bb",
+      "summary": "Bridge: `checkWidgetBridgeAvailable()` exposed for early-return guards, `__DEV__` console.warn when native module is null (was silent no-op). Live Activity `startActivity` converted from `Function` + `Task { }` (race: end-old + request-new fired in parallel, ActivityKit's 1-activity-per-app limit silently rejected the new request) to `AsyncFunction` with sequential `await` of all `activity.end()` before `Activity.request()`. Design pass: 1px white@0.12 ContainerRelativeShape stroke on NextPrayer + PrayerTimes widgets, 3-stop deeper gradient (0/0.6/1.0), gold (#E2C98B) accent for secondary text (countdown timer, location), Live Activity lock screen wrapped in ZStack with gradient bg + RoundedRectangle 16pt border."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "Quran screen performance pass",
+      "commit": "792aeec",
+      "summary": "FlatList perf: extracted `SurahListItem` as top-level `memo()` component, `renderItem` and handlers wrapped in `useCallback`, `ListHeaderComponent` JSX moved into `useMemo`, fixed `directAyahMatch` raw-const dep that busted `filteredSurahs` memo every render. `[surah].tsx`: `loadVerses` useCallback with correct deps, `renderItem` useCallback, `ListFooterComponent` useMemo, all bookmark handlers memoized. `mushaf.tsx`: `pageTitle`, `currentVerseKey`, `gridSlots`, `panResponder` useMemo. Then second pass: extracted 5 inline style array literals from inside `SurahListItem` body to defeat shallow-comparison bypass; removed unused `width` dep from `panResponder` deps array. Final pass: `[surah].tsx` switched from full-store destructure to 5 sliced `useAudioStore(s => ...)` selectors so the screen doesn't re-render 10×/sec under Task 9's faster tick rate."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "Reciter URL audit (full-surah mode)",
+      "commit": "a09f6ea",
+      "summary": "Live-tested all reciter URLs against quranicaudio.com/qdc CDN. 5 wrong slugs corrected (Husary murattal, Husary muallim, Minshawy murattal, Abu Bakr Shatri, Yasser Ad-Dussary). 15 reciters had no QDC entry — `fullSurahSlug` removed from those entries; they fall back cleanly to per-ayah everyayah.com (all per-ayah URLs tested clean). All 25 reciters preserved in the array."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "iPhone haptic feedback throughout app",
+      "commit": "09a8044",
+      "summary": "expo-haptics added to: play/pause buttons (Medium impact), surah navigation (Light), bookmark add (Success notification), prayer mark-done (Success), prayer un-mark (Light), Mushaf page nav (Light), Mushaf bookmark add (Success). No haptic on tap-only interactions to avoid noise."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "iOS time-sensitive prayer notifications",
+      "commit": "6554627",
+      "summary": "Added `interruptionLevel: 'timeSensitive'` to both adhan + nudge notification content (iOS 15+ — bypasses Focus mode for users who grant Time Sensitive permission). Explicit iOS permission flags in `requestPermissionsAsync`: `{ ios: { allowAlert: true, allowSound: true, allowBadge: true } }`. Schedule horizon extended from \"today only\" to 7 days × 5 prayers = 35 notifications max (well under iOS 64-limit). Then removed invalid option `allowDisplayInNotificationCenter` (not part of expo-notifications iOS permission shape)."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "Multi-surah Mushaf page audio continuation",
+      "commit": "03358cf",
+      "summary": "When a Mushaf page contains two surahs (one ending mid-page, the next starting), pressing play would play through the first surah's verses then stop dead — the audio system had no way to know what came next. Fix: `mushaf.tsx togglePlayPause` now builds a `pageQueue` from `page.verses` (surahNumber + ayahNumber pairs) and passes it as a 6th arg to `audioStore.loadAndPlay`. The store carries the queue; on per-ayah finish, it consults the queue for the next entry instead of incrementing within the current surah."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "Audio pause race condition + ayah-by-ayah fix",
+      "commit": "e00eb09",
+      "summary": "Pause was being ignored when tapped during async audio load (player.play() would fire after pause completed). Fix: module-level `pauseRequested` flag, set true on every pause(), checked just before `player.play()` is called inside loadAndPlay; if pauseRequested is true, skip play() entirely. `set({ isPlaying: false })` moved outside `if (player)` guard so isPlaying tracks user intent regardless of player state. AppState subscription stored as `_appStateSub` to prevent leaks; `stop()` clears `pageQueue = null`. Ayah-by-ayah play/pause unblocked by same flag mechanism."
+    },
+    {
       "date": "2026-04-25",
       "title": "Operations dashboard scaffolded",
       "commit": null,
@@ -353,7 +433,24 @@
       "summary": "Migrated adhanPlayer + ruqyah screen from deprecated expo-av to expo-audio. Wrapped void-returning setActiveForLockScreen / clearLockScreenControls in try/catch instead of .catch(). Added optional context/repetitions/quranRefs to RuqyahVerse. bump-version.mjs now keeps semver, versionCode, buildNumber, and package.json synced in lockstep."
     }
   ],
-  "fieldNotes": [],
+  "fieldNotes": [
+    {
+      "status": "OPEN",
+      "description": "Edge-to-edge deprecated APIs (Android 15+)",
+      "date": "2026-05-10",
+      "source": "Play Console pre-launch report",
+      "resolvedAt": null,
+      "notes": "StatusBarModule, WindowUtilKt, BottomSheetDialog, SheetDialog all use deprecated APIs (setStatusBarColor, setNavigationBarColor, LAYOUT_IN_DISPLAY_CUTOUT_MODE_*). These come from React Native + Material Components, not our own code. Fix path: upgrade RN when it migrates to WindowInsetsControllerCompat. Non-blocking for v1.6.0."
+    },
+    {
+      "status": "OPEN",
+      "description": "Portrait orientation lock ignored on Android 16 large screens",
+      "date": "2026-05-10",
+      "source": "Play Console pre-launch report",
+      "resolvedAt": null,
+      "notes": "Android 16 will ignore android:screenOrientation=\"PORTRAIT\" on tablets/foldables. Our UI is portrait-only by design. Fix in v1.6.1: support landscape on large screens (resize-friendly layouts), keep portrait on phones. Non-blocking for v1.6.0."
+    }
+  ],
   "errors": [],
   "alerts": {
     "active": [],
