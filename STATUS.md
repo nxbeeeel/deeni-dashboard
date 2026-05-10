@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T15:32:42.384Z (just now)_
+_Last refresh: 2026-05-10T17:02:18.968Z (just now)_
 _App version: 1.7.0 (build 54)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.7.0 (build 54)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **14** |
+| DAU | **12** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -37,37 +37,37 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 64
+- `Application Backgrounded` — 65
 - `Application Opened` — 35
+- `Application Became Active` — 33
 - `quran_played` — 32
-- `Application Became Active` — 32
 - `surah_opened` — 8
-- `feature_opened` — 5
+- `feature_opened` — 6
 - `Application Installed` — 4
-- `mushaf_opened` — 2
-- `prayer_marked_done` — 2
+- `mushaf_opened` — 3
+- `prayer_marked_done` — 3
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `3299bb6` — chore(dashboard): refresh state 2026-05-10T14:01:39Z · 2h ago
-- `6554ae6` — chore: bump version to 1.7.0 (54) + release automation pipeline · 3h ago
-- `2ca6ac2` — feat(mushaf): tap-ayah verse selection mode with action bottom sheet · 3h ago
-- `36d88f7` — feat(mushaf): printed Madani Mushaf rendering — cartouche, justified lines, medallions, gold frame · 3h ago
-- `162df28` — feat(quran): translation picker shows curated 49 featured (Browse all toggle) · 3h ago
-- `9a5b605` — feat(quran): shared SurahPicker component (search + filter + recents) · 3h ago
-- `c072721` — feat(mushaf): add SurahCartouche component (printed Mushaf style) · 3h ago
-- `b87a57e` — feat(mushaf): add HizbMarker + SajdaMarker components for margin rosettes · 3h ago
-- `82a3f0a` — feat(mushaf): add VerseMedallion component (gold-bordered verse-end glyph) · 3h ago
-- `d62ca38` — fix(quran): guard translation read against DB prepareSync NPE · 3h ago
+- `fce04e6` — chore(dashboard): refresh state 2026-05-10T15:32:43Z · 2h ago
+- `3299bb6` — chore(dashboard): refresh state 2026-05-10T14:01:39Z · 3h ago
+- `6554ae6` — chore: bump version to 1.7.0 (54) + release automation pipeline · 4h ago
+- `2ca6ac2` — feat(mushaf): tap-ayah verse selection mode with action bottom sheet · 4h ago
+- `36d88f7` — feat(mushaf): printed Madani Mushaf rendering — cartouche, justified lines, medallions, gold frame · 4h ago
+- `162df28` — feat(quran): translation picker shows curated 49 featured (Browse all toggle) · 4h ago
+- `9a5b605` — feat(quran): shared SurahPicker component (search + filter + recents) · 5h ago
+- `c072721` — feat(mushaf): add SurahCartouche component (printed Mushaf style) · 5h ago
+- `b87a57e` — feat(mushaf): add HizbMarker + SajdaMarker components for margin rosettes · 5h ago
+- `82a3f0a` — feat(mushaf): add VerseMedallion component (gold-bordered verse-end glyph) · 5h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 359ms
-- OK  `rawGithub` — 200 · 144ms
-- OK  `everyayah` — 200 · 515ms
-- OK  `quranicaudio` — 200 · 345ms
-- OK  `qurancdn` — 200 · 537ms
+- OK  `jsdelivr` — 200 · 110ms
+- OK  `rawGithub` — 200 · 155ms
+- OK  `everyayah` — 200 · 424ms
+- OK  `quranicaudio` — 200 · 346ms
+- OK  `qurancdn` — 200 · 352ms
 
 ## EAS update channels
 
