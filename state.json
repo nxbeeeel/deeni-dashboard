@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T19:22:28.599Z",
+  "refreshedAt": "2026-05-10T19:42:48.730Z",
   "appVersion": "1.7.3",
   "buildNumber": 58,
   "sentry": {
@@ -71,25 +71,25 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 12,
+    "dau": 14,
     "dauTrend7d": [
-      4,
+      3,
       11,
       9,
       14,
       13,
       10,
       14,
-      10
+      12
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 60
+        "count": 62
       },
       {
         "event": "Application Became Active",
-        "count": 35
+        "count": 36
       },
       {
         "event": "quran_played",
@@ -97,7 +97,7 @@
       },
       {
         "event": "Application Opened",
-        "count": 29
+        "count": 31
       },
       {
         "event": "surah_opened",
@@ -128,6 +128,55 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "033cbbe",
+        "msg": "chore(bugs): audit FIELD_NOTES — close 13 stale entries, keep 3 actually-open",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:41:25Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/033cbbed4ca3133d694f18e032ef8210b2f1eb80"
+      },
+      {
+        "sha": "e151abd",
+        "msg": "docs(strategy): addendum — both stores already live ~2 weeks, ~200 users",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:37:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e151abdf3f117a1463e8cbd3b02e7af08d637977"
+      },
+      {
+        "sha": "6b2e334",
+        "msg": "docs(worklog): v1.7.3 audio hotfix + 6-part engineering uplift entries",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:29:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6b2e3342d60d88156e5fa6071db95e0ba8a52273"
+      },
+      {
+        "sha": "09ecc3b",
+        "msg": "docs(strategy): Q3 2026 thinking memo — 3 product moves ranked by leverage",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:29:18Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/09ecc3b8da68b31e0c6eed3d76a50bfeee9c4501"
+      },
+      {
+        "sha": "72efb4c",
+        "msg": "feat(claude): wire /ship slash command + typecheck-on-edit hook + plugin checklist",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:26:37Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/72efb4cb8e4eb9cfe0041dd474a0b44c1cbf9b82"
+      },
+      {
+        "sha": "1d9b660",
+        "msg": "docs(engineering): bug-solving playbook + Claude dev ecosystem brief",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:24:08Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1d9b6609395a11f349bd6a144336fce5917b363e"
+      },
+      {
+        "sha": "f155d13",
+        "msg": "chore(dashboard): refresh state 2026-05-10T19:22:29Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T19:22:29Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f155d13e76121c4023369d9cb1fbd660796584da"
+      },
       {
         "sha": "f9c1da6",
         "msg": "chore: bump version to 1.7.3 (audio control hotfix)",
@@ -218,58 +267,15 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-10T18:50:22Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7ed990ad7c78f30a25f1a574a6807e9da0864456"
-      },
-      {
-        "sha": "e087d56",
-        "msg": "perf(translations): FlatList windowing for 500-row Browse all mode",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T18:48:38Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e087d56a5cf5726b06a4df91b8d2e75c10708def"
-      },
-      {
-        "sha": "ebc978f",
-        "msg": "perf(word-by-word): FlatList windowing for long surahs",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T18:46:54Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ebc978fcdfb1c3ce54e83eba2ecd7b304f62d8aa"
-      },
-      {
-        "sha": "b1b1671",
-        "msg": "perf(word-by-word): memoize verse component + stabilize callbacks",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T18:43:58Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b1b1671b1c5332a94b87a5c992b121775f2cad6c"
-      },
-      {
-        "sha": "e211d23",
-        "msg": "chore(release): v1.7.1 (56) — bump + CHANGELOG + 8-locale release notes",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T18:39:43Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e211d233656811cc4de2199b1c6180e0359afac7"
-      },
-      {
-        "sha": "9380136",
-        "msg": "fix(mushaf): v1.7.1 hotfix — cartouche overhaul, border simplification, footer fix, QPC URL",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T18:39:33Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9380136293da1673a634e5b8953af3af40b8051c"
-      },
-      {
-        "sha": "fbfdd27",
-        "msg": "chore(dashboard): refresh state 2026-05-10T18:33:17Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-10T18:33:17Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fbfdd278691117c5c155546c7ae59b83fa52763b"
-      },
-      {
-        "sha": "ff1cb5e",
-        "msg": "chore(dashboard): refresh state 2026-05-10T17:02:20Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-10T17:02:20Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ff1cb5e18fb181c242d86dc839b2252cdca5e019"
       }
     ],
     "releases": [
+      {
+        "tag": "v1.7.3",
+        "name": "v1.7.3",
+        "publishedAt": "2026-05-10T19:21:51Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.7.3"
+      },
       {
         "tag": "v1.6.1",
         "name": "v1.6.1 — Mushaf Hot Fixes",
@@ -288,45 +294,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25637531665,
+      "id": 25637965145,
       "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25637531665",
-      "ranAt": "2026-05-10T19:21:13Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25637965145",
+      "ranAt": "2026-05-10T19:41:38Z",
+      "durationSec": 11
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 179,
+      "latencyMs": 183,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 189,
+      "latencyMs": 238,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 540,
+      "latencyMs": 605,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 369,
+      "latencyMs": 219,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 517,
+      "latencyMs": 202,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -360,6 +366,18 @@
     }
   },
   "worklog": [
+    {
+      "date": "2026-05-10",
+      "title": "Strategy + engineering uplift (PARTS 1–6)",
+      "commit": null,
+      "summary": "Commits: 587f793 (gitignore + LF enforcement), 49a1374 (release.yml graceful skip), 89a7a9f (v1.7.x plan docs + FIELD_NOTES), 81d4076 (1.7.0 release-notes tightened + locales/screenshots/banner), 375261a (ios widget entitlements + marketing site source), 0fcc0d5 (bug-solving playbook + Claude dev ecosystem brief), 6efa3ea (/ship slash command + tsc hook + INSTALL.md), e741961 (Q3-2026 strategy memo) Six-part pre-push and engineering uplift after the v1.7.3 hotfix landed. Cleaned the working tree (committed FIELD_NOTES, plan docs, store-listing tightening, site/, ios/ widget entitlements; gitignored 28MB of design assets + HLS chunks; added `.gitattributes` for LF-only normalization across Windows/Linux to stop EAS hash drift). Fixed `.github/workflows/release.yml` — replaced step-level `if: env.X` guards (which never worked because env was step-local) with a preflight that validates every credential end-to-end (presence + valid base64 + plausible content), writes ANDROID_READY/IOS_READY to GITHUB_ENV, and gates each downstream step. First green release-workflow run in project history (graceful-skipped both platforms with clear `::warning::` log messages instead of going red). Wrote two long engineering docs — `docs/engineering/bug-solving-playbook.md` (intake card format, severity ladder, Sentry→GH auto-ingest wiring, repro harness ladder, the iron 3-failed-fixes architecture-review rule, 5-min post-mortem template) and `docs/engineering/claude-dev-ecosystem.md` (3,800 words: install/evaluate/skip across plugins, MCPs, OSS agentic tooling, marketplaces, best-practice posts, with cost-routing advice — Sonnet default / Opus arch-only / Haiku one-shots → realistic 50-70% bill cut). Wired two concrete Claude Code additions: a `/ship` slash command at `.claude/commands/ship.md` that codifies the bump → CHANGELOG → 8-locale release notes → tag → push → workflow-watch dance (saves ~30 min per release), and a `PostToolUse` hook at `.claude/hooks/typecheck-after-edit.mjs` that runs `tsc --noEmit` after TS/TSX edits and feeds relevant errors back via additionalContext (smoke-tested clean + skip paths). Plus `.claude/INSTALL.md` listing the plugin checklist for the rest. Closed with `docs/strategy/Q3-2026-thinking.md` — 290-line memo ranking the next three product moves: iOS App Store launch (1, 4-6 days, biggest multiplier), Hifz mode with SM-2 spaced repetition (2, 3 weeks, defensible differentiator), \"Support deen.in\" patron flow (3, 1 week, story multiplier not revenue play). Includes alternatives considered and rejected, sequencing through Q3, and honest gaps a real team would close that we won't."
+    },
+    {
+      "date": "2026-05-10",
+      "title": "v1.7.3 audio control hotfix",
+      "commit": "f9c1da6",
+      "summary": "Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time."
+    },
     {
       "date": "2026-05-10",
       "title": "Notification reliability overhaul (Batch 1 + 2)",
@@ -463,160 +481,7 @@
       "summary": "Migrated adhanPlayer + ruqyah screen from deprecated expo-av to expo-audio. Wrapped void-returning setActiveForLockScreen / clearLockScreenControls in try/catch instead of .catch(). Added optional context/repetitions/quranRefs to RuqyahVerse. bump-version.mjs now keeps semver, versionCode, buildNumber, and package.json synced in lockstep."
     }
   ],
-  "fieldNotes": [
-    {
-      "status": "OPEN",
-      "description": "Edge-to-edge deprecated APIs (Android 15+)",
-      "date": "2026-05-10",
-      "source": "Play Console pre-launch report",
-      "resolvedAt": null,
-      "notes": "StatusBarModule, WindowUtilKt, BottomSheetDialog, SheetDialog all use deprecated APIs (setStatusBarColor, setNavigationBarColor, LAYOUT_IN_DISPLAY_CUTOUT_MODE_*). These come from React Native + Material Components, not our own code. Fix path: upgrade RN when it migrates to WindowInsetsControllerCompat. Non-blocking for v1.6.0."
-    },
-    {
-      "status": "OPEN",
-      "description": "Portrait orientation lock ignored on Android 16 large screens",
-      "date": "2026-05-10",
-      "source": "Play Console pre-launch report",
-      "resolvedAt": null,
-      "notes": "Android 16 will ignore android:screenOrientation=\"PORTRAIT\" on tablets/foldables. Our UI is portrait-only by design. Fix in v1.6.1: support landscape on large screens (resize-friendly layouts), keep portrait on phones. Non-blocking for v1.6.0."
-    },
-    {
-      "status": "OPEN",
-      "description": "Mushaf: swipe-to-next-page breaks UI (everything disappears)",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "When swiping left/right to navigate pages, content disappears. Only works correctly when tapping the down arrow button. PanResponder logic likely racing with page state. Hot fix."
-    },
-    {
-      "status": "OPEN",
-      "description": "Mushaf: many ayahs missing from pages",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "After Tanzil layout migration, some pages are missing verses. Need to compare regenerated mushaf-pages.json against expected per-surah ayah counts (6,236 total). Hot fix."
-    },
-    {
-      "status": "OPEN",
-      "description": "Mushaf: book look not proper",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "Mushaf doesn't look like a printed Quran. Spacing, typography, line-height, gold accents, page borders all need polish to match Madani Mushaf print aesthetic."
-    },
-    {
-      "status": "OPEN",
-      "description": "Mushaf: reciter / player not working properly",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "Audio playback on mushaf has bugs (specifics to investigate). May be related to pageQueue logic introduced in v1.6.0."
-    },
-    {
-      "status": "OPEN",
-      "description": "Word-by-word: no surah picker, no next button",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "Word-by-word screen lacks navigation controls. User can't pick which surah to study, and there's no \"next\" button at the end of an ayah/surah to continue. Hot fix."
-    },
-    {
-      "status": "OPEN",
-      "description": "Surah reader mini-player: pause button doesn't work",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "On the read page (surah reader), pause button on the bottom mini-player doesn't pause audio. Pause works from the full-screen music player but not from the embedded MiniPlayer. Likely a wiring bug after recent MiniPlayer changes (sleep timer + loop modes). Hot fix."
-    },
-    {
-      "status": "OPEN",
-      "description": "Lock screen / notification media controls missing",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "When playing full Quran audio, no media controls show in iOS lock screen, Android notification, or in either platform's native media center. expo-audio audioMode is set for background playback but lock screen / now-playing info isn't wired. Critical for background listening UX. May need MPNowPlayingInfoCenter (iOS) + MediaSession (Android) setup. Hot fix."
-    },
-    {
-      "status": "OPEN",
-      "description": "v1.7.0 Mushaf cartouche overlaps verses + bismillah inside it",
-      "date": "2026-05-10",
-      "source": "User screenshots (Telegram)",
-      "resolvedAt": null,
-      "notes": "The new cartouche is rendering with truncated Arabic (\"سُو\" instead of \"سُورَة\"), bismillah is inside the cartouche box (should be below), English label \"AL-FATIHA\"/\"AL-BAQARAH\" overlapping verse text underneath. On special pages (Al-Fatiha, Al-Baqarah opening) the cartouche dominates and verses clip below. Triple gold borders feel cluttered. Page footer \"Juz 1 · Page X · Al-Fatiha\" colliding with bottom toolbar."
-    },
-    {
-      "status": "OPEN",
-      "description": "v1.7.0 QPC font download fails 404",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "\"Download Failed: Call to function 'FileSystem.downloadFileAsync' has been rejected. → Caused by: response has status: 404.\" The QPC_FONT_BASE_URL in qpcFontDownloader.ts was a placeholder pointing to nuqayah/qpc-fonts repo with WRONG filename pattern (QCF2NNN.ttf vs actual QCF2_001.TTF). Either fix URL pattern or move to a real CDN. Hot fix. [RESOLVED v1.7.1: branch was main, upstream is master. Live HTTP 200 verified.]"
-    },
-    {
-      "status": "OPEN",
-      "description": "Surah reader: per-ayah pause button doesn't actually pause",
-      "date": "2026-05-10",
-      "source": "User feedback (screenshot, Telegram)",
-      "resolvedAt": null,
-      "notes": "On the surah reader (`app/quran/[surah].tsx`), each ayah card shows a play/pause icon. When audio is playing, the icon shows pause (green) but tapping it does NOT pause audio. The MiniPlayer at the bottom DOES pause correctly. So the wiring of the per-ayah onPlayPress handler is broken. Likely either (a) handler stale closure, (b) handler calls play() instead of pause() when playing, or (c) calling loadAndPlay again on the same verse doesn't toggle. Hot fix."
-    },
-    {
-      "status": "OPEN",
-      "description": "Word-by-word tap plays AUDIO for a different word",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "(RE-OPEN) \"In word-by-word, when select some word audio is of different.\" Re-reported after v1.6.x \"fix\". The earlier fix (commit cd6e167) was for visual highlight conflict — the implementer confirmed \"Hypothesis E (visual)\" and didn't touch the audio path. But the user's complaint is about AUDIO, not visual. Likely real cause: off-by-one in word.position vs index in audio_url, or filter shifting indices. Need re-investigation focused on the AUDIO mapping."
-    },
-    {
-      "status": "OPEN",
-      "description": "Android: \"Add widget from app\" option missing/broken",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "When user opens Settings on Android, there's no working option to pin/add a widget to the home screen from inside the app. WidgetPinModule.kt + WidgetPinPackage.kt exist (Kotlin native module for requestPinAppWidget), and JS bridge at src/services/widgetPinner.ts exists, but the Settings UI either doesn't show the buttons or the buttons don't trigger. Investigation needed — could be JS bridge mis-wired, or settings screen missing the row, or native module not registering on master (similar to the untracked Swift files we just fixed)."
-    },
-    {
-      "status": "OPEN",
-      "description": "Android: deen.in widget previews missing in system widget chooser",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "When user long-presses Android home screen → Widgets → scrolls to deen.in, the widget previews (thumbnails for PrayerTimes / NextPrayer / DailyHadith / DailyDua / PrayerDuaCombo) are blank/missing. Should show a rendered preview of each widget. Likely cause: previewImage drawables not in android/app/src/main/res/drawable/, OR scripts/generate-widget-previews.mjs hasn't been run, OR generated PNGs aren't tracked in git (similar pattern to the source files we found untracked earlier). iOS widget preview status not yet checked by user."
-    },
-    {
-      "status": "OPEN",
-      "description": "Word-by-word: tap-to-play maps to wrong word",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "\"In word-by-word, when I click a word the audio is for next or another one.\" Likely root causes: off-by-one in word.position indexing (1-indexed in API vs 0-indexed in render), OR audio_url field shifted by one due to char_type_name filter ('word' vs 'end'), OR state race between tap-driven selectedWordId and playback-driven activeWordIndex (added in v1.6.0). Specific to src/components/quran/WordByWordVerse.tsx onPress handler. Fixed in commit cd6e167 (hypothesis E confirmed — visual highlight conflict, not audio)."
-    },
-    {
-      "status": "OPEN",
-      "description": "\"Could not load verses\" / NativeDatabase prepareSync rejection on translation read",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "When opening a surah with translation enabled, user sees error: \"Could not load verses. Call to function 'NativeDatabase.prepareSync' has been rejected. Caused by: java.lang.NullPointerException.\" This is in the Drizzle path (loadVersesFromDB at app/quran/[surah].tsx), different code path than the offline.ts sync DB calls we guarded in v1.6.0 (commit 7684acf). DB handle may be null when Drizzle calls prepareSync. Hot fix needed."
-    },
-    {
-      "status": "OPEN",
-      "description": "Translations: 492+ editions overwhelming, no curation",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "\"More translations has more than 492 editions, what is the real use case? Doesn't feel like a useful thing for us.\" Need to: research best-practice translation curation (Quran.com web, Muslim Pro, iQuran), curate ~20-30 popular editions, group by language with featured/recommended tags, show full list as \"Browse all\" for advanced users. Quality-of-life fix for v1.7.x."
-    },
-    {
-      "status": "OPEN",
-      "description": "Surah selector UX needs improvement",
-      "date": "2026-05-10",
-      "source": "User feedback (Telegram)",
-      "resolvedAt": null,
-      "notes": "Current surah pickers (Quran tab list, Mushaf jump modal, Word-by-word picker) are basic 114-item scrollable lists. Need better discoverability: search, grouping (Juz / Makki vs Madani / length), Arabic + English names side by side, recent/favorites, quick-jump by number. Build a shared SurahPicker component used everywhere."
-    }
-  ],
+  "fieldNotes": [],
   "errors": [],
   "alerts": {
     "active": [],

@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T19:22:28.599Z (just now)_
+_Last refresh: 2026-05-10T19:42:48.730Z (just now)_
 _App version: 1.7.3 (build 58)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.7.3 (build 58)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **12** |
+| DAU | **14** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -37,10 +37,10 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 60
-- `Application Became Active` — 35
+- `Application Backgrounded` — 62
+- `Application Became Active` — 36
 - `quran_played` — 32
-- `Application Opened` — 29
+- `Application Opened` — 31
 - `surah_opened` — 8
 - `feature_opened` — 6
 - `Application Installed` — 4
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `f9c1da6` — chore: bump version to 1.7.3 (audio control hotfix) · 1m ago
-- `375261a` — chore: track iOS widget entitlements + marketing site source · 4m ago
-- `81d4076` — chore(store): tighten 1.7.0 release notes; add locales, screenshots, banner · 4m ago
-- `89a7a9f` — docs: capture v1.7.x plans, field notes, and engineering specs · 4m ago
-- `49a1374` — ci(release): gracefully skip per-platform when submit credentials missing · 5m ago
-- `587f793` — chore(repo): ignore design assets + HLS video chunks; enforce LF endings · 5m ago
-- `a9d3e66` — fix(word-by-word): generation guard prevents stale audio when tapping rapidly · 12m ago
-- `8df3516` — fix(surah-reader): per-ayah play/pause button now actually toggles · 12m ago
-- `2a26566` — chore: bump version to 1.7.2 (perf + sepia) · 22m ago
-- `8a494a5` — feat(settings): expose Sepia theme option in Appearance · 25m ago
+- `033cbbe` — chore(bugs): audit FIELD_NOTES — close 13 stale entries, keep 3 actually-open · 1m ago
+- `e151abd` — docs(strategy): addendum — both stores already live ~2 weeks, ~200 users · 6m ago
+- `6b2e334` — docs(worklog): v1.7.3 audio hotfix + 6-part engineering uplift entries · 13m ago
+- `09ecc3b` — docs(strategy): Q3 2026 thinking memo — 3 product moves ranked by leverage · 14m ago
+- `72efb4c` — feat(claude): wire /ship slash command + typecheck-on-edit hook + plugin checklist · 16m ago
+- `1d9b660` — docs(engineering): bug-solving playbook + Claude dev ecosystem brief · 19m ago
+- `f155d13` — chore(dashboard): refresh state 2026-05-10T19:22:29Z · 20m ago
+- `f9c1da6` — chore: bump version to 1.7.3 (audio control hotfix) · 22m ago
+- `375261a` — chore: track iOS widget entitlements + marketing site source · 25m ago
+- `81d4076` — chore(store): tighten 1.7.0 release notes; add locales, screenshots, banner · 25m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 179ms
-- OK  `rawGithub` — 200 · 189ms
-- OK  `everyayah` — 200 · 540ms
-- OK  `quranicaudio` — 200 · 369ms
-- OK  `qurancdn` — 200 · 517ms
+- OK  `jsdelivr` — 200 · 183ms
+- OK  `rawGithub` — 200 · 238ms
+- OK  `everyayah` — 200 · 605ms
+- OK  `quranicaudio` — 200 · 219ms
+- OK  `qurancdn` — 200 · 202ms
 
 ## EAS update channels
 
@@ -78,6 +78,10 @@ _None._
 
 ## WORKLOG — last entries
 
+- 2026-05-10 — Strategy + engineering uplift (PARTS 1–6)
+  Commits: 587f793 (gitignore + LF enforcement), 49a1374 (release.yml graceful skip), 89a7a9f (v1.7.x plan docs + FIELD_NOTES), 81d4076 (1.7.0 release-notes tightened + locales/screenshots/banner), 375261a (ios widget entitlements + marketing site source), 0fcc0d5 (bug-solving playbook + Claude dev ecosystem brief), 6efa3ea (/ship slash command + tsc hook + INSTALL.md), e741961 (Q3-2026 strategy memo) Six-part pre-push and engineering uplift after the v1.7.3 hotfix landed. Cleaned the working tree (committed FIELD_NOTES, plan docs, store-listing tightening, site/, ios/ widget entitlements; gitignored 28MB of design assets + HLS chunks; added `.gitattributes` for LF-only normalization across Windows/Linux to stop EAS hash drift). Fixed `.github/workflows/release.yml` — replaced step-level `if: env.X` guards (which never worked because env was step-local) with a preflight that validates every credential end-to-end (presence + valid base64 + plausible content), writes ANDROID_READY/IOS_READY to GITHUB_ENV, and gates each downstream step. First green release-workflow run in project history (graceful-skipped both platforms with clear `::warning::` log messages instead of going red). Wrote two long engineering docs — `docs/engineering/bug-solving-playbook.md` (intake card format, severity ladder, Sentry→GH auto-ingest wiring, repro harness ladder, the iron 3-failed-fixes architecture-review rule, 5-min post-mortem template) and `docs/engineering/claude-dev-ecosystem.md` (3,800 words: install/evaluate/skip across plugins, MCPs, OSS agentic tooling, marketplaces, best-practice posts, with cost-routing advice — Sonnet default / Opus arch-only / Haiku one-shots → realistic 50-70% bill cut). Wired two concrete Claude Code additions: a `/ship` slash command at `.claude/commands/ship.md` that codifies the bump → CHANGELOG → 8-locale release notes → tag → push → workflow-watch dance (saves ~30 min per release), and a `PostToolUse` hook at `.claude/hooks/typecheck-after-edit.mjs` that runs `tsc --noEmit` after TS/TSX edits and feeds relevant errors back via additionalContext (smoke-tested clean + skip paths). Plus `.claude/INSTALL.md` listing the plugin checklist for the rest. Closed with `docs/strategy/Q3-2026-thinking.md` — 290-line memo ranking the next three product moves: iOS App Store launch (1, 4-6 days, biggest multiplier), Hifz mode with SM-2 spaced repetition (2, 3 weeks, defensible differentiator), "Support deen.in" patron flow (3, 1 week, story multiplier not revenue play). Includes alternatives considered and rejected, sequencing through Q3, and honest gaps a real team would close that we won't.
+- 2026-05-10 — v1.7.3 audio control hotfix (`f9c1da6`)
+  Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
 - 2026-05-10 — PostHog product-feature event capture (`7071a75`)
@@ -94,7 +98,3 @@ _None._
   FlatList perf: extracted `SurahListItem` as top-level `memo()` component, `renderItem` and handlers wrapped in `useCallback`, `ListHeaderComponent` JSX moved into `useMemo`, fixed `directAyahMatch` raw-const dep that busted `filteredSurahs` memo every render. `[surah].tsx`: `loadVerses` useCallback with correct deps, `renderItem` useCallback, `ListFooterComponent` useMemo, all bookmark handlers memoized. `mushaf.tsx`: `pageTitle`, `currentVerseKey`, `gridSlots`, `panResponder` useMemo. Then second pass: extracted 5 inline style array literals from inside `SurahListItem` body to defeat shallow-comparison bypass; removed unused `width` dep from `panResponder` deps array. Final pass: `[surah].tsx` switched from full-store destructure to 5 sliced `useAudioStore(s => ...)` selectors so the screen doesn't re-render 10×/sec under Task 9's faster tick rate.
 - 2026-05-10 — Reciter URL audit (full-surah mode) (`a09f6ea`)
   Live-tested all reciter URLs against quranicaudio.com/qdc CDN. 5 wrong slugs corrected (Husary murattal, Husary muallim, Minshawy murattal, Abu Bakr Shatri, Yasser Ad-Dussary). 15 reciters had no QDC entry — `fullSurahSlug` removed from those entries; they fall back cleanly to per-ayah everyayah.com (all per-ayah URLs tested clean). All 25 reciters preserved in the array.
-- 2026-05-10 — iPhone haptic feedback throughout app (`09a8044`)
-  expo-haptics added to: play/pause buttons (Medium impact), surah navigation (Light), bookmark add (Success notification), prayer mark-done (Success), prayer un-mark (Light), Mushaf page nav (Light), Mushaf bookmark add (Success). No haptic on tap-only interactions to avoid noise.
-- 2026-05-10 — iOS time-sensitive prayer notifications (`6554627`)
-  Added `interruptionLevel: 'timeSensitive'` to both adhan + nudge notification content (iOS 15+ — bypasses Focus mode for users who grant Time Sensitive permission). Explicit iOS permission flags in `requestPermissionsAsync`: `{ ios: { allowAlert: true, allowSound: true, allowBadge: true } }`. Schedule horizon extended from "today only" to 7 days × 5 prayers = 35 notifications max (well under iOS 64-limit). Then removed invalid option `allowDisplayInNotificationCenter` (not part of expo-notifications iOS permission shape).
