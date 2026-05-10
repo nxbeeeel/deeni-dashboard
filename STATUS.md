@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T19:42:48.730Z (just now)_
+_Last refresh: 2026-05-10T20:01:08.520Z (just now)_
 _App version: 1.7.3 (build 58)_
 
 ## Headline
@@ -37,8 +37,8 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 62
-- `Application Became Active` — 36
+- `Application Backgrounded` — 64
+- `Application Became Active` — 37
 - `quran_played` — 32
 - `Application Opened` — 31
 - `surah_opened` — 8
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `033cbbe` — chore(bugs): audit FIELD_NOTES — close 13 stale entries, keep 3 actually-open · 1m ago
-- `e151abd` — docs(strategy): addendum — both stores already live ~2 weeks, ~200 users · 6m ago
-- `6b2e334` — docs(worklog): v1.7.3 audio hotfix + 6-part engineering uplift entries · 13m ago
-- `09ecc3b` — docs(strategy): Q3 2026 thinking memo — 3 product moves ranked by leverage · 14m ago
-- `72efb4c` — feat(claude): wire /ship slash command + typecheck-on-edit hook + plugin checklist · 16m ago
-- `1d9b660` — docs(engineering): bug-solving playbook + Claude dev ecosystem brief · 19m ago
-- `f155d13` — chore(dashboard): refresh state 2026-05-10T19:22:29Z · 20m ago
-- `f9c1da6` — chore: bump version to 1.7.3 (audio control hotfix) · 22m ago
-- `375261a` — chore: track iOS widget entitlements + marketing site source · 25m ago
-- `81d4076` — chore(store): tighten 1.7.0 release notes; add locales, screenshots, banner · 25m ago
+- `b5d28ae` — docs(engineering): bug-to-ship workflow + /triage slash command · 9m ago
+- `4367696` — chore(dashboard): refresh state 2026-05-10T19:42:50Z · 18m ago
+- `033cbbe` — chore(bugs): audit FIELD_NOTES — close 13 stale entries, keep 3 actually-open · 20m ago
+- `e151abd` — docs(strategy): addendum — both stores already live ~2 weeks, ~200 users · 24m ago
+- `6b2e334` — docs(worklog): v1.7.3 audio hotfix + 6-part engineering uplift entries · 31m ago
+- `09ecc3b` — docs(strategy): Q3 2026 thinking memo — 3 product moves ranked by leverage · 32m ago
+- `72efb4c` — feat(claude): wire /ship slash command + typecheck-on-edit hook + plugin checklist · 35m ago
+- `1d9b660` — docs(engineering): bug-solving playbook + Claude dev ecosystem brief · 37m ago
+- `f155d13` — chore(dashboard): refresh state 2026-05-10T19:22:29Z · 39m ago
+- `f9c1da6` — chore: bump version to 1.7.3 (audio control hotfix) · 40m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 183ms
-- OK  `rawGithub` — 200 · 238ms
-- OK  `everyayah` — 200 · 605ms
-- OK  `quranicaudio` — 200 · 219ms
-- OK  `qurancdn` — 200 · 202ms
+- OK  `jsdelivr` — 200 · 107ms
+- OK  `rawGithub` — 200 · 121ms
+- OK  `everyayah` — 200 · 426ms
+- OK  `quranicaudio` — 200 · 225ms
+- OK  `qurancdn` — 200 · 216ms
 
 ## EAS update channels
 
