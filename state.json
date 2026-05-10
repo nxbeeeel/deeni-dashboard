@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T18:33:16.806Z",
-  "appVersion": "1.7.0",
-  "buildNumber": 54,
+  "refreshedAt": "2026-05-10T19:22:28.599Z",
+  "appVersion": "1.7.3",
+  "buildNumber": 58,
   "sentry": {
     "healthy": true,
     "crashFree": 100,
@@ -85,11 +85,11 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 58
+        "count": 60
       },
       {
         "event": "Application Became Active",
-        "count": 33
+        "count": 35
       },
       {
         "event": "quran_played",
@@ -129,144 +129,144 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "f9c1da6",
+        "msg": "chore: bump version to 1.7.3 (audio control hotfix)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:21:03Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f9c1da657de433568ca60d9408950245148a0c75"
+      },
+      {
+        "sha": "375261a",
+        "msg": "chore: track iOS widget entitlements + marketing site source",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:18:12Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/375261afd936b89cc4cf67d263d21c22de16c576"
+      },
+      {
+        "sha": "81d4076",
+        "msg": "chore(store): tighten 1.7.0 release notes; add locales, screenshots, banner",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:18:06Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/81d40762382b0f61fd97d7f8469131d3d6a5f596"
+      },
+      {
+        "sha": "89a7a9f",
+        "msg": "docs: capture v1.7.x plans, field notes, and engineering specs",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:17:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/89a7a9f63c0da839fb28306550858418d5bf1e96"
+      },
+      {
+        "sha": "49a1374",
+        "msg": "ci(release): gracefully skip per-platform when submit credentials missing",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:17:40Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/49a1374685265ccc9909a19b61173d60e1632179"
+      },
+      {
+        "sha": "587f793",
+        "msg": "chore(repo): ignore design assets + HLS video chunks; enforce LF endings",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:17:32Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/587f793a599ba81b35a43c965c7e459e14025141"
+      },
+      {
+        "sha": "a9d3e66",
+        "msg": "fix(word-by-word): generation guard prevents stale audio when tapping rapidly",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:10:58Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a9d3e6648b71c41e8f4fb2644846726a667e6f70"
+      },
+      {
+        "sha": "8df3516",
+        "msg": "fix(surah-reader): per-ayah play/pause button now actually toggles",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:10:25Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8df3516ad900aff631c019f8df605bbc7bd65a2c"
+      },
+      {
+        "sha": "2a26566",
+        "msg": "chore: bump version to 1.7.2 (perf + sepia)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T19:00:46Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2a26566192321dc64a91f2a3cff25c4cfa5b13a3"
+      },
+      {
+        "sha": "8a494a5",
+        "msg": "feat(settings): expose Sepia theme option in Appearance",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:57:37Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8a494a5929ed4c7e6a8f62ca17923a08347e91c0"
+      },
+      {
+        "sha": "a0a66ff",
+        "msg": "feat(theme): useThemeColors returns sepia palette when theme='sepia'",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:55:44Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a0a66ff991070006c625dae426769567d241c646"
+      },
+      {
+        "sha": "b129b16",
+        "msg": "feat(theme): add 'sepia' to theme union in settingsStore",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:53:12Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b129b168ec28a9071a8643aa6b08d1e32f2319cd"
+      },
+      {
+        "sha": "7ed990a",
+        "msg": "feat(theme): add sepia palette (parchment + warm ink)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:50:22Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7ed990ad7c78f30a25f1a574a6807e9da0864456"
+      },
+      {
+        "sha": "e087d56",
+        "msg": "perf(translations): FlatList windowing for 500-row Browse all mode",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:48:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e087d56a5cf5726b06a4df91b8d2e75c10708def"
+      },
+      {
+        "sha": "ebc978f",
+        "msg": "perf(word-by-word): FlatList windowing for long surahs",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:46:54Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ebc978fcdfb1c3ce54e83eba2ecd7b304f62d8aa"
+      },
+      {
+        "sha": "b1b1671",
+        "msg": "perf(word-by-word): memoize verse component + stabilize callbacks",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:43:58Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b1b1671b1c5332a94b87a5c992b121775f2cad6c"
+      },
+      {
+        "sha": "e211d23",
+        "msg": "chore(release): v1.7.1 (56) — bump + CHANGELOG + 8-locale release notes",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:39:43Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e211d233656811cc4de2199b1c6180e0359afac7"
+      },
+      {
+        "sha": "9380136",
+        "msg": "fix(mushaf): v1.7.1 hotfix — cartouche overhaul, border simplification, footer fix, QPC URL",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T18:39:33Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9380136293da1673a634e5b8953af3af40b8051c"
+      },
+      {
+        "sha": "fbfdd27",
+        "msg": "chore(dashboard): refresh state 2026-05-10T18:33:17Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T18:33:17Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fbfdd278691117c5c155546c7ae59b83fa52763b"
+      },
+      {
         "sha": "ff1cb5e",
         "msg": "chore(dashboard): refresh state 2026-05-10T17:02:20Z",
         "author": "deeni-dashboard-bot",
         "at": "2026-05-10T17:02:20Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ff1cb5e18fb181c242d86dc839b2252cdca5e019"
-      },
-      {
-        "sha": "fce04e6",
-        "msg": "chore(dashboard): refresh state 2026-05-10T15:32:43Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-10T15:32:43Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fce04e698b3fbce1fcf74a26533379f92d7509f4"
-      },
-      {
-        "sha": "3299bb6",
-        "msg": "chore(dashboard): refresh state 2026-05-10T14:01:39Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-10T14:01:39Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/3299bb683e992300553b3b72ae3c4aea37b679d6"
-      },
-      {
-        "sha": "6554ae6",
-        "msg": "chore: bump version to 1.7.0 (54) + release automation pipeline",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:52:44Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6554ae6395835dbf430b248002bccb7e41435060"
-      },
-      {
-        "sha": "2ca6ac2",
-        "msg": "feat(mushaf): tap-ayah verse selection mode with action bottom sheet",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:44:51Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2ca6ac213234fd1de14414f5d312ab0539e6a33c"
-      },
-      {
-        "sha": "36d88f7",
-        "msg": "feat(mushaf): printed Madani Mushaf rendering — cartouche, justified lines, medallions, gold frame",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:36:53Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/36d88f7c29f9f788838accb42d3a17ea53a14415"
-      },
-      {
-        "sha": "162df28",
-        "msg": "feat(quran): translation picker shows curated 49 featured (Browse all toggle)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:34:07Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/162df28a72dee1a52a5dfd50a43c50f4e03bfbc7"
-      },
-      {
-        "sha": "9a5b605",
-        "msg": "feat(quran): shared SurahPicker component (search + filter + recents)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:29:08Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9a5b605213488aa8bbb564254b7380fcf99338f1"
-      },
-      {
-        "sha": "c072721",
-        "msg": "feat(mushaf): add SurahCartouche component (printed Mushaf style)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:24:17Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c072721785485cb9ad76165d9ac4ac651ed8144c"
-      },
-      {
-        "sha": "b87a57e",
-        "msg": "feat(mushaf): add HizbMarker + SajdaMarker components for margin rosettes",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:23:57Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b87a57eb0b813e5f20e3d2788538244870faf1cc"
-      },
-      {
-        "sha": "82a3f0a",
-        "msg": "feat(mushaf): add VerseMedallion component (gold-bordered verse-end glyph)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:23:27Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/82a3f0ae9d327b8905f91426b806e29d38761289"
-      },
-      {
-        "sha": "d62ca38",
-        "msg": "fix(quran): guard translation read against DB prepareSync NPE",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:22:34Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d62ca38719df165b9e455607d5f2a03f80169a57"
-      },
-      {
-        "sha": "bdf93b6",
-        "msg": "feat(mushaf): native page-swipe via react-native-pager-view",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:13:27Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/bdf93b620e70efe3dc0546502e2576b63a7317d7"
-      },
-      {
-        "sha": "8f7a600",
-        "msg": "feat(mushaf): switch to opt-in QPC font download (200 MB stays out of bundle)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T12:12:27Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8f7a6000268eb59a623edd6c3141def754ab19e9"
-      },
-      {
-        "sha": "17fc22c",
-        "msg": "fix(widgets): preserve custom previews across prebuild + complete generator script",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T02:50:03Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/17fc22cd5b8ba55cf13ba8c4b8d25ee94e9cafd5"
-      },
-      {
-        "sha": "b983d91",
-        "msg": "fix(word-by-word): tap-to-play now plays the tapped word (not next/previous)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T02:49:22Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b983d915b6d3145070b8f8d20a86b3d67b8ae011"
-      },
-      {
-        "sha": "4338c7c",
-        "msg": "feat(mushaf): bundle KFGQPC V2 glyph fonts (604 pages)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T02:47:28Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4338c7cd6c3d860abea37d5222652bdc8624ba00"
-      },
-      {
-        "sha": "11212b5",
-        "msg": "feat(word-by-word): surah picker, sticky nav toolbar, MiniPlayer, auto-scroll, end-of-surah CTA",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T02:45:17Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/11212b557945f092b30bf3876e06f54b2ddf892c"
-      },
-      {
-        "sha": "a6739a3",
-        "msg": "fix(widgets): show widget pin section even on unsupported launchers",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T02:45:05Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a6739a317fcad4fbe3fb5d4fa4837cbf6a545d02"
-      },
-      {
-        "sha": "307dda1",
-        "msg": "feat(audio): wire lock screen + notification media controls",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T02:43:34Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/307dda115e77da2ec5c565b9707d3cfc8fe64187"
       }
     ],
     "releases": [
@@ -288,45 +288,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25636482445,
-      "workflow": "Dashboard Refresh",
+      "id": 25637531665,
+      "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25636482445",
-      "ranAt": "2026-05-10T18:32:03Z",
-      "durationSec": 10
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25637531665",
+      "ranAt": "2026-05-10T19:21:13Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 120,
+      "latencyMs": 179,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 152,
+      "latencyMs": 189,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 573,
+      "latencyMs": 540,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 260,
+      "latencyMs": 369,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 334,
+      "latencyMs": 517,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -535,6 +535,86 @@
       "source": "User feedback (Telegram)",
       "resolvedAt": null,
       "notes": "When playing full Quran audio, no media controls show in iOS lock screen, Android notification, or in either platform's native media center. expo-audio audioMode is set for background playback but lock screen / now-playing info isn't wired. Critical for background listening UX. May need MPNowPlayingInfoCenter (iOS) + MediaSession (Android) setup. Hot fix."
+    },
+    {
+      "status": "OPEN",
+      "description": "v1.7.0 Mushaf cartouche overlaps verses + bismillah inside it",
+      "date": "2026-05-10",
+      "source": "User screenshots (Telegram)",
+      "resolvedAt": null,
+      "notes": "The new cartouche is rendering with truncated Arabic (\"سُو\" instead of \"سُورَة\"), bismillah is inside the cartouche box (should be below), English label \"AL-FATIHA\"/\"AL-BAQARAH\" overlapping verse text underneath. On special pages (Al-Fatiha, Al-Baqarah opening) the cartouche dominates and verses clip below. Triple gold borders feel cluttered. Page footer \"Juz 1 · Page X · Al-Fatiha\" colliding with bottom toolbar."
+    },
+    {
+      "status": "OPEN",
+      "description": "v1.7.0 QPC font download fails 404",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "\"Download Failed: Call to function 'FileSystem.downloadFileAsync' has been rejected. → Caused by: response has status: 404.\" The QPC_FONT_BASE_URL in qpcFontDownloader.ts was a placeholder pointing to nuqayah/qpc-fonts repo with WRONG filename pattern (QCF2NNN.ttf vs actual QCF2_001.TTF). Either fix URL pattern or move to a real CDN. Hot fix. [RESOLVED v1.7.1: branch was main, upstream is master. Live HTTP 200 verified.]"
+    },
+    {
+      "status": "OPEN",
+      "description": "Surah reader: per-ayah pause button doesn't actually pause",
+      "date": "2026-05-10",
+      "source": "User feedback (screenshot, Telegram)",
+      "resolvedAt": null,
+      "notes": "On the surah reader (`app/quran/[surah].tsx`), each ayah card shows a play/pause icon. When audio is playing, the icon shows pause (green) but tapping it does NOT pause audio. The MiniPlayer at the bottom DOES pause correctly. So the wiring of the per-ayah onPlayPress handler is broken. Likely either (a) handler stale closure, (b) handler calls play() instead of pause() when playing, or (c) calling loadAndPlay again on the same verse doesn't toggle. Hot fix."
+    },
+    {
+      "status": "OPEN",
+      "description": "Word-by-word tap plays AUDIO for a different word",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "(RE-OPEN) \"In word-by-word, when select some word audio is of different.\" Re-reported after v1.6.x \"fix\". The earlier fix (commit cd6e167) was for visual highlight conflict — the implementer confirmed \"Hypothesis E (visual)\" and didn't touch the audio path. But the user's complaint is about AUDIO, not visual. Likely real cause: off-by-one in word.position vs index in audio_url, or filter shifting indices. Need re-investigation focused on the AUDIO mapping."
+    },
+    {
+      "status": "OPEN",
+      "description": "Android: \"Add widget from app\" option missing/broken",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "When user opens Settings on Android, there's no working option to pin/add a widget to the home screen from inside the app. WidgetPinModule.kt + WidgetPinPackage.kt exist (Kotlin native module for requestPinAppWidget), and JS bridge at src/services/widgetPinner.ts exists, but the Settings UI either doesn't show the buttons or the buttons don't trigger. Investigation needed — could be JS bridge mis-wired, or settings screen missing the row, or native module not registering on master (similar to the untracked Swift files we just fixed)."
+    },
+    {
+      "status": "OPEN",
+      "description": "Android: deen.in widget previews missing in system widget chooser",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "When user long-presses Android home screen → Widgets → scrolls to deen.in, the widget previews (thumbnails for PrayerTimes / NextPrayer / DailyHadith / DailyDua / PrayerDuaCombo) are blank/missing. Should show a rendered preview of each widget. Likely cause: previewImage drawables not in android/app/src/main/res/drawable/, OR scripts/generate-widget-previews.mjs hasn't been run, OR generated PNGs aren't tracked in git (similar pattern to the source files we found untracked earlier). iOS widget preview status not yet checked by user."
+    },
+    {
+      "status": "OPEN",
+      "description": "Word-by-word: tap-to-play maps to wrong word",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "\"In word-by-word, when I click a word the audio is for next or another one.\" Likely root causes: off-by-one in word.position indexing (1-indexed in API vs 0-indexed in render), OR audio_url field shifted by one due to char_type_name filter ('word' vs 'end'), OR state race between tap-driven selectedWordId and playback-driven activeWordIndex (added in v1.6.0). Specific to src/components/quran/WordByWordVerse.tsx onPress handler. Fixed in commit cd6e167 (hypothesis E confirmed — visual highlight conflict, not audio)."
+    },
+    {
+      "status": "OPEN",
+      "description": "\"Could not load verses\" / NativeDatabase prepareSync rejection on translation read",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "When opening a surah with translation enabled, user sees error: \"Could not load verses. Call to function 'NativeDatabase.prepareSync' has been rejected. Caused by: java.lang.NullPointerException.\" This is in the Drizzle path (loadVersesFromDB at app/quran/[surah].tsx), different code path than the offline.ts sync DB calls we guarded in v1.6.0 (commit 7684acf). DB handle may be null when Drizzle calls prepareSync. Hot fix needed."
+    },
+    {
+      "status": "OPEN",
+      "description": "Translations: 492+ editions overwhelming, no curation",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "\"More translations has more than 492 editions, what is the real use case? Doesn't feel like a useful thing for us.\" Need to: research best-practice translation curation (Quran.com web, Muslim Pro, iQuran), curate ~20-30 popular editions, group by language with featured/recommended tags, show full list as \"Browse all\" for advanced users. Quality-of-life fix for v1.7.x."
+    },
+    {
+      "status": "OPEN",
+      "description": "Surah selector UX needs improvement",
+      "date": "2026-05-10",
+      "source": "User feedback (Telegram)",
+      "resolvedAt": null,
+      "notes": "Current surah pickers (Quran tab list, Mushaf jump modal, Word-by-word picker) are basic 114-item scrollable lists. Need better discoverability: search, grouping (Juz / Makki vs Madani / length), Arabic + English names side by side, recent/favorites, quick-jump by number. Build a shared SurahPicker component used everywhere."
     }
   ],
   "errors": [],

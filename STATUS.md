@@ -1,7 +1,7 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T18:33:16.806Z (just now)_
-_App version: 1.7.0 (build 54)_
+_Last refresh: 2026-05-10T19:22:28.599Z (just now)_
+_App version: 1.7.3 (build 58)_
 
 ## Headline
 
@@ -33,12 +33,12 @@ _None._
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 5d ago
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 9d ago
 - REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 3d ago
-- REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 24d ago
+- REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 25d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 58
-- `Application Became Active` — 33
+- `Application Backgrounded` — 60
+- `Application Became Active` — 35
 - `quran_played` — 32
 - `Application Opened` — 29
 - `surah_opened` — 8
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `ff1cb5e` — chore(dashboard): refresh state 2026-05-10T17:02:20Z · 2h ago
-- `fce04e6` — chore(dashboard): refresh state 2026-05-10T15:32:43Z · 3h ago
-- `3299bb6` — chore(dashboard): refresh state 2026-05-10T14:01:39Z · 5h ago
-- `6554ae6` — chore: bump version to 1.7.0 (54) + release automation pipeline · 6h ago
-- `2ca6ac2` — feat(mushaf): tap-ayah verse selection mode with action bottom sheet · 6h ago
-- `36d88f7` — feat(mushaf): printed Madani Mushaf rendering — cartouche, justified lines, medallions, gold frame · 6h ago
-- `162df28` — feat(quran): translation picker shows curated 49 featured (Browse all toggle) · 6h ago
-- `9a5b605` — feat(quran): shared SurahPicker component (search + filter + recents) · 6h ago
-- `c072721` — feat(mushaf): add SurahCartouche component (printed Mushaf style) · 6h ago
-- `b87a57e` — feat(mushaf): add HizbMarker + SajdaMarker components for margin rosettes · 6h ago
+- `f9c1da6` — chore: bump version to 1.7.3 (audio control hotfix) · 1m ago
+- `375261a` — chore: track iOS widget entitlements + marketing site source · 4m ago
+- `81d4076` — chore(store): tighten 1.7.0 release notes; add locales, screenshots, banner · 4m ago
+- `89a7a9f` — docs: capture v1.7.x plans, field notes, and engineering specs · 4m ago
+- `49a1374` — ci(release): gracefully skip per-platform when submit credentials missing · 5m ago
+- `587f793` — chore(repo): ignore design assets + HLS video chunks; enforce LF endings · 5m ago
+- `a9d3e66` — fix(word-by-word): generation guard prevents stale audio when tapping rapidly · 12m ago
+- `8df3516` — fix(surah-reader): per-ayah play/pause button now actually toggles · 12m ago
+- `2a26566` — chore: bump version to 1.7.2 (perf + sepia) · 22m ago
+- `8a494a5` — feat(settings): expose Sepia theme option in Appearance · 25m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 120ms
-- OK  `rawGithub` — 200 · 152ms
-- OK  `everyayah` — 200 · 573ms
-- OK  `quranicaudio` — 200 · 260ms
-- OK  `qurancdn` — 200 · 334ms
+- OK  `jsdelivr` — 200 · 179ms
+- OK  `rawGithub` — 200 · 189ms
+- OK  `everyayah` — 200 · 540ms
+- OK  `quranicaudio` — 200 · 369ms
+- OK  `qurancdn` — 200 · 517ms
 
 ## EAS update channels
 
