@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T06:38:14.676Z (just now)_
+_Last refresh: 2026-05-10T08:58:59.858Z (just now)_
 _App version: 1.6.1 (build 52)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.6.1 (build 52)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **16** |
+| DAU | **15** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -32,17 +32,17 @@ _None._
 
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 5d ago
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 8d ago
-- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 2d ago
+- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 3d ago
 - REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 24d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 51
+- `Application Backgrounded` — 50
 - `Application Opened` — 27
-- `Application Became Active` — 26
 - `quran_played` — 24
-- `Application Installed` — 6
+- `Application Became Active` — 24
 - `feature_opened` — 5
+- `Application Installed` — 5
 - `surah_opened` — 3
 - `mushaf_opened` — 1
 - `prayer_marked_done` — 1
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `7637092` — chore(dashboard): refresh state 2026-05-10T03:48:52Z · 3h ago
-- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 4h ago
-- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 4h ago
-- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 4h ago
-- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 4h ago
-- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 4h ago
-- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 4h ago
-- `ee15f67` — docs(field-notes): log Mushaf hot-fix issues for v1.6.1 · 4h ago
-- `2e85d30` — fix(ci): track v1.4.0+ feature source files (fasting, hijri, zakat, prayer-history, duas guide, offline audio) · 5h ago
-- `d8c3dcb` — fix(ci): track scripts/fix-cmake-stl.cjs (referenced by postinstall) · 5h ago
+- `d65ba24` — chore(dashboard): refresh state 2026-05-10T06:38:15Z · 2h ago
+- `7637092` — chore(dashboard): refresh state 2026-05-10T03:48:52Z · 5h ago
+- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 6h ago
+- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 6h ago
+- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 7h ago
+- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 7h ago
+- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 7h ago
+- `22e8708` — chore(dashboard): refresh state 2026-05-10T02:18:26Z · 7h ago
+- `ee15f67` — docs(field-notes): log Mushaf hot-fix issues for v1.6.1 · 7h ago
+- `2e85d30` — fix(ci): track v1.4.0+ feature source files (fasting, hijri, zakat, prayer-history, duas guide, offline audio) · 7h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 188ms
-- OK  `rawGithub` — 200 · 177ms
-- OK  `everyayah` — 200 · 445ms
-- OK  `quranicaudio` — 200 · 343ms
-- OK  `qurancdn` — 200 · 503ms
+- OK  `jsdelivr` — 200 · 318ms
+- OK  `rawGithub` — 200 · 267ms
+- OK  `everyayah` — 200 · 545ms
+- OK  `quranicaudio` — 200 · 301ms
+- OK  `qurancdn` — 200 · 522ms
 
 ## EAS update channels
 
