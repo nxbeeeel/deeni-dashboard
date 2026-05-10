@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T22:12:38.049Z",
-  "appVersion": "1.7.3",
-  "buildNumber": 58,
+  "refreshedAt": "2026-05-10T23:29:13.481Z",
+  "appVersion": "1.7.4",
+  "buildNumber": 59,
   "sentry": {
     "healthy": true,
     "crashFree": 100,
@@ -129,6 +129,27 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "d6f04bb",
+        "msg": "chore: bump version to 1.7.4 (lock-screen audio fix on Android 14+)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T23:11:52Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d6f04bbb6eae2a63c9fb3cbbcca21796b7af9d94"
+      },
+      {
+        "sha": "2117663",
+        "msg": "ci: disable broken auto-OTA-on-master-push (conflicts with staged-rollout policy)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-10T22:59:43Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2117663d13b985c07d5bbb4115333caccda24eb9"
+      },
+      {
+        "sha": "9d72b3b",
+        "msg": "chore(dashboard): refresh state 2026-05-10T22:12:38Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T22:12:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9d72b3bb026e7863361773a4fc1e90761b1a4102"
+      },
+      {
         "sha": "da8d6d6",
         "msg": "chore(dashboard): refresh state 2026-05-10T21:25:43Z",
         "author": "deeni-dashboard-bot",
@@ -246,30 +267,15 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-10T19:18:06Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/81d40762382b0f61fd97d7f8469131d3d6a5f596"
-      },
-      {
-        "sha": "89a7a9f",
-        "msg": "docs: capture v1.7.x plans, field notes, and engineering specs",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:17:59Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/89a7a9f63c0da839fb28306550858418d5bf1e96"
-      },
-      {
-        "sha": "49a1374",
-        "msg": "ci(release): gracefully skip per-platform when submit credentials missing",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:17:40Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/49a1374685265ccc9909a19b61173d60e1632179"
-      },
-      {
-        "sha": "587f793",
-        "msg": "chore(repo): ignore design assets + HLS video chunks; enforce LF endings",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:17:32Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/587f793a599ba81b35a43c965c7e459e14025141"
       }
     ],
     "releases": [
+      {
+        "tag": "v1.7.4",
+        "name": "v1.7.4",
+        "publishedAt": "2026-05-10T23:12:35Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.7.4"
+      },
       {
         "tag": "v1.7.3",
         "name": "v1.7.3",
@@ -294,13 +300,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25641149405,
+      "id": 25642730323,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25641149405",
-      "ranAt": "2026-05-10T22:11:30Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25642730323",
+      "ranAt": "2026-05-10T23:28:06Z",
       "durationSec": 4
     }
   },
@@ -308,31 +314,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 299,
+      "latencyMs": 178,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 250,
+      "latencyMs": 190,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 726,
+      "latencyMs": 603,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 359,
+      "latencyMs": 462,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 352,
+      "latencyMs": 445,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },

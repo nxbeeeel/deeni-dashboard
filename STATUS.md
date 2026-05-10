@@ -1,7 +1,7 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T22:12:38.049Z (just now)_
-_App version: 1.7.3 (build 58)_
+_Last refresh: 2026-05-10T23:29:13.481Z (just now)_
+_App version: 1.7.4 (build 59)_
 
 ## Headline
 
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `da8d6d6` — chore(dashboard): refresh state 2026-05-10T21:25:43Z · 47m ago
-- `9089bdf` — feat(workflow): ship the full bug-to-ship pipeline (research-grounded, Claude-toolkit-driven) · 1h ago
-- `f23972f` — docs(plan): rewrite workflow-design plan with Claude-toolkit-as-team framing · 2h ago
-- `f2e3d10` — docs: research-grounded plan for the bug-to-ship workflow · 2h ago
-- `2af4f7c` — chore(dashboard): refresh state 2026-05-10T20:01:09Z · 2h ago
-- `b5d28ae` — docs(engineering): bug-to-ship workflow + /triage slash command · 2h ago
-- `4367696` — chore(dashboard): refresh state 2026-05-10T19:42:50Z · 3h ago
-- `033cbbe` — chore(bugs): audit FIELD_NOTES — close 13 stale entries, keep 3 actually-open · 3h ago
-- `e151abd` — docs(strategy): addendum — both stores already live ~2 weeks, ~200 users · 3h ago
-- `6b2e334` — docs(worklog): v1.7.3 audio hotfix + 6-part engineering uplift entries · 3h ago
+- `d6f04bb` — chore: bump version to 1.7.4 (lock-screen audio fix on Android 14+) · 17m ago
+- `2117663` — ci: disable broken auto-OTA-on-master-push (conflicts with staged-rollout policy) · 30m ago
+- `9d72b3b` — chore(dashboard): refresh state 2026-05-10T22:12:38Z · 1h ago
+- `da8d6d6` — chore(dashboard): refresh state 2026-05-10T21:25:43Z · 2h ago
+- `9089bdf` — feat(workflow): ship the full bug-to-ship pipeline (research-grounded, Claude-toolkit-driven) · 3h ago
+- `f23972f` — docs(plan): rewrite workflow-design plan with Claude-toolkit-as-team framing · 3h ago
+- `f2e3d10` — docs: research-grounded plan for the bug-to-ship workflow · 3h ago
+- `2af4f7c` — chore(dashboard): refresh state 2026-05-10T20:01:09Z · 3h ago
+- `b5d28ae` — docs(engineering): bug-to-ship workflow + /triage slash command · 4h ago
+- `4367696` — chore(dashboard): refresh state 2026-05-10T19:42:50Z · 4h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 299ms
-- OK  `rawGithub` — 200 · 250ms
-- OK  `everyayah` — 200 · 726ms
-- OK  `quranicaudio` — 200 · 359ms
-- OK  `qurancdn` — 200 · 352ms
+- OK  `jsdelivr` — 200 · 178ms
+- OK  `rawGithub` — 200 · 190ms
+- OK  `everyayah` — 200 · 603ms
+- OK  `quranicaudio` — 200 · 462ms
+- OK  `qurancdn` — 200 · 445ms
 
 ## EAS update channels
 
