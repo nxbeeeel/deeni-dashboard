@@ -1,13 +1,13 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T12:11:46.060Z (just now)_
-_App version: 1.6.1 (build 52)_
+_Last refresh: 2026-05-10T14:01:38.311Z (just now)_
+_App version: 1.7.0 (build 54)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **100.00%** |
+| Crash-free (24h) | **—** |
 | DAU | **14** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
@@ -30,44 +30,41 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 5d ago
-- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 8d ago
-- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 3d ago
-- REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 24d ago
+_Sentry pull failed: The operation was aborted due to timeout_
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 52
-- `Application Opened` — 29
-- `Application Became Active` — 25
-- `quran_played` — 24
+- `Application Backgrounded` — 62
+- `Application Opened` — 33
+- `quran_played` — 32
+- `Application Became Active` — 29
+- `surah_opened` — 8
 - `feature_opened` — 5
-- `Application Installed` — 5
-- `surah_opened` — 3
-- `mushaf_opened` — 1
+- `Application Installed` — 4
+- `mushaf_opened` — 2
 - `prayer_marked_done` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `b4a77cb` — chore(dashboard): refresh state 2026-05-10T11:28:47Z · 43m ago
-- `b78634d` — chore(dashboard): refresh state 2026-05-10T10:22:58Z · 2h ago
-- `556696e` — chore(dashboard): refresh state 2026-05-10T08:59:00Z · 3h ago
-- `d65ba24` — chore(dashboard): refresh state 2026-05-10T06:38:15Z · 6h ago
-- `7637092` — chore(dashboard): refresh state 2026-05-10T03:48:52Z · 8h ago
-- `f58b410` — chore(dashboard): refresh state 2026-05-10T02:31:20Z · 10h ago
-- `233e20d` — docs(field-notes): log 3 more user-reported issues for v1.6.2 · 10h ago
-- `cd09bb4` — docs: add comprehensive Mushaf design spec for v1.7.0 sprint · 10h ago
-- `2a1e9e1` — chore: bump version to 1.6.1 (52) · 10h ago
-- `6300674` — fix(mushaf): swipe race, audio page-change reset, bismillah rendering for surah-start · 10h ago
+- `6554ae6` — chore: bump version to 1.7.0 (54) + release automation pipeline · 1h ago
+- `2ca6ac2` — feat(mushaf): tap-ayah verse selection mode with action bottom sheet · 1h ago
+- `36d88f7` — feat(mushaf): printed Madani Mushaf rendering — cartouche, justified lines, medallions, gold frame · 1h ago
+- `162df28` — feat(quran): translation picker shows curated 49 featured (Browse all toggle) · 1h ago
+- `9a5b605` — feat(quran): shared SurahPicker component (search + filter + recents) · 2h ago
+- `c072721` — feat(mushaf): add SurahCartouche component (printed Mushaf style) · 2h ago
+- `b87a57e` — feat(mushaf): add HizbMarker + SajdaMarker components for margin rosettes · 2h ago
+- `82a3f0a` — feat(mushaf): add VerseMedallion component (gold-bordered verse-end glyph) · 2h ago
+- `d62ca38` — fix(quran): guard translation read against DB prepareSync NPE · 2h ago
+- `bdf93b6` — feat(mushaf): native page-swipe via react-native-pager-view · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 147ms
-- OK  `rawGithub` — 200 · 210ms
-- OK  `everyayah` — 200 · 480ms
-- OK  `quranicaudio` — 200 · 238ms
-- OK  `qurancdn` — 200 · 489ms
+- OK  `jsdelivr` — 200 · 145ms
+- OK  `rawGithub` — 200 · 217ms
+- OK  `everyayah` — 200 · 537ms
+- OK  `quranicaudio` — 200 · 308ms
+- OK  `qurancdn` — 200 · 529ms
 
 ## EAS update channels
 
@@ -98,3 +95,7 @@ _None._
   expo-haptics added to: play/pause buttons (Medium impact), surah navigation (Light), bookmark add (Success notification), prayer mark-done (Success), prayer un-mark (Light), Mushaf page nav (Light), Mushaf bookmark add (Success). No haptic on tap-only interactions to avoid noise.
 - 2026-05-10 — iOS time-sensitive prayer notifications (`6554627`)
   Added `interruptionLevel: 'timeSensitive'` to both adhan + nudge notification content (iOS 15+ — bypasses Focus mode for users who grant Time Sensitive permission). Explicit iOS permission flags in `requestPermissionsAsync`: `{ ios: { allowAlert: true, allowSound: true, allowBadge: true } }`. Schedule horizon extended from "today only" to 7 days × 5 prayers = 35 notifications max (well under iOS 64-limit). Then removed invalid option `allowDisplayInNotificationCenter` (not part of expo-notifications iOS permission shape).
+
+## Refresh errors
+
+- **sentry** — The operation was aborted due to timeout
