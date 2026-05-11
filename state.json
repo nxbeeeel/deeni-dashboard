@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-11T09:51:42.833Z",
-  "appVersion": "1.7.6",
-  "buildNumber": 64,
+  "refreshedAt": "2026-05-11T12:42:56.973Z",
+  "appVersion": "1.7.7",
+  "buildNumber": 66,
   "sentry": {
     "healthy": true,
     "crashFree": 100,
@@ -73,35 +73,27 @@
     "healthy": true,
     "dau": 11,
     "dauTrend7d": [
-      8,
+      5,
       9,
       14,
       13,
       10,
       14,
       12,
-      5
+      6
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 41
-      },
-      {
-        "event": "Application Opened",
-        "count": 22
+        "count": 38
       },
       {
         "event": "Application Became Active",
         "count": 20
       },
       {
-        "event": "quran_played",
-        "count": 8
-      },
-      {
-        "event": "surah_opened",
-        "count": 5
+        "event": "Application Opened",
+        "count": 19
       },
       {
         "event": "mushaf_opened",
@@ -124,6 +116,27 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "2a4b5ae",
+        "msg": "feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T11:38:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2a4b5ae2c4045dd7d93ce56833654e0886887c53"
+      },
+      {
+        "sha": "44e201a",
+        "msg": "fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T10:59:19Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/44e201ac2de762a280693713c626ee492f17500d"
+      },
+      {
+        "sha": "2641b4d",
+        "msg": "chore(dashboard): refresh state 2026-05-11T09:51:44Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-11T09:51:45Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2641b4d0094c6a44e78352ca36c31b52ee8b5961"
+      },
       {
         "sha": "52e5c05",
         "msg": "chore(dashboard): refresh state 2026-05-11T05:39:46Z",
@@ -242,27 +255,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-10T23:29:15Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1aa7439a398f8e6ceedcdb08565cb7c876dadace"
-      },
-      {
-        "sha": "5b7e438",
-        "msg": "feat(ops): wire Sentry source map upload + release markers via @sentry/react-native plugin",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T23:28:30Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5b7e43856bf69b02e041b56e5e996551ed8b4371"
-      },
-      {
-        "sha": "d6f04bb",
-        "msg": "chore: bump version to 1.7.4 (lock-screen audio fix on Android 14+)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T23:11:52Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d6f04bbb6eae2a63c9fb3cbbcca21796b7af9d94"
-      },
-      {
-        "sha": "2117663",
-        "msg": "ci: disable broken auto-OTA-on-master-push (conflicts with staged-rollout policy)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T22:59:43Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2117663d13b985c07d5bbb4115333caccda24eb9"
       }
     ],
     "releases": [
@@ -296,45 +288,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25662947863,
+      "id": 25670760723,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25662947863",
-      "ranAt": "2026-05-11T09:50:26Z",
-      "durationSec": 11
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25670760723",
+      "ranAt": "2026-05-11T12:41:40Z",
+      "durationSec": 13
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 483,
+      "latencyMs": 304,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 252,
+      "latencyMs": 250,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 646,
+      "latencyMs": 485,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 479,
+      "latencyMs": 238,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 523,
+      "latencyMs": 247,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
