@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-11T18:02:54.873Z (just now)_
+_Last refresh: 2026-05-11T20:19:25.728Z (just now)_
 _App version: 1.7.7 (build 66)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **100.00%** |
-| DAU | **12** |
+| Crash-free (24h) | **—** |
+| DAU | **11** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,42 +30,39 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 6d ago
-- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 10d ago
-- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 4d ago
-- REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 25d ago
+_Sentry pull failed: The operation was aborted due to timeout_
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 58
-- `Application Became Active` — 36
-- `Application Opened` — 20
+- `Application Backgrounded` — 55
+- `Application Became Active` — 34
+- `Application Opened` — 19
 - `prayer_marked_done` — 5
-- `Application Installed` — 4
+- `Application Installed` — 5
 - `mushaf_opened` — 3
 - `feature_opened` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `7ef76c7` — chore(dashboard): refresh state 2026-05-11T16:00:47Z · 2h ago
-- `52f160a` — chore(dashboard): refresh state 2026-05-11T12:42:58Z · 5h ago
-- `2a4b5ae` — feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2 · 6h ago
-- `44e201a` — fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding · 7h ago
-- `2641b4d` — chore(dashboard): refresh state 2026-05-11T09:51:44Z · 8h ago
-- `52e5c05` — chore(dashboard): refresh state 2026-05-11T05:39:46Z · 12h ago
-- `b6a3f43` — docs(learnings): Play Console AD_ID declaration was stale, not a code bug · 15h ago
-- `a35ffce` — feat(quran-foundation): Phase 2a — translation editions list + chapter verses fetchers · 15h ago
-- `7589111` — chore(dashboard): refresh state 2026-05-11T01:27:08Z · 17h ago
-- `cc7eb48` — feat(quran-foundation): Connected Apps integration scaffolding (Phase 0) · 17h ago
+- `5dc0021` — chore(dashboard): refresh state 2026-05-11T18:02:57Z · 2h ago
+- `7ef76c7` — chore(dashboard): refresh state 2026-05-11T16:00:47Z · 4h ago
+- `52f160a` — chore(dashboard): refresh state 2026-05-11T12:42:58Z · 8h ago
+- `2a4b5ae` — feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2 · 9h ago
+- `44e201a` — fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding · 9h ago
+- `2641b4d` — chore(dashboard): refresh state 2026-05-11T09:51:44Z · 10h ago
+- `52e5c05` — chore(dashboard): refresh state 2026-05-11T05:39:46Z · 15h ago
+- `b6a3f43` — docs(learnings): Play Console AD_ID declaration was stale, not a code bug · 18h ago
+- `a35ffce` — feat(quran-foundation): Phase 2a — translation editions list + chapter verses fetchers · 18h ago
+- `7589111` — chore(dashboard): refresh state 2026-05-11T01:27:08Z · 19h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 178ms
-- OK  `rawGithub` — 200 · 200ms
-- OK  `everyayah` — 200 · 503ms
-- OK  `quranicaudio` — 200 · 411ms
-- OK  `qurancdn` — 200 · 409ms
+- OK  `jsdelivr` — 200 · 221ms
+- OK  `rawGithub` — 200 · 203ms
+- OK  `everyayah` — 200 · 627ms
+- OK  `quranicaudio` — 200 · 165ms
+- OK  `qurancdn` — 200 · 172ms
 
 ## EAS update channels
 
@@ -96,3 +93,7 @@ _None._
   FlatList perf: extracted `SurahListItem` as top-level `memo()` component, `renderItem` and handlers wrapped in `useCallback`, `ListHeaderComponent` JSX moved into `useMemo`, fixed `directAyahMatch` raw-const dep that busted `filteredSurahs` memo every render. `[surah].tsx`: `loadVerses` useCallback with correct deps, `renderItem` useCallback, `ListFooterComponent` useMemo, all bookmark handlers memoized. `mushaf.tsx`: `pageTitle`, `currentVerseKey`, `gridSlots`, `panResponder` useMemo. Then second pass: extracted 5 inline style array literals from inside `SurahListItem` body to defeat shallow-comparison bypass; removed unused `width` dep from `panResponder` deps array. Final pass: `[surah].tsx` switched from full-store destructure to 5 sliced `useAudioStore(s => ...)` selectors so the screen doesn't re-render 10×/sec under Task 9's faster tick rate.
 - 2026-05-10 — Reciter URL audit (full-surah mode) (`a09f6ea`)
   Live-tested all reciter URLs against quranicaudio.com/qdc CDN. 5 wrong slugs corrected (Husary murattal, Husary muallim, Minshawy murattal, Abu Bakr Shatri, Yasser Ad-Dussary). 15 reciters had no QDC entry — `fullSurahSlug` removed from those entries; they fall back cleanly to per-ayah everyayah.com (all per-ayah URLs tested clean). All 25 reciters preserved in the array.
+
+## Refresh errors
+
+- **sentry** — The operation was aborted due to timeout
