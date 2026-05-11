@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-11T01:27:07.140Z",
+  "refreshedAt": "2026-05-11T05:39:44.851Z",
   "appVersion": "1.7.6",
   "buildNumber": 64,
   "sentry": {
@@ -11,46 +11,42 @@
     "healthy": true,
     "dau": 11,
     "dauTrend7d": [
-      11,
+      10,
       9,
       14,
       13,
       10,
       14,
       12,
-      3
+      4
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 51
-      },
-      {
-        "event": "quran_played",
-        "count": 32
+        "count": 43
       },
       {
         "event": "Application Opened",
-        "count": 28
+        "count": 23
       },
       {
         "event": "Application Became Active",
-        "count": 26
+        "count": 20
       },
       {
-        "event": "surah_opened",
+        "event": "quran_played",
         "count": 8
       },
       {
-        "event": "mushaf_opened",
-        "count": 3
+        "event": "surah_opened",
+        "count": 5
       },
       {
-        "event": "prayer_marked_done",
+        "event": "mushaf_opened",
         "count": 2
       },
       {
-        "event": "feature_opened",
+        "event": "prayer_marked_done",
         "count": 2
       },
       {
@@ -58,7 +54,7 @@
         "count": 2
       },
       {
-        "event": "Application Updated",
+        "event": "feature_opened",
         "count": 1
       }
     ]
@@ -66,6 +62,27 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "b6a3f43",
+        "msg": "docs(learnings): Play Console AD_ID declaration was stale, not a code bug",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T02:46:04Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b6a3f43ed2e741ea771568deae5811718acc0d9d"
+      },
+      {
+        "sha": "a35ffce",
+        "msg": "feat(quran-foundation): Phase 2a — translation editions list + chapter verses fetchers",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T02:44:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a35ffce6af7c2f9c7a6b24b675d545549f7ce0c2"
+      },
+      {
+        "sha": "7589111",
+        "msg": "chore(dashboard): refresh state 2026-05-11T01:27:08Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-11T01:27:08Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7589111f0232f1b51f478b21e270861fb2fc5ac5"
+      },
       {
         "sha": "cc7eb48",
         "msg": "feat(quran-foundation): Connected Apps integration scaffolding (Phase 0)",
@@ -184,27 +201,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-10T22:12:38Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9d72b3bb026e7863361773a4fc1e90761b1a4102"
-      },
-      {
-        "sha": "da8d6d6",
-        "msg": "chore(dashboard): refresh state 2026-05-10T21:25:43Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-10T21:25:43Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/da8d6d6fb2eccc2034524b28b76ad34ac427146c"
-      },
-      {
-        "sha": "9089bdf",
-        "msg": "feat(workflow): ship the full bug-to-ship pipeline (research-grounded, Claude-toolkit-driven)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T20:44:00Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9089bdf2753f56a7e1d57458fff9cf1ea217b5ad"
-      },
-      {
-        "sha": "f23972f",
-        "msg": "docs(plan): rewrite workflow-design plan with Claude-toolkit-as-team framing",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T20:29:13Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f23972f79d94be95617b4f08c59d39524641ff30"
       }
     ],
     "releases": [
@@ -238,13 +234,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25645510871,
+      "id": 25652399221,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25645510871",
-      "ranAt": "2026-05-11T01:25:59Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25652399221",
+      "ranAt": "2026-05-11T05:38:38Z",
       "durationSec": 3
     }
   },
@@ -252,31 +248,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 118,
+      "latencyMs": 317,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 142,
+      "latencyMs": 165,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 455,
+      "latencyMs": 606,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 233,
+      "latencyMs": 318,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 344,
+      "latencyMs": 499,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },

@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-11T01:27:07.140Z (just now)_
+_Last refresh: 2026-05-11T05:39:44.851Z (just now)_
 _App version: 1.7.6 (build 64)_
 
 ## Headline
@@ -34,37 +34,36 @@ _Sentry pull failed: The operation was aborted due to timeout_
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 51
-- `quran_played` — 32
-- `Application Opened` — 28
-- `Application Became Active` — 26
-- `surah_opened` — 8
-- `mushaf_opened` — 3
+- `Application Backgrounded` — 43
+- `Application Opened` — 23
+- `Application Became Active` — 20
+- `quran_played` — 8
+- `surah_opened` — 5
+- `mushaf_opened` — 2
 - `prayer_marked_done` — 2
-- `feature_opened` — 2
 - `Application Installed` — 2
-- `Application Updated` — 1
+- `feature_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `cc7eb48` — feat(quran-foundation): Connected Apps integration scaffolding (Phase 0) · 18m ago
-- `be91bd7` — feat(mushaf): design v2 Batches B-E + v1.7.6 release (single hairline, SVG lobed-oval cartouche, restrained traditional) · 26m ago
-- `9167013` — feat(mushaf): design v2 Batch A — color system (palette, 4-mode toggle, theme reads) · 45m ago
-- `b8effc0` — docs(plans): mushaf design v2 implementation plan (v1.7.6) — 5 batches, awaiting approval · 58m ago
-- `70ae6da` — fix(build): re-disable Sentry source-map auto-upload — was breaking Gradle on EAS · 1h ago
-- `b26bffa` — ci(release): revert to GitHub-secret-based credential restore · 1h ago
-- `74c73f4` — ci(release): funnel GOOGLE_PLAY_SERVICE_ACCOUNT_KEY_BASE64 secret via job-level env · 1h ago
-- `0a9e941` — fix(mushaf): wire QPC font registration + tighten Amiri layout (v1.7.5) · 1h ago
-- `a49dd06` — chore(dashboard): refresh state 2026-05-10T23:53:50Z · 2h ago
-- `6f33bd8` — docs(plans): mushaf QPC font fix + layout v2 plan (research-grounded, awaiting approval) · 2h ago
+- `b6a3f43` — docs(learnings): Play Console AD_ID declaration was stale, not a code bug · 3h ago
+- `a35ffce` — feat(quran-foundation): Phase 2a — translation editions list + chapter verses fetchers · 3h ago
+- `7589111` — chore(dashboard): refresh state 2026-05-11T01:27:08Z · 4h ago
+- `cc7eb48` — feat(quran-foundation): Connected Apps integration scaffolding (Phase 0) · 5h ago
+- `be91bd7` — feat(mushaf): design v2 Batches B-E + v1.7.6 release (single hairline, SVG lobed-oval cartouche, restrained traditional) · 5h ago
+- `9167013` — feat(mushaf): design v2 Batch A — color system (palette, 4-mode toggle, theme reads) · 5h ago
+- `b8effc0` — docs(plans): mushaf design v2 implementation plan (v1.7.6) — 5 batches, awaiting approval · 5h ago
+- `70ae6da` — fix(build): re-disable Sentry source-map auto-upload — was breaking Gradle on EAS · 5h ago
+- `b26bffa` — ci(release): revert to GitHub-secret-based credential restore · 5h ago
+- `74c73f4` — ci(release): funnel GOOGLE_PLAY_SERVICE_ACCOUNT_KEY_BASE64 secret via job-level env · 6h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 118ms
-- OK  `rawGithub` — 200 · 142ms
-- OK  `everyayah` — 200 · 455ms
-- OK  `quranicaudio` — 200 · 233ms
-- OK  `qurancdn` — 200 · 344ms
+- OK  `jsdelivr` — 200 · 317ms
+- OK  `rawGithub` — 200 · 165ms
+- OK  `everyayah` — 200 · 606ms
+- OK  `quranicaudio` — 200 · 318ms
+- OK  `qurancdn` — 200 · 499ms
 
 ## EAS update channels
 
