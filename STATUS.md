@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-11T16:00:45.536Z (just now)_
+_Last refresh: 2026-05-11T18:02:54.873Z (just now)_
 _App version: 1.7.7 (build 66)_
 
 ## Headline
@@ -37,34 +37,35 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 47
-- `Application Became Active` — 28
-- `Application Opened` — 18
-- `mushaf_opened` — 4
-- `Application Installed` — 3
-- `feature_opened` — 2
+- `Application Backgrounded` — 58
+- `Application Became Active` — 36
+- `Application Opened` — 20
+- `prayer_marked_done` — 5
+- `Application Installed` — 4
+- `mushaf_opened` — 3
+- `feature_opened` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `52f160a` — chore(dashboard): refresh state 2026-05-11T12:42:58Z · 3h ago
-- `2a4b5ae` — feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2 · 4h ago
-- `44e201a` — fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding · 5h ago
-- `2641b4d` — chore(dashboard): refresh state 2026-05-11T09:51:44Z · 6h ago
-- `52e5c05` — chore(dashboard): refresh state 2026-05-11T05:39:46Z · 10h ago
-- `b6a3f43` — docs(learnings): Play Console AD_ID declaration was stale, not a code bug · 13h ago
-- `a35ffce` — feat(quran-foundation): Phase 2a — translation editions list + chapter verses fetchers · 13h ago
-- `7589111` — chore(dashboard): refresh state 2026-05-11T01:27:08Z · 15h ago
-- `cc7eb48` — feat(quran-foundation): Connected Apps integration scaffolding (Phase 0) · 15h ago
-- `be91bd7` — feat(mushaf): design v2 Batches B-E + v1.7.6 release (single hairline, SVG lobed-oval cartouche, restrained traditional) · 15h ago
+- `7ef76c7` — chore(dashboard): refresh state 2026-05-11T16:00:47Z · 2h ago
+- `52f160a` — chore(dashboard): refresh state 2026-05-11T12:42:58Z · 5h ago
+- `2a4b5ae` — feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2 · 6h ago
+- `44e201a` — fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding · 7h ago
+- `2641b4d` — chore(dashboard): refresh state 2026-05-11T09:51:44Z · 8h ago
+- `52e5c05` — chore(dashboard): refresh state 2026-05-11T05:39:46Z · 12h ago
+- `b6a3f43` — docs(learnings): Play Console AD_ID declaration was stale, not a code bug · 15h ago
+- `a35ffce` — feat(quran-foundation): Phase 2a — translation editions list + chapter verses fetchers · 15h ago
+- `7589111` — chore(dashboard): refresh state 2026-05-11T01:27:08Z · 17h ago
+- `cc7eb48` — feat(quran-foundation): Connected Apps integration scaffolding (Phase 0) · 17h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 479ms
-- OK  `rawGithub` — 200 · 302ms
-- OK  `everyayah` — 200 · 499ms
-- OK  `quranicaudio` — 200 · 351ms
-- OK  `qurancdn` — 200 · 402ms
+- OK  `jsdelivr` — 200 · 178ms
+- OK  `rawGithub` — 200 · 200ms
+- OK  `everyayah` — 200 · 503ms
+- OK  `quranicaudio` — 200 · 411ms
+- OK  `qurancdn` — 200 · 409ms
 
 ## EAS update channels
 
