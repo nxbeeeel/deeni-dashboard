@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-11T21:51:07.365Z (just now)_
+_Last refresh: 2026-05-11T23:00:01.326Z (just now)_
 _App version: 1.7.7 (build 66)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.7.7 (build 66)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **12** |
+| DAU | **13** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -37,35 +37,35 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 56
-- `Application Became Active` — 34
-- `Application Opened` — 20
+- `Application Backgrounded` — 63
+- `Application Became Active` — 38
+- `Application Opened` — 22
+- `Application Installed` — 6
 - `prayer_marked_done` — 5
-- `Application Installed` — 5
-- `mushaf_opened` — 3
+- `mushaf_opened` — 4
 - `feature_opened` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `40f0e4e` — chore(dashboard): refresh state 2026-05-11T20:19:26Z · 2h ago
-- `5dc0021` — chore(dashboard): refresh state 2026-05-11T18:02:57Z · 4h ago
-- `7ef76c7` — chore(dashboard): refresh state 2026-05-11T16:00:47Z · 6h ago
-- `52f160a` — chore(dashboard): refresh state 2026-05-11T12:42:58Z · 9h ago
-- `2a4b5ae` — feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2 · 10h ago
-- `44e201a` — fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding · 11h ago
-- `2641b4d` — chore(dashboard): refresh state 2026-05-11T09:51:44Z · 12h ago
-- `52e5c05` — chore(dashboard): refresh state 2026-05-11T05:39:46Z · 16h ago
-- `b6a3f43` — docs(learnings): Play Console AD_ID declaration was stale, not a code bug · 19h ago
-- `a35ffce` — feat(quran-foundation): Phase 2a — translation editions list + chapter verses fetchers · 19h ago
+- `d94a853` — chore(dashboard): refresh state 2026-05-11T21:51:09Z · 1h ago
+- `40f0e4e` — chore(dashboard): refresh state 2026-05-11T20:19:26Z · 3h ago
+- `5dc0021` — chore(dashboard): refresh state 2026-05-11T18:02:57Z · 5h ago
+- `7ef76c7` — chore(dashboard): refresh state 2026-05-11T16:00:47Z · 7h ago
+- `52f160a` — chore(dashboard): refresh state 2026-05-11T12:42:58Z · 10h ago
+- `2a4b5ae` — feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2 · 11h ago
+- `44e201a` — fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding · 12h ago
+- `2641b4d` — chore(dashboard): refresh state 2026-05-11T09:51:44Z · 13h ago
+- `52e5c05` — chore(dashboard): refresh state 2026-05-11T05:39:46Z · 17h ago
+- `b6a3f43` — docs(learnings): Play Console AD_ID declaration was stale, not a code bug · 20h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 164ms
-- OK  `rawGithub` — 200 · 296ms
-- OK  `everyayah` — 200 · 475ms
-- OK  `quranicaudio` — 200 · 353ms
-- OK  `qurancdn` — 200 · 376ms
+- OK  `jsdelivr` — 200 · 176ms
+- OK  `rawGithub` — 200 · 186ms
+- OK  `everyayah` — 200 · 643ms
+- OK  `quranicaudio` — 200 · 452ms
+- OK  `qurancdn` — 200 · 461ms
 
 ## EAS update channels
 
