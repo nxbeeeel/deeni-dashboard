@@ -1,19 +1,19 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-10T23:53:48.558Z (just now)_
-_App version: 1.7.4 (build 60)_
+_Last refresh: 2026-05-11T01:27:07.140Z (just now)_
+_App version: 1.7.6 (build 64)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **100.00%** |
-| DAU | **12** |
+| Crash-free (24h) | **—** |
+| DAU | **11** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
 | Last production deploy | **—** (unknown) |
-| Last CI on main | **failure** |
+| Last CI on main | **in_progress** |
 | Active alerts | **0** |
 
 ## Open bugs (`triage`)
@@ -30,44 +30,41 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 6d ago
-- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 9d ago
-- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 3d ago
-- REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 25d ago
+_Sentry pull failed: The operation was aborted due to timeout_
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 57
-- `Application Became Active` — 33
+- `Application Backgrounded` — 51
 - `quran_played` — 32
 - `Application Opened` — 28
+- `Application Became Active` — 26
 - `surah_opened` — 8
-- `feature_opened` — 6
-- `Application Installed` — 4
 - `mushaf_opened` — 3
-- `prayer_marked_done` — 3
+- `prayer_marked_done` — 2
+- `feature_opened` — 2
+- `Application Installed` — 2
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `6f33bd8` — docs(plans): mushaf QPC font fix + layout v2 plan (research-grounded, awaiting approval) · 1m ago
-- `1add368` — feat(ci): auto-upload per-locale release notes to Play Console on tag push · 14m ago
-- `85352a7` — ci(release): use EAS-stored credentials, remove GitHub-secret-based key restore · 18m ago
-- `1aa7439` — chore(dashboard): refresh state 2026-05-10T23:29:15Z · 25m ago
-- `5b7e438` — feat(ops): wire Sentry source map upload + release markers via @sentry/react-native plugin · 25m ago
-- `d6f04bb` — chore: bump version to 1.7.4 (lock-screen audio fix on Android 14+) · 42m ago
-- `2117663` — ci: disable broken auto-OTA-on-master-push (conflicts with staged-rollout policy) · 54m ago
-- `9d72b3b` — chore(dashboard): refresh state 2026-05-10T22:12:38Z · 2h ago
-- `da8d6d6` — chore(dashboard): refresh state 2026-05-10T21:25:43Z · 2h ago
-- `9089bdf` — feat(workflow): ship the full bug-to-ship pipeline (research-grounded, Claude-toolkit-driven) · 3h ago
+- `cc7eb48` — feat(quran-foundation): Connected Apps integration scaffolding (Phase 0) · 18m ago
+- `be91bd7` — feat(mushaf): design v2 Batches B-E + v1.7.6 release (single hairline, SVG lobed-oval cartouche, restrained traditional) · 26m ago
+- `9167013` — feat(mushaf): design v2 Batch A — color system (palette, 4-mode toggle, theme reads) · 45m ago
+- `b8effc0` — docs(plans): mushaf design v2 implementation plan (v1.7.6) — 5 batches, awaiting approval · 58m ago
+- `70ae6da` — fix(build): re-disable Sentry source-map auto-upload — was breaking Gradle on EAS · 1h ago
+- `b26bffa` — ci(release): revert to GitHub-secret-based credential restore · 1h ago
+- `74c73f4` — ci(release): funnel GOOGLE_PLAY_SERVICE_ACCOUNT_KEY_BASE64 secret via job-level env · 1h ago
+- `0a9e941` — fix(mushaf): wire QPC font registration + tighten Amiri layout (v1.7.5) · 1h ago
+- `a49dd06` — chore(dashboard): refresh state 2026-05-10T23:53:50Z · 2h ago
+- `6f33bd8` — docs(plans): mushaf QPC font fix + layout v2 plan (research-grounded, awaiting approval) · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 185ms
-- OK  `rawGithub` — 200 · 338ms
-- OK  `everyayah` — 200 · 632ms
-- OK  `quranicaudio` — 200 · 439ms
-- OK  `qurancdn` — 200 · 443ms
+- OK  `jsdelivr` — 200 · 118ms
+- OK  `rawGithub` — 200 · 142ms
+- OK  `everyayah` — 200 · 455ms
+- OK  `quranicaudio` — 200 · 233ms
+- OK  `qurancdn` — 200 · 344ms
 
 ## EAS update channels
 
@@ -98,3 +95,7 @@ _None._
   FlatList perf: extracted `SurahListItem` as top-level `memo()` component, `renderItem` and handlers wrapped in `useCallback`, `ListHeaderComponent` JSX moved into `useMemo`, fixed `directAyahMatch` raw-const dep that busted `filteredSurahs` memo every render. `[surah].tsx`: `loadVerses` useCallback with correct deps, `renderItem` useCallback, `ListFooterComponent` useMemo, all bookmark handlers memoized. `mushaf.tsx`: `pageTitle`, `currentVerseKey`, `gridSlots`, `panResponder` useMemo. Then second pass: extracted 5 inline style array literals from inside `SurahListItem` body to defeat shallow-comparison bypass; removed unused `width` dep from `panResponder` deps array. Final pass: `[surah].tsx` switched from full-store destructure to 5 sliced `useAudioStore(s => ...)` selectors so the screen doesn't re-render 10×/sec under Task 9's faster tick rate.
 - 2026-05-10 — Reciter URL audit (full-surah mode) (`a09f6ea`)
   Live-tested all reciter URLs against quranicaudio.com/qdc CDN. 5 wrong slugs corrected (Husary murattal, Husary muallim, Minshawy murattal, Abu Bakr Shatri, Yasser Ad-Dussary). 15 reciters had no QDC entry — `fullSurahSlug` removed from those entries; they fall back cleanly to per-ayah everyayah.com (all per-ayah URLs tested clean). All 25 reciters preserved in the array.
+
+## Refresh errors
+
+- **sentry** — The operation was aborted due to timeout

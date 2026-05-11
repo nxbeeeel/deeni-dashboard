@@ -1,95 +1,29 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-10T23:53:48.558Z",
-  "appVersion": "1.7.4",
-  "buildNumber": 60,
+  "refreshedAt": "2026-05-11T01:27:07.140Z",
+  "appVersion": "1.7.6",
+  "buildNumber": 64,
   "sentry": {
-    "healthy": true,
-    "crashFree": 100,
-    "crashFreeTrend7d": [
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100
-    ],
-    "openIssuesCount": 4,
-    "topIssues": [
-      {
-        "id": "7406195421",
-        "shortId": "REACT-NATIVE-3",
-        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 8,
-        "events1h": null,
-        "users24h": 6,
-        "lastSeen": "2026-05-05T08:33:22.908000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
-        "release": null
-      },
-      {
-        "id": "7434752222",
-        "shortId": "REACT-NATIVE-5",
-        "title": "Error: Call to function 'NativeDatabase.prepareSync' has been rejected.",
-        "events24h": 6,
-        "events1h": null,
-        "users24h": 4,
-        "lastSeen": "2026-05-02T01:33:14.746000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7434752222/",
-        "release": null
-      },
-      {
-        "id": "7466361903",
-        "shortId": "REACT-NATIVE-6",
-        "title": "App Hanging: App hanging for at least 2000 ms.",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-07T20:21:35.247189Z",
-        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
-        "release": null
-      },
-      {
-        "id": "7416393538",
-        "shortId": "REACT-NATIVE-4",
-        "title": "RuntimeException: android.os.DeadSystemException",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-04-16T07:13:59.484000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7416393538/",
-        "release": null
-      }
-    ],
-    "latestRelease": {
-      "version": "in.deen.app@1.7.4+60",
-      "newGroups": 0,
-      "sessions": null
-    }
+    "healthy": false,
+    "error": "The operation was aborted due to timeout"
   },
   "posthog": {
     "healthy": true,
-    "dau": 12,
+    "dau": 11,
     "dauTrend7d": [
-      1,
       11,
       9,
       14,
       13,
       10,
       14,
-      12
+      12,
+      3
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 57
-      },
-      {
-        "event": "Application Became Active",
-        "count": 33
+        "count": 51
       },
       {
         "event": "quran_played",
@@ -100,16 +34,12 @@
         "count": 28
       },
       {
+        "event": "Application Became Active",
+        "count": 26
+      },
+      {
         "event": "surah_opened",
         "count": 8
-      },
-      {
-        "event": "feature_opened",
-        "count": 6
-      },
-      {
-        "event": "Application Installed",
-        "count": 4
       },
       {
         "event": "mushaf_opened",
@@ -117,7 +47,15 @@
       },
       {
         "event": "prayer_marked_done",
-        "count": 3
+        "count": 2
+      },
+      {
+        "event": "feature_opened",
+        "count": 2
+      },
+      {
+        "event": "Application Installed",
+        "count": 2
       },
       {
         "event": "Application Updated",
@@ -128,6 +66,69 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "cc7eb48",
+        "msg": "feat(quran-foundation): Connected Apps integration scaffolding (Phase 0)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T01:09:07Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/cc7eb48ddd743457baeea12471239dda6c9d80c7"
+      },
+      {
+        "sha": "be91bd7",
+        "msg": "feat(mushaf): design v2 Batches B-E + v1.7.6 release (single hairline, SVG lobed-oval cartouche, restrained traditional)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T01:00:41Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/be91bd7c55248669f23c925cba75ac86b7f11a23"
+      },
+      {
+        "sha": "9167013",
+        "msg": "feat(mushaf): design v2 Batch A — color system (palette, 4-mode toggle, theme reads)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T00:41:47Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/916701305ad791c4007514cab33c433a2a3046f4"
+      },
+      {
+        "sha": "b8effc0",
+        "msg": "docs(plans): mushaf design v2 implementation plan (v1.7.6) — 5 batches, awaiting approval",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T00:28:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b8effc0d26b22de33de67755ddcab01168329600"
+      },
+      {
+        "sha": "70ae6da",
+        "msg": "fix(build): re-disable Sentry source-map auto-upload — was breaking Gradle on EAS",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T00:17:58Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/70ae6dadbb84b896fbe4dcfc0ca8b5068c7b2fc2"
+      },
+      {
+        "sha": "b26bffa",
+        "msg": "ci(release): revert to GitHub-secret-based credential restore",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T00:12:25Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b26bffa27e88c8191453ee4a1a84173909c5e8c7"
+      },
+      {
+        "sha": "74c73f4",
+        "msg": "ci(release): funnel GOOGLE_PLAY_SERVICE_ACCOUNT_KEY_BASE64 secret via job-level env",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T00:07:40Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/74c73f4fb36a12fef068605847e04f827e060af6"
+      },
+      {
+        "sha": "0a9e941",
+        "msg": "fix(mushaf): wire QPC font registration + tighten Amiri layout (v1.7.5)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-05-11T00:03:30Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0a9e9411712722d104f4c3ce395bddf2e0562503"
+      },
+      {
+        "sha": "a49dd06",
+        "msg": "chore(dashboard): refresh state 2026-05-10T23:53:50Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-10T23:53:50Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a49dd06d1ab30502bb0aaca17e0bd33d745549d2"
+      },
       {
         "sha": "6f33bd8",
         "msg": "docs(plans): mushaf QPC font fix + layout v2 plan (research-grounded, awaiting approval)",
@@ -204,69 +205,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-10T20:29:13Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f23972f79d94be95617b4f08c59d39524641ff30"
-      },
-      {
-        "sha": "f2e3d10",
-        "msg": "docs: research-grounded plan for the bug-to-ship workflow",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T20:18:14Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f2e3d1054c7eb4fa4807cc12f9833fac273be22f"
-      },
-      {
-        "sha": "2af4f7c",
-        "msg": "chore(dashboard): refresh state 2026-05-10T20:01:09Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-10T20:01:09Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2af4f7cb62e007882cfc381faabfa5c4398a3e76"
-      },
-      {
-        "sha": "b5d28ae",
-        "msg": "docs(engineering): bug-to-ship workflow + /triage slash command",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:52:15Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b5d28ae045bdfe1b45664748797e3a024c8ea844"
-      },
-      {
-        "sha": "4367696",
-        "msg": "chore(dashboard): refresh state 2026-05-10T19:42:50Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-10T19:42:50Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/43676967de13ab5eb8fa854d12ebea33fd3169f7"
-      },
-      {
-        "sha": "033cbbe",
-        "msg": "chore(bugs): audit FIELD_NOTES — close 13 stale entries, keep 3 actually-open",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:41:25Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/033cbbed4ca3133d694f18e032ef8210b2f1eb80"
-      },
-      {
-        "sha": "e151abd",
-        "msg": "docs(strategy): addendum — both stores already live ~2 weeks, ~200 users",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:37:14Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e151abdf3f117a1463e8cbd3b02e7af08d637977"
-      },
-      {
-        "sha": "6b2e334",
-        "msg": "docs(worklog): v1.7.3 audio hotfix + 6-part engineering uplift entries",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:29:59Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6b2e3342d60d88156e5fa6071db95e0ba8a52273"
-      },
-      {
-        "sha": "09ecc3b",
-        "msg": "docs(strategy): Q3 2026 thinking memo — 3 product moves ranked by leverage",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:29:18Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/09ecc3b8da68b31e0c6eed3d76a50bfeee9c4501"
-      },
-      {
-        "sha": "72efb4c",
-        "msg": "feat(claude): wire /ship slash command + typecheck-on-edit hook + plugin checklist",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-10T19:26:37Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/72efb4cb8e4eb9cfe0041dd474a0b44c1cbf9b82"
       }
     ],
     "releases": [
@@ -300,45 +238,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25643233354,
-      "workflow": ".github/workflows/release.yml",
-      "status": "completed",
-      "conclusion": "failure",
+      "id": 25645510871,
+      "workflow": "Dashboard Refresh",
+      "status": "in_progress",
+      "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25643233354",
-      "ranAt": "2026-05-10T23:52:39Z",
-      "durationSec": 0
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25645510871",
+      "ranAt": "2026-05-11T01:25:59Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 185,
+      "latencyMs": 118,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 338,
+      "latencyMs": 142,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 632,
+      "latencyMs": 455,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 439,
+      "latencyMs": 233,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 443,
+      "latencyMs": 344,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -488,7 +426,12 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [],
+  "errors": [
+    {
+      "source": "sentry",
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
   "alerts": {
     "active": [],
     "fired": {},
