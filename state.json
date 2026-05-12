@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-12T10:06:33.288Z",
+  "refreshedAt": "2026-05-12T12:26:30.917Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
     "healthy": true,
-    "crashFree": 97.92,
+    "crashFree": 97.96,
     "crashFreeTrend7d": [
       100,
       100,
@@ -14,7 +14,7 @@
       100,
       100,
       100,
-      91.67
+      93.33
     ],
     "openIssuesCount": 5,
     "topIssues": [
@@ -82,29 +82,29 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 12,
+    "dau": 11,
     "dauTrend7d": [
-      5,
+      4,
       14,
       13,
       10,
       14,
       12,
       14,
-      3
+      4
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 65
+        "count": 60
       },
       {
         "event": "Application Became Active",
-        "count": 44
+        "count": 38
       },
       {
         "event": "Application Opened",
-        "count": 22
+        "count": 24
       },
       {
         "event": "prayer_marked_done",
@@ -131,6 +131,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "37b81f8",
+        "msg": "chore(dashboard): refresh state 2026-05-12T10:06:34Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-12T10:06:34Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/37b81f849b4181c9226aa10d1de6beffeedcccfa"
+      },
       {
         "sha": "8a0832e",
         "msg": "chore(dashboard): refresh state 2026-05-12T07:24:54Z",
@@ -263,13 +270,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-11T00:41:47Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/916701305ad791c4007514cab33c433a2a3046f4"
-      },
-      {
-        "sha": "b8effc0",
-        "msg": "docs(plans): mushaf design v2 implementation plan (v1.7.6) — 5 batches, awaiting approval",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-11T00:28:38Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b8effc0d26b22de33de67755ddcab01168329600"
       }
     ],
     "releases": [
@@ -303,45 +303,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25727593419,
+      "id": 25734244440,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25727593419",
-      "ranAt": "2026-05-12T10:05:17Z",
-      "durationSec": 12
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25734244440",
+      "ranAt": "2026-05-12T12:25:12Z",
+      "durationSec": 14
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 159,
+      "latencyMs": 216,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 332,
+      "latencyMs": 225,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 412,
+      "latencyMs": 606,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 289,
+      "latencyMs": 195,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 337,
+      "latencyMs": 200,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -497,13 +497,13 @@
       {
         "id": "A1:24h-crashfree",
         "severity": "high",
-        "title": "Crash-free dipped to 97.92%",
+        "title": "Crash-free dipped to 97.96%",
         "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7.",
-        "firedAt": "2026-05-12T04:25:16.840Z"
+        "firedAt": "2026-05-12T12:26:30.918Z"
       }
     ],
     "fired": {
-      "A1:24h-crashfree": 1778559916840
+      "A1:24h-crashfree": 1778588790918
     },
     "recent": []
   }
