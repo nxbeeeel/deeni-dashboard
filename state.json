@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-12T00:07:48.197Z",
+  "refreshedAt": "2026-05-12T04:25:16.839Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
     "healthy": true,
-    "crashFree": 100,
+    "crashFree": 97.94,
     "crashFreeTrend7d": [
       100,
       100,
@@ -14,9 +14,9 @@
       100,
       100,
       100,
-      null
+      90
     ],
-    "openIssuesCount": 4,
+    "openIssuesCount": 5,
     "topIssues": [
       {
         "id": "7406195421",
@@ -38,6 +38,17 @@
         "users24h": 4,
         "lastSeen": "2026-05-02T01:33:14.746000Z",
         "url": "https://beloop-1t.sentry.io/issues/7434752222/",
+        "release": null
+      },
+      {
+        "id": "7474927477",
+        "shortId": "REACT-NATIVE-7",
+        "title": "RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-12T00:40:27.929000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7474927477/",
         "release": null
       },
       {
@@ -71,20 +82,21 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 14,
+    "dau": 12,
     "dauTrend7d": [
-      9,
+      7,
       14,
       13,
       10,
       14,
       12,
-      14
+      14,
+      2
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 66
+        "count": 64
       },
       {
         "event": "Application Became Active",
@@ -92,18 +104,18 @@
       },
       {
         "event": "Application Opened",
-        "count": 24
+        "count": 22
       },
       {
         "event": "prayer_marked_done",
         "count": 6
       },
       {
-        "event": "Application Installed",
-        "count": 6
+        "event": "mushaf_opened",
+        "count": 4
       },
       {
-        "event": "mushaf_opened",
+        "event": "Application Installed",
         "count": 4
       },
       {
@@ -119,6 +131,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "5a020ef",
+        "msg": "chore(dashboard): refresh state 2026-05-12T00:07:49Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-12T00:07:49Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5a020efe2d530aaddb629f490599a446865e97b3"
+      },
       {
         "sha": "f8098bd",
         "msg": "chore(dashboard): refresh state 2026-05-11T23:00:03Z",
@@ -251,13 +270,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-11T00:12:25Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b26bffa27e88c8191453ee4a1a84173909c5e8c7"
-      },
-      {
-        "sha": "74c73f4",
-        "msg": "ci(release): funnel GOOGLE_PLAY_SERVICE_ACCOUNT_KEY_BASE64 secret via job-level env",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-11T00:07:40Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/74c73f4fb36a12fef068605847e04f827e060af6"
       }
     ],
     "releases": [
@@ -291,45 +303,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25704812974,
+      "id": 25713236030,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25704812974",
-      "ranAt": "2026-05-12T00:06:33Z",
-      "durationSec": 11
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25713236030",
+      "ranAt": "2026-05-12T04:23:59Z",
+      "durationSec": 13
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 129,
+      "latencyMs": 251,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 157,
+      "latencyMs": 440,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
-      "status": 200,
-      "latencyMs": 460,
+      "status": 206,
+      "latencyMs": 1012,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 250,
+      "latencyMs": 421,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 384,
+      "latencyMs": 420,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -481,8 +493,18 @@
   "fieldNotes": [],
   "errors": [],
   "alerts": {
-    "active": [],
-    "fired": {},
+    "active": [
+      {
+        "id": "A1:24h-crashfree",
+        "severity": "high",
+        "title": "Crash-free dipped to 97.94%",
+        "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7.",
+        "firedAt": "2026-05-12T04:25:16.840Z"
+      }
+    ],
+    "fired": {
+      "A1:24h-crashfree": 1778559916840
+    },
     "recent": []
   }
 }
