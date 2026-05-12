@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-12T07:24:53.161Z (just now)_
+_Last refresh: 2026-05-12T10:06:33.288Z (just now)_
 _App version: 1.7.7 (build 66)_
 
 ## Headline
@@ -37,15 +37,15 @@ _None._
 
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 6 users · last 7d ago
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 10d ago
-- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 7h ago
-- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 4d ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 9h ago
+- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 5d ago
 - REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 26d ago
 
 ## PostHog — top events (24h)
 
 - `Application Backgrounded` — 65
 - `Application Became Active` — 44
-- `Application Opened` — 23
+- `Application Opened` — 22
 - `prayer_marked_done` — 6
 - `mushaf_opened` — 4
 - `Application Installed` — 4
@@ -54,24 +54,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `e90650e` — chore(dashboard): refresh state 2026-05-12T04:25:18Z · 3h ago
-- `5a020ef` — chore(dashboard): refresh state 2026-05-12T00:07:49Z · 7h ago
-- `f8098bd` — chore(dashboard): refresh state 2026-05-11T23:00:03Z · 8h ago
-- `d94a853` — chore(dashboard): refresh state 2026-05-11T21:51:09Z · 10h ago
-- `40f0e4e` — chore(dashboard): refresh state 2026-05-11T20:19:26Z · 11h ago
-- `5dc0021` — chore(dashboard): refresh state 2026-05-11T18:02:57Z · 13h ago
-- `7ef76c7` — chore(dashboard): refresh state 2026-05-11T16:00:47Z · 15h ago
-- `52f160a` — chore(dashboard): refresh state 2026-05-11T12:42:58Z · 19h ago
-- `2a4b5ae` — feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2 · 20h ago
-- `44e201a` — fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding · 20h ago
+- `8a0832e` — chore(dashboard): refresh state 2026-05-12T07:24:54Z · 3h ago
+- `e90650e` — chore(dashboard): refresh state 2026-05-12T04:25:18Z · 6h ago
+- `5a020ef` — chore(dashboard): refresh state 2026-05-12T00:07:49Z · 10h ago
+- `f8098bd` — chore(dashboard): refresh state 2026-05-11T23:00:03Z · 11h ago
+- `d94a853` — chore(dashboard): refresh state 2026-05-11T21:51:09Z · 12h ago
+- `40f0e4e` — chore(dashboard): refresh state 2026-05-11T20:19:26Z · 14h ago
+- `5dc0021` — chore(dashboard): refresh state 2026-05-11T18:02:57Z · 16h ago
+- `7ef76c7` — chore(dashboard): refresh state 2026-05-11T16:00:47Z · 18h ago
+- `52f160a` — chore(dashboard): refresh state 2026-05-11T12:42:58Z · 21h ago
+- `2a4b5ae` — feat(mushaf-v2): Stage 1 — per-page font loader for QF CDN woff2 hafs v2 · 22h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 310ms
-- OK  `rawGithub` — 200 · 199ms
-- OK  `everyayah` — 200 · 486ms
-- OK  `quranicaudio` — 200 · 340ms
-- OK  `qurancdn` — 200 · 425ms
+- OK  `jsdelivr` — 200 · 159ms
+- OK  `rawGithub` — 200 · 332ms
+- OK  `everyayah` — 200 · 412ms
+- OK  `quranicaudio` — 200 · 289ms
+- OK  `qurancdn` — 200 · 337ms
 
 ## EAS update channels
 
