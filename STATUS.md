@@ -1,13 +1,13 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-12T20:01:08.318Z (just now)_
+_Last refresh: 2026-05-12T21:37:50.980Z (just now)_
 _App version: 1.7.7 (build 66)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **96.72%** |
+| Crash-free (24h) | **97.10%** |
 | DAU | **10** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
@@ -18,7 +18,7 @@ _App version: 1.7.7 (build 66)_
 
 ## Active alerts
 
-- **HIGH** — Crash-free dipped to 96.72%  
+- **HIGH** — Crash-free dipped to 97.10%  
   _Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7._  _id: `A1:24h-crashfree`_
 
 ## Open bugs (`triage`)
@@ -35,44 +35,44 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 5 users · last 7d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 5 users · last 8d ago
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 11d ago
-- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 19h ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 21h ago
 - REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 5d ago
 - REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 27d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 38
-- `Application Opened` — 26
-- `Application Became Active` — 18
-- `prayer_marked_done` — 8
-- `feature_opened` — 3
-- `Application Installed` — 3
+- `Application Backgrounded` — 54
+- `Application Became Active` — 34
+- `prayer_marked_done` — 29
+- `Application Opened` — 27
+- `feature_opened` — 4
+- `Application Installed` — 4
 - `Application Updated` — 3
 - `mushaf_opened` — 1
 - `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `b9a3ac2` — chore(dashboard): refresh state 2026-05-12T17:34:48Z · 2h ago
-- `4ab2611` — chore(dashboard): refresh state 2026-05-12T15:24:19Z · 5h ago
-- `afc9bb7` — chore(dashboard): refresh state 2026-05-12T12:26:32Z · 8h ago
-- `37b81f8` — chore(dashboard): refresh state 2026-05-12T10:06:34Z · 10h ago
-- `8a0832e` — chore(dashboard): refresh state 2026-05-12T07:24:54Z · 13h ago
-- `e90650e` — chore(dashboard): refresh state 2026-05-12T04:25:18Z · 16h ago
-- `5a020ef` — chore(dashboard): refresh state 2026-05-12T00:07:49Z · 20h ago
-- `f8098bd` — chore(dashboard): refresh state 2026-05-11T23:00:03Z · 21h ago
-- `d94a853` — chore(dashboard): refresh state 2026-05-11T21:51:09Z · 22h ago
-- `40f0e4e` — chore(dashboard): refresh state 2026-05-11T20:19:26Z · 1d ago
+- `b29cab0` — chore(dashboard): refresh state 2026-05-12T20:01:09Z · 2h ago
+- `b9a3ac2` — chore(dashboard): refresh state 2026-05-12T17:34:48Z · 4h ago
+- `4ab2611` — chore(dashboard): refresh state 2026-05-12T15:24:19Z · 6h ago
+- `afc9bb7` — chore(dashboard): refresh state 2026-05-12T12:26:32Z · 9h ago
+- `37b81f8` — chore(dashboard): refresh state 2026-05-12T10:06:34Z · 12h ago
+- `8a0832e` — chore(dashboard): refresh state 2026-05-12T07:24:54Z · 14h ago
+- `e90650e` — chore(dashboard): refresh state 2026-05-12T04:25:18Z · 17h ago
+- `5a020ef` — chore(dashboard): refresh state 2026-05-12T00:07:49Z · 22h ago
+- `f8098bd` — chore(dashboard): refresh state 2026-05-11T23:00:03Z · 23h ago
+- `d94a853` — chore(dashboard): refresh state 2026-05-11T21:51:09Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 135ms
-- OK  `rawGithub` — 200 · 144ms
-- OK  `everyayah` — 200 · 434ms
-- OK  `quranicaudio` — 200 · 262ms
-- OK  `qurancdn` — 200 · 325ms
+- OK  `jsdelivr` — 200 · 433ms
+- OK  `rawGithub` — 200 · 166ms
+- OK  `everyayah` — 200 · 569ms
+- OK  `quranicaudio` — 200 · 120ms
+- OK  `qurancdn` — 200 · 170ms
 
 ## EAS update channels
 
