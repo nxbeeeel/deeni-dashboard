@@ -1,15 +1,88 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-12T15:24:18.033Z",
+  "refreshedAt": "2026-05-12T17:34:46.958Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "crashFree": 96.97,
+    "crashFreeTrend7d": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      95.12
+    ],
+    "openIssuesCount": 5,
+    "topIssues": [
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 8,
+        "events1h": null,
+        "users24h": 5,
+        "lastSeen": "2026-05-05T08:33:22.908000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      },
+      {
+        "id": "7434752222",
+        "shortId": "REACT-NATIVE-5",
+        "title": "Error: Call to function 'NativeDatabase.prepareSync' has been rejected.",
+        "events24h": 6,
+        "events1h": null,
+        "users24h": 4,
+        "lastSeen": "2026-05-02T01:33:14.746000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7434752222/",
+        "release": null
+      },
+      {
+        "id": "7474927477",
+        "shortId": "REACT-NATIVE-7",
+        "title": "RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-12T00:40:27.929000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7474927477/",
+        "release": null
+      },
+      {
+        "id": "7466361903",
+        "shortId": "REACT-NATIVE-6",
+        "title": "App Hanging: App hanging for at least 2000 ms.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-07T20:21:35.247189Z",
+        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
+        "release": null
+      },
+      {
+        "id": "7416393538",
+        "shortId": "REACT-NATIVE-4",
+        "title": "RuntimeException: android.os.DeadSystemException",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-04-16T07:13:59.484000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7416393538/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app@1.7.7+66",
+      "newGroups": 0,
+      "sessions": null
+    }
   },
   "posthog": {
     "healthy": true,
-    "dau": 11,
+    "dau": 10,
     "dauTrend7d": [
       4,
       14,
@@ -23,23 +96,23 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 43
-      },
-      {
-        "event": "Application Became Active",
-        "count": 26
+        "count": 39
       },
       {
         "event": "Application Opened",
-        "count": 24
+        "count": 26
+      },
+      {
+        "event": "Application Became Active",
+        "count": 20
       },
       {
         "event": "prayer_marked_done",
-        "count": 13
+        "count": 8
       },
       {
         "event": "Application Installed",
-        "count": 5
+        "count": 4
       },
       {
         "event": "feature_opened",
@@ -62,6 +135,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "4ab2611",
+        "msg": "chore(dashboard): refresh state 2026-05-12T15:24:19Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-12T15:24:19Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4ab2611a88aee95c7af7f7ed5b0b125eff7b20ee"
+      },
       {
         "sha": "afc9bb7",
         "msg": "chore(dashboard): refresh state 2026-05-12T12:26:32Z",
@@ -194,13 +274,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-11T01:09:07Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/cc7eb48ddd743457baeea12471239dda6c9d80c7"
-      },
-      {
-        "sha": "be91bd7",
-        "msg": "feat(mushaf): design v2 Batches B-E + v1.7.6 release (single hairline, SVG lobed-oval cartouche, restrained traditional)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-11T01:00:41Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/be91bd7c55248669f23c925cba75ac86b7f11a23"
       }
     ],
     "releases": [
@@ -234,45 +307,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25744242436,
+      "id": 25751295110,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25744242436",
-      "ranAt": "2026-05-12T15:23:02Z",
-      "durationSec": 12
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25751295110",
+      "ranAt": "2026-05-12T17:33:38Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 156,
+      "latencyMs": 250,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 215,
+      "latencyMs": 211,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 480,
+      "latencyMs": 545,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 325,
+      "latencyMs": 255,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 338,
+      "latencyMs": 296,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -422,14 +495,17 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "sentry",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "errors": [],
   "alerts": {
-    "active": [],
+    "active": [
+      {
+        "id": "A1:24h-crashfree",
+        "severity": "high",
+        "title": "Crash-free dipped to 96.97%",
+        "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7.",
+        "firedAt": "2026-05-12T12:26:30.918Z"
+      }
+    ],
     "fired": {
       "A1:24h-crashfree": 1778588790918
     },
