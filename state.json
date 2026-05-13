@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-13T08:17:10.546Z",
+  "refreshedAt": "2026-05-13T11:10:14.832Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
@@ -82,21 +82,25 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 9,
+    "dau": 10,
     "dauTrend7d": [
-      13,
+      10,
       13,
       10,
       14,
       12,
       14,
       9,
-      4
+      6
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 47
+        "count": 67
+      },
+      {
+        "event": "Application Became Active",
+        "count": 45
       },
       {
         "event": "prayer_marked_done",
@@ -104,33 +108,36 @@
       },
       {
         "event": "Application Opened",
-        "count": 25
-      },
-      {
-        "event": "Application Became Active",
         "count": 24
       },
       {
         "event": "feature_opened",
-        "count": 4
+        "count": 5
       },
       {
         "event": "Application Installed",
+        "count": 5
+      },
+      {
+        "event": "surah_opened",
         "count": 4
       },
       {
         "event": "Application Updated",
         "count": 2
-      },
-      {
-        "event": "surah_opened",
-        "count": 1
       }
     ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "faef8a0",
+        "msg": "chore(dashboard): refresh state 2026-05-13T08:17:11Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-13T08:17:11Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/faef8a06a2f257ec13ec050a2afda917589aeab9"
+      },
       {
         "sha": "16b6590",
         "msg": "chore(dashboard): refresh state 2026-05-13T05:13:56Z",
@@ -263,13 +270,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-11T11:38:59Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2a4b5ae2c4045dd7d93ce56833654e0886887c53"
-      },
-      {
-        "sha": "44e201a",
-        "msg": "fix(mushaf): v1.7.7 hot fix — cartouche overflow + Fatihah font size + padding",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-11T10:59:19Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/44e201ac2de762a280693713c626ee492f17500d"
       }
     ],
     "releases": [
@@ -303,45 +303,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25787038493,
+      "id": 25795322586,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25787038493",
-      "ranAt": "2026-05-13T08:16:03Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25795322586",
+      "ranAt": "2026-05-13T11:08:59Z",
+      "durationSec": 11
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 381,
+      "latencyMs": 189,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 199,
+      "latencyMs": 197,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 524,
+      "latencyMs": 542,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 236,
+      "latencyMs": 360,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 270,
+      "latencyMs": 410,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
