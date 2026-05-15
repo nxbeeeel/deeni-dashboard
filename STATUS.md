@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-15T17:11:29.373Z (just now)_
+_Last refresh: 2026-05-15T19:06:51.443Z (just now)_
 _App version: 1.7.7 (build 66)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.7.7 (build 66)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **8** |
+| DAU | **9** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -35,41 +35,41 @@ _None._
 - REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 2d ago
 - REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 4d ago
 - REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 8d ago
-- REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 29d ago
+- REACT-NATIVE-4 — RuntimeException: android.os.DeadSystemException · 1 events · 1 users · last 30d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 42
-- `Application Opened` — 27
+- `Application Backgrounded` — 41
+- `Application Opened` — 24
 - `prayer_marked_done` — 19
-- `Application Became Active` — 14
-- `feature_opened` — 7
-- `mushaf_opened` — 4
-- `Application Installed` — 2
+- `Application Became Active` — 18
+- `feature_opened` — 8
+- `mushaf_opened` — 5
+- `Application Installed` — 3
 - `quran_played` — 1
 - `surah_opened` — 1
 - `adhan_notification_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `1a1f08e` — chore(dashboard): refresh state 2026-05-15T15:23:59Z · 2h ago
-- `214dabf` — chore(dashboard): refresh state 2026-05-15T12:58:19Z · 4h ago
-- `cafa70d` — chore(dashboard): refresh state 2026-05-15T10:34:38Z · 7h ago
-- `ea98333` — chore(dashboard): refresh state 2026-05-15T07:57:07Z · 9h ago
-- `2b9713c` — chore(dashboard): refresh state 2026-05-15T04:36:16Z · 13h ago
-- `39030cf` — chore(dashboard): refresh state 2026-05-15T00:01:41Z · 17h ago
-- `1e487de` — chore(dashboard): refresh state 2026-05-14T22:38:04Z · 19h ago
-- `b01cd7a` — chore(dashboard): refresh state 2026-05-14T21:18:45Z · 20h ago
-- `696961a` — chore(dashboard): refresh state 2026-05-14T19:58:12Z · 21h ago
-- `7b70484` — chore(dashboard): refresh state 2026-05-14T17:58:47Z · 23h ago
+- `81db407` — chore(dashboard): refresh state 2026-05-15T17:11:30Z · 2h ago
+- `1a1f08e` — chore(dashboard): refresh state 2026-05-15T15:23:59Z · 4h ago
+- `214dabf` — chore(dashboard): refresh state 2026-05-15T12:58:19Z · 6h ago
+- `cafa70d` — chore(dashboard): refresh state 2026-05-15T10:34:38Z · 9h ago
+- `ea98333` — chore(dashboard): refresh state 2026-05-15T07:57:07Z · 11h ago
+- `2b9713c` — chore(dashboard): refresh state 2026-05-15T04:36:16Z · 15h ago
+- `39030cf` — chore(dashboard): refresh state 2026-05-15T00:01:41Z · 19h ago
+- `1e487de` — chore(dashboard): refresh state 2026-05-14T22:38:04Z · 20h ago
+- `b01cd7a` — chore(dashboard): refresh state 2026-05-14T21:18:45Z · 22h ago
+- `696961a` — chore(dashboard): refresh state 2026-05-14T19:58:12Z · 23h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 232ms
-- OK  `rawGithub` — 200 · 247ms
-- OK  `everyayah` — 200 · 522ms
-- OK  `quranicaudio` — 200 · 275ms
-- OK  `qurancdn` — 200 · 318ms
+- OK  `jsdelivr` — 200 · 112ms
+- OK  `rawGithub` — 200 · 207ms
+- OK  `everyayah` — 200 · 403ms
+- OK  `quranicaudio` — 200 · 291ms
+- OK  `qurancdn` — 200 · 289ms
 
 ## EAS update channels
 
