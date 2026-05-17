@@ -1,20 +1,25 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-17T19:45:54.464Z (just now)_
+_Last refresh: 2026-05-17T21:00:32.339Z (just now)_
 _App version: 1.7.7 (build 66)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **—** |
-| DAU | **12** |
+| Crash-free (24h) | **97.73%** |
+| DAU | **11** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
 | Last production deploy | **—** (unknown) |
 | Last CI on main | **in_progress** |
-| Active alerts | **0** |
+| Active alerts | **1** |
+
+## Active alerts
+
+- **HIGH** — Crash-free dipped to 97.73%  
+  _Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7._  _id: `A1:24h-crashfree`_
 
 ## Open bugs (`triage`)
 
@@ -30,41 +35,46 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-_Sentry pull failed: The operation was aborted due to timeout_
+- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 16d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 5 users · last 13d ago
+- REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 6h ago
+- REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 5d ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 6d ago
+- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 10d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 65
+- `Application Backgrounded` — 58
 - `quran_played` — 49
-- `Application Opened` — 36
-- `Application Became Active` — 35
+- `Application Became Active` — 34
+- `Application Opened` — 32
 - `feature_opened` — 14
 - `prayer_marked_done` — 11
 - `surah_opened` — 4
 - `Application Installed` — 4
 - `mushaf_opened` — 3
-- `Application Updated` — 2
+- `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `619b252` — chore(dashboard): refresh state 2026-05-17T18:02:06Z · 2h ago
-- `b520f18` — chore(dashboard): refresh state 2026-05-17T16:31:35Z · 3h ago
-- `a894df5` — chore(dashboard): refresh state 2026-05-17T15:01:59Z · 5h ago
-- `bec86e1` — chore(dashboard): refresh state 2026-05-17T13:43:03Z · 6h ago
-- `b50813e` — chore(dashboard): refresh state 2026-05-17T11:40:33Z · 8h ago
-- `34184ba` — chore(dashboard): refresh state 2026-05-17T10:10:49Z · 10h ago
-- `98d0aa9` — chore(dashboard): refresh state 2026-05-17T08:28:06Z · 11h ago
-- `bd9c6ad` — chore(dashboard): refresh state 2026-05-17T05:31:43Z · 14h ago
-- `2b24ea5` — chore(dashboard): refresh state 2026-05-17T01:28:01Z · 18h ago
-- `f393e10` — chore(dashboard): refresh state 2026-05-16T23:29:33Z · 20h ago
+- `7cccaef` — chore(dashboard): refresh state 2026-05-17T19:45:56Z · 1h ago
+- `619b252` — chore(dashboard): refresh state 2026-05-17T18:02:06Z · 3h ago
+- `b520f18` — chore(dashboard): refresh state 2026-05-17T16:31:35Z · 4h ago
+- `a894df5` — chore(dashboard): refresh state 2026-05-17T15:01:59Z · 6h ago
+- `bec86e1` — chore(dashboard): refresh state 2026-05-17T13:43:03Z · 7h ago
+- `b50813e` — chore(dashboard): refresh state 2026-05-17T11:40:33Z · 9h ago
+- `34184ba` — chore(dashboard): refresh state 2026-05-17T10:10:49Z · 11h ago
+- `98d0aa9` — chore(dashboard): refresh state 2026-05-17T08:28:06Z · 13h ago
+- `bd9c6ad` — chore(dashboard): refresh state 2026-05-17T05:31:43Z · 15h ago
+- `2b24ea5` — chore(dashboard): refresh state 2026-05-17T01:28:01Z · 20h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 108ms
-- OK  `rawGithub` — 200 · 160ms
-- OK  `everyayah` — 200 · 538ms
-- OK  `quranicaudio` — 200 · 4486ms
-- OK  `qurancdn` — 200 · 387ms
+- OK  `jsdelivr` — 200 · 403ms
+- OK  `rawGithub` — 200 · 205ms
+- OK  `everyayah` — 200 · 494ms
+- OK  `quranicaudio` — 200 · 323ms
+- OK  `qurancdn` — 200 · 407ms
 
 ## EAS update channels
 
@@ -95,7 +105,3 @@ _Sentry pull failed: The operation was aborted due to timeout_
   FlatList perf: extracted `SurahListItem` as top-level `memo()` component, `renderItem` and handlers wrapped in `useCallback`, `ListHeaderComponent` JSX moved into `useMemo`, fixed `directAyahMatch` raw-const dep that busted `filteredSurahs` memo every render. `[surah].tsx`: `loadVerses` useCallback with correct deps, `renderItem` useCallback, `ListFooterComponent` useMemo, all bookmark handlers memoized. `mushaf.tsx`: `pageTitle`, `currentVerseKey`, `gridSlots`, `panResponder` useMemo. Then second pass: extracted 5 inline style array literals from inside `SurahListItem` body to defeat shallow-comparison bypass; removed unused `width` dep from `panResponder` deps array. Final pass: `[surah].tsx` switched from full-store destructure to 5 sliced `useAudioStore(s => ...)` selectors so the screen doesn't re-render 10×/sec under Task 9's faster tick rate.
 - 2026-05-10 — Reciter URL audit (full-surah mode) (`a09f6ea`)
   Live-tested all reciter URLs against quranicaudio.com/qdc CDN. 5 wrong slugs corrected (Husary murattal, Husary muallim, Minshawy murattal, Abu Bakr Shatri, Yasser Ad-Dussary). 15 reciters had no QDC entry — `fullSurahSlug` removed from those entries; they fall back cleanly to per-ayah everyayah.com (all per-ayah URLs tested clean). All 25 reciters preserved in the array.
-
-## Refresh errors
-
-- **sentry** — The operation was aborted due to timeout
