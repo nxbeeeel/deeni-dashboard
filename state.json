@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-16T23:29:31.983Z",
+  "refreshedAt": "2026-05-17T01:27:59.247Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
@@ -9,26 +9,15 @@
     "crashFreeTrend7d": [
       100,
       100,
-      100,
       96.67,
       100,
       100,
       100,
-      100
+      100,
+      null
     ],
     "openIssuesCount": 5,
     "topIssues": [
-      {
-        "id": "7406195421",
-        "shortId": "REACT-NATIVE-3",
-        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 8,
-        "events1h": null,
-        "users24h": 5,
-        "lastSeen": "2026-05-05T08:33:22.908000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
-        "release": null
-      },
       {
         "id": "7434752222",
         "shortId": "REACT-NATIVE-5",
@@ -38,6 +27,17 @@
         "users24h": 4,
         "lastSeen": "2026-05-02T01:33:14.746000Z",
         "url": "https://beloop-1t.sentry.io/issues/7434752222/",
+        "release": null
+      },
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 8,
+        "events1h": null,
+        "users24h": 5,
+        "lastSeen": "2026-05-05T08:33:22.908000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
         "release": null
       },
       {
@@ -84,7 +84,7 @@
     "healthy": true,
     "dau": 8,
     "dauTrend7d": [
-      12,
+      9,
       15,
       10,
       13,
@@ -95,11 +95,11 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 17
+        "count": 15
       },
       {
         "event": "Application Opened",
-        "count": 13
+        "count": 12
       },
       {
         "event": "prayer_marked_done",
@@ -126,6 +126,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "f393e10",
+        "msg": "chore(dashboard): refresh state 2026-05-16T23:29:33Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-16T23:29:33Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f393e104f08168ca68d4d4e98db93e45f1a8363b"
+      },
       {
         "sha": "3329446",
         "msg": "chore(dashboard): refresh state 2026-05-16T22:24:33Z",
@@ -258,13 +265,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-15T17:11:30Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/81db4073a1a0c2dcbfc78712ddce1882ca6e5e75"
-      },
-      {
-        "sha": "1a1f08e",
-        "msg": "chore(dashboard): refresh state 2026-05-15T15:23:59Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-15T15:23:59Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1a1f08e9f0f82d4f0d4c19a7a41ec119ac14a340"
       }
     ],
     "releases": [
@@ -298,13 +298,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25975779356,
+      "id": 25977978446,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25975779356",
-      "ranAt": "2026-05-16T23:28:23Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25977978446",
+      "ranAt": "2026-05-17T01:26:45Z",
       "durationSec": 4
     }
   },
@@ -312,31 +312,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 251,
+      "latencyMs": 296,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 380,
+      "latencyMs": 286,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 516,
+      "latencyMs": 597,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 214,
+      "latencyMs": 277,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 187,
+      "latencyMs": 262,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
