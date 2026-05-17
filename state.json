@@ -1,101 +1,17 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-17T18:02:04.593Z",
+  "refreshedAt": "2026-05-17T19:45:54.464Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
-    "healthy": true,
-    "crashFree": 97.67,
-    "crashFreeTrend7d": [
-      100,
-      100,
-      96.67,
-      100,
-      100,
-      100,
-      100,
-      97.3
-    ],
-    "openIssuesCount": 6,
-    "topIssues": [
-      {
-        "id": "7434752222",
-        "shortId": "REACT-NATIVE-5",
-        "title": "Error: Call to function 'NativeDatabase.prepareSync' has been rejected.",
-        "events24h": 6,
-        "events1h": null,
-        "users24h": 4,
-        "lastSeen": "2026-05-02T01:33:14.746000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7434752222/",
-        "release": null
-      },
-      {
-        "id": "7406195421",
-        "shortId": "REACT-NATIVE-3",
-        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 8,
-        "events1h": null,
-        "users24h": 5,
-        "lastSeen": "2026-05-05T08:33:22.908000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
-        "release": null
-      },
-      {
-        "id": "7487221431",
-        "shortId": "REACT-NATIVE-9",
-        "title": "EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 >",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-17T15:18:07Z",
-        "url": "https://beloop-1t.sentry.io/issues/7487221431/",
-        "release": null
-      },
-      {
-        "id": "7479242978",
-        "shortId": "REACT-NATIVE-8",
-        "title": "ApplicationNotResponding: ANR",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-13T08:40:53.808000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7479242978/",
-        "release": null
-      },
-      {
-        "id": "7474927477",
-        "shortId": "REACT-NATIVE-7",
-        "title": "RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-12T00:40:27.929000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7474927477/",
-        "release": null
-      },
-      {
-        "id": "7466361903",
-        "shortId": "REACT-NATIVE-6",
-        "title": "App Hanging: App hanging for at least 2000 ms.",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-07T20:21:35.247189Z",
-        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
-        "release": null
-      }
-    ],
-    "latestRelease": {
-      "version": "in.deen.app.preview@1.7.8+67",
-      "newGroups": 0,
-      "sessions": null
-    }
+    "healthy": false,
+    "error": "The operation was aborted due to timeout"
   },
   "posthog": {
     "healthy": true,
     "dau": 12,
     "dauTrend7d": [
-      3,
+      1,
       15,
       10,
       13,
@@ -107,38 +23,38 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 73
+        "count": 65
       },
       {
         "event": "quran_played",
         "count": 49
       },
       {
-        "event": "Application Became Active",
-        "count": 40
-      },
-      {
-        "event": "feature_opened",
-        "count": 37
-      },
-      {
         "event": "Application Opened",
+        "count": 36
+      },
+      {
+        "event": "Application Became Active",
         "count": 35
       },
       {
-        "event": "prayer_marked_done",
-        "count": 15
+        "event": "feature_opened",
+        "count": 14
       },
       {
-        "event": "mushaf_opened",
-        "count": 6
+        "event": "prayer_marked_done",
+        "count": 11
+      },
+      {
+        "event": "surah_opened",
+        "count": 4
       },
       {
         "event": "Application Installed",
         "count": 4
       },
       {
-        "event": "surah_opened",
+        "event": "mushaf_opened",
         "count": 3
       },
       {
@@ -150,6 +66,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "619b252",
+        "msg": "chore(dashboard): refresh state 2026-05-17T18:02:06Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-17T18:02:06Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/619b252ef78220e5bddb8f060015d0459f4666f5"
+      },
       {
         "sha": "b520f18",
         "msg": "chore(dashboard): refresh state 2026-05-17T16:31:35Z",
@@ -282,13 +205,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-16T10:47:04Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/410d8e8e21ab52292f8d2e397d4eddb85a4ae766"
-      },
-      {
-        "sha": "38df63d",
-        "msg": "chore(dashboard): refresh state 2026-05-16T09:13:13Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-16T09:13:13Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/38df63df4d696375d3bf364fa1c7f96f3637a00a"
       }
     ],
     "releases": [
@@ -322,45 +238,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 25998491052,
+      "id": 26000852588,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/25998491052",
-      "ranAt": "2026-05-17T18:00:58Z",
-      "durationSec": 2
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26000852588",
+      "ranAt": "2026-05-17T19:44:47Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 369,
+      "latencyMs": 108,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 306,
+      "latencyMs": 160,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 572,
+      "latencyMs": 538,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 425,
+      "latencyMs": 4486,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 373,
+      "latencyMs": 387,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -510,21 +426,24 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [],
+  "errors": [
+    {
+      "source": "sentry",
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
   "alerts": {
-    "active": [
-      {
-        "id": "A1:24h-crashfree",
-        "severity": "high",
-        "title": "Crash-free dipped to 97.67%",
-        "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7.",
-        "firedAt": "2026-05-17T16:31:33.622Z"
-      }
-    ],
+    "active": [],
     "fired": {
       "A1:24h-crashfree": 1779035493622
     },
     "recent": [
+      {
+        "id": "A1:24h-crashfree",
+        "title": "Crash-free dipped to 97.67%",
+        "firedAt": "2026-05-17T16:31:33.622Z",
+        "resolvedAt": "2026-05-17T19:45:54.465Z"
+      },
       {
         "id": "A1:24h-crashfree",
         "title": "Crash-free dipped to 96.97%",
