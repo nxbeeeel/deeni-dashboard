@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-17T22:03:07.386Z",
+  "refreshedAt": "2026-05-17T23:32:09.318Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
     "healthy": true,
-    "crashFree": 97.73,
+    "crashFree": 97.83,
     "crashFreeTrend7d": [
       100,
       100,
@@ -14,7 +14,7 @@
       100,
       100,
       100,
-      97.67
+      97.83
     ],
     "openIssuesCount": 6,
     "topIssues": [
@@ -93,7 +93,7 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 11,
+    "dau": 10,
     "dauTrend7d": [
       15,
       10,
@@ -114,11 +114,11 @@
       },
       {
         "event": "Application Became Active",
-        "count": 34
+        "count": 35
       },
       {
         "event": "Application Opened",
-        "count": 32
+        "count": 33
       },
       {
         "event": "feature_opened",
@@ -133,11 +133,11 @@
         "count": 4
       },
       {
-        "event": "Application Installed",
-        "count": 4
+        "event": "mushaf_opened",
+        "count": 3
       },
       {
-        "event": "mushaf_opened",
+        "event": "Application Installed",
         "count": 3
       },
       {
@@ -149,6 +149,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "5d2a5e5",
+        "msg": "chore(dashboard): refresh state 2026-05-17T22:03:08Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-17T22:03:08Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5d2a5e5eba912d9def5554ef0f31dadb1454491a"
+      },
       {
         "sha": "0bf62ee",
         "msg": "chore(dashboard): refresh state 2026-05-17T21:00:33Z",
@@ -281,13 +288,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-16T15:01:43Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/08e303fde1b308c06b23453028b6467d6c51a0bc"
-      },
-      {
-        "sha": "3e0971b",
-        "msg": "chore(dashboard): refresh state 2026-05-16T13:46:40Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-16T13:46:40Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/3e0971b6310a8c758e8904535ae5e01eac3dbc45"
       }
     ],
     "releases": [
@@ -321,45 +321,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26003961910,
+      "id": 26005898802,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26003961910",
-      "ranAt": "2026-05-17T22:01:58Z",
-      "durationSec": 5
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26005898802",
+      "ranAt": "2026-05-17T23:31:01Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 219,
+      "latencyMs": 214,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 242,
+      "latencyMs": 221,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 599,
+      "latencyMs": 494,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 282,
+      "latencyMs": 473,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 227,
+      "latencyMs": 409,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -515,13 +515,13 @@
       {
         "id": "A1:24h-crashfree",
         "severity": "high",
-        "title": "Crash-free dipped to 97.73%",
+        "title": "Crash-free dipped to 97.83%",
         "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7.",
-        "firedAt": "2026-05-17T16:31:33.622Z"
+        "firedAt": "2026-05-17T23:32:09.318Z"
       }
     ],
     "fired": {
-      "A1:24h-crashfree": 1779035493622
+      "A1:24h-crashfree": 1779060729318
     },
     "recent": [
       {
