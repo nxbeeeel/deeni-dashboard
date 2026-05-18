@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-18T18:21:06.528Z (just now)_
+_Last refresh: 2026-05-18T20:16:01.549Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **100.00%** |
-| DAU | **10** |
+| Crash-free (24h) | **—** |
+| DAU | **12** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,45 +30,39 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 17d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 5 users · last 13d ago
-- REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 1d ago
-- REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 5d ago
-- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 7d ago
-- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 11d ago
+_Sentry pull failed: The operation was aborted due to timeout_
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 32
+- `Application Backgrounded` — 33
 - `Application Opened` — 21
-- `Application Became Active` — 12
-- `prayer_marked_done` — 9
+- `Application Became Active` — 15
+- `prayer_marked_done` — 14
 - `mushaf_opened` — 3
-- `surah_opened` — 3
-- `Application Installed` — 2
-- `feature_opened` — 1
+- `Application Installed` — 3
+- `surah_opened` — 2
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 2h ago
-- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 2h ago
-- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 3h ago
-- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 3h ago
-- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 4h ago
-- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 4h ago
-- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 18h ago
-- `a12ab9a` — fix(adhan): notification sound silent on iOS, intermittent on Android — three .wav files were MP3 + over iOS 30s limit · 18h ago
+- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 2h ago
+- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 4h ago
+- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 4h ago
+- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 5h ago
+- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 5h ago
+- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 5h ago
+- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 6h ago
+- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 19h ago
+- `a12ab9a` — fix(adhan): notification sound silent on iOS, intermittent on Android — three .wav files were MP3 + over iOS 30s limit · 20h ago
 - `5825bd9` — fix(mushaf v2 seed): asset copy uses File.copy not File.downloadFileAsync · 4d ago
-- `44a2353` — build(metro): register woff2 + db as asset extensions for QCF V2 bundling · 4d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 330ms
-- OK  `rawGithub` — 200 · 456ms
-- OK  `everyayah` — 200 · 593ms
-- OK  `quranicaudio` — 200 · 264ms
-- OK  `qurancdn` — 200 · 336ms
+- OK  `jsdelivr` — 200 · 284ms
+- OK  `rawGithub` — 200 · 274ms
+- OK  `everyayah` — 200 · 629ms
+- OK  `quranicaudio` — 200 · 4519ms
+- OK  `qurancdn` — 200 · 260ms
 
 ## EAS update channels
 
@@ -99,3 +93,7 @@ _None._
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
+
+## Refresh errors
+
+- **sentry** — The operation was aborted due to timeout
