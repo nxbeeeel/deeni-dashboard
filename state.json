@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-18T08:32:56.809Z",
+  "refreshedAt": "2026-05-18T12:38:53.363Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
     "healthy": true,
-    "crashFree": 98.04,
+    "crashFree": 98,
     "crashFreeTrend7d": [
       100,
       96.67,
@@ -93,45 +93,45 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 11,
+    "dau": 12,
     "dauTrend7d": [
-      12,
+      11,
       10,
       13,
       7,
       13,
       9,
       10,
-      2
+      6
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 41
+        "count": 35
       },
       {
         "event": "Application Opened",
-        "count": 31
+        "count": 26
       },
       {
         "event": "Application Became Active",
-        "count": 20
+        "count": 16
       },
       {
         "event": "prayer_marked_done",
-        "count": 13
-      },
-      {
-        "event": "mushaf_opened",
-        "count": 6
+        "count": 7
       },
       {
         "event": "feature_opened",
         "count": 6
       },
       {
+        "event": "mushaf_opened",
+        "count": 5
+      },
+      {
         "event": "surah_opened",
-        "count": 6
+        "count": 5
       },
       {
         "event": "Application Installed",
@@ -146,6 +146,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "4dbb051",
+        "msg": "chore(dashboard): refresh state 2026-05-18T08:32:59Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-18T08:32:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4dbb051675c518bddd98db1ebf6995611fdfcaff"
+      },
       {
         "sha": "26a4804",
         "msg": "chore(dashboard): refresh state 2026-05-18T04:09:25Z",
@@ -278,13 +285,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-16T19:13:47Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/855ad250ceca161f8e6a2a3932202b1d5621e8af"
-      },
-      {
-        "sha": "dfd0426",
-        "msg": "chore(dashboard): refresh state 2026-05-16T17:33:49Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-16T17:33:49Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dfd0426088058d11407a6754d9af39decafa15e4"
       }
     ],
     "releases": [
@@ -318,45 +318,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26022400494,
+      "id": 26033932377,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26022400494",
-      "ranAt": "2026-05-18T08:31:44Z",
-      "durationSec": 5
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26033932377",
+      "ranAt": "2026-05-18T12:37:42Z",
+      "durationSec": 6
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 396,
+      "latencyMs": 126,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 340,
+      "latencyMs": 133,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 572,
+      "latencyMs": 433,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 342,
+      "latencyMs": 177,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 437,
+      "latencyMs": 227,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -512,7 +512,7 @@
       {
         "id": "A1:24h-crashfree",
         "severity": "high",
-        "title": "Crash-free dipped to 98.04%",
+        "title": "Crash-free dipped to 98.00%",
         "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7.",
         "firedAt": "2026-05-18T08:32:56.810Z"
       }

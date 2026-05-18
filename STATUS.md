@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-18T08:32:56.809Z (just now)_
+_Last refresh: 2026-05-18T12:38:53.363Z (just now)_
 _App version: 1.7.7 (build 66)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **98.04%** |
-| DAU | **11** |
+| Crash-free (24h) | **98.00%** |
+| DAU | **12** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -18,7 +18,7 @@ _App version: 1.7.7 (build 66)_
 
 ## Active alerts
 
-- **HIGH** — Crash-free dipped to 98.04%  
+- **HIGH** — Crash-free dipped to 98.00%  
   _Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7._  _id: `A1:24h-crashfree`_
 
 ## Open bugs (`triage`)
@@ -37,43 +37,43 @@ _None._
 
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 16d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 5 users · last 13d ago
-- REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 17h ago
+- REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 21h ago
 - REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 5d ago
-- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 6d ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 7d ago
 - REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 11d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 41
-- `Application Opened` — 31
-- `Application Became Active` — 20
-- `prayer_marked_done` — 13
-- `mushaf_opened` — 6
+- `Application Backgrounded` — 35
+- `Application Opened` — 26
+- `Application Became Active` — 16
+- `prayer_marked_done` — 7
 - `feature_opened` — 6
-- `surah_opened` — 6
+- `mushaf_opened` — 5
+- `surah_opened` — 5
 - `Application Installed` — 3
 - `Application Updated` — 2
 
 ## GitHub — recent commits to main
 
-- `26a4804` — chore(dashboard): refresh state 2026-05-18T04:09:25Z · 4h ago
-- `d119db2` — chore(dashboard): refresh state 2026-05-17T23:32:11Z · 9h ago
-- `5d2a5e5` — chore(dashboard): refresh state 2026-05-17T22:03:08Z · 11h ago
-- `0bf62ee` — chore(dashboard): refresh state 2026-05-17T21:00:33Z · 12h ago
-- `7cccaef` — chore(dashboard): refresh state 2026-05-17T19:45:56Z · 13h ago
-- `619b252` — chore(dashboard): refresh state 2026-05-17T18:02:06Z · 15h ago
-- `b520f18` — chore(dashboard): refresh state 2026-05-17T16:31:35Z · 16h ago
-- `a894df5` — chore(dashboard): refresh state 2026-05-17T15:01:59Z · 18h ago
-- `bec86e1` — chore(dashboard): refresh state 2026-05-17T13:43:03Z · 19h ago
-- `b50813e` — chore(dashboard): refresh state 2026-05-17T11:40:33Z · 21h ago
+- `4dbb051` — chore(dashboard): refresh state 2026-05-18T08:32:59Z · 4h ago
+- `26a4804` — chore(dashboard): refresh state 2026-05-18T04:09:25Z · 8h ago
+- `d119db2` — chore(dashboard): refresh state 2026-05-17T23:32:11Z · 13h ago
+- `5d2a5e5` — chore(dashboard): refresh state 2026-05-17T22:03:08Z · 15h ago
+- `0bf62ee` — chore(dashboard): refresh state 2026-05-17T21:00:33Z · 16h ago
+- `7cccaef` — chore(dashboard): refresh state 2026-05-17T19:45:56Z · 17h ago
+- `619b252` — chore(dashboard): refresh state 2026-05-17T18:02:06Z · 19h ago
+- `b520f18` — chore(dashboard): refresh state 2026-05-17T16:31:35Z · 20h ago
+- `a894df5` — chore(dashboard): refresh state 2026-05-17T15:01:59Z · 22h ago
+- `bec86e1` — chore(dashboard): refresh state 2026-05-17T13:43:03Z · 23h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 396ms
-- OK  `rawGithub` — 200 · 340ms
-- OK  `everyayah` — 200 · 572ms
-- OK  `quranicaudio` — 200 · 342ms
-- OK  `qurancdn` — 200 · 437ms
+- OK  `jsdelivr` — 200 · 126ms
+- OK  `rawGithub` — 200 · 133ms
+- OK  `everyayah` — 200 · 433ms
+- OK  `quranicaudio` — 200 · 177ms
+- OK  `qurancdn` — 200 · 227ms
 
 ## EAS update channels
 
