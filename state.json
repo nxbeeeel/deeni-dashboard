@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-18T21:48:25.270Z",
+  "refreshedAt": "2026-05-18T23:08:39.228Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -92,12 +92,67 @@
     }
   },
   "posthog": {
-    "healthy": false,
-    "error": "PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.\r\n"
+    "healthy": true,
+    "dau": 14,
+    "dauTrend7d": [
+      2,
+      10,
+      13,
+      7,
+      13,
+      9,
+      10,
+      14
+    ],
+    "topEvents24h": [
+      {
+        "event": "Application Backgrounded",
+        "count": 44
+      },
+      {
+        "event": "Application Became Active",
+        "count": 24
+      },
+      {
+        "event": "Application Opened",
+        "count": 23
+      },
+      {
+        "event": "prayer_marked_done",
+        "count": 19
+      },
+      {
+        "event": "Application Installed",
+        "count": 4
+      },
+      {
+        "event": "mushaf_opened",
+        "count": 3
+      },
+      {
+        "event": "surah_opened",
+        "count": 2
+      },
+      {
+        "event": "Application Updated",
+        "count": 2
+      },
+      {
+        "event": "feature_opened",
+        "count": 1
+      }
+    ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "062ab08",
+        "msg": "chore(dashboard): refresh state 2026-05-18T21:48:26Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-18T21:48:26Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/062ab0810cc590f79224c3cd1889bf50e5d8343d"
+      },
       {
         "sha": "a2f8afd",
         "msg": "chore(dashboard): refresh state 2026-05-18T20:16:04Z",
@@ -230,13 +285,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-14T08:06:57Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c8318c29026b9ef03d3b138c1b6b2b38e6ff0216"
-      },
-      {
-        "sha": "034766c",
-        "msg": "fix(mushaf): clipped-letter regression on Juz 30 multi-surah pages — scale fontSize per actual flex",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-14T07:41:32Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/034766c5eab9aee959e59fddaf3ca080ec69142e"
       }
     ],
     "releases": [
@@ -270,45 +318,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26062397330,
+      "id": 26065679886,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26062397330",
-      "ranAt": "2026-05-18T21:47:21Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26065679886",
+      "ranAt": "2026-05-18T23:07:40Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 225,
+      "latencyMs": 313,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 237,
+      "latencyMs": 181,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 612,
+      "latencyMs": 458,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 343,
+      "latencyMs": 304,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 431,
+      "latencyMs": 302,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -500,12 +548,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "posthog",
-      "error": "PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.\r\n"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {

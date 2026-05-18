@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-18T21:48:25.270Z (just now)_
+_Last refresh: 2026-05-18T23:08:39.228Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **—** |
+| DAU | **14** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -39,29 +39,36 @@ _None._
 
 ## PostHog — top events (24h)
 
-_PostHog pull failed: PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.
-_
+- `Application Backgrounded` — 44
+- `Application Became Active` — 24
+- `Application Opened` — 23
+- `prayer_marked_done` — 19
+- `Application Installed` — 4
+- `mushaf_opened` — 3
+- `surah_opened` — 2
+- `Application Updated` — 2
+- `feature_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 2h ago
-- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 3h ago
-- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 5h ago
-- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 6h ago
-- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 6h ago
-- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 7h ago
-- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 7h ago
-- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 7h ago
-- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 21h ago
-- `a12ab9a` — fix(adhan): notification sound silent on iOS, intermittent on Android — three .wav files were MP3 + over iOS 30s limit · 22h ago
+- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 1h ago
+- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 3h ago
+- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 5h ago
+- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 7h ago
+- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 7h ago
+- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 7h ago
+- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 8h ago
+- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 8h ago
+- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 9h ago
+- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 22h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 225ms
-- OK  `rawGithub` — 200 · 237ms
-- OK  `everyayah` — 200 · 612ms
-- OK  `quranicaudio` — 200 · 343ms
-- OK  `qurancdn` — 200 · 431ms
+- OK  `jsdelivr` — 200 · 313ms
+- OK  `rawGithub` — 200 · 181ms
+- OK  `everyayah` — 200 · 458ms
+- OK  `quranicaudio` — 200 · 304ms
+- OK  `qurancdn` — 200 · 302ms
 
 ## EAS update channels
 
@@ -92,8 +99,3 @@ _
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
-
-## Refresh errors
-
-- **posthog** — PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.
-
