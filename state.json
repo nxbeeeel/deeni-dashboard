@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-18T04:09:23.719Z",
+  "refreshedAt": "2026-05-18T08:32:56.809Z",
   "appVersion": "1.7.7",
   "buildNumber": 66,
   "sentry": {
@@ -95,7 +95,7 @@
     "healthy": true,
     "dau": 11,
     "dauTrend7d": [
-      14,
+      12,
       10,
       13,
       7,
@@ -107,35 +107,31 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 61
-      },
-      {
-        "event": "quran_played",
-        "count": 49
+        "count": 41
       },
       {
         "event": "Application Opened",
-        "count": 36
+        "count": 31
       },
       {
         "event": "Application Became Active",
-        "count": 35
-      },
-      {
-        "event": "feature_opened",
-        "count": 14
+        "count": 20
       },
       {
         "event": "prayer_marked_done",
-        "count": 11
+        "count": 13
       },
       {
         "event": "mushaf_opened",
-        "count": 5
+        "count": 6
+      },
+      {
+        "event": "feature_opened",
+        "count": 6
       },
       {
         "event": "surah_opened",
-        "count": 5
+        "count": 6
       },
       {
         "event": "Application Installed",
@@ -150,6 +146,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "26a4804",
+        "msg": "chore(dashboard): refresh state 2026-05-18T04:09:25Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-18T04:09:25Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/26a4804d323d59d4ebb702250d39628b22f4aece"
+      },
       {
         "sha": "d119db2",
         "msg": "chore(dashboard): refresh state 2026-05-17T23:32:11Z",
@@ -282,13 +285,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-16T17:33:49Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dfd0426088058d11407a6754d9af39decafa15e4"
-      },
-      {
-        "sha": "2242cbd",
-        "msg": "chore(dashboard): refresh state 2026-05-16T16:30:22Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-16T16:30:22Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2242cbd0b6f9b298c59b238d6e1dc403a94df303"
       }
     ],
     "releases": [
@@ -322,45 +318,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26012976607,
+      "id": 26022400494,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26012976607",
-      "ranAt": "2026-05-18T04:08:15Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26022400494",
+      "ranAt": "2026-05-18T08:31:44Z",
+      "durationSec": 5
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 379,
+      "latencyMs": 396,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 249,
+      "latencyMs": 340,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 579,
+      "latencyMs": 572,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 180,
+      "latencyMs": 342,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 223,
+      "latencyMs": 437,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -518,11 +514,11 @@
         "severity": "high",
         "title": "Crash-free dipped to 98.04%",
         "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.7.7.",
-        "firedAt": "2026-05-17T23:32:09.318Z"
+        "firedAt": "2026-05-18T08:32:56.810Z"
       }
     ],
     "fired": {
-      "A1:24h-crashfree": 1779060729318
+      "A1:24h-crashfree": 1779093176810
     },
     "recent": [
       {
