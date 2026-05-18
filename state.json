@@ -1,63 +1,110 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-18T20:16:01.549Z",
+  "refreshedAt": "2026-05-18T21:48:25.270Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "crashFree": 100,
+    "crashFreeTrend7d": [
+      100,
+      96.67,
+      100,
+      100,
+      100,
+      100,
+      97.83,
+      100
+    ],
+    "openIssuesCount": 6,
+    "topIssues": [
+      {
+        "id": "7434752222",
+        "shortId": "REACT-NATIVE-5",
+        "title": "Error: Call to function 'NativeDatabase.prepareSync' has been rejected.",
+        "events24h": 6,
+        "events1h": null,
+        "users24h": 4,
+        "lastSeen": "2026-05-02T01:33:14.746000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7434752222/",
+        "release": null
+      },
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 8,
+        "events1h": null,
+        "users24h": 5,
+        "lastSeen": "2026-05-05T08:33:22.908000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      },
+      {
+        "id": "7487221431",
+        "shortId": "REACT-NATIVE-9",
+        "title": "EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 >",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-17T15:18:07Z",
+        "url": "https://beloop-1t.sentry.io/issues/7487221431/",
+        "release": null
+      },
+      {
+        "id": "7479242978",
+        "shortId": "REACT-NATIVE-8",
+        "title": "ApplicationNotResponding: ANR",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-13T08:40:53.808000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7479242978/",
+        "release": null
+      },
+      {
+        "id": "7474927477",
+        "shortId": "REACT-NATIVE-7",
+        "title": "RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-12T00:40:27.929000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7474927477/",
+        "release": null
+      },
+      {
+        "id": "7466361903",
+        "shortId": "REACT-NATIVE-6",
+        "title": "App Hanging: App hanging for at least 2000 ms.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-07T20:21:35.247189Z",
+        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app.preview@1.8.0+69",
+      "newGroups": 0,
+      "sessions": null
+    }
   },
   "posthog": {
-    "healthy": true,
-    "dau": 12,
-    "dauTrend7d": [
-      4,
-      10,
-      13,
-      7,
-      13,
-      9,
-      10,
-      11
-    ],
-    "topEvents24h": [
-      {
-        "event": "Application Backgrounded",
-        "count": 33
-      },
-      {
-        "event": "Application Opened",
-        "count": 21
-      },
-      {
-        "event": "Application Became Active",
-        "count": 15
-      },
-      {
-        "event": "prayer_marked_done",
-        "count": 14
-      },
-      {
-        "event": "mushaf_opened",
-        "count": 3
-      },
-      {
-        "event": "Application Installed",
-        "count": 3
-      },
-      {
-        "event": "surah_opened",
-        "count": 2
-      },
-      {
-        "event": "Application Updated",
-        "count": 1
-      }
-    ]
+    "healthy": false,
+    "error": "PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.\r\n"
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "a2f8afd",
+        "msg": "chore(dashboard): refresh state 2026-05-18T20:16:04Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-18T20:16:04Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a2f8afd9a8a9621e7755750b3b90827476a1df76"
+      },
       {
         "sha": "f61f24e",
         "msg": "chore(dashboard): refresh state 2026-05-18T18:21:09Z",
@@ -190,13 +237,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-14T07:41:32Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/034766c5eab9aee959e59fddaf3ca080ec69142e"
-      },
-      {
-        "sha": "888c4df",
-        "msg": "fix(mushaf): the REAL multi-surah Juz 30 glyph bug — qpcActive justify path",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-14T07:21:51Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/888c4df0419cd24d7536b2126cf789003fc27f22"
       }
     ],
     "releases": [
@@ -230,13 +270,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26057902623,
+      "id": 26062397330,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26057902623",
-      "ranAt": "2026-05-18T20:14:50Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26062397330",
+      "ranAt": "2026-05-18T21:47:21Z",
       "durationSec": 4
     }
   },
@@ -244,31 +284,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 284,
+      "latencyMs": 225,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 274,
+      "latencyMs": 237,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 629,
+      "latencyMs": 612,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 4519,
+      "latencyMs": 343,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 260,
+      "latencyMs": 431,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -462,8 +502,8 @@
   "fieldNotes": [],
   "errors": [
     {
-      "source": "sentry",
-      "error": "The operation was aborted due to timeout"
+      "source": "posthog",
+      "error": "PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.\r\n"
     }
   ],
   "alerts": {

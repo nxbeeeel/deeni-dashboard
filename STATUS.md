@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-18T20:16:01.549Z (just now)_
+_Last refresh: 2026-05-18T21:48:25.270Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **—** |
-| DAU | **12** |
+| Crash-free (24h) | **100.00%** |
+| DAU | **—** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,39 +30,38 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-_Sentry pull failed: The operation was aborted due to timeout_
+- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 17d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 5 users · last 14d ago
+- REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 1d ago
+- REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 6d ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 7d ago
+- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 11d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 33
-- `Application Opened` — 21
-- `Application Became Active` — 15
-- `prayer_marked_done` — 14
-- `mushaf_opened` — 3
-- `Application Installed` — 3
-- `surah_opened` — 2
-- `Application Updated` — 1
+_PostHog pull failed: PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.
+_
 
 ## GitHub — recent commits to main
 
-- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 2h ago
-- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 4h ago
-- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 4h ago
-- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 5h ago
-- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 5h ago
-- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 5h ago
-- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 6h ago
-- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 19h ago
-- `a12ab9a` — fix(adhan): notification sound silent on iOS, intermittent on Android — three .wav files were MP3 + over iOS 30s limit · 20h ago
-- `5825bd9` — fix(mushaf v2 seed): asset copy uses File.copy not File.downloadFileAsync · 4d ago
+- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 2h ago
+- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 3h ago
+- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 5h ago
+- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 6h ago
+- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 6h ago
+- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 7h ago
+- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 7h ago
+- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 7h ago
+- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 21h ago
+- `a12ab9a` — fix(adhan): notification sound silent on iOS, intermittent on Android — three .wav files were MP3 + over iOS 30s limit · 22h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 284ms
-- OK  `rawGithub` — 200 · 274ms
-- OK  `everyayah` — 200 · 629ms
-- OK  `quranicaudio` — 200 · 4519ms
-- OK  `qurancdn` — 200 · 260ms
+- OK  `jsdelivr` — 200 · 225ms
+- OK  `rawGithub` — 200 · 237ms
+- OK  `everyayah` — 200 · 612ms
+- OK  `quranicaudio` — 200 · 343ms
+- OK  `qurancdn` — 200 · 431ms
 
 ## EAS update channels
 
@@ -96,4 +95,5 @@ _Sentry pull failed: The operation was aborted due to timeout_
 
 ## Refresh errors
 
-- **sentry** — The operation was aborted due to timeout
+- **posthog** — PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.
+
