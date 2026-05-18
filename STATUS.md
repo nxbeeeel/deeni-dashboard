@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-18T16:29:47.992Z (just now)_
+_Last refresh: 2026-05-18T18:21:06.528Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -40,35 +40,35 @@ _None._
 ## PostHog — top events (24h)
 
 - `Application Backgrounded` — 32
-- `Application Opened` — 24
-- `Application Became Active` — 11
-- `prayer_marked_done` — 7
-- `surah_opened` — 5
+- `Application Opened` — 21
+- `Application Became Active` — 12
+- `prayer_marked_done` — 9
 - `mushaf_opened` — 3
-- `Application Installed` — 3
+- `surah_opened` — 3
+- `Application Installed` — 2
 - `feature_opened` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 12m ago
-- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 47m ago
-- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 2h ago
-- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 2h ago
-- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 2h ago
-- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 16h ago
-- `a12ab9a` — fix(adhan): notification sound silent on iOS, intermittent on Android — three .wav files were MP3 + over iOS 30s limit · 16h ago
+- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 2h ago
+- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 2h ago
+- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 3h ago
+- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 3h ago
+- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 4h ago
+- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 4h ago
+- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 18h ago
+- `a12ab9a` — fix(adhan): notification sound silent on iOS, intermittent on Android — three .wav files were MP3 + over iOS 30s limit · 18h ago
 - `5825bd9` — fix(mushaf v2 seed): asset copy uses File.copy not File.downloadFileAsync · 4d ago
 - `44a2353` — build(metro): register woff2 + db as asset extensions for QCF V2 bundling · 4d ago
-- `9eaf4d4` — feat(mushaf v2): Phase 2.5 + 3 — wire bundled assets + re-enable v2 renderer · 4d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 317ms
-- OK  `rawGithub` — 200 · 309ms
-- OK  `everyayah` — 200 · 626ms
-- OK  `quranicaudio` — 200 · 367ms
-- OK  `qurancdn` — 200 · 472ms
+- OK  `jsdelivr` — 200 · 330ms
+- OK  `rawGithub` — 200 · 456ms
+- OK  `everyayah` — 200 · 593ms
+- OK  `quranicaudio` — 200 · 264ms
+- OK  `qurancdn` — 200 · 336ms
 
 ## EAS update channels
 
