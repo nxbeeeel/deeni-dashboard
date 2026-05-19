@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-19T10:24:48.519Z (just now)_
+_Last refresh: 2026-05-19T13:42:23.745Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **13** |
+| DAU | **15** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,43 +30,43 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 17d ago
+- REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 4 users · last 18d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 5 users · last 14d ago
 - REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 2d ago
 - REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 6d ago
-- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 7d ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 8d ago
 - REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 12d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 70
-- `Application Became Active` — 43
-- `Application Opened` — 26
-- `prayer_marked_done` — 18
+- `Application Backgrounded` — 67
+- `Application Became Active` — 42
+- `Application Opened` — 24
+- `prayer_marked_done` — 22
 - `Application Installed` — 3
 - `feature_opened` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `3ba6016` — chore(dashboard): refresh state 2026-05-19T06:14:02Z · 4h ago
-- `dd2011f` — chore(dashboard): refresh state 2026-05-19T01:31:22Z · 9h ago
-- `8dc3be9` — chore(dashboard): refresh state 2026-05-18T23:08:40Z · 11h ago
-- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 13h ago
-- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 14h ago
-- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 16h ago
-- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 18h ago
-- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 18h ago
-- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 19h ago
-- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 20h ago
+- `24d3987` — chore(dashboard): refresh state 2026-05-19T10:24:49Z · 3h ago
+- `3ba6016` — chore(dashboard): refresh state 2026-05-19T06:14:02Z · 7h ago
+- `dd2011f` — chore(dashboard): refresh state 2026-05-19T01:31:22Z · 12h ago
+- `8dc3be9` — chore(dashboard): refresh state 2026-05-18T23:08:40Z · 15h ago
+- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 16h ago
+- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 17h ago
+- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 19h ago
+- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 21h ago
+- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 21h ago
+- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 22h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 367ms
-- OK  `rawGithub` — 200 · 344ms
-- OK  `everyayah` — 200 · 515ms
-- OK  `quranicaudio` — 200 · 252ms
-- OK  `qurancdn` — 200 · 377ms
+- OK  `jsdelivr` — 200 · 516ms
+- OK  `rawGithub` — 200 · 348ms
+- OK  `everyayah` — 200 · 578ms
+- OK  `quranicaudio` — 200 · 258ms
+- OK  `qurancdn` — 200 · 267ms
 
 ## EAS update channels
 
