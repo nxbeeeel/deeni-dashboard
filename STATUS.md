@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-19T13:42:23.745Z (just now)_
+_Last refresh: 2026-05-19T16:52:12.384Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **15** |
+| DAU | **14** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -39,34 +39,34 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 67
-- `Application Became Active` — 42
-- `Application Opened` — 24
-- `prayer_marked_done` — 22
-- `Application Installed` — 3
+- `Application Backgrounded` — 62
+- `Application Became Active` — 38
+- `Application Opened` — 25
+- `prayer_marked_done` — 19
+- `Application Installed` — 2
 - `feature_opened` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `24d3987` — chore(dashboard): refresh state 2026-05-19T10:24:49Z · 3h ago
-- `3ba6016` — chore(dashboard): refresh state 2026-05-19T06:14:02Z · 7h ago
-- `dd2011f` — chore(dashboard): refresh state 2026-05-19T01:31:22Z · 12h ago
-- `8dc3be9` — chore(dashboard): refresh state 2026-05-18T23:08:40Z · 15h ago
-- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 16h ago
-- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 17h ago
-- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 19h ago
-- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 21h ago
-- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 21h ago
-- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 22h ago
+- `f9735fb` — chore(dashboard): refresh state 2026-05-19T13:42:25Z · 3h ago
+- `24d3987` — chore(dashboard): refresh state 2026-05-19T10:24:49Z · 6h ago
+- `3ba6016` — chore(dashboard): refresh state 2026-05-19T06:14:02Z · 11h ago
+- `dd2011f` — chore(dashboard): refresh state 2026-05-19T01:31:22Z · 15h ago
+- `8dc3be9` — chore(dashboard): refresh state 2026-05-18T23:08:40Z · 18h ago
+- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 19h ago
+- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 21h ago
+- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 23h ago
+- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 1d ago
+- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 516ms
-- OK  `rawGithub` — 200 · 348ms
-- OK  `everyayah` — 200 · 578ms
-- OK  `quranicaudio` — 200 · 258ms
-- OK  `qurancdn` — 200 · 267ms
+- OK  `jsdelivr` — 200 · 154ms
+- OK  `rawGithub` — 200 · 192ms
+- OK  `everyayah` — 200 · 520ms
+- OK  `quranicaudio` — 200 · 212ms
+- OK  `qurancdn` — 200 · 316ms
 
 ## EAS update channels
 
