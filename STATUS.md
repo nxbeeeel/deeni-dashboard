@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-19T06:14:01.698Z (just now)_
+_Last refresh: 2026-05-19T10:24:48.519Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **14** |
+| DAU | **13** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -35,40 +35,38 @@ _None._
 - REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 2d ago
 - REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 6d ago
 - REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 7d ago
-- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 11d ago
+- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 12d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 43
-- `Application Became Active` — 24
-- `Application Opened` — 22
-- `prayer_marked_done` — 19
-- `Application Installed` — 4
-- `mushaf_opened` — 1
+- `Application Backgrounded` — 70
+- `Application Became Active` — 43
+- `Application Opened` — 26
+- `prayer_marked_done` — 18
+- `Application Installed` — 3
 - `feature_opened` — 1
-- `surah_opened` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `dd2011f` — chore(dashboard): refresh state 2026-05-19T01:31:22Z · 5h ago
-- `8dc3be9` — chore(dashboard): refresh state 2026-05-18T23:08:40Z · 7h ago
-- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 8h ago
-- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 10h ago
-- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 12h ago
-- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 14h ago
-- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 14h ago
-- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 15h ago
-- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 15h ago
-- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 15h ago
+- `3ba6016` — chore(dashboard): refresh state 2026-05-19T06:14:02Z · 4h ago
+- `dd2011f` — chore(dashboard): refresh state 2026-05-19T01:31:22Z · 9h ago
+- `8dc3be9` — chore(dashboard): refresh state 2026-05-18T23:08:40Z · 11h ago
+- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 13h ago
+- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 14h ago
+- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 16h ago
+- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 18h ago
+- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 18h ago
+- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 19h ago
+- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 20h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 142ms
-- OK  `rawGithub` — 200 · 153ms
-- OK  `everyayah` — 200 · 406ms
-- OK  `quranicaudio` — 200 · 225ms
-- OK  `qurancdn` — 200 · 249ms
+- OK  `jsdelivr` — 200 · 367ms
+- OK  `rawGithub` — 200 · 344ms
+- OK  `everyayah` — 200 · 515ms
+- OK  `quranicaudio` — 200 · 252ms
+- OK  `qurancdn` — 200 · 377ms
 
 ## EAS update channels
 
