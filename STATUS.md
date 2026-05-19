@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-18T23:08:39.228Z (just now)_
+_Last refresh: 2026-05-19T01:31:21.304Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -39,9 +39,9 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 44
+- `Application Backgrounded` — 48
+- `Application Opened` — 27
 - `Application Became Active` — 24
-- `Application Opened` — 23
 - `prayer_marked_done` — 19
 - `Application Installed` — 4
 - `mushaf_opened` — 3
@@ -51,24 +51,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 1h ago
-- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 3h ago
-- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 5h ago
-- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 7h ago
-- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 7h ago
-- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 7h ago
-- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 8h ago
-- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 8h ago
-- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 9h ago
-- `3bb3360` — fix(haramain-live): iOS playsinline belt-and-suspenders — prevent auto-fullscreen → audio-only state · 22h ago
+- `8dc3be9` — chore(dashboard): refresh state 2026-05-18T23:08:40Z · 2h ago
+- `062ab08` — chore(dashboard): refresh state 2026-05-18T21:48:26Z · 4h ago
+- `a2f8afd` — chore(dashboard): refresh state 2026-05-18T20:16:04Z · 5h ago
+- `f61f24e` — chore(dashboard): refresh state 2026-05-18T18:21:09Z · 7h ago
+- `7b35066` — chore(dashboard): refresh state 2026-05-18T16:29:51Z · 9h ago
+- `39cb55a` — chore: sync android/app/build.gradle versionCode 65→70 + versionName 1.7.7→1.8.0 · 9h ago
+- `a6a67c7` — fix(build): move sharp to optionalDependencies so EAS macOS install does not fail · 10h ago
+- `e88c2e9` — chore: sync EAS auto-bump of versionCode 70 + iOS buildNumber 26 · 11h ago
+- `9945f4b` — chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix) · 11h ago
+- `c3bd898` — release(v1.8.0): QCF V2 mushaf — per-page TTF fonts + correct word ordering · 11h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 313ms
-- OK  `rawGithub` — 200 · 181ms
-- OK  `everyayah` — 200 · 458ms
-- OK  `quranicaudio` — 200 · 304ms
-- OK  `qurancdn` — 200 · 302ms
+- OK  `jsdelivr` — 200 · 131ms
+- OK  `rawGithub` — 200 · 172ms
+- OK  `everyayah` — 200 · 519ms
+- OK  `quranicaudio` — 200 · 226ms
+- OK  `qurancdn` — 200 · 362ms
 
 ## EAS update channels
 
