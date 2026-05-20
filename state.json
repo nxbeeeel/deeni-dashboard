@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-19T22:46:26.253Z",
+  "refreshedAt": "2026-05-20T00:12:22.491Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
     "healthy": true,
     "crashFree": 100,
     "crashFreeTrend7d": [
-      96.67,
       100,
       100,
       100,
       100,
       97.83,
       100,
-      100
+      100,
+      null
     ],
     "openIssuesCount": 6,
     "topIssues": [
@@ -141,6 +141,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "7aa1f39",
+        "msg": "chore(dashboard): refresh state 2026-05-19T22:46:27Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-19T22:46:27Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7aa1f397aefdffcda54852e8e54826634624d857"
+      },
       {
         "sha": "53534fe",
         "msg": "chore(dashboard): refresh state 2026-05-19T21:03:09Z",
@@ -273,13 +280,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-18T00:18:09Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a12ab9a5b4dfb5ff702afe40d009fd2ad0682797"
-      },
-      {
-        "sha": "5825bd9",
-        "msg": "fix(mushaf v2 seed): asset copy uses File.copy not File.downloadFileAsync",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-14T12:15:37Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5825bd9fdef6e54332c801294e85739210bb0b20"
       }
     ],
     "releases": [
@@ -313,45 +313,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26129876261,
+      "id": 26133110353,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26129876261",
-      "ranAt": "2026-05-19T22:45:28Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26133110353",
+      "ranAt": "2026-05-20T00:11:19Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 136,
+      "latencyMs": 141,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 140,
+      "latencyMs": 188,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 396,
+      "latencyMs": 543,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 213,
+      "latencyMs": 267,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 211,
+      "latencyMs": 335,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
