@@ -1,52 +1,136 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-20T11:31:55.229Z",
+  "refreshedAt": "2026-05-20T15:36:00.753Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
-    "healthy": false,
-    "error": "Sentry /organizations/beloop-1t/releases/?per_page=1 → HTTP 500: Internal error"
+    "healthy": true,
+    "crashFree": 100,
+    "crashFreeTrend7d": [
+      100,
+      100,
+      100,
+      100,
+      97.83,
+      100,
+      100,
+      100
+    ],
+    "openIssuesCount": 6,
+    "topIssues": [
+      {
+        "id": "7434752222",
+        "shortId": "REACT-NATIVE-5",
+        "title": "Error: Call to function 'NativeDatabase.prepareSync' has been rejected.",
+        "events24h": 6,
+        "events1h": null,
+        "users24h": 4,
+        "lastSeen": "2026-05-02T01:33:14.746000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7434752222/",
+        "release": null
+      },
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 8,
+        "events1h": null,
+        "users24h": 5,
+        "lastSeen": "2026-05-05T08:33:22.908000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      },
+      {
+        "id": "7487221431",
+        "shortId": "REACT-NATIVE-9",
+        "title": "EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 >",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-17T15:18:07Z",
+        "url": "https://beloop-1t.sentry.io/issues/7487221431/",
+        "release": null
+      },
+      {
+        "id": "7479242978",
+        "shortId": "REACT-NATIVE-8",
+        "title": "ApplicationNotResponding: ANR",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-13T08:40:53.808000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7479242978/",
+        "release": null
+      },
+      {
+        "id": "7474927477",
+        "shortId": "REACT-NATIVE-7",
+        "title": "RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-12T00:40:27.929000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7474927477/",
+        "release": null
+      },
+      {
+        "id": "7466361903",
+        "shortId": "REACT-NATIVE-6",
+        "title": "App Hanging: App hanging for at least 2000 ms.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-05-07T20:21:35.247189Z",
+        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app@1.8.0-debug+72",
+      "newGroups": 0,
+      "sessions": null
+    }
   },
   "posthog": {
     "healthy": true,
     "dau": 13,
     "dauTrend7d": [
-      10,
+      8,
       7,
       13,
       10,
       10,
       15,
       12,
-      8
+      10
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 44
+        "count": 50
       },
       {
         "event": "Application Became Active",
-        "count": 31
+        "count": 35
       },
       {
         "event": "Application Opened",
-        "count": 24
+        "count": 25
       },
       {
         "event": "prayer_marked_done",
-        "count": 20
+        "count": 24
       },
       {
         "event": "feature_opened",
-        "count": 8
-      },
-      {
-        "event": "mushaf_opened",
-        "count": 5
+        "count": 9
       },
       {
         "event": "Application Installed",
+        "count": 6
+      },
+      {
+        "event": "mushaf_opened",
         "count": 5
       },
       {
@@ -56,12 +140,27 @@
       {
         "event": "surah_opened",
         "count": 1
+      },
+      {
+        "event": "adhan_notification_opened",
+        "count": 1
+      },
+      {
+        "event": "Application Updated",
+        "count": 1
       }
     ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "fc1c2f1",
+        "msg": "chore(dashboard): refresh state 2026-05-20T11:31:56Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-20T11:31:56Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fc1c2f15517759ddb19a668c3095a41e4e0effb9"
+      },
       {
         "sha": "b048d9e",
         "msg": "chore(dashboard): refresh state 2026-05-20T08:30:04Z",
@@ -194,13 +293,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-05-18T14:54:20Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e88c2e99a24f238bf84d6e6240d764190879ae1e"
-      },
-      {
-        "sha": "9945f4b",
-        "msg": "chore: bump version to 1.8.0 (authentic mushaf typography + adhan sound fix)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-05-18T14:46:56Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9945f4bcbd6ccb6524a02b6ddf739baf34794b18"
       }
     ],
     "releases": [
@@ -234,13 +326,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26159694361,
+      "id": 26172952799,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26159694361",
-      "ranAt": "2026-05-20T11:30:47Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26172952799",
+      "ranAt": "2026-05-20T15:34:56Z",
       "durationSec": 4
     }
   },
@@ -248,31 +340,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 467,
+      "latencyMs": 155,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 986,
+      "latencyMs": 179,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 557,
+      "latencyMs": 448,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 242,
+      "latencyMs": 231,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 262,
+      "latencyMs": 241,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -464,12 +556,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "sentry",
-      "error": "Sentry /organizations/beloop-1t/releases/?per_page=1 → HTTP 500: Internal error"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {
