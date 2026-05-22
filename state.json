@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-22T15:39:05.319Z",
+  "refreshedAt": "2026-05-22T17:58:11.899Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -35,7 +35,7 @@
         "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
         "events24h": 8,
         "events1h": null,
-        "users24h": 5,
+        "users24h": 4,
         "lastSeen": "2026-05-05T08:33:22.908000Z",
         "url": "https://beloop-1t.sentry.io/issues/7406195421/",
         "release": null
@@ -93,37 +93,37 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 12,
+    "dau": 13,
     "dauTrend7d": [
-      9,
+      5,
       10,
       10,
       15,
       12,
       14,
       5,
-      11
+      13
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 22
-      },
-      {
-        "event": "prayer_marked_done",
-        "count": 16
+        "count": 24
       },
       {
         "event": "Application Opened",
+        "count": 15
+      },
+      {
+        "event": "prayer_marked_done",
         "count": 14
       },
       {
         "event": "Application Became Active",
-        "count": 13
+        "count": 14
       },
       {
         "event": "surah_opened",
-        "count": 5
+        "count": 6
       },
       {
         "event": "feature_opened",
@@ -135,14 +135,14 @@
       },
       {
         "event": "Application Updated",
+        "count": 3
+      },
+      {
+        "event": "mushaf_opened",
         "count": 2
       },
       {
         "event": "quran_played",
-        "count": 1
-      },
-      {
-        "event": "mushaf_opened",
         "count": 1
       }
     ]
@@ -150,6 +150,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "8ab20d5",
+        "msg": "chore(dashboard): refresh state 2026-05-22T15:39:06Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-22T15:39:06Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8ab20d57cb41d57d966e5de1f9add7d90289ee50"
+      },
       {
         "sha": "2527b69",
         "msg": "chore(dashboard): refresh state 2026-05-22T12:30:41Z",
@@ -282,13 +289,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-20T08:30:04Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b048d9e50908a141374fb6a75651e0ee23c5c6bb"
-      },
-      {
-        "sha": "67ccc78",
-        "msg": "chore(dashboard): refresh state 2026-05-20T04:48:18Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-20T04:48:18Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/67ccc781ec95deecd2c56a5a703e923128b726a9"
       }
     ],
     "releases": [
@@ -322,13 +322,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26297169251,
+      "id": 26303677698,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26297169251",
-      "ranAt": "2026-05-22T15:37:58Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26303677698",
+      "ranAt": "2026-05-22T17:57:04Z",
       "durationSec": 4
     }
   },
@@ -336,31 +336,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 263,
+      "latencyMs": 165,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 146,
+      "latencyMs": 184,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 457,
+      "latencyMs": 503,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 266,
+      "latencyMs": 273,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 259,
+      "latencyMs": 306,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
