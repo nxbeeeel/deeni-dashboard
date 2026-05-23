@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-23T20:09:22.062Z (just now)_
+_Last refresh: 2026-05-23T21:28:23.042Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **12** |
+| DAU | **11** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -33,42 +33,42 @@ _None._
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 2 users · last 22d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 4 users · last 19d ago
 - REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 6d ago
-- REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 10d ago
+- REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 11d ago
 - REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 12d ago
 - REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 16d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 41
+- `Application Backgrounded` — 40
 - `Application Became Active` — 25
-- `Application Opened` — 21
+- `Application Opened` — 20
 - `prayer_marked_done` — 11
 - `feature_opened` — 9
-- `Application Installed` — 4
 - `mushaf_opened` — 3
+- `Application Installed` — 3
 - `surah_opened` — 1
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `4c396f9` — chore(dashboard): refresh state 2026-05-23T18:35:23Z · 2h ago
-- `15a706b` — chore(dashboard): refresh state 2026-05-23T17:07:12Z · 3h ago
-- `2db523e` — chore(dashboard): refresh state 2026-05-23T15:44:48Z · 4h ago
-- `65a373d` — chore(dashboard): refresh state 2026-05-23T14:10:46Z · 6h ago
-- `32fd02b` — chore(dashboard): refresh state 2026-05-23T12:13:28Z · 8h ago
-- `4ce4620` — chore(dashboard): refresh state 2026-05-23T11:22:06Z · 9h ago
-- `6a59035` — chore(dashboard): refresh state 2026-05-23T09:59:05Z · 10h ago
-- `070a935` — chore(dashboard): refresh state 2026-05-23T07:56:07Z · 12h ago
-- `a647966` — chore(dashboard): refresh state 2026-05-23T05:07:08Z · 15h ago
-- `bd0db98` — chore(dashboard): refresh state 2026-05-23T01:24:42Z · 19h ago
+- `b8780da` — chore(dashboard): refresh state 2026-05-23T20:09:22Z · 1h ago
+- `4c396f9` — chore(dashboard): refresh state 2026-05-23T18:35:23Z · 3h ago
+- `15a706b` — chore(dashboard): refresh state 2026-05-23T17:07:12Z · 4h ago
+- `2db523e` — chore(dashboard): refresh state 2026-05-23T15:44:48Z · 6h ago
+- `65a373d` — chore(dashboard): refresh state 2026-05-23T14:10:46Z · 7h ago
+- `32fd02b` — chore(dashboard): refresh state 2026-05-23T12:13:28Z · 9h ago
+- `4ce4620` — chore(dashboard): refresh state 2026-05-23T11:22:06Z · 10h ago
+- `6a59035` — chore(dashboard): refresh state 2026-05-23T09:59:05Z · 11h ago
+- `070a935` — chore(dashboard): refresh state 2026-05-23T07:56:07Z · 14h ago
+- `a647966` — chore(dashboard): refresh state 2026-05-23T05:07:08Z · 16h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 249ms
-- OK  `rawGithub` — 200 · 278ms
-- OK  `everyayah` — 200 · 518ms
-- OK  `quranicaudio` — 200 · 384ms
-- OK  `qurancdn` — 200 · 321ms
+- OK  `jsdelivr` — 200 · 423ms
+- OK  `rawGithub` — 200 · 272ms
+- OK  `everyayah` — 200 · 581ms
+- OK  `quranicaudio` — 200 · 327ms
+- OK  `qurancdn` — 200 · 418ms
 
 ## EAS update channels
 
