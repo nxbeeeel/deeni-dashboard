@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-05-31T10:33:32.818Z (just now)_
+_Last refresh: 2026-05-31T12:14:58.802Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **9** |
+| DAU | **—** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -31,47 +31,39 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-5 — Error: Call to function 'NativeDatabase.prepareSync' has been rejected. · 6 events · 1 users · last 29d ago
-- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 1 events · 1 users · last 29m ago
+- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 1 events · 1 users · last 2h ago
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 1 events · 1 users · last 1d ago
 - REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 14d ago
 - REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 18d ago
-- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 19d ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 20d ago
 - REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 24d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 8 events · 1 users · last 26d ago
 
 ## PostHog — top events (24h)
 
-- `prayer_marked_done` — 29
-- `Application Backgrounded` — 29
-- `Application Became Active` — 18
-- `Application Opened` — 15
-- `quran_played` — 13
-- `feature_opened` — 12
-- `surah_opened` — 6
-- `Application Installed` — 4
-- `mushaf_opened` — 2
-- `Application Updated` — 1
+_PostHog pull failed: PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.
+_
 
 ## GitHub — recent commits to main
 
-- `9c6d3a0` — chore(dashboard): refresh state 2026-05-31T08:27:53Z · 2h ago
-- `2f31890` — chore(dashboard): refresh state 2026-05-31T05:05:35Z · 5h ago
-- `dee80c5` — chore(dashboard): refresh state 2026-05-31T00:05:46Z · 10h ago
-- `e88acfc` — chore(dashboard): refresh state 2026-05-30T22:32:57Z · 12h ago
-- `4b36660` — chore(dashboard): refresh state 2026-05-30T21:05:51Z · 13h ago
-- `b90e6c5` — chore(dashboard): refresh state 2026-05-30T19:50:40Z · 15h ago
-- `62f1229` — chore(dashboard): refresh state 2026-05-30T18:04:59Z · 16h ago
-- `b3ab04b` — chore(dashboard): refresh state 2026-05-30T16:35:10Z · 18h ago
-- `9548a30` — chore(dashboard): refresh state 2026-05-30T15:14:09Z · 19h ago
-- `d4badf3` — chore(dashboard): refresh state 2026-05-30T13:50:53Z · 21h ago
+- `7e4d150` — chore(dashboard): refresh state 2026-05-31T10:33:33Z · 2h ago
+- `9c6d3a0` — chore(dashboard): refresh state 2026-05-31T08:27:53Z · 4h ago
+- `2f31890` — chore(dashboard): refresh state 2026-05-31T05:05:35Z · 7h ago
+- `dee80c5` — chore(dashboard): refresh state 2026-05-31T00:05:46Z · 12h ago
+- `e88acfc` — chore(dashboard): refresh state 2026-05-30T22:32:57Z · 14h ago
+- `4b36660` — chore(dashboard): refresh state 2026-05-30T21:05:51Z · 15h ago
+- `b90e6c5` — chore(dashboard): refresh state 2026-05-30T19:50:40Z · 16h ago
+- `62f1229` — chore(dashboard): refresh state 2026-05-30T18:04:59Z · 18h ago
+- `b3ab04b` — chore(dashboard): refresh state 2026-05-30T16:35:10Z · 20h ago
+- `9548a30` — chore(dashboard): refresh state 2026-05-30T15:14:09Z · 21h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 424ms
-- OK  `rawGithub` — 200 · 340ms
-- OK  `everyayah` — 200 · 544ms
-- OK  `quranicaudio` — 200 · 447ms
-- OK  `qurancdn` — 200 · 435ms
+- OK  `jsdelivr` — 200 · 289ms
+- OK  `rawGithub` — 200 · 192ms
+- OK  `everyayah` — 200 · 489ms
+- OK  `quranicaudio` — 200 · 278ms
+- OK  `qurancdn` — 200 · 377ms
 
 ## EAS update channels
 
@@ -102,3 +94,8 @@ _None._
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
+
+## Refresh errors
+
+- **posthog** — PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.
+
