@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-05-31T12:14:58.802Z",
+  "refreshedAt": "2026-05-31T14:19:21.249Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -114,12 +114,71 @@
     }
   },
   "posthog": {
-    "healthy": false,
-    "error": "PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.\r\n"
+    "healthy": true,
+    "dau": 9,
+    "dauTrend7d": [
+      2,
+      8,
+      10,
+      5,
+      4,
+      7,
+      8,
+      8
+    ],
+    "topEvents24h": [
+      {
+        "event": "Application Backgrounded",
+        "count": 32
+      },
+      {
+        "event": "prayer_marked_done",
+        "count": 29
+      },
+      {
+        "event": "Application Opened",
+        "count": 17
+      },
+      {
+        "event": "Application Became Active",
+        "count": 16
+      },
+      {
+        "event": "quran_played",
+        "count": 13
+      },
+      {
+        "event": "feature_opened",
+        "count": 13
+      },
+      {
+        "event": "surah_opened",
+        "count": 4
+      },
+      {
+        "event": "mushaf_opened",
+        "count": 2
+      },
+      {
+        "event": "Application Installed",
+        "count": 2
+      },
+      {
+        "event": "Application Updated",
+        "count": 1
+      }
+    ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "8e89e7b",
+        "msg": "chore(dashboard): refresh state 2026-05-31T12:14:59Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-05-31T12:14:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8e89e7bc13fd1f204348a1a3f8a526c8d02e18d0"
+      },
       {
         "sha": "7e4d150",
         "msg": "chore(dashboard): refresh state 2026-05-31T10:33:33Z",
@@ -252,13 +311,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-29T18:38:14Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/337e41f960d69ec394bc4be7179e2cae3dacc1d8"
-      },
-      {
-        "sha": "f0ddecc",
-        "msg": "chore(dashboard): refresh state 2026-05-29T15:53:39Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-29T15:53:39Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f0ddeccbaef826df07db0cf79064d4b915de152c"
       }
     ],
     "releases": [
@@ -292,45 +344,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26712306764,
+      "id": 26715063099,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26712306764",
-      "ranAt": "2026-05-31T12:13:54Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26715063099",
+      "ranAt": "2026-05-31T14:18:19Z",
+      "durationSec": 2
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 289,
+      "latencyMs": 228,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 192,
+      "latencyMs": 268,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 489,
+      "latencyMs": 568,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 278,
+      "latencyMs": 394,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 377,
+      "latencyMs": 451,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -522,12 +574,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "posthog",
-      "error": "PostHog query failed → HTTP 503: <!DOCTYPE html><title>Error 503</title><p>Error 503.\r\n"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {
