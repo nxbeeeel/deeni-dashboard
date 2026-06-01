@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-01T13:14:01.928Z",
+  "refreshedAt": "2026-06-01T19:09:40.982Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -104,56 +104,60 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 13,
+    "dau": 18,
     "dauTrend7d": [
-      7,
+      4,
       10,
       5,
       4,
       7,
       8,
       11,
-      8
+      16
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 64
+        "count": 80
       },
       {
         "event": "Application Became Active",
-        "count": 41
-      },
-      {
-        "event": "Application Opened",
-        "count": 22
+        "count": 52
       },
       {
         "event": "prayer_marked_done",
-        "count": 19
+        "count": 29
+      },
+      {
+        "event": "Application Opened",
+        "count": 27
       },
       {
         "event": "feature_opened",
-        "count": 17
+        "count": 21
       },
       {
         "event": "mushaf_opened",
-        "count": 9
-      },
-      {
-        "event": "surah_opened",
-        "count": 4
+        "count": 8
       },
       {
         "event": "Application Installed",
+        "count": 6
+      },
+      {
+        "event": "surah_opened",
+        "count": 5
+      },
+      {
+        "event": "Application Updated",
+        "count": 4
+      },
+      {
+        "event": "quran_played",
         "count": 3
       },
       {
         "event": "bookmark_added",
-        "count": 2
-      },
-      {
-        "event": "Application Updated",
         "count": 1
       }
     ]
@@ -161,6 +165,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "0830aa0",
+        "msg": "chore(dashboard): refresh state 2026-06-01T13:14:02Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-01T13:14:02Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0830aa0edcfe3a86c211ce02f397651a92cf7b41"
+      },
       {
         "sha": "7bb37ae",
         "msg": "chore(dashboard): refresh state 2026-06-01T07:05:58Z",
@@ -293,13 +304,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-05-30T16:35:10Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b3ab04b5a702150c28577c81d036fa22020d3a9d"
-      },
-      {
-        "sha": "9548a30",
-        "msg": "chore(dashboard): refresh state 2026-05-30T15:14:09Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-05-30T15:14:09Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9548a30574dacdfa1a2c666c42f0f657c7863d8f"
       }
     ],
     "releases": [
@@ -333,13 +337,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 26757097892,
+      "id": 26775982845,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26757097892",
-      "ranAt": "2026-06-01T13:12:52Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/26775982845",
+      "ranAt": "2026-06-01T19:08:29Z",
       "durationSec": 4
     }
   },
@@ -347,31 +351,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 155,
+      "latencyMs": 411,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 228,
+      "latencyMs": 333,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 552,
+      "latencyMs": 551,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 334,
+      "latencyMs": 265,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 307,
+      "latencyMs": 192,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
