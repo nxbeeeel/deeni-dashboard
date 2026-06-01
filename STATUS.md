@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-01T07:05:57.856Z (just now)_
+_Last refresh: 2026-06-01T13:14:01.928Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **—** |
-| DAU | **12** |
+| Crash-free (24h) | **100.00%** |
+| DAU | **13** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,41 +30,47 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-_Sentry pull failed: The operation was aborted due to timeout_
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 9 events · 2 users · last 2h ago
+- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 1 events · 1 users · last 1d ago
+- REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 1 events · 1 users · last 2d ago
+- REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 15d ago
+- REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 19d ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 21d ago
+- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 25d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 51
-- `Application Became Active` — 30
-- `prayer_marked_done` — 26
-- `Application Opened` — 21
-- `quran_played` — 13
-- `feature_opened` — 7
-- `mushaf_opened` — 6
+- `Application Backgrounded` — 64
+- `Application Became Active` — 41
+- `Application Opened` — 22
+- `prayer_marked_done` — 19
+- `feature_opened` — 17
+- `mushaf_opened` — 9
 - `surah_opened` — 4
-- `Application Installed` — 2
+- `Application Installed` — 3
+- `bookmark_added` — 2
 - `Application Updated` — 1
 
 ## GitHub — recent commits to main
 
-- `9290a94` — chore(dashboard): refresh state 2026-06-01T01:41:09Z · 5h ago
-- `8377e67` — chore(dashboard): refresh state 2026-05-31T23:05:51Z · 8h ago
-- `0b2b22e` — chore(dashboard): refresh state 2026-05-31T21:34:19Z · 10h ago
-- `7fcfcf4` — chore(dashboard): refresh state 2026-05-31T20:15:40Z · 11h ago
-- `d57a0a2` — chore(dashboard): refresh state 2026-05-31T18:46:43Z · 12h ago
-- `4b35e16` — chore(dashboard): refresh state 2026-05-31T17:13:52Z · 14h ago
-- `5fad9ce` — chore(dashboard): refresh state 2026-05-31T15:51:10Z · 15h ago
-- `3e46c08` — chore(dashboard): refresh state 2026-05-31T14:19:21Z · 17h ago
-- `8e89e7b` — chore(dashboard): refresh state 2026-05-31T12:14:59Z · 19h ago
-- `7e4d150` — chore(dashboard): refresh state 2026-05-31T10:33:33Z · 21h ago
+- `7bb37ae` — chore(dashboard): refresh state 2026-06-01T07:05:58Z · 6h ago
+- `9290a94` — chore(dashboard): refresh state 2026-06-01T01:41:09Z · 12h ago
+- `8377e67` — chore(dashboard): refresh state 2026-05-31T23:05:51Z · 14h ago
+- `0b2b22e` — chore(dashboard): refresh state 2026-05-31T21:34:19Z · 16h ago
+- `7fcfcf4` — chore(dashboard): refresh state 2026-05-31T20:15:40Z · 17h ago
+- `d57a0a2` — chore(dashboard): refresh state 2026-05-31T18:46:43Z · 18h ago
+- `4b35e16` — chore(dashboard): refresh state 2026-05-31T17:13:52Z · 20h ago
+- `5fad9ce` — chore(dashboard): refresh state 2026-05-31T15:51:10Z · 21h ago
+- `3e46c08` — chore(dashboard): refresh state 2026-05-31T14:19:21Z · 23h ago
+- `8e89e7b` — chore(dashboard): refresh state 2026-05-31T12:14:59Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 133ms
-- OK  `rawGithub` — 200 · 184ms
-- OK  `everyayah` — 200 · 509ms
-- OK  `quranicaudio` — 200 · 259ms
-- OK  `qurancdn` — 200 · 355ms
+- OK  `jsdelivr` — 200 · 155ms
+- OK  `rawGithub` — 200 · 228ms
+- OK  `everyayah` — 200 · 552ms
+- OK  `quranicaudio` — 200 · 334ms
+- OK  `qurancdn` — 200 · 307ms
 
 ## EAS update channels
 
@@ -95,7 +101,3 @@ _Sentry pull failed: The operation was aborted due to timeout_
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
-
-## Refresh errors
-
-- **sentry** — The operation was aborted due to timeout
