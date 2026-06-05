@@ -1,112 +1,17 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-05T13:54:50.331Z",
+  "refreshedAt": "2026-06-05T16:32:40.157Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
-    "healthy": true,
-    "crashFree": 100,
-    "crashFreeTrend7d": [
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100
-    ],
-    "openIssuesCount": 7,
-    "topIssues": [
-      {
-        "id": "7516974353",
-        "shortId": "REACT-NATIVE-B",
-        "title": "Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 \"The file “manifest.json” couldn’t be opened because you don’t have permission to view it.\" UserInfo={NSFilePath=/var/mobile/Containers/Data/Application/9AC17B92-8C7F-4E05-813C-C559C5B...",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-31T10:04:34.378000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7516974353/",
-        "release": null
-      },
-      {
-        "id": "7516374479",
-        "shortId": "REACT-NATIVE-A",
-        "title": "ApplicationNotResponding: Background ANR",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-30T08:19:20.922000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7516374479/",
-        "release": null
-      },
-      {
-        "id": "7487221431",
-        "shortId": "REACT-NATIVE-9",
-        "title": "EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 >",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-17T15:18:07Z",
-        "url": "https://beloop-1t.sentry.io/issues/7487221431/",
-        "release": null
-      },
-      {
-        "id": "7479242978",
-        "shortId": "REACT-NATIVE-8",
-        "title": "ApplicationNotResponding: ANR",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-13T08:40:53.808000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7479242978/",
-        "release": null
-      },
-      {
-        "id": "7474927477",
-        "shortId": "REACT-NATIVE-7",
-        "title": "RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-12T00:40:27.929000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7474927477/",
-        "release": null
-      },
-      {
-        "id": "7466361903",
-        "shortId": "REACT-NATIVE-6",
-        "title": "App Hanging: App hanging for at least 2000 ms.",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-07T20:21:35.247189Z",
-        "url": "https://beloop-1t.sentry.io/issues/7466361903/",
-        "release": null
-      },
-      {
-        "id": "7406195421",
-        "shortId": "REACT-NATIVE-3",
-        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 9,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-06-01T11:43:59.869000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
-        "release": null
-      }
-    ],
-    "latestRelease": {
-      "version": "in.deen.app@1.8.0-debug+72",
-      "newGroups": 0,
-      "sessions": null
-    }
+    "healthy": false,
+    "error": "Unexpected token '<', \"\n\n\n\n\n\n\n<!DOCTYPE \"... is not valid JSON"
   },
   "posthog": {
     "healthy": true,
     "dau": 11,
     "dauTrend7d": [
-      4,
+      3,
       9,
       11,
       16,
@@ -118,15 +23,15 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 64
+        "count": 70
       },
       {
         "event": "Application Became Active",
-        "count": 41
+        "count": 48
       },
       {
         "event": "Application Opened",
-        "count": 24
+        "count": 23
       },
       {
         "event": "prayer_marked_done",
@@ -134,7 +39,7 @@
       },
       {
         "event": "feature_opened",
-        "count": 11
+        "count": 10
       },
       {
         "event": "mushaf_opened",
@@ -157,6 +62,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "1ba39e1",
+        "msg": "chore(dashboard): refresh state 2026-06-05T13:54:51Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-05T13:54:51Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1ba39e1c88584cfdb6524af9d85a63ed0e7f8d95"
+      },
       {
         "sha": "4c6acc6",
         "msg": "chore(dashboard): refresh state 2026-06-05T10:52:08Z",
@@ -289,13 +201,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-02T20:29:17Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/634520c3f775f4a33852566285cd503293c0a21f"
-      },
-      {
-        "sha": "3ba18ff",
-        "msg": "chore(dashboard): refresh state 2026-06-02T17:28:06Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-02T17:28:06Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/3ba18ffbcdf2dcef4f532fdd56a3cf117cc05e3c"
       }
     ],
     "releases": [
@@ -329,13 +234,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 27018991565,
+      "id": 27027135125,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27018991565",
-      "ranAt": "2026-06-05T13:53:45Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27027135125",
+      "ranAt": "2026-06-05T16:31:25Z",
       "durationSec": 3
     }
   },
@@ -343,31 +248,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 148,
+      "latencyMs": 201,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 260,
+      "latencyMs": 201,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 461,
+      "latencyMs": 509,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 323,
+      "latencyMs": 240,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 264,
+      "latencyMs": 318,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -559,7 +464,12 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [],
+  "errors": [
+    {
+      "source": "sentry",
+      "error": "Unexpected token '<', \"\n\n\n\n\n\n\n<!DOCTYPE \"... is not valid JSON"
+    }
+  ],
   "alerts": {
     "active": [],
     "fired": {},
