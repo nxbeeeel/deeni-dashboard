@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-05T16:32:40.157Z (just now)_
+_Last refresh: 2026-06-05T19:00:28.803Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **—** |
-| DAU | **11** |
+| Crash-free (24h) | **100.00%** |
+| DAU | **10** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,21 +30,20 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-_Sentry pull failed: Unexpected token '<', "
-
-
-
-
-
-
-<!DOCTYPE "... is not valid JSON_
+- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 1 events · 1 users · last 5d ago
+- REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 1 events · 1 users · last 6d ago
+- REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 19d ago
+- REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 23d ago
+- REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 25d ago
+- REACT-NATIVE-6 — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 29d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 9 events · 1 users · last 4d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 70
-- `Application Became Active` — 48
-- `Application Opened` — 23
-- `prayer_marked_done` — 17
+- `Application Backgrounded` — 68
+- `Application Became Active` — 49
+- `Application Opened` — 20
+- `prayer_marked_done` — 14
 - `feature_opened` — 10
 - `mushaf_opened` — 6
 - `surah_opened` — 6
@@ -53,24 +52,24 @@ _Sentry pull failed: Unexpected token '<', "
 
 ## GitHub — recent commits to main
 
-- `1ba39e1` — chore(dashboard): refresh state 2026-06-05T13:54:51Z · 3h ago
-- `4c6acc6` — chore(dashboard): refresh state 2026-06-05T10:52:08Z · 6h ago
-- `5fc4ef7` — chore(dashboard): refresh state 2026-06-05T06:37:45Z · 10h ago
-- `314d094` — chore(dashboard): refresh state 2026-06-05T01:38:50Z · 15h ago
-- `b6ba41d` — chore(dashboard): refresh state 2026-06-04T23:13:36Z · 17h ago
-- `99033bc` — chore(dashboard): refresh state 2026-06-04T21:46:11Z · 19h ago
-- `1afaa43` — chore(dashboard): refresh state 2026-06-04T19:39:39Z · 21h ago
-- `8094598` — chore(dashboard): refresh state 2026-06-04T17:30:58Z · 23h ago
+- `82a2b13` — chore(dashboard): refresh state 2026-06-05T16:32:42Z · 2h ago
+- `1ba39e1` — chore(dashboard): refresh state 2026-06-05T13:54:51Z · 5h ago
+- `4c6acc6` — chore(dashboard): refresh state 2026-06-05T10:52:08Z · 8h ago
+- `5fc4ef7` — chore(dashboard): refresh state 2026-06-05T06:37:45Z · 12h ago
+- `314d094` — chore(dashboard): refresh state 2026-06-05T01:38:50Z · 17h ago
+- `b6ba41d` — chore(dashboard): refresh state 2026-06-04T23:13:36Z · 20h ago
+- `99033bc` — chore(dashboard): refresh state 2026-06-04T21:46:11Z · 21h ago
+- `1afaa43` — chore(dashboard): refresh state 2026-06-04T19:39:39Z · 23h ago
+- `8094598` — chore(dashboard): refresh state 2026-06-04T17:30:58Z · 1d ago
 - `7061a87` — chore(dashboard): refresh state 2026-06-04T14:07:32Z · 1d ago
-- `44a7d89` — chore(dashboard): refresh state 2026-06-04T10:49:17Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 201ms
-- OK  `rawGithub` — 200 · 201ms
-- OK  `everyayah` — 200 · 509ms
-- OK  `quranicaudio` — 200 · 240ms
-- OK  `qurancdn` — 200 · 318ms
+- OK  `jsdelivr` — 200 · 102ms
+- OK  `rawGithub` — 200 · 148ms
+- OK  `everyayah` — 200 · 523ms
+- OK  `quranicaudio` — 200 · 175ms
+- OK  `qurancdn` — 200 · 358ms
 
 ## EAS update channels
 
@@ -101,14 +100,3 @@ _Sentry pull failed: Unexpected token '<', "
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
-
-## Refresh errors
-
-- **sentry** — Unexpected token '<', "
-
-
-
-
-
-
-<!DOCTYPE "... is not valid JSON
