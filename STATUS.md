@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-07T21:20:22.852Z (just now)_
+_Last refresh: 2026-06-07T22:39:38.356Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -30,7 +30,7 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 1 events · 1 users · last 7d ago
+- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 1 events · 1 users · last 8d ago
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 1 events · 1 users · last 9d ago
 - REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 21d ago
 - REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 26d ago
@@ -39,33 +39,33 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 21
+- `Application Backgrounded` — 23
 - `Application Became Active` — 13
+- `Application Opened` — 10
 - `prayer_marked_done` — 9
-- `Application Opened` — 9
 - `Application Installed` — 3
 - `feature_opened` — 2
 
 ## GitHub — recent commits to main
 
-- `9e20298` — chore(dashboard): refresh state 2026-06-07T19:56:51Z · 1h ago
-- `2b068d3` — chore(dashboard): refresh state 2026-06-07T18:09:09Z · 3h ago
-- `3c33b8e` — chore(dashboard): refresh state 2026-06-07T16:54:21Z · 4h ago
-- `b4cf990` — chore(dashboard): refresh state 2026-06-07T15:12:48Z · 6h ago
-- `7444eaf` — chore(dashboard): refresh state 2026-06-07T13:06:36Z · 8h ago
-- `e8a76f7` — chore(dashboard): refresh state 2026-06-07T11:12:21Z · 10h ago
-- `f54c9c9` — chore(dashboard): refresh state 2026-06-07T08:36:54Z · 13h ago
-- `730a4fc` — chore(dashboard): refresh state 2026-06-07T05:09:42Z · 16h ago
-- `53f114d` — chore(dashboard): refresh state 2026-06-07T00:09:55Z · 21h ago
-- `d4955be` — chore(dashboard): refresh state 2026-06-06T22:38:33Z · 23h ago
+- `bc4e8ed` — chore(dashboard): refresh state 2026-06-07T21:20:23Z · 1h ago
+- `9e20298` — chore(dashboard): refresh state 2026-06-07T19:56:51Z · 3h ago
+- `2b068d3` — chore(dashboard): refresh state 2026-06-07T18:09:09Z · 5h ago
+- `3c33b8e` — chore(dashboard): refresh state 2026-06-07T16:54:21Z · 6h ago
+- `b4cf990` — chore(dashboard): refresh state 2026-06-07T15:12:48Z · 7h ago
+- `7444eaf` — chore(dashboard): refresh state 2026-06-07T13:06:36Z · 10h ago
+- `e8a76f7` — chore(dashboard): refresh state 2026-06-07T11:12:21Z · 11h ago
+- `f54c9c9` — chore(dashboard): refresh state 2026-06-07T08:36:54Z · 14h ago
+- `730a4fc` — chore(dashboard): refresh state 2026-06-07T05:09:42Z · 18h ago
+- `53f114d` — chore(dashboard): refresh state 2026-06-07T00:09:55Z · 23h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 91ms
-- OK  `rawGithub` — 200 · 101ms
-- OK  `everyayah` — 200 · 412ms
-- OK  `quranicaudio` — 200 · 389ms
-- OK  `qurancdn` — 200 · 160ms
+- OK  `jsdelivr` — 200 · 104ms
+- OK  `rawGithub` — 200 · 118ms
+- OK  `everyayah` — 200 · 550ms
+- OK  `quranicaudio` — 200 · 419ms
+- OK  `qurancdn` — 200 · 387ms
 
 ## EAS update channels
 
