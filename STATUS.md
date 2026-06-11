@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-10T22:54:13.954Z (just now)_
+_Last refresh: 2026-06-11T00:21:17.065Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **12** |
+| DAU | **—** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -35,38 +35,32 @@ _None._
 - REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 24d ago
 - REACT-NATIVE-8 — ApplicationNotResponding: ANR · 1 events · 1 users · last 29d ago
 - REACT-NATIVE-7 — RemoteServiceException$CannotDeliverBroadcastException: can't deliver broadcast · 1 events · 1 users · last 30d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 9 events · 1 users · last 9d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 9 events · 1 users · last 10d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 53
-- `Application Became Active` — 38
-- `prayer_marked_done` — 22
-- `Application Opened` — 20
-- `feature_opened` — 2
-- `surah_opened` — 2
-- `adhan_notification_opened` — 1
+_PostHog pull failed: PostHog query failed → HTTP 500: {"type":"server_error","code":"error","detail":"A server error occurred.","attr":null}_
 
 ## GitHub — recent commits to main
 
-- `114590d` — chore(dashboard): refresh state 2026-06-10T20:37:38Z · 2h ago
-- `c483e0a` — chore(dashboard): refresh state 2026-06-10T17:43:40Z · 5h ago
-- `001f968` — chore(dashboard): refresh state 2026-06-10T14:28:25Z · 8h ago
-- `b8e5adc` — chore(dashboard): refresh state 2026-06-10T10:59:47Z · 12h ago
-- `7093592` — chore(dashboard): refresh state 2026-06-10T06:36:57Z · 16h ago
-- `17864dd` — chore(dashboard): refresh state 2026-06-10T01:37:52Z · 21h ago
+- `091ba3b` — chore(dashboard): refresh state 2026-06-10T22:54:15Z · 1h ago
+- `114590d` — chore(dashboard): refresh state 2026-06-10T20:37:38Z · 4h ago
+- `c483e0a` — chore(dashboard): refresh state 2026-06-10T17:43:40Z · 7h ago
+- `001f968` — chore(dashboard): refresh state 2026-06-10T14:28:25Z · 10h ago
+- `b8e5adc` — chore(dashboard): refresh state 2026-06-10T10:59:47Z · 13h ago
+- `7093592` — chore(dashboard): refresh state 2026-06-10T06:36:57Z · 18h ago
+- `17864dd` — chore(dashboard): refresh state 2026-06-10T01:37:52Z · 23h ago
 - `1401332` — chore(dashboard): refresh state 2026-06-09T23:20:42Z · 1d ago
 - `1d19296` — chore(dashboard): refresh state 2026-06-09T21:51:35Z · 1d ago
 - `1f7bc27` — chore(dashboard): refresh state 2026-06-09T19:35:07Z · 1d ago
-- `5020055` — chore(dashboard): refresh state 2026-06-09T17:09:41Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 348ms
-- OK  `rawGithub` — 200 · 188ms
-- OK  `everyayah` — 200 · 552ms
-- OK  `quranicaudio` — 200 · 157ms
-- OK  `qurancdn` — 200 · 189ms
+- OK  `jsdelivr` — 200 · 127ms
+- OK  `rawGithub` — 200 · 157ms
+- OK  `everyayah` — 200 · 382ms
+- OK  `quranicaudio` — 200 · 247ms
+- OK  `qurancdn` — 200 · 224ms
 
 ## EAS update channels
 
@@ -97,3 +91,7 @@ _None._
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
+
+## Refresh errors
+
+- **posthog** — PostHog query failed → HTTP 500: {"type":"server_error","code":"error","detail":"A server error occurred.","attr":null}
