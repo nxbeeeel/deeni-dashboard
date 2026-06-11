@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-11T14:04:17.065Z",
+  "refreshedAt": "2026-06-11T17:51:54.846Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -19,6 +19,17 @@
     "openIssuesCount": 5,
     "topIssues": [
       {
+        "id": "7516374479",
+        "shortId": "REACT-NATIVE-A",
+        "title": "ApplicationNotResponding: Background ANR",
+        "events24h": 2,
+        "events1h": null,
+        "users24h": 2,
+        "lastSeen": "2026-06-11T16:25:18.568000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7516374479/",
+        "release": null
+      },
+      {
         "id": "7516974353",
         "shortId": "REACT-NATIVE-B",
         "title": "Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 \"The file “manifest.json” couldn’t be opened because you don’t have permission to view it.\" UserInfo={NSFilePath=/var/mobile/Containers/Data/Application/9AC17B92-8C7F-4E05-813C-C559C5B...",
@@ -27,17 +38,6 @@
         "users24h": 1,
         "lastSeen": "2026-05-31T10:04:34.378000Z",
         "url": "https://beloop-1t.sentry.io/issues/7516974353/",
-        "release": null
-      },
-      {
-        "id": "7516374479",
-        "shortId": "REACT-NATIVE-A",
-        "title": "ApplicationNotResponding: Background ANR",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-30T08:19:20.922000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7516374479/",
         "release": null
       },
       {
@@ -84,43 +84,55 @@
     "healthy": true,
     "dau": 13,
     "dauTrend7d": [
-      9,
+      6,
       7,
       9,
       10,
       10,
       13,
       13,
-      11
+      13
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 72
+        "count": 82
       },
       {
         "event": "Application Became Active",
-        "count": 51
+        "count": 60
       },
       {
-        "event": "Application Opened",
+        "event": "quran_played",
         "count": 24
       },
       {
-        "event": "prayer_marked_done",
-        "count": 19
+        "event": "Application Opened",
+        "count": 22
       },
       {
-        "event": "surah_opened",
-        "count": 4
+        "event": "prayer_marked_done",
+        "count": 12
       },
       {
         "event": "feature_opened",
-        "count": 3
+        "count": 11
+      },
+      {
+        "event": "surah_opened",
+        "count": 9
+      },
+      {
+        "event": "bookmark_added",
+        "count": 7
+      },
+      {
+        "event": "mushaf_opened",
+        "count": 6
       },
       {
         "event": "Application Installed",
-        "count": 2
+        "count": 4
       },
       {
         "event": "adhan_notification_opened",
@@ -131,6 +143,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "a220dd1",
+        "msg": "chore(dashboard): refresh state 2026-06-11T14:04:18Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-11T14:04:18Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a220dd125909043a0f90e8ce55a7e93d426bc095"
+      },
       {
         "sha": "7a29553",
         "msg": "chore(dashboard): refresh state 2026-06-11T09:51:58Z",
@@ -263,13 +282,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-08T23:48:32Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/41a6ddd86182c4bb158865451bd31c14c7a4acff"
-      },
-      {
-        "sha": "17c6562",
-        "msg": "chore(dashboard): refresh state 2026-06-08T22:13:21Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-08T22:13:21Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/17c6562827dc4f2a131703cb98ea53cef52a6e74"
       }
     ],
     "releases": [
@@ -303,45 +315,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 27352434861,
+      "id": 27366531750,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27352434861",
-      "ranAt": "2026-06-11T14:03:02Z",
-      "durationSec": 7
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27366531750",
+      "ranAt": "2026-06-11T17:50:39Z",
+      "durationSec": 5
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 368,
+      "latencyMs": 103,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 225,
+      "latencyMs": 330,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 535,
+      "latencyMs": 576,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 364,
+      "latencyMs": 174,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 356,
+      "latencyMs": 240,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
