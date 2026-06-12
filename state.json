@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-12T12:58:03.569Z",
+  "refreshedAt": "2026-06-12T16:26:32.628Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -71,48 +71,40 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 13,
+    "dau": 9,
     "dauTrend7d": [
-      5,
+      3,
       9,
       10,
       10,
       13,
       13,
       15,
-      5
+      6
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 56
-      },
-      {
-        "event": "Application Became Active",
-        "count": 40
-      },
-      {
-        "event": "quran_played",
-        "count": 24
-      },
-      {
-        "event": "feature_opened",
-        "count": 20
+        "count": 26
       },
       {
         "event": "Application Opened",
-        "count": 19
+        "count": 16
+      },
+      {
+        "event": "quran_played",
+        "count": 15
+      },
+      {
+        "event": "Application Became Active",
+        "count": 15
+      },
+      {
+        "event": "feature_opened",
+        "count": 13
       },
       {
         "event": "surah_opened",
-        "count": 12
-      },
-      {
-        "event": "mushaf_opened",
-        "count": 7
-      },
-      {
-        "event": "bookmark_added",
         "count": 7
       },
       {
@@ -120,14 +112,29 @@
         "count": 5
       },
       {
-        "event": "Application Installed",
+        "event": "mushaf_opened",
         "count": 4
+      },
+      {
+        "event": "bookmark_added",
+        "count": 1
+      },
+      {
+        "event": "Application Installed",
+        "count": 1
       }
     ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "dfc79b9",
+        "msg": "chore(dashboard): refresh state 2026-06-12T12:58:03Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-12T12:58:03Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dfc79b96526788984d6152a252c042c518fc8428"
+      },
       {
         "sha": "0a8d253",
         "msg": "chore(dashboard): refresh state 2026-06-12T09:44:40Z",
@@ -260,13 +267,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-09T21:51:35Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1d19296bac4fbe23aa3ea0872409a5f2bab1e97f"
-      },
-      {
-        "sha": "1f7bc27",
-        "msg": "chore(dashboard): refresh state 2026-06-09T19:35:07Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-09T19:35:07Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1f7bc272484496c0557a105ed9b268ae06a04395"
       }
     ],
     "releases": [
@@ -300,45 +300,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 27417074292,
+      "id": 27428642303,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27417074292",
-      "ranAt": "2026-06-12T12:56:59Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27428642303",
+      "ranAt": "2026-06-12T16:25:18Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 125,
+      "latencyMs": 159,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 141,
+      "latencyMs": 214,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 524,
+      "latencyMs": 538,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 250,
+      "latencyMs": 400,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 239,
+      "latencyMs": 316,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
