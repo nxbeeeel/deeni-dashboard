@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-13T08:39:01.170Z (just now)_
+_Last refresh: 2026-06-13T11:20:16.718Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **12** |
+| DAU | **11** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -31,17 +31,17 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 2 users · last 2d ago
-- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 3h ago
+- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 6h ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 1 events · 1 users · last 13d ago
 - REACT-NATIVE-9 — EXC_BAD_ACCESS: Exception 1, Code 1, Subcode 11210692933609237054 > · 1 events · 1 users · last 27d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 9 events · 1 users · last 12d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 35
+- `Application Backgrounded` — 37
 - `prayer_marked_done` — 26
-- `Application Opened` — 20
-- `Application Became Active` — 17
+- `Application Became Active` — 19
+- `Application Opened` — 18
 - `feature_opened` — 8
 - `quran_played` — 7
 - `mushaf_opened` — 6
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `6dfc7e6` — chore(dashboard): refresh state 2026-06-13T05:08:18Z · 4h ago
-- `47ee77a` — chore(dashboard): refresh state 2026-06-13T00:03:55Z · 9h ago
-- `44b30c5` — chore(dashboard): refresh state 2026-06-12T22:28:37Z · 10h ago
-- `ebb1ae9` — chore(dashboard): refresh state 2026-06-12T20:37:20Z · 12h ago
-- `118db29` — chore(dashboard): refresh state 2026-06-12T18:25:20Z · 14h ago
-- `552e494` — chore(dashboard): refresh state 2026-06-12T16:26:33Z · 16h ago
-- `dfc79b9` — chore(dashboard): refresh state 2026-06-12T12:58:03Z · 20h ago
-- `0a8d253` — chore(dashboard): refresh state 2026-06-12T09:44:40Z · 23h ago
+- `9ca85e4` — chore(dashboard): refresh state 2026-06-13T08:39:02Z · 3h ago
+- `6dfc7e6` — chore(dashboard): refresh state 2026-06-13T05:08:18Z · 6h ago
+- `47ee77a` — chore(dashboard): refresh state 2026-06-13T00:03:55Z · 11h ago
+- `44b30c5` — chore(dashboard): refresh state 2026-06-12T22:28:37Z · 13h ago
+- `ebb1ae9` — chore(dashboard): refresh state 2026-06-12T20:37:20Z · 15h ago
+- `118db29` — chore(dashboard): refresh state 2026-06-12T18:25:20Z · 17h ago
+- `552e494` — chore(dashboard): refresh state 2026-06-12T16:26:33Z · 19h ago
+- `dfc79b9` — chore(dashboard): refresh state 2026-06-12T12:58:03Z · 22h ago
+- `0a8d253` — chore(dashboard): refresh state 2026-06-12T09:44:40Z · 1d ago
 - `e4a6bde` — chore(dashboard): refresh state 2026-06-12T05:16:57Z · 1d ago
-- `7fdb558` — chore(dashboard): refresh state 2026-06-12T00:05:12Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 176ms
-- OK  `rawGithub` — 200 · 218ms
-- OK  `everyayah` — 200 · 604ms
-- OK  `quranicaudio` — 200 · 330ms
-- OK  `qurancdn` — 200 · 316ms
+- OK  `jsdelivr` — 200 · 241ms
+- OK  `rawGithub` — 200 · 550ms
+- OK  `everyayah` — 200 · 788ms
+- OK  `quranicaudio` — 200 · 290ms
+- OK  `qurancdn` — 200 · 347ms
 
 ## EAS update channels
 
