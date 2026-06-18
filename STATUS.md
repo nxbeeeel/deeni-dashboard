@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-18T15:37:37.622Z (just now)_
+_Last refresh: 2026-06-18T18:29:26.752Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.0 (build 70)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **7** |
+| DAU | **8** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -31,7 +31,7 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 2 users · last 7d ago
-- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 5d ago
+- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 6d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 1 events · 1 users · last 18d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 9 events · 1 users · last 17d ago
 
@@ -39,9 +39,9 @@ _None._
 
 - `Application Backgrounded` — 30
 - `Application Became Active` — 22
-- `prayer_marked_done` — 15
-- `Application Opened` — 10
-- `feature_opened` — 3
+- `prayer_marked_done` — 11
+- `Application Opened` — 11
+- `feature_opened` — 2
 - `surah_opened` — 2
 - `mushaf_opened` — 1
 - `bookmark_added` — 1
@@ -49,31 +49,32 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `30fb279` — chore(dashboard): refresh state 2026-06-18T11:36:55Z · 4h ago
-- `cf4d9d3` — chore(dashboard): refresh state 2026-06-18T07:17:17Z · 8h ago
-- `b791e33` — chore(dashboard): refresh state 2026-06-18T02:02:30Z · 14h ago
-- `2447670` — chore(dashboard): refresh state 2026-06-17T23:05:21Z · 17h ago
-- `9fd55a2` — chore(dashboard): refresh state 2026-06-17T21:30:25Z · 18h ago
-- `d3ff8bf` — chore(dashboard): refresh state 2026-06-17T19:07:57Z · 21h ago
-- `1d3c662` — chore(dashboard): refresh state 2026-06-17T16:24:38Z · 23h ago
+- `1a591e3` — chore(dashboard): refresh state 2026-06-18T15:37:38Z · 3h ago
+- `30fb279` — chore(dashboard): refresh state 2026-06-18T11:36:55Z · 7h ago
+- `cf4d9d3` — chore(dashboard): refresh state 2026-06-18T07:17:17Z · 11h ago
+- `b791e33` — chore(dashboard): refresh state 2026-06-18T02:02:30Z · 16h ago
+- `2447670` — chore(dashboard): refresh state 2026-06-17T23:05:21Z · 19h ago
+- `9fd55a2` — chore(dashboard): refresh state 2026-06-17T21:30:25Z · 21h ago
+- `d3ff8bf` — chore(dashboard): refresh state 2026-06-17T19:07:57Z · 23h ago
+- `1d3c662` — chore(dashboard): refresh state 2026-06-17T16:24:38Z · 1d ago
 - `c217ffb` — chore(dashboard): refresh state 2026-06-17T12:21:45Z · 1d ago
 - `0967fd1` — chore(dashboard): refresh state 2026-06-17T07:36:34Z · 1d ago
-- `3836381` — chore(dashboard): refresh state 2026-06-17T02:04:02Z · 2d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 96ms
-- OK  `rawGithub` — 200 · 417ms
-- OK  `everyayah` — 200 · 688ms
-- OK  `quranicaudio` — 200 · 216ms
-- OK  `qurancdn` — 200 · 273ms
+- OK  `jsdelivr` — 200 · 120ms
+- OK  `rawGithub` — 200 · 240ms
+- OK  `everyayah` — 200 · 568ms
+- OK  `quranicaudio` — 200 · 178ms
+- OK  `qurancdn` — 200 · 267ms
 
 ## EAS update channels
 
 - `production` — ? · — · unknown
 - `internal` — ? · — · unknown
 - `preview` — ? · — · unknown
-- `development` — ? · — · unknown
+- `development` — pull failed: Command failed: npx --yes eas-cli@latest update:list --branch development --json --non-interactive --limit 1
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not 
 
 ## WORKLOG — last entries
 
