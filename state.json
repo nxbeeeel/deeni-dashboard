@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-18T18:29:26.752Z",
+  "refreshedAt": "2026-06-18T21:06:38.419Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -73,7 +73,7 @@
     "healthy": true,
     "dau": 8,
     "dauTrend7d": [
-      4,
+      3,
       9,
       12,
       9,
@@ -124,6 +124,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "5785363",
+        "msg": "chore(dashboard): refresh state 2026-06-18T18:29:27Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-18T18:29:27Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5785363d00c71f7cfbd3e85fb20d40004f0ca449"
+      },
       {
         "sha": "1a591e3",
         "msg": "chore(dashboard): refresh state 2026-06-18T15:37:38Z",
@@ -256,13 +263,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-15T21:11:00Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/334696e39183b978a21895940ace465239a8fdd5"
-      },
-      {
-        "sha": "bf7fda3",
-        "msg": "chore(dashboard): refresh state 2026-06-15T17:33:45Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-15T17:33:45Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/bf7fda39937ca07dbed9caa24c094499497a2656"
       }
     ],
     "releases": [
@@ -296,13 +296,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 27780809115,
+      "id": 27789276243,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27780809115",
-      "ranAt": "2026-06-18T18:28:21Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27789276243",
+      "ranAt": "2026-06-18T21:05:24Z",
       "durationSec": 4
     }
   },
@@ -310,25 +310,25 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 120,
+      "latencyMs": 2320,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 240,
+      "latencyMs": 303,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 568,
+      "latencyMs": 513,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 178,
+      "latencyMs": 394,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
@@ -360,8 +360,10 @@
         "createdAt": null
       },
       "development": {
-        "healthy": false,
-        "error": "Command failed: npx --yes eas-cli@latest update:list --branch development --json --non-interactive --limit 1\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not "
+        "healthy": true,
+        "version": null,
+        "id": null,
+        "createdAt": null
       }
     }
   },

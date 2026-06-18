@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-18T18:29:26.752Z (just now)_
+_Last refresh: 2026-06-18T21:06:38.419Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
@@ -49,23 +49,23 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `1a591e3` — chore(dashboard): refresh state 2026-06-18T15:37:38Z · 3h ago
-- `30fb279` — chore(dashboard): refresh state 2026-06-18T11:36:55Z · 7h ago
-- `cf4d9d3` — chore(dashboard): refresh state 2026-06-18T07:17:17Z · 11h ago
-- `b791e33` — chore(dashboard): refresh state 2026-06-18T02:02:30Z · 16h ago
-- `2447670` — chore(dashboard): refresh state 2026-06-17T23:05:21Z · 19h ago
-- `9fd55a2` — chore(dashboard): refresh state 2026-06-17T21:30:25Z · 21h ago
-- `d3ff8bf` — chore(dashboard): refresh state 2026-06-17T19:07:57Z · 23h ago
+- `5785363` — chore(dashboard): refresh state 2026-06-18T18:29:27Z · 3h ago
+- `1a591e3` — chore(dashboard): refresh state 2026-06-18T15:37:38Z · 5h ago
+- `30fb279` — chore(dashboard): refresh state 2026-06-18T11:36:55Z · 10h ago
+- `cf4d9d3` — chore(dashboard): refresh state 2026-06-18T07:17:17Z · 14h ago
+- `b791e33` — chore(dashboard): refresh state 2026-06-18T02:02:30Z · 19h ago
+- `2447670` — chore(dashboard): refresh state 2026-06-17T23:05:21Z · 22h ago
+- `9fd55a2` — chore(dashboard): refresh state 2026-06-17T21:30:25Z · 1d ago
+- `d3ff8bf` — chore(dashboard): refresh state 2026-06-17T19:07:57Z · 1d ago
 - `1d3c662` — chore(dashboard): refresh state 2026-06-17T16:24:38Z · 1d ago
 - `c217ffb` — chore(dashboard): refresh state 2026-06-17T12:21:45Z · 1d ago
-- `0967fd1` — chore(dashboard): refresh state 2026-06-17T07:36:34Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 120ms
-- OK  `rawGithub` — 200 · 240ms
-- OK  `everyayah` — 200 · 568ms
-- OK  `quranicaudio` — 200 · 178ms
+- OK  `jsdelivr` — 200 · 2320ms
+- OK  `rawGithub` — 200 · 303ms
+- OK  `everyayah` — 200 · 513ms
+- OK  `quranicaudio` — 200 · 394ms
 - OK  `qurancdn` — 200 · 267ms
 
 ## EAS update channels
@@ -73,8 +73,7 @@ _None._
 - `production` — ? · — · unknown
 - `internal` — ? · — · unknown
 - `preview` — ? · — · unknown
-- `development` — pull failed: Command failed: npx --yes eas-cli@latest update:list --branch development --json --non-interactive --limit 1
-npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not 
+- `development` — ? · — · unknown
 
 ## WORKLOG — last entries
 
