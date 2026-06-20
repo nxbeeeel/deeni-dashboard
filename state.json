@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-20T19:45:37.379Z",
+  "refreshedAt": "2026-06-20T21:23:04.170Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -14,7 +14,7 @@
       100,
       100,
       100,
-      96.43
+      96.77
     ],
     "openIssuesCount": 5,
     "topIssues": [
@@ -27,6 +27,17 @@
         "users24h": 2,
         "lastSeen": "2026-06-11T16:25:18.568000Z",
         "url": "https://beloop-1t.sentry.io/issues/7516374479/",
+        "release": null
+      },
+      {
+        "id": "7516974353",
+        "shortId": "REACT-NATIVE-B",
+        "title": "Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 \"The file “manifest.json” couldn’t be opened because you don’t have permission to view it.\" UserInfo={NSFilePath=/var/mobile/Containers/Data/Application/9AC17B92-8C7F-4E05-813C-C559C5B...",
+        "events24h": 2,
+        "events1h": null,
+        "users24h": 2,
+        "lastSeen": "2026-06-19T20:46:10.232000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7516974353/",
         "release": null
       },
       {
@@ -52,17 +63,6 @@
         "release": null
       },
       {
-        "id": "7516974353",
-        "shortId": "REACT-NATIVE-B",
-        "title": "Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 \"The file “manifest.json” couldn’t be opened because you don’t have permission to view it.\" UserInfo={NSFilePath=/var/mobile/Containers/Data/Application/9AC17B92-8C7F-4E05-813C-C559C5B...",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-05-31T10:04:34.378000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7516974353/",
-        "release": null
-      },
-      {
         "id": "7406195421",
         "shortId": "REACT-NATIVE-3",
         "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
@@ -82,21 +82,21 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 12,
+    "dau": 13,
     "dauTrend7d": [
-      2,
+      1,
       9,
       12,
       8,
       7,
       9,
       11,
-      11
+      12
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 42
+        "count": 46
       },
       {
         "event": "quran_played",
@@ -104,11 +104,11 @@
       },
       {
         "event": "Application Became Active",
-        "count": 26
+        "count": 29
       },
       {
         "event": "prayer_marked_done",
-        "count": 22
+        "count": 27
       },
       {
         "event": "Application Opened",
@@ -120,7 +120,7 @@
       },
       {
         "event": "mushaf_opened",
-        "count": 4
+        "count": 3
       },
       {
         "event": "surah_opened",
@@ -143,6 +143,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "b24a15e",
+        "msg": "chore(dashboard): refresh state 2026-06-20T19:45:38Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-20T19:45:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b24a15e4356fe6996b1ff9e035775d404495ea0e"
+      },
       {
         "sha": "5f72396",
         "msg": "chore(dashboard): refresh state 2026-06-20T17:56:25Z",
@@ -275,13 +282,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-18T15:37:38Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1a591e36ac1fcc970a83396925c9c74cde832053"
-      },
-      {
-        "sha": "30fb279",
-        "msg": "chore(dashboard): refresh state 2026-06-18T11:36:55Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-18T11:36:55Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/30fb279579923db232e7e81f2c42972c88403af4"
       }
     ],
     "releases": [
@@ -315,13 +315,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 27881907846,
+      "id": 27884248438,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27881907846",
-      "ranAt": "2026-06-20T19:44:29Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27884248438",
+      "ranAt": "2026-06-20T21:21:56Z",
       "durationSec": 4
     }
   },
@@ -329,31 +329,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 84,
+      "latencyMs": 122,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 137,
+      "latencyMs": 127,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 497,
+      "latencyMs": 421,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 249,
+      "latencyMs": 224,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 267,
+      "latencyMs": 230,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -553,11 +553,11 @@
         "severity": "high",
         "title": "Crash-free dipped to 96.97%",
         "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.8.0.",
-        "firedAt": "2026-06-20T14:43:05.228Z"
+        "firedAt": "2026-06-20T21:23:04.170Z"
       }
     ],
     "fired": {
-      "A1:24h-crashfree": 1781966585228
+      "A1:24h-crashfree": 1781990584170
     },
     "recent": [
       {
