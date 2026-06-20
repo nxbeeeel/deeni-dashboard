@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-20T12:01:41.236Z",
+  "refreshedAt": "2026-06-20T14:43:05.228Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
     "healthy": true,
-    "crashFree": 100,
+    "crashFree": 96.15,
     "crashFreeTrend7d": [
       100,
       100,
@@ -14,9 +14,9 @@
       100,
       100,
       100,
-      100
+      95
     ],
-    "openIssuesCount": 4,
+    "openIssuesCount": 5,
     "topIssues": [
       {
         "id": "7516374479",
@@ -27,6 +27,17 @@
         "users24h": 2,
         "lastSeen": "2026-06-11T16:25:18.568000Z",
         "url": "https://beloop-1t.sentry.io/issues/7516374479/",
+        "release": null
+      },
+      {
+        "id": "7564455365",
+        "shortId": "REACT-NATIVE-D",
+        "title": "NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a null object reference in method 'void android.view.ViewGroup.dispatchGetDisplayList()'",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-20T14:05:42.314000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7564455365/",
         "release": null
       },
       {
@@ -71,16 +82,16 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 12,
+    "dau": 10,
     "dauTrend7d": [
-      9,
+      7,
       9,
       12,
       8,
       7,
       9,
       10,
-      6
+      8
     ],
     "topEvents24h": [
       {
@@ -89,42 +100,42 @@
       },
       {
         "event": "quran_played",
-        "count": 27
+        "count": 29
       },
       {
         "event": "Application Became Active",
-        "count": 20
+        "count": 24
       },
       {
         "event": "Application Opened",
-        "count": 18
+        "count": 14
       },
       {
         "event": "prayer_marked_done",
-        "count": 11
+        "count": 13
       },
       {
         "event": "feature_opened",
-        "count": 11
+        "count": 9
       },
       {
         "event": "mushaf_opened",
-        "count": 5
+        "count": 4
       },
       {
         "event": "surah_opened",
         "count": 3
       },
       {
-        "event": "bookmark_added",
-        "count": 1
-      },
-      {
         "event": "Application Installed",
-        "count": 1
+        "count": 2
       },
       {
         "event": "Application Updated",
+        "count": 2
+      },
+      {
+        "event": "bookmark_added",
         "count": 1
       }
     ]
@@ -132,6 +143,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "ad7b341",
+        "msg": "chore(dashboard): refresh state 2026-06-20T12:01:42Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-20T12:01:42Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ad7b341ebdc811680d59f2cfdba3dd87769c254b"
+      },
       {
         "sha": "0f7413e",
         "msg": "chore(dashboard): refresh state 2026-06-20T09:51:21Z",
@@ -264,13 +282,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-17T23:05:21Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2447670c290a2ea407cc8c1825ddbe49dffe8852"
-      },
-      {
-        "sha": "9fd55a2",
-        "msg": "chore(dashboard): refresh state 2026-06-17T21:30:25Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-17T21:30:25Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9fd55a2b370cfde6132578a904223ebe281801b7"
       }
     ],
     "releases": [
@@ -304,45 +315,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 27870534797,
+      "id": 27874371802,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27870534797",
-      "ranAt": "2026-06-20T12:00:33Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/27874371802",
+      "ranAt": "2026-06-20T14:41:51Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 285,
+      "latencyMs": 148,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 195,
+      "latencyMs": 211,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 465,
+      "latencyMs": 540,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 235,
+      "latencyMs": 293,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 347,
+      "latencyMs": 357,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -536,8 +547,18 @@
   "fieldNotes": [],
   "errors": [],
   "alerts": {
-    "active": [],
-    "fired": {},
+    "active": [
+      {
+        "id": "A1:24h-crashfree",
+        "severity": "high",
+        "title": "Crash-free dipped to 96.15%",
+        "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.8.0.",
+        "firedAt": "2026-06-20T14:43:05.228Z"
+      }
+    ],
+    "fired": {
+      "A1:24h-crashfree": 1781966585228
+    },
     "recent": [
       {
         "id": "A1:24h-crashfree",
