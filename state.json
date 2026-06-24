@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-24T18:18:58.219Z",
+  "refreshedAt": "2026-06-24T20:19:13.404Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
     "healthy": true,
-    "crashFree": 100,
+    "crashFree": 96,
     "crashFreeTrend7d": [
       100,
       100,
@@ -14,9 +14,9 @@
       100,
       100,
       100,
-      100
+      96
     ],
-    "openIssuesCount": 5,
+    "openIssuesCount": 6,
     "topIssues": [
       {
         "id": "7516374479",
@@ -38,6 +38,17 @@
         "users24h": 2,
         "lastSeen": "2026-06-19T20:46:10.232000Z",
         "url": "https://beloop-1t.sentry.io/issues/7516974353/",
+        "release": null
+      },
+      {
+        "id": "7573142995",
+        "shortId": "REACT-NATIVE-E",
+        "title": "WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-24T18:23:25.948000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7573142995/",
         "release": null
       },
       {
@@ -91,7 +102,7 @@
       12,
       11,
       8,
-      9
+      10
     ],
     "topEvents24h": [
       {
@@ -100,7 +111,7 @@
       },
       {
         "event": "Application Became Active",
-        "count": 24
+        "count": 25
       },
       {
         "event": "Application Opened",
@@ -127,6 +138,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "bb5afa4",
+        "msg": "chore(dashboard): refresh state 2026-06-24T18:18:59Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-24T18:18:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/bb5afa49f5411bdb2590c5205e6ff0b0338c4fb4"
+      },
       {
         "sha": "8a35d42",
         "msg": "chore(dashboard): refresh state 2026-06-24T16:25:59Z",
@@ -259,13 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-22T08:40:52Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5994e01d2da33191ce14b9cb1739d999da826b44"
-      },
-      {
-        "sha": "dbb3393",
-        "msg": "chore(dashboard): refresh state 2026-06-22T02:04:24Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-22T02:04:24Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dbb3393ee08a3a6f9a0acba6289956ba244f83cc"
       }
     ],
     "releases": [
@@ -299,45 +310,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28120049652,
+      "id": 28126950299,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28120049652",
-      "ranAt": "2026-06-24T18:17:48Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28126950299",
+      "ranAt": "2026-06-24T20:18:03Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 108,
+      "latencyMs": 177,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 225,
+      "latencyMs": 192,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 522,
+      "latencyMs": 458,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 219,
+      "latencyMs": 302,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 261,
+      "latencyMs": 330,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -531,9 +542,17 @@
   "fieldNotes": [],
   "errors": [],
   "alerts": {
-    "active": [],
+    "active": [
+      {
+        "id": "A1:24h-crashfree",
+        "severity": "high",
+        "title": "Crash-free dipped to 96.00%",
+        "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.8.0.",
+        "firedAt": "2026-06-24T20:19:13.404Z"
+      }
+    ],
     "fired": {
-      "A1:24h-crashfree": 1782043253676
+      "A1:24h-crashfree": 1782332353404
     },
     "recent": [
       {
