@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-23T23:37:14.092Z (just now)_
+_Last refresh: 2026-06-24T04:02:12.814Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **—** |
-| DAU | **7** |
+| Crash-free (24h) | **100.00%** |
+| DAU | **8** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,39 +30,43 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-_Sentry pull failed: The operation was aborted due to timeout_
+- REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 2 users · last 13d ago
+- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 2 users · last 4d ago
+- REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 4d ago
+- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 11d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 9 events · 1 users · last 23d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 24
-- `Application Became Active` — 17
+- `Application Backgrounded` — 27
+- `Application Became Active` — 18
+- `prayer_marked_done` — 11
+- `Application Opened` — 11
 - `surah_opened` — 9
-- `Application Opened` — 9
-- `prayer_marked_done` — 7
+- `feature_opened` — 3
 - `mushaf_opened` — 1
-- `feature_opened` — 1
 - `Application Installed` — 1
 
 ## GitHub — recent commits to main
 
-- `4ff84a6` — chore(dashboard): refresh state 2026-06-23T22:18:46Z · 1h ago
-- `f8e0498` — chore(dashboard): refresh state 2026-06-23T20:35:17Z · 3h ago
-- `16964f9` — chore(dashboard): refresh state 2026-06-23T18:22:50Z · 5h ago
-- `ad4f88d` — chore(dashboard): refresh state 2026-06-23T16:10:50Z · 7h ago
-- `09762ab` — chore(dashboard): refresh state 2026-06-23T13:23:46Z · 10h ago
-- `ea2b54f` — chore(dashboard): refresh state 2026-06-23T10:12:14Z · 13h ago
-- `57dac5e` — chore(dashboard): refresh state 2026-06-23T06:13:35Z · 17h ago
-- `dc5b2e4` — chore(dashboard): refresh state 2026-06-23T01:32:49Z · 22h ago
+- `dbfaf5b` — chore(dashboard): refresh state 2026-06-23T23:37:14Z · 4h ago
+- `4ff84a6` — chore(dashboard): refresh state 2026-06-23T22:18:46Z · 6h ago
+- `f8e0498` — chore(dashboard): refresh state 2026-06-23T20:35:17Z · 7h ago
+- `16964f9` — chore(dashboard): refresh state 2026-06-23T18:22:50Z · 10h ago
+- `ad4f88d` — chore(dashboard): refresh state 2026-06-23T16:10:50Z · 12h ago
+- `09762ab` — chore(dashboard): refresh state 2026-06-23T13:23:46Z · 15h ago
+- `ea2b54f` — chore(dashboard): refresh state 2026-06-23T10:12:14Z · 18h ago
+- `57dac5e` — chore(dashboard): refresh state 2026-06-23T06:13:35Z · 22h ago
+- `dc5b2e4` — chore(dashboard): refresh state 2026-06-23T01:32:49Z · 1d ago
 - `99fd878` — chore(dashboard): refresh state 2026-06-22T23:25:00Z · 1d ago
-- `f6f9d03` — chore(dashboard): refresh state 2026-06-22T21:33:55Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 106ms
-- OK  `rawGithub` — 200 · 164ms
-- OK  `everyayah` — 200 · 438ms
-- OK  `quranicaudio` — 200 · 181ms
-- OK  `qurancdn` — 200 · 193ms
+- OK  `jsdelivr` — 200 · 131ms
+- OK  `rawGithub` — 200 · 190ms
+- OK  `everyayah` — 200 · 514ms
+- OK  `quranicaudio` — 200 · 364ms
+- OK  `qurancdn` — 200 · 217ms
 
 ## EAS update channels
 
@@ -93,7 +97,3 @@ _Sentry pull failed: The operation was aborted due to timeout_
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
-
-## Refresh errors
-
-- **sentry** — The operation was aborted due to timeout

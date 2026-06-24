@@ -1,15 +1,88 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-23T23:37:14.092Z",
+  "refreshedAt": "2026-06-24T04:02:12.814Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "crashFree": 100,
+    "crashFreeTrend7d": [
+      100,
+      100,
+      100,
+      97.14,
+      100,
+      100,
+      100,
+      100
+    ],
+    "openIssuesCount": 5,
+    "topIssues": [
+      {
+        "id": "7516374479",
+        "shortId": "REACT-NATIVE-A",
+        "title": "ApplicationNotResponding: Background ANR",
+        "events24h": 4,
+        "events1h": null,
+        "users24h": 2,
+        "lastSeen": "2026-06-11T16:25:18.568000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7516374479/",
+        "release": null
+      },
+      {
+        "id": "7516974353",
+        "shortId": "REACT-NATIVE-B",
+        "title": "Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 \"The file “manifest.json” couldn’t be opened because you don’t have permission to view it.\" UserInfo={NSFilePath=/var/mobile/Containers/Data/Application/9AC17B92-8C7F-4E05-813C-C559C5B...",
+        "events24h": 2,
+        "events1h": null,
+        "users24h": 2,
+        "lastSeen": "2026-06-19T20:46:10.232000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7516974353/",
+        "release": null
+      },
+      {
+        "id": "7564455365",
+        "shortId": "REACT-NATIVE-D",
+        "title": "NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a null object reference in method 'void android.view.ViewGroup.dispatchGetDisplayList()'",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-20T14:05:42.314000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7564455365/",
+        "release": null
+      },
+      {
+        "id": "7548218468",
+        "shortId": "REACT-NATIVE-C",
+        "title": "security_scan_validation_probe",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 0,
+        "lastSeen": "2026-06-13T05:37:58.610080Z",
+        "url": "https://beloop-1t.sentry.io/issues/7548218468/",
+        "release": null
+      },
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 9,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-01T11:43:59.869000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app@1.8.0-debug+72",
+      "newGroups": 0,
+      "sessions": null
+    }
   },
   "posthog": {
     "healthy": true,
-    "dau": 7,
+    "dau": 8,
     "dauTrend7d": [
       7,
       9,
@@ -17,35 +90,36 @@
       13,
       12,
       10,
-      7
+      7,
+      2
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 24
+        "count": 27
       },
       {
         "event": "Application Became Active",
-        "count": 17
+        "count": 18
+      },
+      {
+        "event": "prayer_marked_done",
+        "count": 11
+      },
+      {
+        "event": "Application Opened",
+        "count": 11
       },
       {
         "event": "surah_opened",
         "count": 9
       },
       {
-        "event": "Application Opened",
-        "count": 9
-      },
-      {
-        "event": "prayer_marked_done",
-        "count": 7
+        "event": "feature_opened",
+        "count": 3
       },
       {
         "event": "mushaf_opened",
-        "count": 1
-      },
-      {
-        "event": "feature_opened",
         "count": 1
       },
       {
@@ -57,6 +131,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "dbfaf5b",
+        "msg": "chore(dashboard): refresh state 2026-06-23T23:37:14Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-23T23:37:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dbfaf5bf1c602f26682ca4a9fd4b51d85657c876"
+      },
       {
         "sha": "4ff84a6",
         "msg": "chore(dashboard): refresh state 2026-06-23T22:18:46Z",
@@ -189,13 +270,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-21T16:17:26Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fd1f89f6dee9c6f5be5c85bb9c2fca20bea066fd"
-      },
-      {
-        "sha": "971b202",
-        "msg": "chore(dashboard): refresh state 2026-06-21T14:30:05Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-21T14:30:05Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/971b202bd6032ec32e68629665e837dbca2cea1b"
       }
     ],
     "releases": [
@@ -229,13 +303,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28064443602,
+      "id": 28074213663,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28064443602",
-      "ranAt": "2026-06-23T23:36:07Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28074213663",
+      "ranAt": "2026-06-24T04:01:06Z",
       "durationSec": 3
     }
   },
@@ -243,31 +317,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 106,
+      "latencyMs": 131,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 164,
+      "latencyMs": 190,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 438,
+      "latencyMs": 514,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 181,
+      "latencyMs": 364,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 193,
+      "latencyMs": 217,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -459,12 +533,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "sentry",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {
