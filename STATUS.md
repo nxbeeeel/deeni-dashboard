@@ -1,25 +1,20 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-25T17:32:16.123Z (just now)_
+_Last refresh: 2026-06-25T20:08:28.488Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **97.14%** |
-| DAU | **—** |
+| Crash-free (24h) | **100.00%** |
+| DAU | **7** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
 | Last production deploy | **—** (unknown) |
 | Last CI on main | **in_progress** |
-| Active alerts | **1** |
-
-## Active alerts
-
-- **HIGH** — Crash-free dipped to 97.14%  
-  _Sessions in the last 24h. Threshold is 99.00%. App version 1.8.0._  _id: `A1:24h-crashfree`_
+| Active alerts | **0** |
 
 ## Open bugs (`triage`)
 
@@ -37,35 +32,44 @@ _None._
 
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 2 users · last 14d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 2 users · last 6d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 2 users · last 16h ago
-- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 23h ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 2 users · last 19h ago
+- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 1d ago
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 5d ago
 - REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 13d ago
 
 ## PostHog — top events (24h)
 
-_PostHog pull failed: The operation was aborted due to timeout_
+- `quran_played` — 46
+- `Application Backgrounded` — 46
+- `Application Became Active` — 38
+- `Application Opened` — 14
+- `prayer_marked_done` — 13
+- `feature_opened` — 11
+- `surah_opened` — 4
+- `mushaf_opened` — 2
+- `bookmark_added` — 1
+- `Application Installed` — 1
 
 ## GitHub — recent commits to main
 
-- `3a611c1` — chore(dashboard): refresh state 2026-06-25T15:26:20Z · 2h ago
-- `1bbce98` — chore(dashboard): refresh state 2026-06-25T12:26:21Z · 5h ago
-- `8d4755e` — chore(dashboard): refresh state 2026-06-25T09:53:50Z · 8h ago
-- `070c2de` — chore(dashboard): refresh state 2026-06-25T06:13:26Z · 11h ago
-- `9cef0aa` — chore(dashboard): refresh state 2026-06-25T01:33:15Z · 16h ago
-- `1fb6046` — chore(dashboard): refresh state 2026-06-24T23:09:58Z · 18h ago
-- `d1d8c44` — chore(dashboard): refresh state 2026-06-24T21:55:18Z · 20h ago
-- `b754eff` — chore(dashboard): refresh state 2026-06-24T20:19:14Z · 21h ago
-- `bb5afa4` — chore(dashboard): refresh state 2026-06-24T18:18:59Z · 23h ago
-- `8a35d42` — chore(dashboard): refresh state 2026-06-24T16:25:59Z · 1d ago
+- `23305e2` — chore(dashboard): refresh state 2026-06-25T17:32:16Z · 3h ago
+- `3a611c1` — chore(dashboard): refresh state 2026-06-25T15:26:20Z · 5h ago
+- `1bbce98` — chore(dashboard): refresh state 2026-06-25T12:26:21Z · 8h ago
+- `8d4755e` — chore(dashboard): refresh state 2026-06-25T09:53:50Z · 10h ago
+- `070c2de` — chore(dashboard): refresh state 2026-06-25T06:13:26Z · 14h ago
+- `9cef0aa` — chore(dashboard): refresh state 2026-06-25T01:33:15Z · 19h ago
+- `1fb6046` — chore(dashboard): refresh state 2026-06-24T23:09:58Z · 21h ago
+- `d1d8c44` — chore(dashboard): refresh state 2026-06-24T21:55:18Z · 22h ago
+- `b754eff` — chore(dashboard): refresh state 2026-06-24T20:19:14Z · 1d ago
+- `bb5afa4` — chore(dashboard): refresh state 2026-06-24T18:18:59Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 130ms
-- OK  `rawGithub` — 200 · 141ms
-- OK  `everyayah` — 200 · 440ms
-- OK  `quranicaudio` — 200 · 221ms
-- OK  `qurancdn` — 200 · 236ms
+- OK  `jsdelivr` — 200 · 188ms
+- OK  `rawGithub` — 200 · 204ms
+- OK  `everyayah` — 200 · 506ms
+- OK  `quranicaudio` — 200 · 282ms
+- OK  `qurancdn` — 200 · 357ms
 
 ## EAS update channels
 
@@ -96,7 +100,3 @@ _PostHog pull failed: The operation was aborted due to timeout_
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
 - 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
   Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
-
-## Refresh errors
-
-- **posthog** — The operation was aborted due to timeout
