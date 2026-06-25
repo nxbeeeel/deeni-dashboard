@@ -1,13 +1,13 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-25T09:53:50.386Z (just now)_
+_Last refresh: 2026-06-25T12:26:19.715Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **97.67%** |
+| Crash-free (24h) | **97.62%** |
 | DAU | **12** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
@@ -18,7 +18,7 @@ _App version: 1.8.0 (build 70)_
 
 ## Active alerts
 
-- **HIGH** — Crash-free dipped to 97.67%  
+- **HIGH** — Crash-free dipped to 97.62%  
   _Sessions in the last 24h. Threshold is 99.00%. App version 1.8.0._  _id: `A1:24h-crashfree`_
 
 ## Open bugs (`triage`)
@@ -37,19 +37,19 @@ _None._
 
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 2 users · last 14d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 2 users · last 6d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 2 users · last 8h ago
-- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 16h ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 2 users · last 11h ago
+- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 18h ago
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 5d ago
 - REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 12d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 61
+- `Application Backgrounded` — 60
 - `Application Became Active` — 51
 - `quran_played` — 46
-- `Application Opened` — 20
-- `prayer_marked_done` — 16
-- `feature_opened` — 15
+- `Application Opened` — 19
+- `prayer_marked_done` — 15
+- `feature_opened` — 14
 - `surah_opened` — 7
 - `Application Installed` — 4
 - `mushaf_opened` — 2
@@ -57,24 +57,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `070c2de` — chore(dashboard): refresh state 2026-06-25T06:13:26Z · 4h ago
-- `9cef0aa` — chore(dashboard): refresh state 2026-06-25T01:33:15Z · 8h ago
-- `1fb6046` — chore(dashboard): refresh state 2026-06-24T23:09:58Z · 11h ago
-- `d1d8c44` — chore(dashboard): refresh state 2026-06-24T21:55:18Z · 12h ago
-- `b754eff` — chore(dashboard): refresh state 2026-06-24T20:19:14Z · 14h ago
-- `bb5afa4` — chore(dashboard): refresh state 2026-06-24T18:18:59Z · 16h ago
-- `8a35d42` — chore(dashboard): refresh state 2026-06-24T16:25:59Z · 17h ago
-- `3fc1120` — chore(dashboard): refresh state 2026-06-24T13:38:15Z · 20h ago
-- `7b2856d` — chore(dashboard): refresh state 2026-06-24T11:13:33Z · 23h ago
-- `5d0e84e` — chore(dashboard): refresh state 2026-06-24T08:00:07Z · 1d ago
+- `8d4755e` — chore(dashboard): refresh state 2026-06-25T09:53:50Z · 3h ago
+- `070c2de` — chore(dashboard): refresh state 2026-06-25T06:13:26Z · 6h ago
+- `9cef0aa` — chore(dashboard): refresh state 2026-06-25T01:33:15Z · 11h ago
+- `1fb6046` — chore(dashboard): refresh state 2026-06-24T23:09:58Z · 13h ago
+- `d1d8c44` — chore(dashboard): refresh state 2026-06-24T21:55:18Z · 15h ago
+- `b754eff` — chore(dashboard): refresh state 2026-06-24T20:19:14Z · 16h ago
+- `bb5afa4` — chore(dashboard): refresh state 2026-06-24T18:18:59Z · 18h ago
+- `8a35d42` — chore(dashboard): refresh state 2026-06-24T16:25:59Z · 20h ago
+- `3fc1120` — chore(dashboard): refresh state 2026-06-24T13:38:15Z · 23h ago
+- `7b2856d` — chore(dashboard): refresh state 2026-06-24T11:13:33Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 167ms
-- OK  `rawGithub` — 200 · 221ms
-- OK  `everyayah` — 200 · 546ms
-- OK  `quranicaudio` — 200 · 392ms
-- OK  `qurancdn` — 200 · 408ms
+- OK  `jsdelivr` — 200 · 150ms
+- OK  `rawGithub` — 200 · 354ms
+- OK  `everyayah` — 200 · 690ms
+- OK  `quranicaudio` — 200 · 364ms
+- OK  `qurancdn` — 200 · 424ms
 
 ## EAS update channels
 
