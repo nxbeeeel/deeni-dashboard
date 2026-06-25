@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-25T01:33:14.358Z",
+  "refreshedAt": "2026-06-25T06:13:25.423Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
     "healthy": true,
-    "crashFree": 97.3,
+    "crashFree": 97.06,
     "crashFreeTrend7d": [
       100,
       100,
@@ -41,6 +41,17 @@
         "release": null
       },
       {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 10,
+        "events1h": null,
+        "users24h": 2,
+        "lastSeen": "2026-06-25T01:35:29.308000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      },
+      {
         "id": "7573142995",
         "shortId": "REACT-NATIVE-E",
         "title": "WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM.",
@@ -72,17 +83,6 @@
         "lastSeen": "2026-06-13T05:37:58.610080Z",
         "url": "https://beloop-1t.sentry.io/issues/7548218468/",
         "release": null
-      },
-      {
-        "id": "7406195421",
-        "shortId": "REACT-NATIVE-3",
-        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 9,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-06-01T11:43:59.869000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
-        "release": null
       }
     ],
     "latestRelease": {
@@ -95,7 +95,7 @@
     "healthy": true,
     "dau": 11,
     "dauTrend7d": [
-      9,
+      6,
       11,
       13,
       12,
@@ -107,7 +107,7 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 51
+        "count": 49
       },
       {
         "event": "quran_played",
@@ -127,7 +127,7 @@
       },
       {
         "event": "feature_opened",
-        "count": 13
+        "count": 14
       },
       {
         "event": "surah_opened",
@@ -150,6 +150,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "9cef0aa",
+        "msg": "chore(dashboard): refresh state 2026-06-25T01:33:15Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-25T01:33:15Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9cef0aa98e6629d912b60d873c1f502b9b00ff3a"
+      },
       {
         "sha": "1fb6046",
         "msg": "chore(dashboard): refresh state 2026-06-24T23:09:58Z",
@@ -282,13 +289,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-22T23:25:00Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/99fd878efd67de8b300a2dabc8a61b0a603a8e8b"
-      },
-      {
-        "sha": "f6f9d03",
-        "msg": "chore(dashboard): refresh state 2026-06-22T21:33:55Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-22T21:33:55Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f6f9d03fd6a49970dcf79e48fc82938f8fc41392"
       }
     ],
     "releases": [
@@ -322,13 +322,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28140885586,
+      "id": 28150690540,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28140885586",
-      "ranAt": "2026-06-25T01:32:11Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28150690540",
+      "ranAt": "2026-06-25T06:12:20Z",
       "durationSec": 3
     }
   },
@@ -336,31 +336,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 143,
+      "latencyMs": 178,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 161,
+      "latencyMs": 165,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 448,
+      "latencyMs": 345,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 198,
+      "latencyMs": 270,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 452,
+      "latencyMs": 560,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -558,13 +558,13 @@
       {
         "id": "A1:24h-crashfree",
         "severity": "high",
-        "title": "Crash-free dipped to 97.30%",
+        "title": "Crash-free dipped to 97.06%",
         "body": "Sessions in the last 24h. Threshold is 99.00%. App version 1.8.0.",
-        "firedAt": "2026-06-24T20:19:13.404Z"
+        "firedAt": "2026-06-25T06:13:25.424Z"
       }
     ],
     "fired": {
-      "A1:24h-crashfree": 1782332353404
+      "A1:24h-crashfree": 1782368005424
     },
     "recent": [
       {

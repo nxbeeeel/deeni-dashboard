@@ -1,13 +1,13 @@
 # deen.in — operations status
 
-_Last refresh: 2026-06-25T01:33:14.358Z (just now)_
+_Last refresh: 2026-06-25T06:13:25.423Z (just now)_
 _App version: 1.8.0 (build 70)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **97.30%** |
+| Crash-free (24h) | **97.06%** |
 | DAU | **11** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
@@ -18,7 +18,7 @@ _App version: 1.8.0 (build 70)_
 
 ## Active alerts
 
-- **HIGH** — Crash-free dipped to 97.30%  
+- **HIGH** — Crash-free dipped to 97.06%  
   _Sessions in the last 24h. Threshold is 99.00%. App version 1.8.0._  _id: `A1:24h-crashfree`_
 
 ## Open bugs (`triage`)
@@ -35,21 +35,21 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 2 users · last 13d ago
+- REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 2 users · last 14d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 2 users · last 5d ago
-- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 7h ago
-- REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 4d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 2 users · last 5h ago
+- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 12h ago
+- REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 5d ago
 - REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 12d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 9 events · 1 users · last 24d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 51
+- `Application Backgrounded` — 49
 - `quran_played` — 46
 - `Application Became Active` — 41
 - `Application Opened` — 18
 - `prayer_marked_done` — 14
-- `feature_opened` — 13
+- `feature_opened` — 14
 - `surah_opened` — 6
 - `Application Installed` — 3
 - `mushaf_opened` — 2
@@ -57,24 +57,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `1fb6046` — chore(dashboard): refresh state 2026-06-24T23:09:58Z · 2h ago
-- `d1d8c44` — chore(dashboard): refresh state 2026-06-24T21:55:18Z · 4h ago
-- `b754eff` — chore(dashboard): refresh state 2026-06-24T20:19:14Z · 5h ago
-- `bb5afa4` — chore(dashboard): refresh state 2026-06-24T18:18:59Z · 7h ago
-- `8a35d42` — chore(dashboard): refresh state 2026-06-24T16:25:59Z · 9h ago
-- `3fc1120` — chore(dashboard): refresh state 2026-06-24T13:38:15Z · 12h ago
-- `7b2856d` — chore(dashboard): refresh state 2026-06-24T11:13:33Z · 14h ago
-- `5d0e84e` — chore(dashboard): refresh state 2026-06-24T08:00:07Z · 18h ago
-- `6a5105e` — chore(dashboard): refresh state 2026-06-24T04:02:13Z · 22h ago
-- `dbfaf5b` — chore(dashboard): refresh state 2026-06-23T23:37:14Z · 1d ago
+- `9cef0aa` — chore(dashboard): refresh state 2026-06-25T01:33:15Z · 5h ago
+- `1fb6046` — chore(dashboard): refresh state 2026-06-24T23:09:58Z · 7h ago
+- `d1d8c44` — chore(dashboard): refresh state 2026-06-24T21:55:18Z · 8h ago
+- `b754eff` — chore(dashboard): refresh state 2026-06-24T20:19:14Z · 10h ago
+- `bb5afa4` — chore(dashboard): refresh state 2026-06-24T18:18:59Z · 12h ago
+- `8a35d42` — chore(dashboard): refresh state 2026-06-24T16:25:59Z · 14h ago
+- `3fc1120` — chore(dashboard): refresh state 2026-06-24T13:38:15Z · 17h ago
+- `7b2856d` — chore(dashboard): refresh state 2026-06-24T11:13:33Z · 19h ago
+- `5d0e84e` — chore(dashboard): refresh state 2026-06-24T08:00:07Z · 22h ago
+- `6a5105e` — chore(dashboard): refresh state 2026-06-24T04:02:13Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 143ms
-- OK  `rawGithub` — 200 · 161ms
-- OK  `everyayah` — 200 · 448ms
-- OK  `quranicaudio` — 200 · 198ms
-- OK  `qurancdn` — 200 · 452ms
+- OK  `jsdelivr` — 200 · 178ms
+- OK  `rawGithub` — 200 · 165ms
+- OK  `everyayah` — 200 · 345ms
+- OK  `quranicaudio` — 200 · 270ms
+- OK  `qurancdn` — 200 · 560ms
 
 ## EAS update channels
 
