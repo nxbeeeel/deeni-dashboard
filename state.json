@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-06-27T20:12:02.080Z",
+  "refreshedAt": "2026-06-27T21:39:33.002Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -95,7 +95,7 @@
     "healthy": true,
     "dau": 11,
     "dauTrend7d": [
-      3,
+      1,
       12,
       11,
       8,
@@ -107,19 +107,19 @@
     "topEvents24h": [
       {
         "event": "quran_played",
-        "count": 30
+        "count": 60
       },
       {
         "event": "Application Backgrounded",
-        "count": 25
-      },
-      {
-        "event": "Application Opened",
-        "count": 15
+        "count": 26
       },
       {
         "event": "Application Became Active",
-        "count": 14
+        "count": 16
+      },
+      {
+        "event": "Application Opened",
+        "count": 16
       },
       {
         "event": "prayer_marked_done",
@@ -135,7 +135,7 @@
       },
       {
         "event": "surah_opened",
-        "count": 7
+        "count": 11
       },
       {
         "event": "Application Installed",
@@ -143,13 +143,20 @@
       },
       {
         "event": "bookmark_added",
-        "count": 1
+        "count": 2
       }
     ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "d985649",
+        "msg": "chore(dashboard): refresh state 2026-06-27T20:12:02Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-06-27T20:12:02Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d98564946fd992ed42578bf3c1cf6948aee7068b"
+      },
       {
         "sha": "49a1ba0",
         "msg": "chore(dashboard): refresh state 2026-06-27T18:46:36Z",
@@ -282,13 +289,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-25T23:54:29Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a1a1717bd73e3210bfa54ea52761f36382209c8c"
-      },
-      {
-        "sha": "0dbeb4a",
-        "msg": "chore(dashboard): refresh state 2026-06-25T22:06:04Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-25T22:06:04Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0dbeb4a5873e39c67b7c25db006ca554dc909e71"
       }
     ],
     "releases": [
@@ -322,13 +322,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28300458512,
+      "id": 28302558911,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28300458512",
-      "ranAt": "2026-06-27T20:10:54Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28302558911",
+      "ranAt": "2026-06-27T21:38:24Z",
       "durationSec": 4
     }
   },
@@ -336,31 +336,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 118,
+      "latencyMs": 124,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 184,
+      "latencyMs": 238,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 599,
+      "latencyMs": 523,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 243,
+      "latencyMs": 510,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 336,
+      "latencyMs": 514,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
