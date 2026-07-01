@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-01T09:03:43.229Z",
+  "refreshedAt": "2026-07-01T12:20:35.252Z",
   "appVersion": "1.8.0",
   "buildNumber": 70,
   "sentry": {
@@ -27,17 +27,6 @@
         "users24h": 1,
         "lastSeen": "2026-06-11T16:25:18.568000Z",
         "url": "https://beloop-1t.sentry.io/issues/7516374479/",
-        "release": null
-      },
-      {
-        "id": "7406195421",
-        "shortId": "REACT-NATIVE-3",
-        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 10,
-        "events1h": null,
-        "users24h": 2,
-        "lastSeen": "2026-06-25T01:35:29.308000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
         "release": null
       },
       {
@@ -83,6 +72,17 @@
         "lastSeen": "2026-06-19T20:46:10.232000Z",
         "url": "https://beloop-1t.sentry.io/issues/7516974353/",
         "release": null
+      },
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 10,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-25T01:35:29.308000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
       }
     ],
     "latestRelease": {
@@ -102,16 +102,16 @@
       8,
       8,
       8,
-      3
+      5
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 45
+        "count": 58
       },
       {
         "event": "Application Became Active",
-        "count": 27
+        "count": 36
       },
       {
         "event": "surah_opened",
@@ -119,15 +119,15 @@
       },
       {
         "event": "Application Opened",
-        "count": 18
+        "count": 20
       },
       {
         "event": "prayer_marked_done",
-        "count": 11
+        "count": 14
       },
       {
         "event": "feature_opened",
-        "count": 5
+        "count": 6
       },
       {
         "event": "mushaf_opened",
@@ -142,6 +142,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "014e054",
+        "msg": "chore(dashboard): refresh state 2026-07-01T09:03:44Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-01T09:03:44Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/014e054883fb6d0906d2b640248b341e0872ea1b"
+      },
       {
         "sha": "2db9513",
         "msg": "chore(dashboard): refresh state 2026-07-01T05:07:38Z",
@@ -274,13 +281,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-06-29T00:13:37Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/62922fcd6026411246e965443f58096e18da572c"
-      },
-      {
-        "sha": "e49919d",
-        "msg": "chore(dashboard): refresh state 2026-06-28T22:36:26Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-28T22:36:26Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e49919dd488e075d522f593a8de74db55a45aa1e"
       }
     ],
     "releases": [
@@ -314,13 +314,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28506120697,
+      "id": 28516995567,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28506120697",
-      "ranAt": "2026-07-01T09:02:33Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28516995567",
+      "ranAt": "2026-07-01T12:19:30Z",
       "durationSec": 3
     }
   },
@@ -328,31 +328,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 128,
+      "latencyMs": 72,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 400,
+      "latencyMs": 216,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 555,
+      "latencyMs": 475,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 259,
+      "latencyMs": 174,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 513,
+      "latencyMs": 236,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -360,10 +360,8 @@
     "healthy": true,
     "channels": {
       "production": {
-        "healthy": true,
-        "version": null,
-        "id": null,
-        "createdAt": null
+        "healthy": false,
+        "error": "Command failed: npx --yes eas-cli@latest update:list --branch production --json --non-interactive --limit 1\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not u"
       },
       "internal": {
         "healthy": true,
