@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T20:52:57.130Z (just now)_
+_Last refresh: 2026-07-02T21:14:22.752Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 1m ago
-- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 1m ago
-- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 1m ago
-- `dd641f9` — fix(ios): stop opacity animations over liquid glass - build-29 invisible-content bug class · 1m ago
-- `3662b11` — chore(dashboard): refresh state 2026-07-02T20:29:42Z · 23m ago
-- `eab0aa7` — docs(triage): iOS build-29 invisible-content bug class + widgets/tracker + structured next-session debug prompt · 25m ago
-- `e6bee8b` — chore(dashboard): refresh state 2026-07-02T20:17:18Z · 36m ago
-- `5b44952` — docs: v1.8.3 backlog — everything from the 2026-07-02 session queued for the next update · 37m ago
-- `ed9913a` — chore(dashboard): refresh state 2026-07-02T20:15:31Z · 37m ago
-- `4fc6f59` — fix(crash): in-app review MissingActivity — foreground-guard the native requestReview call · 39m ago
+- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 5m ago
+- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 21m ago
+- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 23m ago
+- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 23m ago
+- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 23m ago
+- `dd641f9` — fix(ios): stop opacity animations over liquid glass - build-29 invisible-content bug class · 23m ago
+- `3662b11` — chore(dashboard): refresh state 2026-07-02T20:29:42Z · 45m ago
+- `eab0aa7` — docs(triage): iOS build-29 invisible-content bug class + widgets/tracker + structured next-session debug prompt · 46m ago
+- `e6bee8b` — chore(dashboard): refresh state 2026-07-02T20:17:18Z · 57m ago
+- `5b44952` — docs: v1.8.3 backlog — everything from the 2026-07-02 session queued for the next update · 58m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 172ms
-- OK  `rawGithub` — 200 · 195ms
-- OK  `everyayah` — 200 · 693ms
-- OK  `quranicaudio` — 200 · 313ms
-- OK  `qurancdn` — 200 · 590ms
+- OK  `jsdelivr` — 200 · 144ms
+- OK  `rawGithub` — 200 · 189ms
+- OK  `everyayah` — 200 · 443ms
+- OK  `quranicaudio` — 200 · 322ms
+- OK  `qurancdn` — 200 · 301ms
 
 ## EAS update channels
 
