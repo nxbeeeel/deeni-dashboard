@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T15:13:40.915Z",
+  "refreshedAt": "2026-07-02T15:15:10.221Z",
   "appVersion": "1.8.1",
   "buildNumber": 73,
   "sentry": {
@@ -139,6 +139,20 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "dfe00ae",
+        "msg": "docs(triage): widget-picker previews missing in EAS preview build + ASC agreement blocker",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T15:13:54Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dfe00ae7a9fa8f78b2a56a87d1a49f7adcae7af4"
+      },
+      {
+        "sha": "5fedd85",
+        "msg": "chore(dashboard): refresh state 2026-07-02T15:13:41Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T15:13:42Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5fedd85881e2bd98f7a68ec0bb5a621240589a2e"
+      },
+      {
         "sha": "eb67ff8",
         "msg": "fix(db): route all raw SQLite access through the shared self-healing handle",
         "author": "Mohammed Nabeel C A",
@@ -263,20 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-02T13:00:05Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1089da565648bbb5a8cae4e8d17f3705a6d4eeb6"
-      },
-      {
-        "sha": "a1d1a82",
-        "msg": "fix(mushaf-v2): make every silent pipeline failure loud + add Mushaf Health diagnostics",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T12:56:14Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a1d1a828b248fbf46e773580394cf1a8bfbc5f9b"
-      },
-      {
-        "sha": "41ef54d",
-        "msg": "chore(scripts): commit mushaf v2 on-device diagnostic scripts from 2026-05-18 session",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T12:45:44Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/41ef54def797642d77ff3374bd2b938ea43e5dbc"
       }
     ],
     "releases": [
@@ -310,13 +310,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28600796392,
+      "id": 28600901154,
       "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28600796392",
-      "ranAt": "2026-07-02T15:12:25Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28600901154",
+      "ranAt": "2026-07-02T15:14:00Z",
       "durationSec": 3
     }
   },
@@ -324,31 +324,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 194,
+      "latencyMs": 103,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 358,
+      "latencyMs": 155,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 525,
+      "latencyMs": 510,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 354,
+      "latencyMs": 245,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 384,
+      "latencyMs": 252,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
