@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T13:22:51.721Z",
+  "refreshedAt": "2026-07-02T13:27:37.715Z",
   "appVersion": "1.8.1",
   "buildNumber": 73,
   "sentry": {
@@ -139,6 +139,20 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "92292bb",
+        "msg": "fix(prayer): high-latitude rule — Isha/Fajr no longer collapse to ~1 AM in UK summer",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T13:26:22Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/92292bb1837481779fbf76d5f28e3e2e5acfc886"
+      },
+      {
+        "sha": "00afe01",
+        "msg": "chore(dashboard): refresh state 2026-07-02T13:22:52Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T13:22:52Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/00afe01e0c2b7b2ac8f9677adc056396db6a5bd5"
+      },
+      {
         "sha": "ecfd8e7",
         "msg": "feat(location): auto-refresh location after travel — app AND widgets follow the user",
         "author": "Mohammed Nabeel C A",
@@ -263,20 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-02T08:14:47Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f67e03a39fcf8c400d32d25610d1e74d127c5011"
-      },
-      {
-        "sha": "e332f96",
-        "msg": "chore(dashboard): refresh state 2026-07-02T04:42:41Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T04:42:41Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e332f962849a3b8dc8379f0784b1d8341f4e772b"
-      },
-      {
-        "sha": "9b8b49a",
-        "msg": "chore(dashboard): refresh state 2026-07-02T00:14:26Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T00:14:26Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9b8b49a5ae014552964d2ecf6756aa669baf01a1"
       }
     ],
     "releases": [
@@ -310,13 +310,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28593331301,
+      "id": 28593644780,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28593331301",
-      "ranAt": "2026-07-02T13:21:39Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28593644780",
+      "ranAt": "2026-07-02T13:26:27Z",
       "durationSec": 3
     }
   },
@@ -324,19 +324,19 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 222,
+      "latencyMs": 180,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 432,
+      "latencyMs": 152,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 562,
+      "latencyMs": 470,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
@@ -348,7 +348,7 @@
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 410,
+      "latencyMs": 644,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
