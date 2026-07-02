@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T15:15:10.221Z (just now)_
+_Last refresh: 2026-07-02T15:17:43.105Z (just now)_
 _App version: 1.8.1 (build 73)_
 
 ## Headline
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `dfe00ae` — docs(triage): widget-picker previews missing in EAS preview build + ASC agreement blocker · 1m ago
-- `5fedd85` — chore(dashboard): refresh state 2026-07-02T15:13:41Z · 1m ago
-- `eb67ff8` — fix(db): route all raw SQLite access through the shared self-healing handle · 3m ago
-- `9e4780c` — ci: run expo-doctor on every push — fail dependency/config drift in CI, not mid-EAS-build · 27m ago
-- `d436082` — chore(dashboard): refresh state 2026-07-02T14:47:54Z · 27m ago
-- `6a99a1e` — fix(build): satisfy EAS doctor gate — align 29 expo packages, function-form app.config.js, dedupe @expo/fingerprint · 29m ago
+- `cc1bac7` — docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis · 2m ago
+- `88c2b5e` — chore(dashboard): refresh state 2026-07-02T15:15:11Z · 3m ago
+- `dfe00ae` — docs(triage): widget-picker previews missing in EAS preview build + ASC agreement blocker · 4m ago
+- `5fedd85` — chore(dashboard): refresh state 2026-07-02T15:13:41Z · 4m ago
+- `eb67ff8` — fix(db): route all raw SQLite access through the shared self-healing handle · 5m ago
+- `9e4780c` — ci: run expo-doctor on every push — fail dependency/config drift in CI, not mid-EAS-build · 29m ago
+- `d436082` — chore(dashboard): refresh state 2026-07-02T14:47:54Z · 30m ago
+- `6a99a1e` — fix(build): satisfy EAS doctor gate — align 29 expo packages, function-form app.config.js, dedupe @expo/fingerprint · 31m ago
 - `89dbd32` — docs: session state — CI green, preview build f730f2a9 queued with all fixes · 2h ago
 - `5e2a0e7` — fix(ci): mushaf integrity verifier — cross-platform script path resolution · 2h ago
-- `a106b32` — chore(dashboard): refresh state 2026-07-02T13:27:38Z · 2h ago
-- `92292bb` — fix(prayer): high-latitude rule — Isha/Fajr no longer collapse to ~1 AM in UK summer · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 103ms
-- OK  `rawGithub` — 200 · 155ms
-- OK  `everyayah` — 200 · 510ms
-- OK  `quranicaudio` — 200 · 245ms
-- OK  `qurancdn` — 200 · 252ms
+- OK  `jsdelivr` — 200 · 162ms
+- OK  `rawGithub` — 200 · 240ms
+- OK  `everyayah` — 200 · 584ms
+- OK  `quranicaudio` — 200 · 456ms
+- OK  `qurancdn` — 200 · 289ms
 
 ## EAS update channels
 
