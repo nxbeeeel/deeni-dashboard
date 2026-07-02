@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T13:19:22.467Z (just now)_
+_Last refresh: 2026-07-02T13:22:51.721Z (just now)_
 _App version: 1.8.1 (build 73)_
 
 ## Headline
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `d1426bb` — chore(dashboard): refresh state 2026-07-02T13:17:32Z · 2m ago
-- `5734f03` — docs(triage): UK high-latitude prayer-time bug — root cause + guarded fix proposal · 3m ago
-- `d2d750b` — feat(process): SessionStart hook auto-injects live project state into every session · 6m ago
-- `432d877` — chore(dashboard): refresh state 2026-07-02T13:07:05Z · 12m ago
-- `b5adf75` — docs: session handoff update — recovery work log, UI upgrade spec, perf findings, CHANGELOG unreleased v1.8.2 · 14m ago
-- `5411a19` — fix(ota): unify expo-updates runtimeVersion across build paths · 17m ago
-- `1089da5` — fix(ios): transparent player modal, invisible glass surfaces, Live Activity churn · 19m ago
-- `a1d1a82` — fix(mushaf-v2): make every silent pipeline failure loud + add Mushaf Health diagnostics · 23m ago
-- `41ef54d` — chore(scripts): commit mushaf v2 on-device diagnostic scripts from 2026-05-18 session · 34m ago
-- `8e2bcdf` — chore(release): sync v1.8.1 vc73/bn27 bumps + 4-ABI prebuild parity + release-notes reformat · 34m ago
+- `ecfd8e7` — feat(location): auto-refresh location after travel — app AND widgets follow the user · 1m ago
+- `691e62e` — chore(dashboard): refresh state 2026-07-02T13:19:23Z · 3m ago
+- `d1426bb` — chore(dashboard): refresh state 2026-07-02T13:17:32Z · 5m ago
+- `5734f03` — docs(triage): UK high-latitude prayer-time bug — root cause + guarded fix proposal · 7m ago
+- `d2d750b` — feat(process): SessionStart hook auto-injects live project state into every session · 10m ago
+- `432d877` — chore(dashboard): refresh state 2026-07-02T13:07:05Z · 16m ago
+- `b5adf75` — docs: session handoff update — recovery work log, UI upgrade spec, perf findings, CHANGELOG unreleased v1.8.2 · 17m ago
+- `5411a19` — fix(ota): unify expo-updates runtimeVersion across build paths · 21m ago
+- `1089da5` — fix(ios): transparent player modal, invisible glass surfaces, Live Activity churn · 23m ago
+- `a1d1a82` — fix(mushaf-v2): make every silent pipeline failure loud + add Mushaf Health diagnostics · 27m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 86ms
-- OK  `rawGithub` — 200 · 199ms
-- OK  `everyayah` — 200 · 531ms
-- OK  `quranicaudio` — 200 · 192ms
-- OK  `qurancdn` — 200 · 379ms
+- OK  `jsdelivr` — 200 · 222ms
+- OK  `rawGithub` — 200 · 432ms
+- OK  `everyayah` — 200 · 562ms
+- OK  `quranicaudio` — 200 · 308ms
+- OK  `qurancdn` — 200 · 410ms
 
 ## EAS update channels
 
