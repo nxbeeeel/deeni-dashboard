@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T13:27:37.715Z (just now)_
+_Last refresh: 2026-07-02T14:47:53.799Z (just now)_
 _App version: 1.8.1 (build 73)_
 
 ## Headline
@@ -39,9 +39,9 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 42
-- `Application Became Active` — 26
-- `Application Opened` — 17
+- `Application Backgrounded` — 39
+- `Application Became Active` — 24
+- `Application Opened` — 16
 - `prayer_marked_done` — 11
 - `feature_opened` — 2
 - `bookmark_added` — 1
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `92292bb` — fix(prayer): high-latitude rule — Isha/Fajr no longer collapse to ~1 AM in UK summer · 1m ago
-- `00afe01` — chore(dashboard): refresh state 2026-07-02T13:22:52Z · 5m ago
-- `ecfd8e7` — feat(location): auto-refresh location after travel — app AND widgets follow the user · 6m ago
-- `691e62e` — chore(dashboard): refresh state 2026-07-02T13:19:23Z · 8m ago
-- `d1426bb` — chore(dashboard): refresh state 2026-07-02T13:17:32Z · 10m ago
-- `5734f03` — docs(triage): UK high-latitude prayer-time bug — root cause + guarded fix proposal · 11m ago
-- `d2d750b` — feat(process): SessionStart hook auto-injects live project state into every session · 15m ago
-- `432d877` — chore(dashboard): refresh state 2026-07-02T13:07:05Z · 21m ago
-- `b5adf75` — docs: session handoff update — recovery work log, UI upgrade spec, perf findings, CHANGELOG unreleased v1.8.2 · 22m ago
-- `5411a19` — fix(ota): unify expo-updates runtimeVersion across build paths · 26m ago
+- `6a99a1e` — fix(build): satisfy EAS doctor gate — align 29 expo packages, function-form app.config.js, dedupe @expo/fingerprint · 1m ago
+- `89dbd32` — docs: session state — CI green, preview build f730f2a9 queued with all fixes · 1h ago
+- `5e2a0e7` — fix(ci): mushaf integrity verifier — cross-platform script path resolution · 1h ago
+- `a106b32` — chore(dashboard): refresh state 2026-07-02T13:27:38Z · 1h ago
+- `92292bb` — fix(prayer): high-latitude rule — Isha/Fajr no longer collapse to ~1 AM in UK summer · 1h ago
+- `00afe01` — chore(dashboard): refresh state 2026-07-02T13:22:52Z · 1h ago
+- `ecfd8e7` — feat(location): auto-refresh location after travel — app AND widgets follow the user · 1h ago
+- `691e62e` — chore(dashboard): refresh state 2026-07-02T13:19:23Z · 1h ago
+- `d1426bb` — chore(dashboard): refresh state 2026-07-02T13:17:32Z · 2h ago
+- `5734f03` — docs(triage): UK high-latitude prayer-time bug — root cause + guarded fix proposal · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 180ms
-- OK  `rawGithub` — 200 · 152ms
-- OK  `everyayah` — 200 · 470ms
-- OK  `quranicaudio` — 200 · 308ms
-- OK  `qurancdn` — 200 · 644ms
+- OK  `jsdelivr` — 200 · 159ms
+- OK  `rawGithub` — 200 · 173ms
+- OK  `everyayah` — 200 · 458ms
+- OK  `quranicaudio` — 200 · 240ms
+- OK  `qurancdn` — 200 · 615ms
 
 ## EAS update channels
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T13:27:37.715Z",
+  "refreshedAt": "2026-07-02T14:47:53.799Z",
   "appVersion": "1.8.1",
   "buildNumber": 73,
   "sentry": {
@@ -86,7 +86,7 @@
       }
     ],
     "latestRelease": {
-      "version": "in.deen.app@1.8.0-debug+72",
+      "version": "in.deen.app@1.8.0+27",
       "newGroups": 0,
       "sessions": null
     }
@@ -95,7 +95,7 @@
     "healthy": true,
     "dau": 9,
     "dauTrend7d": [
-      6,
+      5,
       9,
       12,
       8,
@@ -107,15 +107,15 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 42
+        "count": 39
       },
       {
         "event": "Application Became Active",
-        "count": 26
+        "count": 24
       },
       {
         "event": "Application Opened",
-        "count": 17
+        "count": 16
       },
       {
         "event": "prayer_marked_done",
@@ -138,6 +138,34 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "6a99a1e",
+        "msg": "fix(build): satisfy EAS doctor gate — align 29 expo packages, function-form app.config.js, dedupe @expo/fingerprint",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T14:46:37Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6a99a1ea28fcc0267a8bd339b74c49504350bded"
+      },
+      {
+        "sha": "89dbd32",
+        "msg": "docs: session state — CI green, preview build f730f2a9 queued with all fixes",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T13:32:52Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/89dbd325762807a3dd250ae2e61d608ff09e83e6"
+      },
+      {
+        "sha": "5e2a0e7",
+        "msg": "fix(ci): mushaf integrity verifier — cross-platform script path resolution",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T13:29:36Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5e2a0e7faa23a9e19b70a6de04057ada1a14a21c"
+      },
+      {
+        "sha": "a106b32",
+        "msg": "chore(dashboard): refresh state 2026-07-02T13:27:38Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T13:27:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a106b3298a4be00bfe076a798fec7c2d03fdf119"
+      },
       {
         "sha": "92292bb",
         "msg": "fix(prayer): high-latitude rule — Isha/Fajr no longer collapse to ~1 AM in UK summer",
@@ -249,34 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-02T12:45:44Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7a4eb1544957c611b3e19c3671db12ca05bdcbec"
-      },
-      {
-        "sha": "dbf39e6",
-        "msg": "chore(dashboard): refresh state 2026-07-02T12:42:42Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T12:42:42Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dbf39e6813256dd64bea0d5141314b95f0d689a9"
-      },
-      {
-        "sha": "7d9b0a0",
-        "msg": "docs: full-system audit 2026-07-02 — SESSION_STATE handoff protocol, SYSTEM_MAP, recovery plan, 6 new FIELD_NOTES entries",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T12:40:32Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7d9b0a0b84eecb2c9e8e8678b1870636c3862201"
-      },
-      {
-        "sha": "30494b1",
-        "msg": "chore(dashboard): refresh state 2026-07-02T11:09:55Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T11:09:55Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/30494b14974ccdb0d0833794d17943d516541277"
-      },
-      {
-        "sha": "f67e03a",
-        "msg": "chore(dashboard): refresh state 2026-07-02T08:14:47Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T08:14:47Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f67e03a39fcf8c400d32d25610d1e74d127c5011"
       }
     ],
     "releases": [
@@ -310,45 +310,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28593644780,
-      "workflow": "Dashboard Refresh",
+      "id": 28599064011,
+      "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28593644780",
-      "ranAt": "2026-07-02T13:26:27Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28599064011",
+      "ranAt": "2026-07-02T14:46:42Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 180,
+      "latencyMs": 159,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 152,
+      "latencyMs": 173,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 470,
+      "latencyMs": 458,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 308,
+      "latencyMs": 240,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 644,
+      "latencyMs": 615,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
