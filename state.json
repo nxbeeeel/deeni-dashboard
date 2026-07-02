@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T12:42:41.326Z",
-  "appVersion": "1.8.0",
-  "buildNumber": 70,
+  "refreshedAt": "2026-07-02T13:07:05.071Z",
+  "appVersion": "1.8.1",
+  "buildNumber": 73,
   "sentry": {
     "healthy": true,
     "crashFree": 100,
@@ -107,7 +107,7 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 44
+        "count": 43
       },
       {
         "event": "Application Became Active",
@@ -115,7 +115,7 @@
       },
       {
         "event": "Application Opened",
-        "count": 20
+        "count": 18
       },
       {
         "event": "prayer_marked_done",
@@ -138,6 +138,69 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "b5adf75",
+        "msg": "docs: session handoff update — recovery work log, UI upgrade spec, perf findings, CHANGELOG unreleased v1.8.2",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T13:05:40Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b5adf75fdc4c09b0921c4e552d8e27f417cda17d"
+      },
+      {
+        "sha": "5411a19",
+        "msg": "fix(ota): unify expo-updates runtimeVersion across build paths",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T13:02:04Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5411a192fe1038fe1fe828b2ba3f5e63ebe61c82"
+      },
+      {
+        "sha": "1089da5",
+        "msg": "fix(ios): transparent player modal, invisible glass surfaces, Live Activity churn",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T13:00:05Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1089da565648bbb5a8cae4e8d17f3705a6d4eeb6"
+      },
+      {
+        "sha": "a1d1a82",
+        "msg": "fix(mushaf-v2): make every silent pipeline failure loud + add Mushaf Health diagnostics",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T12:56:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a1d1a828b248fbf46e773580394cf1a8bfbc5f9b"
+      },
+      {
+        "sha": "41ef54d",
+        "msg": "chore(scripts): commit mushaf v2 on-device diagnostic scripts from 2026-05-18 session",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T12:45:44Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/41ef54def797642d77ff3374bd2b938ea43e5dbc"
+      },
+      {
+        "sha": "8e2bcdf",
+        "msg": "chore(release): sync v1.8.1 vc73/bn27 bumps + 4-ABI prebuild parity + release-notes reformat",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T12:45:44Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8e2bcdfb4de69f941700bee91d36aaa6d1197519"
+      },
+      {
+        "sha": "b920190",
+        "msg": "fix(mushaf): pin qcfV2StackScale to 1 — no more zoom-in/out feel between dense and normal pages",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T12:45:44Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b92019023cddd769879a0978e697386ca2c8f6af"
+      },
+      {
+        "sha": "7a4eb15",
+        "msg": "chore: gitignore credentials, keystores, crash/diagnostic logs",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T12:45:44Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7a4eb1544957c611b3e19c3671db12ca05bdcbec"
+      },
+      {
+        "sha": "dbf39e6",
+        "msg": "chore(dashboard): refresh state 2026-07-02T12:42:42Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T12:42:42Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dbf39e6813256dd64bea0d5141314b95f0d689a9"
+      },
       {
         "sha": "7d9b0a0",
         "msg": "docs: full-system audit 2026-07-02 — SESSION_STATE handoff protocol, SYSTEM_MAP, recovery plan, 6 new FIELD_NOTES entries",
@@ -214,69 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-01T12:20:35Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e38497fc8e8383d686217d4fa9a557415054d789"
-      },
-      {
-        "sha": "014e054",
-        "msg": "chore(dashboard): refresh state 2026-07-01T09:03:44Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-01T09:03:44Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/014e054883fb6d0906d2b640248b341e0872ea1b"
-      },
-      {
-        "sha": "2db9513",
-        "msg": "chore(dashboard): refresh state 2026-07-01T05:07:38Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-01T05:07:38Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2db95133d25c36208191644dc9552b94b1463458"
-      },
-      {
-        "sha": "dd3a173",
-        "msg": "chore(dashboard): refresh state 2026-07-01T00:12:37Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-01T00:12:37Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dd3a1735bd538ab108b4c690cfeb7cd26b124921"
-      },
-      {
-        "sha": "fb2f540",
-        "msg": "chore(dashboard): refresh state 2026-06-30T22:51:51Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-30T22:51:51Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fb2f54031519f3bfe6dbc97d2b04aba0bc6de70c"
-      },
-      {
-        "sha": "78f9d73",
-        "msg": "chore(dashboard): refresh state 2026-06-30T21:16:21Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-30T21:16:21Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/78f9d73cca30c3d0ea1583f4ce81d9d9122d97fb"
-      },
-      {
-        "sha": "c4fad5a",
-        "msg": "chore(dashboard): refresh state 2026-06-30T19:21:13Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-30T19:21:13Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c4fad5acab55a11d01884aac9b5f6831f91a0aa7"
-      },
-      {
-        "sha": "dac6e18",
-        "msg": "chore(dashboard): refresh state 2026-06-30T17:25:43Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-30T17:25:43Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dac6e18a6661d59e0c6ddd57141afe6062b6680d"
-      },
-      {
-        "sha": "e2f189d",
-        "msg": "chore(dashboard): refresh state 2026-06-30T15:16:29Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-30T15:16:29Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e2f189d3d47a23cae8a4215d428f16da7b781f6c"
-      },
-      {
-        "sha": "5264b77",
-        "msg": "chore(dashboard): refresh state 2026-06-30T12:30:27Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-06-30T12:30:27Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5264b774b599901b0cb8337107c9337a5d2129da"
       }
     ],
     "releases": [
@@ -310,13 +310,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28590782631,
+      "id": 28592324704,
       "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28590782631",
-      "ranAt": "2026-07-02T12:41:31Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28592324704",
+      "ranAt": "2026-07-02T13:05:59Z",
       "durationSec": 4
     }
   },
@@ -324,31 +324,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 100,
+      "latencyMs": 151,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 209,
+      "latencyMs": 192,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 511,
+      "latencyMs": 407,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 261,
+      "latencyMs": 247,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 309,
+      "latencyMs": 504,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -382,6 +382,12 @@
     }
   },
   "worklog": [
+    {
+      "date": "2026-07-02",
+      "title": "Full-system audit + v1.8.x recovery (Phases 0–4 prep)",
+      "commit": null,
+      "summary": "Commits: 7d9b0a0 (audit docs) + cffe4c4/ebe4623/6d4dc36/8dec806 (Phase 0 WIP recovery) + 02a41a1 (mushaf v2 hardening + health screen) + 884286f (iOS fixes) + 8cafb9a (OTA runtime unification) Six weeks after the v1.8.0 ship, Mohammed reported the flagship QCF V2 mushaf typography unchanged for store users on BOTH platforms, plus iOS transparent-player and stuck-Dynamic-Island bugs. Audit (3 parallel explorers + direct verification) found: (1) the v2 renderer IS default-on in production but every pipeline stage — seed copy, font download (552 of 604 pages are CDN-streamed at view time), font registration, word hydration — failed silently into a v1 fallback; (2) OTA delivery fragmented across three runtimes because Android v1.8.0 shipped from a LOCAL gradle build whose committed android/ project still had fingerprint policy (startup crash `FileNotFoundException: fingerprint`, patched on release night by hand-writing a fake fingerprint asset) while iOS shipped via EAS with runtime \"1.8.0\"; the \"1.7.9\" in app.json was dead config — app.config.js derives runtime from version; (3) iOS player modal floated over an unpainted void (modals present above the root stack; app-wide CelestialBackdrop + global contentStyle:transparent never painted behind it); (4) the home-screen effect tore down and re-requested the Live Activity every 60s countdown tick via an unawaited bridge call. Landed: v2Telemetry (Sentry deduped-per-stage + 50-event on-device ring buffer); seed hardening (byte-stream fallback for iOS sandbox File.copy failures, zero-byte purge, post-seed row-count validation, forceReseed repair); font loader hardening (3-attempt download w/ backoff, 20KB integrity floor, corrupt-cache purge — a bad cached file used to short-circuit `target.exists` and permanently block that page's font); Settings → Mushaf health diagnostic screen (seed rows, font cache, live bundled/CDN pipeline probe, repair, event log); iOS player opaque backdrop; GlassSurface base-tint so surfaces can't render invisible; Live Activity dedupe-key + awaited AsyncFunctions; runtimeVersion unification (app.json phantom removed, strings.xml file:fingerprint → explicit version, fake asset deleted, bump-version.mjs syncs strings.xml). Process: SESSION_STATE.md handoff protocol added to CLAUDE.md (every session reads first / updates last), SYSTEM_MAP.md architecture doc, recovery plan + UI aesthetic upgrade spec in docs/plans/. Verification: `npx tsc --noEmit` clean at every commit. NOT yet device-verified — next step is a preview build + the Mushaf health pipeline test on Mohammed's devices, then v1.8.2 via EAS on both platforms (never local store builds again)."
+    },
     {
       "date": "2026-05-14",
       "title": "Qibla accuracy fix: World Magnetic Model 2025 replaces dipole approximation",

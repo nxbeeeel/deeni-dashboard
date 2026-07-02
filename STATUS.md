@@ -1,7 +1,7 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T12:42:41.326Z (just now)_
-_App version: 1.8.0 (build 70)_
+_Last refresh: 2026-07-02T13:07:05.071Z (just now)_
+_App version: 1.8.1 (build 73)_
 
 ## Headline
 
@@ -35,13 +35,13 @@ _None._
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 12d ago
 - REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 19d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 13d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 7d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 8d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 44
+- `Application Backgrounded` — 43
 - `Application Became Active` — 26
-- `Application Opened` — 20
+- `Application Opened` — 18
 - `prayer_marked_done` — 12
 - `feature_opened` — 2
 - `bookmark_added` — 1
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `7d9b0a0` — docs: full-system audit 2026-07-02 — SESSION_STATE handoff protocol, SYSTEM_MAP, recovery plan, 6 new FIELD_NOTES entries · 2m ago
-- `30494b1` — chore(dashboard): refresh state 2026-07-02T11:09:55Z · 2h ago
-- `f67e03a` — chore(dashboard): refresh state 2026-07-02T08:14:47Z · 4h ago
-- `e332f96` — chore(dashboard): refresh state 2026-07-02T04:42:41Z · 8h ago
-- `9b8b49a` — chore(dashboard): refresh state 2026-07-02T00:14:26Z · 12h ago
-- `c45b34d` — chore(dashboard): refresh state 2026-07-01T22:49:11Z · 14h ago
-- `15fa2a6` — chore(dashboard): refresh state 2026-07-01T21:08:51Z · 16h ago
-- `1d4fce0` — chore(dashboard): refresh state 2026-07-01T19:22:22Z · 17h ago
-- `b4d096a` — chore(dashboard): refresh state 2026-07-01T17:30:22Z · 19h ago
-- `811f730` — chore(dashboard): refresh state 2026-07-01T15:20:50Z · 21h ago
+- `b5adf75` — docs: session handoff update — recovery work log, UI upgrade spec, perf findings, CHANGELOG unreleased v1.8.2 · 1m ago
+- `5411a19` — fix(ota): unify expo-updates runtimeVersion across build paths · 5m ago
+- `1089da5` — fix(ios): transparent player modal, invisible glass surfaces, Live Activity churn · 7m ago
+- `a1d1a82` — fix(mushaf-v2): make every silent pipeline failure loud + add Mushaf Health diagnostics · 11m ago
+- `41ef54d` — chore(scripts): commit mushaf v2 on-device diagnostic scripts from 2026-05-18 session · 21m ago
+- `8e2bcdf` — chore(release): sync v1.8.1 vc73/bn27 bumps + 4-ABI prebuild parity + release-notes reformat · 21m ago
+- `b920190` — fix(mushaf): pin qcfV2StackScale to 1 — no more zoom-in/out feel between dense and normal pages · 21m ago
+- `7a4eb15` — chore: gitignore credentials, keystores, crash/diagnostic logs · 21m ago
+- `dbf39e6` — chore(dashboard): refresh state 2026-07-02T12:42:42Z · 24m ago
+- `7d9b0a0` — docs: full-system audit 2026-07-02 — SESSION_STATE handoff protocol, SYSTEM_MAP, recovery plan, 6 new FIELD_NOTES entries · 27m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 100ms
-- OK  `rawGithub` — 200 · 209ms
-- OK  `everyayah` — 200 · 511ms
-- OK  `quranicaudio` — 200 · 261ms
-- OK  `qurancdn` — 200 · 309ms
+- OK  `jsdelivr` — 200 · 151ms
+- OK  `rawGithub` — 200 · 192ms
+- OK  `everyayah` — 200 · 407ms
+- OK  `quranicaudio` — 200 · 247ms
+- OK  `qurancdn` — 200 · 504ms
 
 ## EAS update channels
 
@@ -77,6 +77,8 @@ _None._
 
 ## WORKLOG — last entries
 
+- 2026-07-02 — Full-system audit + v1.8.x recovery (Phases 0–4 prep)
+  Commits: 7d9b0a0 (audit docs) + cffe4c4/ebe4623/6d4dc36/8dec806 (Phase 0 WIP recovery) + 02a41a1 (mushaf v2 hardening + health screen) + 884286f (iOS fixes) + 8cafb9a (OTA runtime unification) Six weeks after the v1.8.0 ship, Mohammed reported the flagship QCF V2 mushaf typography unchanged for store users on BOTH platforms, plus iOS transparent-player and stuck-Dynamic-Island bugs. Audit (3 parallel explorers + direct verification) found: (1) the v2 renderer IS default-on in production but every pipeline stage — seed copy, font download (552 of 604 pages are CDN-streamed at view time), font registration, word hydration — failed silently into a v1 fallback; (2) OTA delivery fragmented across three runtimes because Android v1.8.0 shipped from a LOCAL gradle build whose committed android/ project still had fingerprint policy (startup crash `FileNotFoundException: fingerprint`, patched on release night by hand-writing a fake fingerprint asset) while iOS shipped via EAS with runtime "1.8.0"; the "1.7.9" in app.json was dead config — app.config.js derives runtime from version; (3) iOS player modal floated over an unpainted void (modals present above the root stack; app-wide CelestialBackdrop + global contentStyle:transparent never painted behind it); (4) the home-screen effect tore down and re-requested the Live Activity every 60s countdown tick via an unawaited bridge call. Landed: v2Telemetry (Sentry deduped-per-stage + 50-event on-device ring buffer); seed hardening (byte-stream fallback for iOS sandbox File.copy failures, zero-byte purge, post-seed row-count validation, forceReseed repair); font loader hardening (3-attempt download w/ backoff, 20KB integrity floor, corrupt-cache purge — a bad cached file used to short-circuit `target.exists` and permanently block that page's font); Settings → Mushaf health diagnostic screen (seed rows, font cache, live bundled/CDN pipeline probe, repair, event log); iOS player opaque backdrop; GlassSurface base-tint so surfaces can't render invisible; Live Activity dedupe-key + awaited AsyncFunctions; runtimeVersion unification (app.json phantom removed, strings.xml file:fingerprint → explicit version, fake asset deleted, bump-version.mjs syncs strings.xml). Process: SESSION_STATE.md handoff protocol added to CLAUDE.md (every session reads first / updates last), SYSTEM_MAP.md architecture doc, recovery plan + UI aesthetic upgrade spec in docs/plans/. Verification: `npx tsc --noEmit` clean at every commit. NOT yet device-verified — next step is a preview build + the Mushaf health pipeline test on Mohammed's devices, then v1.8.2 via EAS on both platforms (never local store builds again).
 - 2026-05-14 — Qibla accuracy fix: World Magnetic Model 2025 replaces dipole approximation
   Mohammed reported "slight variation in Qibla" while standing in a masjid. Audited `app/qibla/index.tsx` and found the magnetic-declination function was a tilted-dipole approximation, not the proper World Magnetic Model. Wrote a probe script comparing dipole vs WMM 2025 across major Muslim-population regions and quantified the error: **Kerala 5.08° off, Mumbai 3.68°, Cairo 2.16°, New York 8.42°, San Francisco 17.04°.** SF was so wrong the displayed Qibla pointed in roughly the wrong half of the compass. Fix in three parts: 1. Extracted all Qibla math into `src/services/qibla/calculation.ts` — was inline in the screen file, untestable. New API: `calculateQiblaBearing`, `calculateDistanceToKaabaKm`, `getMagneticDeclination`, `classifyMagneticFieldMagnitude`, `magneticFieldMagnitude`, `getCardinalDirection`. Kaaba coords bumped to `21.4225241, 39.8261818` (matches Batoul Apps' Adhan library, the industry reference). 2. `getMagneticDeclination` now backed by the `geomagnetism` npm package (Apache-2.0, 72 KB, pure JS, no native deps) which ships WMM 2025/2020/2015 with auto-epoch-selection. Smoke-tested 8 cities (Kochi, Chennai, Jakarta, Cairo, Riyadh, NYC, London, Makkah) against NOAA's online calculator — all within 0.5°. 3. Interference detector tightened — now flags BOTH weak field (<20 μT) AND strong field (>70 μT), not just weak. Strong-field is the masjid scenario (steel beams, AC ducts, speaker magnets). The "needs calibration" banner now fires correctly when Mohammed (or any user) is standing inside a metal-structured building. Outcome: Qibla bearing now sub-degree accurate worldwide (was 2°–17° off depending on region). The hadith "between east and west is qibla" gives ±45° tolerance so users weren't praying invalidly under the old code, but they were facing slightly off the true direction — and they deserved better. Learnings entry "qibla-dipole-model-vs-wmm" documents the root cause + a CI-gate follow-up (vendored NOAA reference fixtures asserting our declination at 5 cities matches within 1°).
 - 2026-05-14 — Quran text integrity verifier: all 6,236 ayahs match canonical byte-for-byte
@@ -95,5 +97,3 @@ _None._
   Commits: 587f793 (gitignore + LF enforcement), 49a1374 (release.yml graceful skip), 89a7a9f (v1.7.x plan docs + FIELD_NOTES), 81d4076 (1.7.0 release-notes tightened + locales/screenshots/banner), 375261a (ios widget entitlements + marketing site source), 0fcc0d5 (bug-solving playbook + Claude dev ecosystem brief), 6efa3ea (/ship slash command + tsc hook + INSTALL.md), e741961 (Q3-2026 strategy memo) Six-part pre-push and engineering uplift after the v1.7.3 hotfix landed. Cleaned the working tree (committed FIELD_NOTES, plan docs, store-listing tightening, site/, ios/ widget entitlements; gitignored 28MB of design assets + HLS chunks; added `.gitattributes` for LF-only normalization across Windows/Linux to stop EAS hash drift). Fixed `.github/workflows/release.yml` — replaced step-level `if: env.X` guards (which never worked because env was step-local) with a preflight that validates every credential end-to-end (presence + valid base64 + plausible content), writes ANDROID_READY/IOS_READY to GITHUB_ENV, and gates each downstream step. First green release-workflow run in project history (graceful-skipped both platforms with clear `::warning::` log messages instead of going red). Wrote two long engineering docs — `docs/engineering/bug-solving-playbook.md` (intake card format, severity ladder, Sentry→GH auto-ingest wiring, repro harness ladder, the iron 3-failed-fixes architecture-review rule, 5-min post-mortem template) and `docs/engineering/claude-dev-ecosystem.md` (3,800 words: install/evaluate/skip across plugins, MCPs, OSS agentic tooling, marketplaces, best-practice posts, with cost-routing advice — Sonnet default / Opus arch-only / Haiku one-shots → realistic 50-70% bill cut). Wired two concrete Claude Code additions: a `/ship` slash command at `.claude/commands/ship.md` that codifies the bump → CHANGELOG → 8-locale release notes → tag → push → workflow-watch dance (saves ~30 min per release), and a `PostToolUse` hook at `.claude/hooks/typecheck-after-edit.mjs` that runs `tsc --noEmit` after TS/TSX edits and feeds relevant errors back via additionalContext (smoke-tested clean + skip paths). Plus `.claude/INSTALL.md` listing the plugin checklist for the rest. Closed with `docs/strategy/Q3-2026-thinking.md` — 290-line memo ranking the next three product moves: iOS App Store launch (1, 4-6 days, biggest multiplier), Hifz mode with SM-2 spaced repetition (2, 3 weeks, defensible differentiator), "Support deen.in" patron flow (3, 1 week, story multiplier not revenue play). Includes alternatives considered and rejected, sequencing through Q3, and honest gaps a real team would close that we won't.
 - 2026-05-10 — v1.7.3 audio control hotfix (`f9c1da6`)
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
-- 2026-05-10 — Notification reliability overhaul (Batch 1 + 2) (`350c64c`)
-  Foundation pass: USE_EXACT_ALARM permission (Android 14+ default-deny fix), stable per-prayer-per-day identifiers (`adhan_${prayer}_${YYYY-MM-DD}`), idempotent diff-based scheduling instead of cancel-all-then-recreate, default `nudgeEnabled: false` (most-reported "duplicate adhan" cause), removed iOS foreground double-playback, singleton listener guard, unified Test button. Hardening pass: self-heal listener on AppState 'active' that re-runs scheduling when scheduled count drops below threshold (catches OEM kills on Xiaomi/Samsung/Realme), versioned per-prayer channels (`adhan-fajr-v2`, etc.) with auto-bump on sound change, permission-revoked detection with `notificationsBlocked` / `timeSensitiveBlocked` flags, new Notification Health screen at /settings/notification-health (count, next 5, permissions, re-schedule action, OS settings deep link).
