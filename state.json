@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T20:29:41.812Z",
+  "refreshedAt": "2026-07-02T20:52:57.130Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -139,6 +139,41 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "bfc1548",
+        "msg": "docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T20:51:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/bfc15485ecccb3cf4d1c6302017b3b9a2319c1e3"
+      },
+      {
+        "sha": "714f81d",
+        "msg": "perf(mushaf): slice audio-store subscription off the 100 ms tick",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T20:51:30Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/714f81d5c94a6f637aa1723ccc19c3e694fa55c5"
+      },
+      {
+        "sha": "f06a802",
+        "msg": "fix(ios): widget App Group bridge was dead on the new architecture",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T20:51:30Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f06a8020a2dba131c5fe9a68fb16774ba2214cfd"
+      },
+      {
+        "sha": "dd641f9",
+        "msg": "fix(ios): stop opacity animations over liquid glass - build-29 invisible-content bug class",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T20:51:30Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dd641f9af9a672b65ef2f37bbb5be209248dd821"
+      },
+      {
+        "sha": "3662b11",
+        "msg": "chore(dashboard): refresh state 2026-07-02T20:29:42Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T20:29:42Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/3662b11c86f219b031e62cf15e5a6c769741b887"
+      },
+      {
         "sha": "eab0aa7",
         "msg": "docs(triage): iOS build-29 invisible-content bug class + widgets/tracker + structured next-session debug prompt",
         "author": "Mohammed Nabeel C A",
@@ -242,41 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-02T15:46:53Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a51984c3d2e605b85518c8ddb3817c0a3c3876e0"
-      },
-      {
-        "sha": "ff6c031",
-        "msg": "chore(dashboard): refresh state 2026-07-02T15:42:39Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T15:42:39Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ff6c0310667c60cb1be8e0a743e6978e7e2ddd17"
-      },
-      {
-        "sha": "449c4e1",
-        "msg": "chore(dashboard): refresh state 2026-07-02T15:17:44Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T15:17:44Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/449c4e181ba1a9bb2ebd4a1214cc09472ae71d09"
-      },
-      {
-        "sha": "cc1bac7",
-        "msg": "docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T15:15:47Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/cc1bac7eec32603fb133a7c46c1bfe1848c7fdf0"
-      },
-      {
-        "sha": "88c2b5e",
-        "msg": "chore(dashboard): refresh state 2026-07-02T15:15:11Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T15:15:11Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/88c2b5eea6af350085d29abb503aad8c3ee39c00"
-      },
-      {
-        "sha": "dfe00ae",
-        "msg": "docs(triage): widget-picker previews missing in EAS preview build + ASC agreement blocker",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T15:13:54Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dfe00ae7a9fa8f78b2a56a87d1a49f7adcae7af4"
       }
     ],
     "releases": [
@@ -316,45 +316,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28619488539,
+      "id": 28620791542,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28619488539",
-      "ranAt": "2026-07-02T20:28:30Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28620791542",
+      "ranAt": "2026-07-02T20:51:50Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 136,
+      "latencyMs": 172,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 333,
+      "latencyMs": 195,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 575,
+      "latencyMs": 693,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 580,
+      "latencyMs": 313,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 440,
+      "latencyMs": 590,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
