@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T14:47:53.799Z",
+  "refreshedAt": "2026-07-02T15:13:40.915Z",
   "appVersion": "1.8.1",
   "buildNumber": 73,
   "sentry": {
@@ -86,14 +86,14 @@
       }
     ],
     "latestRelease": {
-      "version": "in.deen.app@1.8.0+27",
+      "version": "in.deen.app.preview@1.8.1+73",
       "newGroups": 0,
       "sessions": null
     }
   },
   "posthog": {
     "healthy": true,
-    "dau": 9,
+    "dau": 8,
     "dauTrend7d": [
       5,
       9,
@@ -107,7 +107,7 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 39
+        "count": 38
       },
       {
         "event": "Application Became Active",
@@ -115,7 +115,7 @@
       },
       {
         "event": "Application Opened",
-        "count": 16
+        "count": 15
       },
       {
         "event": "prayer_marked_done",
@@ -138,6 +138,27 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "eb67ff8",
+        "msg": "fix(db): route all raw SQLite access through the shared self-healing handle",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T15:12:19Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/eb67ff8dd59bcdaf849b454b677e9c46e8d068a3"
+      },
+      {
+        "sha": "9e4780c",
+        "msg": "ci: run expo-doctor on every push — fail dependency/config drift in CI, not mid-EAS-build",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T14:48:16Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9e4780c21b89273bb2cf8babc8be0331e593e364"
+      },
+      {
+        "sha": "d436082",
+        "msg": "chore(dashboard): refresh state 2026-07-02T14:47:54Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T14:47:54Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d436082ea522f48b1a165ffa6072d97b3e30dbd9"
+      },
       {
         "sha": "6a99a1e",
         "msg": "fix(build): satisfy EAS doctor gate — align 29 expo packages, function-form app.config.js, dedupe @expo/fingerprint",
@@ -256,27 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-02T12:45:44Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/41ef54def797642d77ff3374bd2b938ea43e5dbc"
-      },
-      {
-        "sha": "8e2bcdf",
-        "msg": "chore(release): sync v1.8.1 vc73/bn27 bumps + 4-ABI prebuild parity + release-notes reformat",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T12:45:44Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8e2bcdfb4de69f941700bee91d36aaa6d1197519"
-      },
-      {
-        "sha": "b920190",
-        "msg": "fix(mushaf): pin qcfV2StackScale to 1 — no more zoom-in/out feel between dense and normal pages",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T12:45:44Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b92019023cddd769879a0978e697386ca2c8f6af"
-      },
-      {
-        "sha": "7a4eb15",
-        "msg": "chore: gitignore credentials, keystores, crash/diagnostic logs",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T12:45:44Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7a4eb1544957c611b3e19c3671db12ca05bdcbec"
       }
     ],
     "releases": [
@@ -310,45 +310,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28599064011,
+      "id": 28600796392,
       "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28599064011",
-      "ranAt": "2026-07-02T14:46:42Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28600796392",
+      "ranAt": "2026-07-02T15:12:25Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 159,
+      "latencyMs": 194,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 173,
+      "latencyMs": 358,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 458,
+      "latencyMs": 525,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 240,
+      "latencyMs": 354,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 615,
+      "latencyMs": 384,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
