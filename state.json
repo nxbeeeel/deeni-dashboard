@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T15:42:39.092Z",
-  "appVersion": "1.8.1",
-  "buildNumber": 73,
+  "refreshedAt": "2026-07-02T15:52:45.913Z",
+  "appVersion": "1.8.2",
+  "buildNumber": 74,
   "sentry": {
     "healthy": true,
     "crashFree": 100,
@@ -139,6 +139,34 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "74af33b",
+        "msg": "docs: session state — v1.8.2 release in flight (Android building, iOS agreement-blocked)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T15:51:26Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/74af33b1fbf3ca89ea8963d9ffcf3a50768f5f32"
+      },
+      {
+        "sha": "725596e",
+        "msg": "chore(eas): remove production autoIncrement — bump-version.mjs owns versionCode",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T15:48:00Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/725596eaf0ed952f99842ea790e687b2df5c788e"
+      },
+      {
+        "sha": "a51984c",
+        "msg": "chore: bump version to 1.8.2 (mushaf typography for everyone + travel-aware prayer times)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T15:46:53Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a51984c3d2e605b85518c8ddb3817c0a3c3876e0"
+      },
+      {
+        "sha": "ff6c031",
+        "msg": "chore(dashboard): refresh state 2026-07-02T15:42:39Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T15:42:39Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ff6c0310667c60cb1be8e0a743e6978e7e2ddd17"
+      },
+      {
         "sha": "449c4e1",
         "msg": "chore(dashboard): refresh state 2026-07-02T15:17:44Z",
         "author": "deeni-dashboard-bot",
@@ -249,37 +277,15 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-02T13:19:23Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/691e62e8ceab90685a2c62ce251ac3bd9a328056"
-      },
-      {
-        "sha": "d1426bb",
-        "msg": "chore(dashboard): refresh state 2026-07-02T13:17:32Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T13:17:32Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d1426bb55ee30d43c42596c72970119c704c7678"
-      },
-      {
-        "sha": "5734f03",
-        "msg": "docs(triage): UK high-latitude prayer-time bug — root cause + guarded fix proposal",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T13:16:16Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5734f0370a84d0fd9f2a858bfa951ca93fad64e1"
-      },
-      {
-        "sha": "d2d750b",
-        "msg": "feat(process): SessionStart hook auto-injects live project state into every session",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T13:12:53Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d2d750b429c8ff6f7c10c3b5a70bcc13de29d37a"
-      },
-      {
-        "sha": "432d877",
-        "msg": "chore(dashboard): refresh state 2026-07-02T13:07:05Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T13:07:05Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/432d877378f4eacae7d73c0387ad006f29edc746"
       }
     ],
     "releases": [
+      {
+        "tag": "v1.8.2",
+        "name": "v1.8.2 — Mushaf typography for everyone + travel-aware prayer times",
+        "publishedAt": "2026-07-02T15:49:04Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.8.2"
+      },
       {
         "tag": "v1.7.4",
         "name": "v1.7.4",
@@ -310,13 +316,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28602688365,
-      "workflow": "Dashboard Refresh",
+      "id": 28603334225,
+      "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28602688365",
-      "ranAt": "2026-07-02T15:41:29Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28603334225",
+      "ranAt": "2026-07-02T15:51:30Z",
       "durationSec": 4
     }
   },
@@ -324,31 +330,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 945,
+      "latencyMs": 192,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 180,
+      "latencyMs": 228,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 513,
+      "latencyMs": 573,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 266,
+      "latencyMs": 350,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 373,
+      "latencyMs": 556,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },

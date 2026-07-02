@@ -1,7 +1,7 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T15:42:39.092Z (just now)_
-_App version: 1.8.1 (build 73)_
+_Last refresh: 2026-07-02T15:52:45.913Z (just now)_
+_App version: 1.8.2 (build 74)_
 
 ## Headline
 
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `449c4e1` — chore(dashboard): refresh state 2026-07-02T15:17:44Z · 25m ago
-- `cc1bac7` — docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis · 27m ago
-- `88c2b5e` — chore(dashboard): refresh state 2026-07-02T15:15:11Z · 27m ago
-- `dfe00ae` — docs(triage): widget-picker previews missing in EAS preview build + ASC agreement blocker · 29m ago
-- `5fedd85` — chore(dashboard): refresh state 2026-07-02T15:13:41Z · 29m ago
-- `eb67ff8` — fix(db): route all raw SQLite access through the shared self-healing handle · 30m ago
-- `9e4780c` — ci: run expo-doctor on every push — fail dependency/config drift in CI, not mid-EAS-build · 54m ago
-- `d436082` — chore(dashboard): refresh state 2026-07-02T14:47:54Z · 55m ago
-- `6a99a1e` — fix(build): satisfy EAS doctor gate — align 29 expo packages, function-form app.config.js, dedupe @expo/fingerprint · 56m ago
-- `89dbd32` — docs: session state — CI green, preview build f730f2a9 queued with all fixes · 2h ago
+- `74af33b` — docs: session state — v1.8.2 release in flight (Android building, iOS agreement-blocked) · 1m ago
+- `725596e` — chore(eas): remove production autoIncrement — bump-version.mjs owns versionCode · 5m ago
+- `a51984c` — chore: bump version to 1.8.2 (mushaf typography for everyone + travel-aware prayer times) · 6m ago
+- `ff6c031` — chore(dashboard): refresh state 2026-07-02T15:42:39Z · 10m ago
+- `449c4e1` — chore(dashboard): refresh state 2026-07-02T15:17:44Z · 35m ago
+- `cc1bac7` — docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis · 37m ago
+- `88c2b5e` — chore(dashboard): refresh state 2026-07-02T15:15:11Z · 38m ago
+- `dfe00ae` — docs(triage): widget-picker previews missing in EAS preview build + ASC agreement blocker · 39m ago
+- `5fedd85` — chore(dashboard): refresh state 2026-07-02T15:13:41Z · 39m ago
+- `eb67ff8` — fix(db): route all raw SQLite access through the shared self-healing handle · 40m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 945ms
-- OK  `rawGithub` — 200 · 180ms
-- OK  `everyayah` — 200 · 513ms
-- OK  `quranicaudio` — 200 · 266ms
-- OK  `qurancdn` — 200 · 373ms
+- OK  `jsdelivr` — 200 · 192ms
+- OK  `rawGithub` — 200 · 228ms
+- OK  `everyayah` — 200 · 573ms
+- OK  `quranicaudio` — 200 · 350ms
+- OK  `qurancdn` — 200 · 556ms
 
 ## EAS update channels
 
