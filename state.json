@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T20:15:30.675Z",
+  "refreshedAt": "2026-07-02T20:17:17.608Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -139,6 +139,20 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "5b44952",
+        "msg": "docs: v1.8.3 backlog — everything from the 2026-07-02 session queued for the next update",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T20:16:06Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5b449520e465e981c01258abf6929500e5469a01"
+      },
+      {
+        "sha": "ed9913a",
+        "msg": "chore(dashboard): refresh state 2026-07-02T20:15:31Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T20:15:31Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ed9913aaea9ee310ffb6b7c8a78a2b1d7396e3ee"
+      },
+      {
         "sha": "4fc6f59",
         "msg": "fix(crash): in-app review MissingActivity — foreground-guard the native requestReview call",
         "author": "Mohammed Nabeel C A",
@@ -263,20 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-02T15:12:19Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/eb67ff8dd59bcdaf849b454b677e9c46e8d068a3"
-      },
-      {
-        "sha": "9e4780c",
-        "msg": "ci: run expo-doctor on every push — fail dependency/config drift in CI, not mid-EAS-build",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T14:48:16Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9e4780c21b89273bb2cf8babc8be0331e593e364"
-      },
-      {
-        "sha": "d436082",
-        "msg": "chore(dashboard): refresh state 2026-07-02T14:47:54Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T14:47:54Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d436082ea522f48b1a165ffa6072d97b3e30dbd9"
       }
     ],
     "releases": [
@@ -316,13 +316,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28618725664,
-      "workflow": "CI/CD",
+      "id": 28618824824,
+      "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28618725664",
-      "ranAt": "2026-07-02T20:14:23Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28618824824",
+      "ranAt": "2026-07-02T20:16:11Z",
       "durationSec": 4
     }
   },
@@ -330,31 +330,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 138,
+      "latencyMs": 103,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 193,
+      "latencyMs": 94,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 673,
+      "latencyMs": 485,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 270,
+      "latencyMs": 216,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 280,
+      "latencyMs": 232,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
