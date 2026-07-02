@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T21:14:22.752Z",
+  "refreshedAt": "2026-07-02T22:39:23.238Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -86,16 +86,16 @@
       }
     ],
     "latestRelease": {
-      "version": "in.deen.app@1.8.2+74",
+      "version": "in.deen.app@1.8.2+30",
       "newGroups": 0,
       "sessions": null
     }
   },
   "posthog": {
     "healthy": true,
-    "dau": 8,
+    "dau": 7,
     "dauTrend7d": [
-      3,
+      2,
       9,
       12,
       8,
@@ -107,15 +107,15 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 33
+        "count": 32
       },
       {
         "event": "Application Became Active",
-        "count": 22
+        "count": 21
       },
       {
         "event": "Application Opened",
-        "count": 12
+        "count": 11
       },
       {
         "event": "prayer_marked_done",
@@ -138,6 +138,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "24a0ed1",
+        "msg": "chore(dashboard): refresh state 2026-07-02T21:14:23Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T21:14:23Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/24a0ed157e02ead14a364f4f116c87c9536120b1"
+      },
       {
         "sha": "7d0a522",
         "msg": "chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes",
@@ -270,13 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-02T15:52:47Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/507d04826b83de2a226c3fe2fdce39fe6134b8ca"
-      },
-      {
-        "sha": "74af33b",
-        "msg": "docs: session state — v1.8.2 release in flight (Android building, iOS agreement-blocked)",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T15:51:26Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/74af33b1fbf3ca89ea8963d9ffcf3a50768f5f32"
       }
     ],
     "releases": [
@@ -316,45 +316,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28621947759,
+      "id": 28626012626,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28621947759",
-      "ranAt": "2026-07-02T21:13:20Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28626012626",
+      "ranAt": "2026-07-02T22:38:11Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 144,
+      "latencyMs": 190,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 189,
+      "latencyMs": 283,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 443,
+      "latencyMs": 549,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 322,
+      "latencyMs": 303,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 301,
+      "latencyMs": 368,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
