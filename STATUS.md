@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T17:29:39.508Z (just now)_
+_Last refresh: 2026-07-02T17:55:09.765Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `50befc1` — docs(security): log audit findings — dashboard client-auth (S2), QF soft-secret + WebView mixedContent (accepted) · 2m ago
-- `e56154f` — fix(ios): Live Activity dedupe key only recorded on real success + cleared on update failure · 4m ago
+- `056d482` — chore(dashboard): refresh state 2026-07-02T17:29:40Z · 25m ago
+- `50befc1` — docs(security): log audit findings — dashboard client-auth (S2), QF soft-secret + WebView mixedContent (accepted) · 28m ago
+- `e56154f` — fix(ios): Live Activity dedupe key only recorded on real success + cleared on update failure · 29m ago
 - `507d048` — chore(dashboard): refresh state 2026-07-02T15:52:47Z · 2h ago
 - `74af33b` — docs: session state — v1.8.2 release in flight (Android building, iOS agreement-blocked) · 2h ago
 - `725596e` — chore(eas): remove production autoIncrement — bump-version.mjs owns versionCode · 2h ago
 - `a51984c` — chore: bump version to 1.8.2 (mushaf typography for everyone + travel-aware prayer times) · 2h ago
 - `ff6c031` — chore(dashboard): refresh state 2026-07-02T15:42:39Z · 2h ago
-- `449c4e1` — chore(dashboard): refresh state 2026-07-02T15:17:44Z · 2h ago
-- `cc1bac7` — docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis · 2h ago
-- `88c2b5e` — chore(dashboard): refresh state 2026-07-02T15:15:11Z · 2h ago
+- `449c4e1` — chore(dashboard): refresh state 2026-07-02T15:17:44Z · 3h ago
+- `cc1bac7` — docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis · 3h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 157ms
-- OK  `rawGithub` — 200 · 561ms
-- OK  `everyayah` — 200 · 581ms
-- OK  `quranicaudio` — 200 · 259ms
-- OK  `qurancdn` — 200 · 389ms
+- OK  `jsdelivr` — 200 · 214ms
+- OK  `rawGithub` — 200 · 269ms
+- OK  `everyayah` — 200 · 576ms
+- OK  `quranicaudio` — 200 · 346ms
+- OK  `qurancdn` — 200 · 465ms
 
 ## EAS update channels
 

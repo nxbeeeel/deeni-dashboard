@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T17:29:39.508Z",
+  "refreshedAt": "2026-07-02T17:55:09.765Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -139,6 +139,13 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "056d482",
+        "msg": "chore(dashboard): refresh state 2026-07-02T17:29:40Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T17:29:40Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/056d4824d27cc02ec908f3ecca20cbfd6b2768a7"
+      },
+      {
         "sha": "50befc1",
         "msg": "docs(security): log audit findings — dashboard client-auth (S2), QF soft-secret + WebView mixedContent (accepted)",
         "author": "Mohammed Nabeel C A",
@@ -270,13 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-02T13:27:38Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a106b3298a4be00bfe076a798fec7c2d03fdf119"
-      },
-      {
-        "sha": "92292bb",
-        "msg": "fix(prayer): high-latitude rule — Isha/Fajr no longer collapse to ~1 AM in UK summer",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T13:26:22Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/92292bb1837481779fbf76d5f28e3e2e5acfc886"
       }
     ],
     "releases": [
@@ -316,45 +316,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28609181866,
-      "workflow": "CI/CD",
+      "id": 28610712925,
+      "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28609181866",
-      "ranAt": "2026-07-02T17:28:27Z",
-      "durationSec": 5
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28610712925",
+      "ranAt": "2026-07-02T17:53:57Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 157,
+      "latencyMs": 214,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 561,
+      "latencyMs": 269,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 581,
+      "latencyMs": 576,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 259,
+      "latencyMs": 346,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 389,
+      "latencyMs": 465,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
