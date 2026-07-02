@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T15:52:45.913Z (just now)_
+_Last refresh: 2026-07-02T17:29:39.508Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -33,40 +33,40 @@ _None._
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 1 users · last 21d ago
 - REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 8d ago
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 12d ago
-- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 19d ago
+- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 20d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 13d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 8d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 38
-- `Application Became Active` — 24
-- `Application Opened` — 15
-- `prayer_marked_done` — 11
+- `Application Backgrounded` — 33
+- `Application Became Active` — 22
+- `Application Opened` — 12
+- `prayer_marked_done` — 9
 - `feature_opened` — 2
 - `bookmark_added` — 1
 - `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `74af33b` — docs: session state — v1.8.2 release in flight (Android building, iOS agreement-blocked) · 1m ago
-- `725596e` — chore(eas): remove production autoIncrement — bump-version.mjs owns versionCode · 5m ago
-- `a51984c` — chore: bump version to 1.8.2 (mushaf typography for everyone + travel-aware prayer times) · 6m ago
-- `ff6c031` — chore(dashboard): refresh state 2026-07-02T15:42:39Z · 10m ago
-- `449c4e1` — chore(dashboard): refresh state 2026-07-02T15:17:44Z · 35m ago
-- `cc1bac7` — docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis · 37m ago
-- `88c2b5e` — chore(dashboard): refresh state 2026-07-02T15:15:11Z · 38m ago
-- `dfe00ae` — docs(triage): widget-picker previews missing in EAS preview build + ASC agreement blocker · 39m ago
-- `5fedd85` — chore(dashboard): refresh state 2026-07-02T15:13:41Z · 39m ago
-- `eb67ff8` — fix(db): route all raw SQLite access through the shared self-healing handle · 40m ago
+- `50befc1` — docs(security): log audit findings — dashboard client-auth (S2), QF soft-secret + WebView mixedContent (accepted) · 2m ago
+- `e56154f` — fix(ios): Live Activity dedupe key only recorded on real success + cleared on update failure · 4m ago
+- `507d048` — chore(dashboard): refresh state 2026-07-02T15:52:47Z · 2h ago
+- `74af33b` — docs: session state — v1.8.2 release in flight (Android building, iOS agreement-blocked) · 2h ago
+- `725596e` — chore(eas): remove production autoIncrement — bump-version.mjs owns versionCode · 2h ago
+- `a51984c` — chore: bump version to 1.8.2 (mushaf typography for everyone + travel-aware prayer times) · 2h ago
+- `ff6c031` — chore(dashboard): refresh state 2026-07-02T15:42:39Z · 2h ago
+- `449c4e1` — chore(dashboard): refresh state 2026-07-02T15:17:44Z · 2h ago
+- `cc1bac7` — docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis · 2h ago
+- `88c2b5e` — chore(dashboard): refresh state 2026-07-02T15:15:11Z · 2h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 192ms
-- OK  `rawGithub` — 200 · 228ms
-- OK  `everyayah` — 200 · 573ms
-- OK  `quranicaudio` — 200 · 350ms
-- OK  `qurancdn` — 200 · 556ms
+- OK  `jsdelivr` — 200 · 157ms
+- OK  `rawGithub` — 200 · 561ms
+- OK  `everyayah` — 200 · 581ms
+- OK  `quranicaudio` — 200 · 259ms
+- OK  `qurancdn` — 200 · 389ms
 
 ## EAS update channels
 
