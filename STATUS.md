@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T13:17:31.691Z (just now)_
+_Last refresh: 2026-07-02T13:19:22.467Z (just now)_
 _App version: 1.8.1 (build 73)_
 
 ## Headline
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `5734f03` — docs(triage): UK high-latitude prayer-time bug — root cause + guarded fix proposal · 1m ago
-- `d2d750b` — feat(process): SessionStart hook auto-injects live project state into every session · 5m ago
-- `432d877` — chore(dashboard): refresh state 2026-07-02T13:07:05Z · 10m ago
-- `b5adf75` — docs: session handoff update — recovery work log, UI upgrade spec, perf findings, CHANGELOG unreleased v1.8.2 · 12m ago
-- `5411a19` — fix(ota): unify expo-updates runtimeVersion across build paths · 15m ago
-- `1089da5` — fix(ios): transparent player modal, invisible glass surfaces, Live Activity churn · 17m ago
-- `a1d1a82` — fix(mushaf-v2): make every silent pipeline failure loud + add Mushaf Health diagnostics · 21m ago
-- `41ef54d` — chore(scripts): commit mushaf v2 on-device diagnostic scripts from 2026-05-18 session · 32m ago
-- `8e2bcdf` — chore(release): sync v1.8.1 vc73/bn27 bumps + 4-ABI prebuild parity + release-notes reformat · 32m ago
-- `b920190` — fix(mushaf): pin qcfV2StackScale to 1 — no more zoom-in/out feel between dense and normal pages · 32m ago
+- `d1426bb` — chore(dashboard): refresh state 2026-07-02T13:17:32Z · 2m ago
+- `5734f03` — docs(triage): UK high-latitude prayer-time bug — root cause + guarded fix proposal · 3m ago
+- `d2d750b` — feat(process): SessionStart hook auto-injects live project state into every session · 6m ago
+- `432d877` — chore(dashboard): refresh state 2026-07-02T13:07:05Z · 12m ago
+- `b5adf75` — docs: session handoff update — recovery work log, UI upgrade spec, perf findings, CHANGELOG unreleased v1.8.2 · 14m ago
+- `5411a19` — fix(ota): unify expo-updates runtimeVersion across build paths · 17m ago
+- `1089da5` — fix(ios): transparent player modal, invisible glass surfaces, Live Activity churn · 19m ago
+- `a1d1a82` — fix(mushaf-v2): make every silent pipeline failure loud + add Mushaf Health diagnostics · 23m ago
+- `41ef54d` — chore(scripts): commit mushaf v2 on-device diagnostic scripts from 2026-05-18 session · 34m ago
+- `8e2bcdf` — chore(release): sync v1.8.1 vc73/bn27 bumps + 4-ABI prebuild parity + release-notes reformat · 34m ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 157ms
-- OK  `rawGithub` — 200 · 119ms
-- OK  `everyayah` — 200 · 477ms
-- OK  `quranicaudio` — 200 · 269ms
-- OK  `qurancdn` — 200 · 264ms
+- OK  `jsdelivr` — 200 · 86ms
+- OK  `rawGithub` — 200 · 199ms
+- OK  `everyayah` — 200 · 531ms
+- OK  `quranicaudio` — 200 · 192ms
+- OK  `qurancdn` — 200 · 379ms
 
 ## EAS update channels
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T13:17:31.691Z",
+  "refreshedAt": "2026-07-02T13:19:22.467Z",
   "appVersion": "1.8.1",
   "buildNumber": 73,
   "sentry": {
@@ -139,6 +139,13 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "d1426bb",
+        "msg": "chore(dashboard): refresh state 2026-07-02T13:17:32Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T13:17:32Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d1426bb55ee30d43c42596c72970119c704c7678"
+      },
+      {
         "sha": "5734f03",
         "msg": "docs(triage): UK high-latitude prayer-time bug — root cause + guarded fix proposal",
         "author": "Mohammed Nabeel C A",
@@ -270,13 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-01T21:08:51Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/15fa2a6f24c03ec9a00abe87f08fb47ac8c62454"
-      },
-      {
-        "sha": "1d4fce0",
-        "msg": "chore(dashboard): refresh state 2026-07-01T19:22:22Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-01T19:22:22Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1d4fce02fa76f3d619d79cce037bb068d7e2de19"
       }
     ],
     "releases": [
@@ -310,45 +310,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28592995841,
+      "id": 28593106321,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28592995841",
-      "ranAt": "2026-07-02T13:16:23Z",
-      "durationSec": 7
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28593106321",
+      "ranAt": "2026-07-02T13:18:10Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 157,
+      "latencyMs": 86,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 119,
+      "latencyMs": 199,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 477,
+      "latencyMs": 531,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 269,
+      "latencyMs": 192,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 264,
+      "latencyMs": 379,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
