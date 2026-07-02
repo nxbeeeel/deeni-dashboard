@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T20:17:17.608Z",
+  "refreshedAt": "2026-07-02T20:29:41.812Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -139,6 +139,20 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "eab0aa7",
+        "msg": "docs(triage): iOS build-29 invisible-content bug class + widgets/tracker + structured next-session debug prompt",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T20:28:24Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/eab0aa7ba9e748f370082a8ecc684cdbb79a411e"
+      },
+      {
+        "sha": "e6bee8b",
+        "msg": "chore(dashboard): refresh state 2026-07-02T20:17:18Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T20:17:18Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e6bee8b8482146700fafe168bf7d0f22884966cd"
+      },
+      {
         "sha": "5b44952",
         "msg": "docs: v1.8.3 backlog — everything from the 2026-07-02 session queued for the next update",
         "author": "Mohammed Nabeel C A",
@@ -263,20 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-02T15:13:54Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dfe00ae7a9fa8f78b2a56a87d1a49f7adcae7af4"
-      },
-      {
-        "sha": "5fedd85",
-        "msg": "chore(dashboard): refresh state 2026-07-02T15:13:41Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T15:13:42Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5fedd85881e2bd98f7a68ec0bb5a621240589a2e"
-      },
-      {
-        "sha": "eb67ff8",
-        "msg": "fix(db): route all raw SQLite access through the shared self-healing handle",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T15:12:19Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/eb67ff8dd59bcdaf849b454b677e9c46e8d068a3"
       }
     ],
     "releases": [
@@ -316,13 +316,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28618824824,
+      "id": 28619488539,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28618824824",
-      "ranAt": "2026-07-02T20:16:11Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28619488539",
+      "ranAt": "2026-07-02T20:28:30Z",
       "durationSec": 4
     }
   },
@@ -330,31 +330,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 103,
+      "latencyMs": 136,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 94,
+      "latencyMs": 333,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 485,
+      "latencyMs": 575,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 216,
+      "latencyMs": 580,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 232,
+      "latencyMs": 440,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },

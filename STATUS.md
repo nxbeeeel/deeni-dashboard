@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T20:17:17.608Z (just now)_
+_Last refresh: 2026-07-02T20:29:41.812Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `5b44952` — docs: v1.8.3 backlog — everything from the 2026-07-02 session queued for the next update · 1m ago
-- `ed9913a` — chore(dashboard): refresh state 2026-07-02T20:15:31Z · 2m ago
-- `4fc6f59` — fix(crash): in-app review MissingActivity — foreground-guard the native requestReview call · 3m ago
-- `31aefe9` — chore(android): block AD_ID permission — keeps Play 'advertising ID: No' declaration honest · 8m ago
-- `03ec358` — chore(dashboard): refresh state 2026-07-02T19:39:56Z · 37m ago
-- `173dfbc` — chore(dashboard): refresh state 2026-07-02T17:55:10Z · 2h ago
+- `eab0aa7` — docs(triage): iOS build-29 invisible-content bug class + widgets/tracker + structured next-session debug prompt · 1m ago
+- `e6bee8b` — chore(dashboard): refresh state 2026-07-02T20:17:18Z · 12m ago
+- `5b44952` — docs: v1.8.3 backlog — everything from the 2026-07-02 session queued for the next update · 14m ago
+- `ed9913a` — chore(dashboard): refresh state 2026-07-02T20:15:31Z · 14m ago
+- `4fc6f59` — fix(crash): in-app review MissingActivity — foreground-guard the native requestReview call · 15m ago
+- `31aefe9` — chore(android): block AD_ID permission — keeps Play 'advertising ID: No' declaration honest · 20m ago
+- `03ec358` — chore(dashboard): refresh state 2026-07-02T19:39:56Z · 50m ago
+- `173dfbc` — chore(dashboard): refresh state 2026-07-02T17:55:10Z · 3h ago
 - `056d482` — chore(dashboard): refresh state 2026-07-02T17:29:40Z · 3h ago
 - `50befc1` — docs(security): log audit findings — dashboard client-auth (S2), QF soft-secret + WebView mixedContent (accepted) · 3h ago
-- `e56154f` — fix(ios): Live Activity dedupe key only recorded on real success + cleared on update failure · 3h ago
-- `507d048` — chore(dashboard): refresh state 2026-07-02T15:52:47Z · 4h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 103ms
-- OK  `rawGithub` — 200 · 94ms
-- OK  `everyayah` — 200 · 485ms
-- OK  `quranicaudio` — 200 · 216ms
-- OK  `qurancdn` — 200 · 232ms
+- OK  `jsdelivr` — 200 · 136ms
+- OK  `rawGithub` — 200 · 333ms
+- OK  `everyayah` — 200 · 575ms
+- OK  `quranicaudio` — 200 · 580ms
+- OK  `qurancdn` — 200 · 440ms
 
 ## EAS update channels
 
