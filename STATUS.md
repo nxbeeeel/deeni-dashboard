@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T19:39:53.155Z (just now)_
+_Last refresh: 2026-07-02T20:15:30.675Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
+- `4fc6f59` — fix(crash): in-app review MissingActivity — foreground-guard the native requestReview call · 1m ago
+- `31aefe9` — chore(android): block AD_ID permission — keeps Play 'advertising ID: No' declaration honest · 6m ago
+- `03ec358` — chore(dashboard): refresh state 2026-07-02T19:39:56Z · 36m ago
 - `173dfbc` — chore(dashboard): refresh state 2026-07-02T17:55:10Z · 2h ago
-- `056d482` — chore(dashboard): refresh state 2026-07-02T17:29:40Z · 2h ago
-- `50befc1` — docs(security): log audit findings — dashboard client-auth (S2), QF soft-secret + WebView mixedContent (accepted) · 2h ago
-- `e56154f` — fix(ios): Live Activity dedupe key only recorded on real success + cleared on update failure · 2h ago
+- `056d482` — chore(dashboard): refresh state 2026-07-02T17:29:40Z · 3h ago
+- `50befc1` — docs(security): log audit findings — dashboard client-auth (S2), QF soft-secret + WebView mixedContent (accepted) · 3h ago
+- `e56154f` — fix(ios): Live Activity dedupe key only recorded on real success + cleared on update failure · 3h ago
 - `507d048` — chore(dashboard): refresh state 2026-07-02T15:52:47Z · 4h ago
 - `74af33b` — docs: session state — v1.8.2 release in flight (Android building, iOS agreement-blocked) · 4h ago
 - `725596e` — chore(eas): remove production autoIncrement — bump-version.mjs owns versionCode · 4h ago
-- `a51984c` — chore: bump version to 1.8.2 (mushaf typography for everyone + travel-aware prayer times) · 4h ago
-- `ff6c031` — chore(dashboard): refresh state 2026-07-02T15:42:39Z · 4h ago
-- `449c4e1` — chore(dashboard): refresh state 2026-07-02T15:17:44Z · 4h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 197ms
-- OK  `rawGithub` — 200 · 250ms
-- OK  `everyayah` — 200 · 513ms
-- OK  `quranicaudio` — 200 · 322ms
-- OK  `qurancdn` — 200 · 317ms
+- OK  `jsdelivr` — 200 · 138ms
+- OK  `rawGithub` — 200 · 193ms
+- OK  `everyayah` — 200 · 673ms
+- OK  `quranicaudio` — 200 · 270ms
+- OK  `qurancdn` — 200 · 280ms
 
 ## EAS update channels
 

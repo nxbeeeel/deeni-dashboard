@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T19:39:53.155Z",
+  "refreshedAt": "2026-07-02T20:15:30.675Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -86,7 +86,7 @@
       }
     ],
     "latestRelease": {
-      "version": "in.deen.app.preview@1.8.1+73",
+      "version": "in.deen.app@1.8.2+74",
       "newGroups": 0,
       "sessions": null
     }
@@ -138,6 +138,27 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "4fc6f59",
+        "msg": "fix(crash): in-app review MissingActivity — foreground-guard the native requestReview call",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T20:14:19Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4fc6f59cefad421eaffb7a662c9bc62dba9bbc8a"
+      },
+      {
+        "sha": "31aefe9",
+        "msg": "chore(android): block AD_ID permission — keeps Play 'advertising ID: No' declaration honest",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-02T20:09:16Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/31aefe99a78cde3d8b00c1b1b8692c22ee03bcfa"
+      },
+      {
+        "sha": "03ec358",
+        "msg": "chore(dashboard): refresh state 2026-07-02T19:39:56Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T19:39:56Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/03ec3588006f984ed6465ef5fb5ca1be3979fec2"
+      },
       {
         "sha": "173dfbc",
         "msg": "chore(dashboard): refresh state 2026-07-02T17:55:10Z",
@@ -256,27 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-02T14:47:54Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d436082ea522f48b1a165ffa6072d97b3e30dbd9"
-      },
-      {
-        "sha": "6a99a1e",
-        "msg": "fix(build): satisfy EAS doctor gate — align 29 expo packages, function-form app.config.js, dedupe @expo/fingerprint",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T14:46:37Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6a99a1ea28fcc0267a8bd339b74c49504350bded"
-      },
-      {
-        "sha": "89dbd32",
-        "msg": "docs: session state — CI green, preview build f730f2a9 queued with all fixes",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T13:32:52Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/89dbd325762807a3dd250ae2e61d608ff09e83e6"
-      },
-      {
-        "sha": "5e2a0e7",
-        "msg": "fix(ci): mushaf integrity verifier — cross-platform script path resolution",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T13:29:36Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5e2a0e7faa23a9e19b70a6de04057ada1a14a21c"
       }
     ],
     "releases": [
@@ -316,45 +316,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28616756373,
-      "workflow": "Dashboard Refresh",
+      "id": 28618725664,
+      "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28616756373",
-      "ranAt": "2026-07-02T19:38:39Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28618725664",
+      "ranAt": "2026-07-02T20:14:23Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 197,
+      "latencyMs": 138,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 250,
+      "latencyMs": 193,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 513,
+      "latencyMs": 673,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 322,
+      "latencyMs": 270,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 317,
+      "latencyMs": 280,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
