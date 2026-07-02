@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-02T15:17:43.105Z",
+  "refreshedAt": "2026-07-02T15:42:39.092Z",
   "appVersion": "1.8.1",
   "buildNumber": 73,
   "sentry": {
@@ -139,6 +139,13 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "449c4e1",
+        "msg": "chore(dashboard): refresh state 2026-07-02T15:17:44Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-02T15:17:44Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/449c4e181ba1a9bb2ebd4a1214cc09472ae71d09"
+      },
+      {
         "sha": "cc1bac7",
         "msg": "docs(triage): widget previews confirmed present in EAS APK — launcher previewLayout gap is primary hypothesis",
         "author": "Mohammed Nabeel C A",
@@ -270,13 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-02T13:07:05Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/432d877378f4eacae7d73c0387ad006f29edc746"
-      },
-      {
-        "sha": "b5adf75",
-        "msg": "docs: session handoff update — recovery work log, UI upgrade spec, perf findings, CHANGELOG unreleased v1.8.2",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T13:05:40Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b5adf75fdc4c09b0921c4e552d8e27f417cda17d"
       }
     ],
     "releases": [
@@ -310,45 +310,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28601052160,
-      "workflow": "CI/CD",
+      "id": 28602688365,
+      "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28601052160",
-      "ranAt": "2026-07-02T15:16:22Z",
-      "durationSec": 15
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28602688365",
+      "ranAt": "2026-07-02T15:41:29Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 162,
+      "latencyMs": 945,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 240,
+      "latencyMs": 180,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 584,
+      "latencyMs": 513,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 456,
+      "latencyMs": 266,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 289,
+      "latencyMs": 373,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
