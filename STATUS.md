@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-03T04:27:30.780Z (just now)_
+_Last refresh: 2026-07-03T07:48:05.093Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.2 (build 74)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **5** |
+| DAU | **4** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -31,7 +31,7 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 1 users · last 22d ago
-- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 8d ago
+- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 9d ago
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 13d ago
 - REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 20d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 13d ago
@@ -39,9 +39,9 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 24
-- `Application Became Active` — 17
-- `Application Opened` — 8
+- `Application Backgrounded` — 21
+- `Application Became Active` — 15
+- `Application Opened` — 6
 - `prayer_marked_done` — 3
 - `bookmark_added` — 1
 - `feature_opened` — 1
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `4ecf3d6` — chore(dashboard): refresh state 2026-07-03T00:11:32Z · 4h ago
-- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 6h ago
-- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 7h ago
-- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 7h ago
-- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 8h ago
-- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 8h ago
-- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 8h ago
-- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 8h ago
-- `dd641f9` — fix(ios): stop opacity animations over liquid glass - build-29 invisible-content bug class · 8h ago
-- `3662b11` — chore(dashboard): refresh state 2026-07-02T20:29:42Z · 8h ago
+- `357f4c0` — chore(dashboard): refresh state 2026-07-03T04:27:31Z · 3h ago
+- `4ecf3d6` — chore(dashboard): refresh state 2026-07-03T00:11:32Z · 8h ago
+- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 9h ago
+- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 11h ago
+- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 11h ago
+- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 11h ago
+- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 11h ago
+- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 11h ago
+- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 11h ago
+- `dd641f9` — fix(ios): stop opacity animations over liquid glass - build-29 invisible-content bug class · 11h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 147ms
-- OK  `rawGithub` — 200 · 225ms
-- OK  `everyayah` — 200 · 474ms
-- OK  `quranicaudio` — 200 · 338ms
-- OK  `qurancdn` — 200 · 296ms
+- OK  `jsdelivr` — 200 · 128ms
+- OK  `rawGithub` — 200 · 497ms
+- OK  `everyayah` — 200 · 611ms
+- OK  `quranicaudio` — 200 · 312ms
+- OK  `qurancdn` — 200 · 348ms
 
 ## EAS update channels
 
