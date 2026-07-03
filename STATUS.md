@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-03T16:56:17.760Z (just now)_
+_Last refresh: 2026-07-03T18:16:41.549Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.2 (build 74)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **4** |
+| DAU | **7** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -33,39 +33,40 @@ _None._
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 1 users · last 22d ago
 - REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 9d ago
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 13d ago
-- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 20d ago
+- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 21d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 14d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 9d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 17
-- `Application Became Active` — 12
-- `Application Opened` — 5
+- `Application Backgrounded` — 30
+- `Application Became Active` — 22
+- `Application Opened` — 9
+- `feature_opened` — 5
+- `surah_opened` — 2
+- `Application Installed` — 2
 - `bookmark_added` — 1
-- `feature_opened` — 1
-- `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `9d06495` — chore(dashboard): refresh state 2026-07-03T15:20:20Z · 2h ago
-- `a13bc0a` — chore(dashboard): refresh state 2026-07-03T13:00:03Z · 4h ago
-- `bce2a9b` — chore(dashboard): refresh state 2026-07-03T10:42:53Z · 6h ago
-- `e14aeb6` — chore(dashboard): refresh state 2026-07-03T07:48:05Z · 9h ago
-- `357f4c0` — chore(dashboard): refresh state 2026-07-03T04:27:31Z · 12h ago
-- `4ecf3d6` — chore(dashboard): refresh state 2026-07-03T00:11:32Z · 17h ago
-- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 18h ago
-- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 20h ago
-- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 20h ago
-- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 20h ago
+- `c1389fe` — chore(dashboard): refresh state 2026-07-03T16:56:18Z · 1h ago
+- `9d06495` — chore(dashboard): refresh state 2026-07-03T15:20:20Z · 3h ago
+- `a13bc0a` — chore(dashboard): refresh state 2026-07-03T13:00:03Z · 5h ago
+- `bce2a9b` — chore(dashboard): refresh state 2026-07-03T10:42:53Z · 8h ago
+- `e14aeb6` — chore(dashboard): refresh state 2026-07-03T07:48:05Z · 10h ago
+- `357f4c0` — chore(dashboard): refresh state 2026-07-03T04:27:31Z · 14h ago
+- `4ecf3d6` — chore(dashboard): refresh state 2026-07-03T00:11:32Z · 18h ago
+- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 20h ago
+- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 21h ago
+- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 21h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 356ms
-- OK  `rawGithub` — 200 · 338ms
-- OK  `everyayah` — 200 · 630ms
-- OK  `quranicaudio` — 200 · 346ms
-- OK  `qurancdn` — 200 · 649ms
+- OK  `jsdelivr` — 200 · 191ms
+- OK  `rawGithub` — 200 · 231ms
+- OK  `everyayah` — 200 · 708ms
+- OK  `quranicaudio` — 200 · 279ms
+- OK  `qurancdn` — 200 · 311ms
 
 ## EAS update channels
 
