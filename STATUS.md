@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-03T07:48:05.093Z (just now)_
+_Last refresh: 2026-07-03T10:42:52.864Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -34,39 +34,38 @@ _None._
 - REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 9d ago
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 13d ago
 - REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 20d ago
-- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 13d ago
+- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 14d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 8d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 21
-- `Application Became Active` — 15
-- `Application Opened` — 6
-- `prayer_marked_done` — 3
+- `Application Backgrounded` — 19
+- `Application Became Active` — 14
+- `Application Opened` — 5
 - `bookmark_added` — 1
 - `feature_opened` — 1
 - `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `357f4c0` — chore(dashboard): refresh state 2026-07-03T04:27:31Z · 3h ago
-- `4ecf3d6` — chore(dashboard): refresh state 2026-07-03T00:11:32Z · 8h ago
-- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 9h ago
-- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 11h ago
-- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 11h ago
-- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 11h ago
-- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 11h ago
-- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 11h ago
-- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 11h ago
-- `dd641f9` — fix(ios): stop opacity animations over liquid glass - build-29 invisible-content bug class · 11h ago
+- `e14aeb6` — chore(dashboard): refresh state 2026-07-03T07:48:05Z · 3h ago
+- `357f4c0` — chore(dashboard): refresh state 2026-07-03T04:27:31Z · 6h ago
+- `4ecf3d6` — chore(dashboard): refresh state 2026-07-03T00:11:32Z · 11h ago
+- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 12h ago
+- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 13h ago
+- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 14h ago
+- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 14h ago
+- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 14h ago
+- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 14h ago
+- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 14h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 128ms
-- OK  `rawGithub` — 200 · 497ms
-- OK  `everyayah` — 200 · 611ms
-- OK  `quranicaudio` — 200 · 312ms
-- OK  `qurancdn` — 200 · 348ms
+- OK  `jsdelivr` — 200 · 172ms
+- OK  `rawGithub` — 200 · 203ms
+- OK  `everyayah` — 200 · 639ms
+- OK  `quranicaudio` — 200 · 302ms
+- OK  `qurancdn` — 200 · 298ms
 
 ## EAS update channels
 
