@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-02T22:39:23.238Z (just now)_
+_Last refresh: 2026-07-03T00:11:31.388Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.2 (build 74)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **7** |
+| DAU | **6** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -39,34 +39,34 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 32
-- `Application Became Active` — 21
+- `Application Backgrounded` — 33
+- `Application Became Active` — 22
 - `Application Opened` — 11
-- `prayer_marked_done` — 9
+- `prayer_marked_done` — 4
 - `feature_opened` — 2
 - `bookmark_added` — 1
 - `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 1h ago
-- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 2h ago
-- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 2h ago
-- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 2h ago
-- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 2h ago
-- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 2h ago
-- `dd641f9` — fix(ios): stop opacity animations over liquid glass - build-29 invisible-content bug class · 2h ago
-- `3662b11` — chore(dashboard): refresh state 2026-07-02T20:29:42Z · 2h ago
-- `eab0aa7` — docs(triage): iOS build-29 invisible-content bug class + widgets/tracker + structured next-session debug prompt · 2h ago
-- `e6bee8b` — chore(dashboard): refresh state 2026-07-02T20:17:18Z · 2h ago
+- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 2h ago
+- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 3h ago
+- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 3h ago
+- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 3h ago
+- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 3h ago
+- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 3h ago
+- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 3h ago
+- `dd641f9` — fix(ios): stop opacity animations over liquid glass - build-29 invisible-content bug class · 3h ago
+- `3662b11` — chore(dashboard): refresh state 2026-07-02T20:29:42Z · 4h ago
+- `eab0aa7` — docs(triage): iOS build-29 invisible-content bug class + widgets/tracker + structured next-session debug prompt · 4h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 190ms
-- OK  `rawGithub` — 200 · 283ms
-- OK  `everyayah` — 200 · 549ms
-- OK  `quranicaudio` — 200 · 303ms
-- OK  `qurancdn` — 200 · 368ms
+- OK  `jsdelivr` — 200 · 163ms
+- OK  `rawGithub` — 200 · 207ms
+- OK  `everyayah` — 200 · 580ms
+- OK  `quranicaudio` — 200 · 334ms
+- OK  `qurancdn` — 200 · 323ms
 
 ## EAS update channels
 
