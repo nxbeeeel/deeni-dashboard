@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-03T10:42:52.864Z (just now)_
+_Last refresh: 2026-07-03T13:00:02.661Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -39,8 +39,8 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 19
-- `Application Became Active` — 14
+- `Application Backgrounded` — 17
+- `Application Became Active` — 12
 - `Application Opened` — 5
 - `bookmark_added` — 1
 - `feature_opened` — 1
@@ -48,24 +48,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `e14aeb6` — chore(dashboard): refresh state 2026-07-03T07:48:05Z · 3h ago
-- `357f4c0` — chore(dashboard): refresh state 2026-07-03T04:27:31Z · 6h ago
-- `4ecf3d6` — chore(dashboard): refresh state 2026-07-03T00:11:32Z · 11h ago
-- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 12h ago
-- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 13h ago
-- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 14h ago
-- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 14h ago
-- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 14h ago
-- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 14h ago
-- `f06a802` — fix(ios): widget App Group bridge was dead on the new architecture · 14h ago
+- `bce2a9b` — chore(dashboard): refresh state 2026-07-03T10:42:53Z · 2h ago
+- `e14aeb6` — chore(dashboard): refresh state 2026-07-03T07:48:05Z · 5h ago
+- `357f4c0` — chore(dashboard): refresh state 2026-07-03T04:27:31Z · 9h ago
+- `4ecf3d6` — chore(dashboard): refresh state 2026-07-03T00:11:32Z · 13h ago
+- `4620469` — chore(dashboard): refresh state 2026-07-02T22:39:24Z · 14h ago
+- `24a0ed1` — chore(dashboard): refresh state 2026-07-02T21:14:23Z · 16h ago
+- `7d0a522` — chore(ios): buildNumber 30 - TestFlight verification build for the build-29 invisible-content + widget-bridge fixes · 16h ago
+- `166afc7` — chore(dashboard): refresh state 2026-07-02T20:52:58Z · 16h ago
+- `bfc1548` — docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff · 16h ago
+- `714f81d` — perf(mushaf): slice audio-store subscription off the 100 ms tick · 16h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 172ms
-- OK  `rawGithub` — 200 · 203ms
-- OK  `everyayah` — 200 · 639ms
-- OK  `quranicaudio` — 200 · 302ms
-- OK  `qurancdn` — 200 · 298ms
+- OK  `jsdelivr` — 200 · 146ms
+- OK  `rawGithub` — 200 · 174ms
+- OK  `everyayah` — 200 · 531ms
+- OK  `quranicaudio` — 200 · 290ms
+- OK  `qurancdn` — 200 · 259ms
 
 ## EAS update channels
 
