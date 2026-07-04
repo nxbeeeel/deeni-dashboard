@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-04T11:39:22.027Z (just now)_
+_Last refresh: 2026-07-04T13:44:58.322Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.2 (build 74)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **8** |
+| DAU | **9** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -35,38 +35,38 @@ _None._
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 14d ago
 - REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 21d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 15d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 9d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 10d ago
 
 ## PostHog — top events (24h)
 
 - `Application Backgrounded` — 22
 - `Application Became Active` — 13
-- `Application Opened` — 12
-- `feature_opened` — 8
+- `Application Opened` — 13
+- `feature_opened` — 7
+- `Application Installed` — 4
 - `prayer_marked_done` — 3
-- `Application Installed` — 3
 - `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `f662da6` — chore(dashboard): refresh state 2026-07-04T11:38:09Z · 1m ago
-- `5f6d60d` — fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop · 3m ago
-- `997f62f` — chore(dashboard): refresh state 2026-07-04T09:38:12Z · 2h ago
-- `777b343` — chore(dashboard): refresh state 2026-07-04T07:24:39Z · 4h ago
-- `f4f9210` — chore(dashboard): refresh state 2026-07-04T04:21:37Z · 7h ago
-- `779b274` — chore(dashboard): refresh state 2026-07-04T00:10:27Z · 11h ago
-- `4c46259` — chore(dashboard): refresh state 2026-07-03T22:35:33Z · 13h ago
-- `24531c8` — chore(dashboard): refresh state 2026-07-03T21:18:36Z · 14h ago
-- `7c6b0b8` — chore(dashboard): refresh state 2026-07-03T19:59:02Z · 16h ago
-- `add94cf` — chore(dashboard): refresh state 2026-07-03T18:16:42Z · 17h ago
+- `029ae80` — chore(dashboard): refresh state 2026-07-04T11:39:22Z · 2h ago
+- `f662da6` — chore(dashboard): refresh state 2026-07-04T11:38:09Z · 2h ago
+- `5f6d60d` — fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop · 2h ago
+- `997f62f` — chore(dashboard): refresh state 2026-07-04T09:38:12Z · 4h ago
+- `777b343` — chore(dashboard): refresh state 2026-07-04T07:24:39Z · 6h ago
+- `f4f9210` — chore(dashboard): refresh state 2026-07-04T04:21:37Z · 9h ago
+- `779b274` — chore(dashboard): refresh state 2026-07-04T00:10:27Z · 14h ago
+- `4c46259` — chore(dashboard): refresh state 2026-07-03T22:35:33Z · 15h ago
+- `24531c8` — chore(dashboard): refresh state 2026-07-03T21:18:36Z · 16h ago
+- `7c6b0b8` — chore(dashboard): refresh state 2026-07-03T19:59:02Z · 18h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 216ms
-- OK  `rawGithub` — 200 · 226ms
-- OK  `everyayah` — 200 · 588ms
-- OK  `quranicaudio` — 200 · 405ms
-- OK  `qurancdn` — 200 · 795ms
+- OK  `jsdelivr` — 200 · 136ms
+- OK  `rawGithub` — 200 · 255ms
+- OK  `everyayah` — 200 · 545ms
+- OK  `quranicaudio` — 200 · 283ms
+- OK  `qurancdn` — 200 · 283ms
 
 ## EAS update channels
 
