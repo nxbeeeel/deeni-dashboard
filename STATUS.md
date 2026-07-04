@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-04T18:06:04.818Z (just now)_
+_Last refresh: 2026-07-04T19:46:45.091Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **100.00%** |
-| DAU | **7** |
+| Crash-free (24h) | **—** |
+| DAU | **8** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,18 +30,13 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 1 users · last 23d ago
-- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 10d ago
-- REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 14d ago
-- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 22d ago
-- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 15d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 10d ago
+_Sentry pull failed: The operation was aborted due to timeout_
 
 ## PostHog — top events (24h)
 
-- `Application Opened` — 13
-- `Application Backgrounded` — 12
-- `prayer_marked_done` — 10
+- `Application Opened` — 14
+- `prayer_marked_done` — 13
+- `Application Backgrounded` — 13
 - `Application Became Active` — 6
 - `mushaf_opened` — 3
 - `feature_opened` — 3
@@ -49,24 +44,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `0951f1a` — chore(dashboard): refresh state 2026-07-04T16:34:06Z · 2h ago
-- `f3d80f0` — chore(dashboard): refresh state 2026-07-04T15:10:54Z · 3h ago
-- `afb28fe` — chore(dashboard): refresh state 2026-07-04T13:44:59Z · 4h ago
-- `029ae80` — chore(dashboard): refresh state 2026-07-04T11:39:22Z · 6h ago
-- `f662da6` — chore(dashboard): refresh state 2026-07-04T11:38:09Z · 6h ago
-- `5f6d60d` — fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop · 6h ago
-- `997f62f` — chore(dashboard): refresh state 2026-07-04T09:38:12Z · 8h ago
-- `777b343` — chore(dashboard): refresh state 2026-07-04T07:24:39Z · 11h ago
-- `f4f9210` — chore(dashboard): refresh state 2026-07-04T04:21:37Z · 14h ago
-- `779b274` — chore(dashboard): refresh state 2026-07-04T00:10:27Z · 18h ago
+- `7d95478` — chore(dashboard): refresh state 2026-07-04T18:06:05Z · 2h ago
+- `0951f1a` — chore(dashboard): refresh state 2026-07-04T16:34:06Z · 3h ago
+- `f3d80f0` — chore(dashboard): refresh state 2026-07-04T15:10:54Z · 5h ago
+- `afb28fe` — chore(dashboard): refresh state 2026-07-04T13:44:59Z · 6h ago
+- `029ae80` — chore(dashboard): refresh state 2026-07-04T11:39:22Z · 8h ago
+- `f662da6` — chore(dashboard): refresh state 2026-07-04T11:38:09Z · 8h ago
+- `5f6d60d` — fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop · 8h ago
+- `997f62f` — chore(dashboard): refresh state 2026-07-04T09:38:12Z · 10h ago
+- `777b343` — chore(dashboard): refresh state 2026-07-04T07:24:39Z · 12h ago
+- `f4f9210` — chore(dashboard): refresh state 2026-07-04T04:21:37Z · 15h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 214ms
-- OK  `rawGithub` — 200 · 222ms
-- OK  `everyayah` — 200 · 623ms
-- OK  `quranicaudio` — 200 · 340ms
-- OK  `qurancdn` — 200 · 479ms
+- OK  `jsdelivr` — 200 · 406ms
+- OK  `rawGithub` — 200 · 315ms
+- OK  `everyayah` — 200 · 539ms
+- OK  `quranicaudio` — 200 · 324ms
+- OK  `qurancdn` — 200 · 397ms
 
 ## EAS update channels
 
@@ -97,3 +92,7 @@ _None._
   Commits: 587f793 (gitignore + LF enforcement), 49a1374 (release.yml graceful skip), 89a7a9f (v1.7.x plan docs + FIELD_NOTES), 81d4076 (1.7.0 release-notes tightened + locales/screenshots/banner), 375261a (ios widget entitlements + marketing site source), 0fcc0d5 (bug-solving playbook + Claude dev ecosystem brief), 6efa3ea (/ship slash command + tsc hook + INSTALL.md), e741961 (Q3-2026 strategy memo) Six-part pre-push and engineering uplift after the v1.7.3 hotfix landed. Cleaned the working tree (committed FIELD_NOTES, plan docs, store-listing tightening, site/, ios/ widget entitlements; gitignored 28MB of design assets + HLS chunks; added `.gitattributes` for LF-only normalization across Windows/Linux to stop EAS hash drift). Fixed `.github/workflows/release.yml` — replaced step-level `if: env.X` guards (which never worked because env was step-local) with a preflight that validates every credential end-to-end (presence + valid base64 + plausible content), writes ANDROID_READY/IOS_READY to GITHUB_ENV, and gates each downstream step. First green release-workflow run in project history (graceful-skipped both platforms with clear `::warning::` log messages instead of going red). Wrote two long engineering docs — `docs/engineering/bug-solving-playbook.md` (intake card format, severity ladder, Sentry→GH auto-ingest wiring, repro harness ladder, the iron 3-failed-fixes architecture-review rule, 5-min post-mortem template) and `docs/engineering/claude-dev-ecosystem.md` (3,800 words: install/evaluate/skip across plugins, MCPs, OSS agentic tooling, marketplaces, best-practice posts, with cost-routing advice — Sonnet default / Opus arch-only / Haiku one-shots → realistic 50-70% bill cut). Wired two concrete Claude Code additions: a `/ship` slash command at `.claude/commands/ship.md` that codifies the bump → CHANGELOG → 8-locale release notes → tag → push → workflow-watch dance (saves ~30 min per release), and a `PostToolUse` hook at `.claude/hooks/typecheck-after-edit.mjs` that runs `tsc --noEmit` after TS/TSX edits and feeds relevant errors back via additionalContext (smoke-tested clean + skip paths). Plus `.claude/INSTALL.md` listing the plugin checklist for the rest. Closed with `docs/strategy/Q3-2026-thinking.md` — 290-line memo ranking the next three product moves: iOS App Store launch (1, 4-6 days, biggest multiplier), Hifz mode with SM-2 spaced repetition (2, 3 weeks, defensible differentiator), "Support deen.in" patron flow (3, 1 week, story multiplier not revenue play). Includes alternatives considered and rejected, sequencing through Q3, and honest gaps a real team would close that we won't.
 - 2026-05-10 — v1.7.3 audio control hotfix (`f9c1da6`)
   Two user-reported audio bugs from device-testing of v1.7.2 patched within the session and shipped as v1.7.3. Per-ayah pause button on `app/quran/[surah].tsx` was unconditionally calling `loadAndPlay` regardless of state — tapping pause silently restarted the verse from the top instead of pausing. Replaced with a three-branch toggle: same verse + playing → `pauseAudio`; same verse + paused but loaded → `playAudio`; otherwise → `loadAndPlay`. Required adding `isPlaying`, `pauseAudio`, `playAudio` selectors to the existing `useAudioStore` slice. Word-by-word tap audio race: rapid taps were starting overlapping `createAudioPlayer` flows, and whichever finished loading last would win — sometimes that wasn't the word the user last tapped. Added a `wordPlayGenRef` generation counter (`useRef(0)`) with three guard checks (after createAudioPlayer, in `onPlaybackStatusUpdate` listener, before `play()`) so any stale call from a previous tap releases its player and bails. Bumped versionCode 57→58 / iOS buildNumber 19→20. Wrote 8 locale release notes (en-US, en-GB, ar, hi-IN, ml-IN, ms, tr-TR, ur) plus combined.txt, all verified under Play Console's 500-codepoint cap. Tagged v1.7.3 and pushed; release workflow ran green for the first time.
+
+## Refresh errors
+
+- **sentry** — The operation was aborted due to timeout
