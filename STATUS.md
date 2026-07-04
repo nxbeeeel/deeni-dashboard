@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-04T11:38:07.914Z (just now)_
+_Last refresh: 2026-07-04T11:39:22.027Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -13,7 +13,7 @@ _App version: 1.8.2 (build 74)_
 | In progress | **0** |
 | Fixed (14d) | **0** |
 | Last production deploy | **—** (unknown) |
-| Last CI on main | **pending** |
+| Last CI on main | **in_progress** |
 | Active alerts | **0** |
 
 ## Open bugs (`triage`)
@@ -49,7 +49,8 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `5f6d60d` — fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop · 2m ago
+- `f662da6` — chore(dashboard): refresh state 2026-07-04T11:38:09Z · 1m ago
+- `5f6d60d` — fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop · 3m ago
 - `997f62f` — chore(dashboard): refresh state 2026-07-04T09:38:12Z · 2h ago
 - `777b343` — chore(dashboard): refresh state 2026-07-04T07:24:39Z · 4h ago
 - `f4f9210` — chore(dashboard): refresh state 2026-07-04T04:21:37Z · 7h ago
@@ -58,15 +59,14 @@ _None._
 - `24531c8` — chore(dashboard): refresh state 2026-07-03T21:18:36Z · 14h ago
 - `7c6b0b8` — chore(dashboard): refresh state 2026-07-03T19:59:02Z · 16h ago
 - `add94cf` — chore(dashboard): refresh state 2026-07-03T18:16:42Z · 17h ago
-- `c1389fe` — chore(dashboard): refresh state 2026-07-03T16:56:18Z · 19h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 218ms
-- OK  `rawGithub` — 200 · 225ms
-- OK  `everyayah` — 200 · 510ms
-- OK  `quranicaudio` — 200 · 304ms
-- OK  `qurancdn` — 200 · 357ms
+- OK  `jsdelivr` — 200 · 216ms
+- OK  `rawGithub` — 200 · 226ms
+- OK  `everyayah` — 200 · 588ms
+- OK  `quranicaudio` — 200 · 405ms
+- OK  `qurancdn` — 200 · 795ms
 
 ## EAS update channels
 

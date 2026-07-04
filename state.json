@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-04T11:38:07.914Z",
+  "refreshedAt": "2026-07-04T11:39:22.027Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -139,6 +139,13 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "f662da6",
+        "msg": "chore(dashboard): refresh state 2026-07-04T11:38:09Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-04T11:38:09Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f662da6b643589f08fa42f298e1d7013b8062131"
+      },
+      {
         "sha": "5f6d60d",
         "msg": "fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop",
         "author": "Mohammed Nabeel C A",
@@ -270,13 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-02T21:09:48Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/7d0a522ecc02bcd96f710980df48e7d4f84ab553"
-      },
-      {
-        "sha": "166afc7",
-        "msg": "chore(dashboard): refresh state 2026-07-02T20:52:58Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-02T20:52:58Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/166afc7409778c7e268c0a769dc91fed377a5e68"
       }
     ],
     "releases": [
@@ -318,43 +318,43 @@
     "ciLastRun": {
       "id": 28704965751,
       "workflow": "Dashboard Refresh",
-      "status": "pending",
+      "status": "in_progress",
       "conclusion": null,
       "branch": "master",
       "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28704965751",
       "ranAt": "2026-07-04T11:36:57Z",
-      "durationSec": 1
+      "durationSec": 80
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 218,
+      "latencyMs": 216,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 225,
+      "latencyMs": 226,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 510,
+      "latencyMs": 588,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 304,
+      "latencyMs": 405,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 357,
+      "latencyMs": 795,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
