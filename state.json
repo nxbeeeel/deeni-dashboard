@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-04T07:24:38.499Z",
+  "refreshedAt": "2026-07-04T09:38:11.780Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -93,7 +93,7 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 9,
+    "dau": 8,
     "dauTrend7d": [
       10,
       8,
@@ -102,7 +102,7 @@
       8,
       6,
       7,
-      3
+      4
     ],
     "topEvents24h": [
       {
@@ -111,15 +111,15 @@
       },
       {
         "event": "Application Became Active",
-        "count": 13
+        "count": 12
       },
       {
         "event": "Application Opened",
-        "count": 10
+        "count": 11
       },
       {
         "event": "feature_opened",
-        "count": 5
+        "count": 8
       },
       {
         "event": "prayer_marked_done",
@@ -138,6 +138,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "777b343",
+        "msg": "chore(dashboard): refresh state 2026-07-04T07:24:39Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-04T07:24:39Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/777b3432e71cb5906341da0e521406fa57881874"
+      },
       {
         "sha": "f4f9210",
         "msg": "chore(dashboard): refresh state 2026-07-04T04:21:37Z",
@@ -270,13 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-02T20:51:30Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/714f81d5c94a6f637aa1723ccc19c3e694fa55c5"
-      },
-      {
-        "sha": "f06a802",
-        "msg": "fix(ios): widget App Group bridge was dead on the new architecture",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T20:51:30Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f06a8020a2dba131c5fe9a68fb16774ba2214cfd"
       }
     ],
     "releases": [
@@ -316,45 +316,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28699018485,
+      "id": 28702154540,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28699018485",
-      "ranAt": "2026-07-04T07:23:29Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28702154540",
+      "ranAt": "2026-07-04T09:37:05Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 152,
+      "latencyMs": 155,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 176,
+      "latencyMs": 171,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 563,
+      "latencyMs": 524,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 486,
+      "latencyMs": 300,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 236,
+      "latencyMs": 268,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
