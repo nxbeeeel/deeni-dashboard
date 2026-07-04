@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-04T09:38:11.780Z",
+  "refreshedAt": "2026-07-04T11:38:07.914Z",
   "appVersion": "1.8.2",
   "buildNumber": 74,
   "sentry": {
@@ -107,15 +107,15 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 21
+        "count": 22
       },
       {
         "event": "Application Became Active",
-        "count": 12
+        "count": 13
       },
       {
         "event": "Application Opened",
-        "count": 11
+        "count": 12
       },
       {
         "event": "feature_opened",
@@ -138,6 +138,20 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "5f6d60d",
+        "msg": "fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-04T11:36:36Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5f6d60d93809da6f195c454418081f577819e9d5"
+      },
+      {
+        "sha": "997f62f",
+        "msg": "chore(dashboard): refresh state 2026-07-04T09:38:12Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-04T09:38:12Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/997f62fee1f87ea3d81ecca13bae4a1abf3c8438"
+      },
       {
         "sha": "777b343",
         "msg": "chore(dashboard): refresh state 2026-07-04T07:24:39Z",
@@ -263,20 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-02T20:52:58Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/166afc7409778c7e268c0a769dc91fed377a5e68"
-      },
-      {
-        "sha": "bfc1548",
-        "msg": "docs(triage): iOS build-29 root causes + fixes landed - FIELD_NOTES transitions + SESSION_STATE handoff",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T20:51:38Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/bfc15485ecccb3cf4d1c6302017b3b9a2319c1e3"
-      },
-      {
-        "sha": "714f81d",
-        "msg": "perf(mushaf): slice audio-store subscription off the 100 ms tick",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-02T20:51:30Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/714f81d5c94a6f637aa1723ccc19c3e694fa55c5"
       }
     ],
     "releases": [
@@ -316,45 +316,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28702154540,
+      "id": 28704965751,
       "workflow": "Dashboard Refresh",
-      "status": "in_progress",
+      "status": "pending",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28702154540",
-      "ranAt": "2026-07-04T09:37:05Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28704965751",
+      "ranAt": "2026-07-04T11:36:57Z",
+      "durationSec": 1
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 155,
+      "latencyMs": 218,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 171,
+      "latencyMs": 225,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 524,
+      "latencyMs": 510,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 300,
+      "latencyMs": 304,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 268,
+      "latencyMs": 357,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
