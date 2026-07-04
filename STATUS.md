@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-04T15:10:53.531Z (just now)_
+_Last refresh: 2026-07-04T16:34:05.812Z (just now)_
 _App version: 1.8.2 (build 74)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.2 (build 74)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **9** |
+| DAU | **10** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -39,34 +39,35 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 23
-- `Application Opened` — 15
-- `Application Became Active` — 13
+- `Application Backgrounded` — 24
+- `Application Opened` — 16
+- `Application Became Active` — 15
+- `prayer_marked_done` — 10
 - `feature_opened` — 7
-- `Application Installed` — 4
-- `prayer_marked_done` — 3
+- `Application Installed` — 5
+- `mushaf_opened` — 2
 - `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `afb28fe` — chore(dashboard): refresh state 2026-07-04T13:44:59Z · 1h ago
-- `029ae80` — chore(dashboard): refresh state 2026-07-04T11:39:22Z · 4h ago
-- `f662da6` — chore(dashboard): refresh state 2026-07-04T11:38:09Z · 4h ago
-- `5f6d60d` — fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop · 4h ago
-- `997f62f` — chore(dashboard): refresh state 2026-07-04T09:38:12Z · 6h ago
-- `777b343` — chore(dashboard): refresh state 2026-07-04T07:24:39Z · 8h ago
-- `f4f9210` — chore(dashboard): refresh state 2026-07-04T04:21:37Z · 11h ago
-- `779b274` — chore(dashboard): refresh state 2026-07-04T00:10:27Z · 15h ago
-- `4c46259` — chore(dashboard): refresh state 2026-07-03T22:35:33Z · 17h ago
-- `24531c8` — chore(dashboard): refresh state 2026-07-03T21:18:36Z · 18h ago
+- `f3d80f0` — chore(dashboard): refresh state 2026-07-04T15:10:54Z · 1h ago
+- `afb28fe` — chore(dashboard): refresh state 2026-07-04T13:44:59Z · 3h ago
+- `029ae80` — chore(dashboard): refresh state 2026-07-04T11:39:22Z · 5h ago
+- `f662da6` — chore(dashboard): refresh state 2026-07-04T11:38:09Z · 5h ago
+- `5f6d60d` — fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop · 5h ago
+- `997f62f` — chore(dashboard): refresh state 2026-07-04T09:38:12Z · 7h ago
+- `777b343` — chore(dashboard): refresh state 2026-07-04T07:24:39Z · 9h ago
+- `f4f9210` — chore(dashboard): refresh state 2026-07-04T04:21:37Z · 12h ago
+- `779b274` — chore(dashboard): refresh state 2026-07-04T00:10:27Z · 16h ago
+- `4c46259` — chore(dashboard): refresh state 2026-07-03T22:35:33Z · 18h ago
 
 ## CDN probes
 
 - OK  `jsdelivr` — 200 · 125ms
-- OK  `rawGithub` — 200 · 183ms
-- OK  `everyayah` — 200 · 433ms
-- OK  `quranicaudio` — 200 · 271ms
-- OK  `qurancdn` — 200 · 292ms
+- OK  `rawGithub` — 200 · 232ms
+- OK  `everyayah` — 200 · 651ms
+- OK  `quranicaudio` — 200 · 236ms
+- OK  `qurancdn` — 200 · 329ms
 
 ## EAS update channels
 
