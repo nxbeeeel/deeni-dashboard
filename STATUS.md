@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-05T19:53:09.042Z (just now)_
+_Last refresh: 2026-07-05T21:08:08.480Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -50,24 +50,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `af1c337` — chore(dashboard): refresh state 2026-07-05T18:08:43Z · 2h ago
-- `f25b3d7` — chore(dashboard): refresh state 2026-07-05T16:36:34Z · 3h ago
-- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 5h ago
-- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 6h ago
-- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 6h ago
-- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 7h ago
-- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 7h ago
-- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 7h ago
-- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 7h ago
-- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 7h ago
+- `2b59486` — chore(dashboard): refresh state 2026-07-05T19:53:09Z · 1h ago
+- `af1c337` — chore(dashboard): refresh state 2026-07-05T18:08:43Z · 3h ago
+- `f25b3d7` — chore(dashboard): refresh state 2026-07-05T16:36:34Z · 5h ago
+- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 6h ago
+- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 7h ago
+- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 7h ago
+- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 8h ago
+- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 8h ago
+- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 9h ago
+- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 9h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 115ms
-- OK  `rawGithub` — 200 · 175ms
-- OK  `everyayah` — 200 · 530ms
-- OK  `quranicaudio` — 200 · 289ms
-- OK  `qurancdn` — 200 · 527ms
+- OK  `jsdelivr` — 200 · 164ms
+- OK  `rawGithub` — 200 · 172ms
+- OK  `everyayah` — 200 · 534ms
+- OK  `quranicaudio` — 200 · 241ms
+- OK  `qurancdn` — 200 · 394ms
 
 ## EAS update channels
 
