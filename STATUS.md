@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-05T16:36:33.659Z (just now)_
+_Last refresh: 2026-07-05T18:08:42.384Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.3 (build 75)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **11** |
+| DAU | **10** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -33,40 +33,41 @@ _None._
 - REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 1 users · last 24d ago
 - REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 11d ago
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 15d ago
-- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 22d ago
+- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 23d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 16d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 11d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 28
-- `Application Opened` — 17
-- `Application Became Active` — 12
-- `feature_opened` — 5
-- `prayer_marked_done` — 4
-- `mushaf_opened` — 2
+- `Application Backgrounded` — 32
+- `Application Opened` — 18
+- `Application Became Active` — 14
+- `prayer_marked_done` — 8
+- `feature_opened` — 6
+- `mushaf_opened` — 3
+- `surah_opened` — 2
 - `Application Installed` — 2
 
 ## GitHub — recent commits to main
 
-- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 1h ago
-- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 3h ago
-- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 3h ago
-- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 4h ago
-- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 4h ago
-- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 4h ago
-- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 4h ago
-- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 4h ago
-- `4bc96b4` — docs(field-notes): log store-still-1.8.0 + crash-on-launch (issue #1) · 4h ago
-- `5c6dd2a` — chore(dashboard): refresh state 2026-07-05T11:56:27Z · 5h ago
+- `f25b3d7` — chore(dashboard): refresh state 2026-07-05T16:36:34Z · 2h ago
+- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 3h ago
+- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 4h ago
+- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 4h ago
+- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 5h ago
+- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 5h ago
+- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 6h ago
+- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 6h ago
+- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 6h ago
+- `4bc96b4` — docs(field-notes): log store-still-1.8.0 + crash-on-launch (issue #1) · 6h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 78ms
-- OK  `rawGithub` — 200 · 202ms
-- OK  `everyayah` — 200 · 695ms
-- OK  `quranicaudio` — 200 · 236ms
-- OK  `qurancdn` — 200 · 271ms
+- OK  `jsdelivr` — 200 · 271ms
+- OK  `rawGithub` — 200 · 225ms
+- OK  `everyayah` — 200 · 415ms
+- OK  `quranicaudio` — 200 · 229ms
+- OK  `qurancdn` — 200 · 215ms
 
 ## EAS update channels
 
