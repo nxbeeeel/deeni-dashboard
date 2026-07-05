@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-05T12:37:13.788Z",
+  "refreshedAt": "2026-07-05T12:44:50.746Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -139,6 +139,27 @@
     "healthy": true,
     "commits": [
       {
+        "sha": "ce99745",
+        "msg": "chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout)",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-05T12:43:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ce99745b82cb77c0a6e5b1fd576de42204d0c8d4"
+      },
+      {
+        "sha": "9fcd22f",
+        "msg": "docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog",
+        "author": "Mohammed Nabeel C A",
+        "at": "2026-07-05T12:37:52Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9fcd22fb1187186fa76bf947158c63ea4dd7190a"
+      },
+      {
+        "sha": "969133a",
+        "msg": "chore(dashboard): refresh state 2026-07-05T12:37:14Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-05T12:37:14Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/969133aee65d26d2804f9086e15f448310d70ccc"
+      },
+      {
         "sha": "dfa4d54",
         "msg": "chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship",
         "author": "Mohammed Nabeel C A",
@@ -256,27 +277,6 @@
         "author": "Mohammed Nabeel C A",
         "at": "2026-07-04T11:36:36Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5f6d60d93809da6f195c454418081f577819e9d5"
-      },
-      {
-        "sha": "997f62f",
-        "msg": "chore(dashboard): refresh state 2026-07-04T09:38:12Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-04T09:38:12Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/997f62fee1f87ea3d81ecca13bae4a1abf3c8438"
-      },
-      {
-        "sha": "777b343",
-        "msg": "chore(dashboard): refresh state 2026-07-04T07:24:39Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-04T07:24:39Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/777b3432e71cb5906341da0e521406fa57881874"
-      },
-      {
-        "sha": "f4f9210",
-        "msg": "chore(dashboard): refresh state 2026-07-04T04:21:37Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-04T04:21:37Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f4f9210d356f2dcd984a895b9b94df943f423603"
       }
     ],
     "releases": [
@@ -316,45 +316,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28740975355,
-      "workflow": "Dashboard Refresh",
+      "id": 28741176149,
+      "workflow": "CI/CD",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28740975355",
-      "ranAt": "2026-07-05T12:36:06Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28741176149",
+      "ranAt": "2026-07-05T12:43:43Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 108,
+      "latencyMs": 125,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 162,
+      "latencyMs": 208,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 504,
+      "latencyMs": 674,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 204,
+      "latencyMs": 241,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 281,
+      "latencyMs": 293,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -388,6 +388,12 @@
     }
   },
   "worklog": [
+    {
+      "date": "2026-07-05",
+      "title": "v1.8.3 ship: iOS invisible-content root cause + widget bridge + perf (vc75/bn31, both stores)",
+      "commit": null,
+      "summary": "Commits: dd641f9 (glass-safe animations) + f06a802 (widget App Group bridge) + 714f81d (mushaf perf slice) + 5f6d60d (player modal static route options) + 4fc6f59 (review-crash guard) + 31aefe9 (AD_ID block) + release chore. The build-29 \"invisible content\" class turned out to be ONE mechanism: iOS 26's UIGlassEffect refuses to render beneath any ancestor whose opacity is 0 or animating (Expo docs + upstream expo/expo#41024, unfixed). Four in-app triggers mapped 1:1 to the five reported symptoms — Tabs `animation:'fade'` (blank Prayer tab, fast-tap breakage), root Stack/mushaf fades, FadeInSection resting at opacity 0 (light-theme ghost), and the press-animation opacity dip over GlassPill/AnimatedRow (location chip, player during playback). Fixes: transform-only animation policy on iOS (Android untouched), never-rest-at-0 failsafe, `useReduceMotion` hook (app + OS setting), `forceGlassFallback` diagnostic kill switch in Mushaf Health, ErrorBoundary around tab scenes (Sentry `area:tab_scene`). Sentry was 100% crash-free through the whole episode — corroborates a pure native-rendering failure invisible to JS. Second root cause: iosBridge resolved our custom Expo module through legacy `NativeModules` — always null on the new architecture — so every widget App Group write silently no-op'd (widgets stuck on sample data, tracker dots never mirrored; Live Activities unaffected via the library's own bindings). Now `requireOptionalNativeModule`. One regression during verification: the new iOS slide animation exposed the player's inline `presentation:'modal'` being applied mid-transition → presentation restart loop (\"auto-swipe left, touch dead\" on build 30); fixed by declaring route options statically in _layout, delivered via OTA to runtime 1.8.2, device-verified same day. Perf HIGH items shipped: ATT + analytics + OTA check + mushaf seed off the boot path (post-first-frame), mushaf pager audio-store subscription sliced off the 100 ms tick. Privacy gate run (docs/research/v1.8.3-privacy-diff.md — PASS, timing-only analytics change + one local boolean); public log at site/privacy-changelog.md. Device verification: Mohammed confirmed invisible-content fixed and player smooth on TestFlight build 30 + OTA. v1.8.3 (vc75/bn31) tagged → release.yml builds + auto-submits both platforms; Play upload manual (secret still unset), App Store review submission manual in ASC."
+    },
     {
       "date": "2026-07-02",
       "title": "Full-system audit + v1.8.x recovery (Phases 0–4 prep)",
