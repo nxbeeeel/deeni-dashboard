@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-05T21:08:08.480Z (just now)_
+_Last refresh: 2026-07-05T22:32:44.483Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.3 (build 75)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **9** |
+| DAU | **7** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -39,35 +39,35 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 31
-- `Application Opened` — 17
-- `Application Became Active` — 14
-- `feature_opened` — 6
+- `Application Backgrounded` — 28
+- `Application Opened` — 15
+- `Application Became Active` — 13
 - `prayer_marked_done` — 5
+- `feature_opened` — 5
 - `mushaf_opened` — 3
 - `surah_opened` — 2
 - `Application Installed` — 2
 
 ## GitHub — recent commits to main
 
-- `2b59486` — chore(dashboard): refresh state 2026-07-05T19:53:09Z · 1h ago
-- `af1c337` — chore(dashboard): refresh state 2026-07-05T18:08:43Z · 3h ago
-- `f25b3d7` — chore(dashboard): refresh state 2026-07-05T16:36:34Z · 5h ago
-- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 6h ago
-- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 7h ago
-- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 7h ago
-- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 8h ago
-- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 8h ago
-- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 9h ago
-- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 9h ago
+- `e8a7e73` — chore(dashboard): refresh state 2026-07-05T21:08:09Z · 1h ago
+- `2b59486` — chore(dashboard): refresh state 2026-07-05T19:53:09Z · 3h ago
+- `af1c337` — chore(dashboard): refresh state 2026-07-05T18:08:43Z · 4h ago
+- `f25b3d7` — chore(dashboard): refresh state 2026-07-05T16:36:34Z · 6h ago
+- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 7h ago
+- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 9h ago
+- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 9h ago
+- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 10h ago
+- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 10h ago
+- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 10h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 164ms
-- OK  `rawGithub` — 200 · 172ms
-- OK  `everyayah` — 200 · 534ms
-- OK  `quranicaudio` — 200 · 241ms
-- OK  `qurancdn` — 200 · 394ms
+- OK  `jsdelivr` — 200 · 183ms
+- OK  `rawGithub` — 200 · 211ms
+- OK  `everyayah` — 200 · 649ms
+- OK  `quranicaudio` — 200 · 270ms
+- OK  `qurancdn` — 200 · 328ms
 
 ## EAS update channels
 
