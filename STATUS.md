@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-05T13:53:17.661Z (just now)_
+_Last refresh: 2026-07-05T15:17:35.502Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -39,8 +39,8 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 23
-- `Application Opened` — 17
+- `Application Backgrounded` — 22
+- `Application Opened` — 16
 - `prayer_marked_done` — 11
 - `Application Became Active` — 9
 - `mushaf_opened` — 4
@@ -49,24 +49,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 1h ago
-- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 1h ago
-- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 1h ago
-- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 1h ago
-- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 1h ago
-- `4bc96b4` — docs(field-notes): log store-still-1.8.0 + crash-on-launch (issue #1) · 1h ago
-- `5c6dd2a` — chore(dashboard): refresh state 2026-07-05T11:56:27Z · 2h ago
-- `8fa1b4d` — chore(dashboard): refresh state 2026-07-05T10:21:12Z · 4h ago
-- `cc7ecfd` — chore(dashboard): refresh state 2026-07-05T07:32:58Z · 6h ago
-- `429dbf9` — chore(dashboard): refresh state 2026-07-05T03:55:32Z · 10h ago
+- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 1h ago
+- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 1h ago
+- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 3h ago
+- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 3h ago
+- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 3h ago
+- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 3h ago
+- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 3h ago
+- `4bc96b4` — docs(field-notes): log store-still-1.8.0 + crash-on-launch (issue #1) · 3h ago
+- `5c6dd2a` — chore(dashboard): refresh state 2026-07-05T11:56:27Z · 3h ago
+- `8fa1b4d` — chore(dashboard): refresh state 2026-07-05T10:21:12Z · 5h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 170ms
-- OK  `rawGithub` — 200 · 265ms
-- OK  `everyayah` — 200 · 526ms
-- OK  `quranicaudio` — 200 · 316ms
-- OK  `qurancdn` — 200 · 335ms
+- OK  `jsdelivr` — 200 · 108ms
+- OK  `rawGithub` — 200 · 220ms
+- OK  `everyayah` — 200 · 606ms
+- OK  `quranicaudio` — 200 · 269ms
+- OK  `qurancdn` — 200 · 353ms
 
 ## EAS update channels
 
