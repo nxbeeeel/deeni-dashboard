@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-05T15:17:35.502Z (just now)_
+_Last refresh: 2026-07-05T16:36:33.659Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.3 (build 75)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **9** |
+| DAU | **11** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -39,34 +39,34 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 22
-- `Application Opened` — 16
-- `prayer_marked_done` — 11
-- `Application Became Active` — 9
-- `mushaf_opened` — 4
-- `feature_opened` — 4
+- `Application Backgrounded` — 28
+- `Application Opened` — 17
+- `Application Became Active` — 12
+- `feature_opened` — 5
+- `prayer_marked_done` — 4
+- `mushaf_opened` — 2
 - `Application Installed` — 2
 
 ## GitHub — recent commits to main
 
-- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 1h ago
-- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 1h ago
-- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 3h ago
-- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 3h ago
-- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 3h ago
-- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 3h ago
-- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 3h ago
-- `4bc96b4` — docs(field-notes): log store-still-1.8.0 + crash-on-launch (issue #1) · 3h ago
-- `5c6dd2a` — chore(dashboard): refresh state 2026-07-05T11:56:27Z · 3h ago
-- `8fa1b4d` — chore(dashboard): refresh state 2026-07-05T10:21:12Z · 5h ago
+- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 1h ago
+- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 3h ago
+- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 3h ago
+- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 4h ago
+- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 4h ago
+- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 4h ago
+- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 4h ago
+- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 4h ago
+- `4bc96b4` — docs(field-notes): log store-still-1.8.0 + crash-on-launch (issue #1) · 4h ago
+- `5c6dd2a` — chore(dashboard): refresh state 2026-07-05T11:56:27Z · 5h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 108ms
-- OK  `rawGithub` — 200 · 220ms
-- OK  `everyayah` — 200 · 606ms
-- OK  `quranicaudio` — 200 · 269ms
-- OK  `qurancdn` — 200 · 353ms
+- OK  `jsdelivr` — 200 · 78ms
+- OK  `rawGithub` — 200 · 202ms
+- OK  `everyayah` — 200 · 695ms
+- OK  `quranicaudio` — 200 · 236ms
+- OK  `qurancdn` — 200 · 271ms
 
 ## EAS update channels
 
