@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-05T12:44:50.746Z",
+  "refreshedAt": "2026-07-05T13:53:17.661Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -86,28 +86,28 @@
       }
     ],
     "latestRelease": {
-      "version": "in.deen.app@1.8.2+30",
+      "version": "in.deen.app@1.8.3+75",
       "newGroups": 0,
       "sessions": null
     }
   },
   "posthog": {
     "healthy": true,
-    "dau": 10,
+    "dau": 9,
     "dauTrend7d": [
-      4,
+      3,
       8,
       8,
       8,
       6,
       7,
       9,
-      4
+      5
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 19
+        "count": 23
       },
       {
         "event": "Application Opened",
@@ -119,25 +119,32 @@
       },
       {
         "event": "Application Became Active",
-        "count": 6
+        "count": 9
       },
       {
         "event": "mushaf_opened",
-        "count": 3
+        "count": 4
       },
       {
         "event": "feature_opened",
-        "count": 3
+        "count": 4
       },
       {
         "event": "Application Installed",
-        "count": 3
+        "count": 2
       }
     ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "0aebd8c",
+        "msg": "chore(dashboard): refresh state 2026-07-05T12:44:51Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-05T12:44:51Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0aebd8cd50602cea20410dc8f6bc602c5cc9b4d7"
+      },
       {
         "sha": "ce99745",
         "msg": "chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout)",
@@ -270,16 +277,15 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-04T11:38:09Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f662da6b643589f08fa42f298e1d7013b8062131"
-      },
-      {
-        "sha": "5f6d60d",
-        "msg": "fix(ios): player modal presentation declared statically - stops the build-30 auto-swipe transition loop",
-        "author": "Mohammed Nabeel C A",
-        "at": "2026-07-04T11:36:36Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/5f6d60d93809da6f195c454418081f577819e9d5"
       }
     ],
     "releases": [
+      {
+        "tag": "v1.8.3",
+        "name": "v1.8.3",
+        "publishedAt": "2026-07-05T12:44:13Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.8.3"
+      },
       {
         "tag": "v1.8.2",
         "name": "v1.8.2 — Mushaf typography for everyone + travel-aware prayer times",
@@ -316,13 +322,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28741176149,
-      "workflow": "CI/CD",
+      "id": 28743019635,
+      "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28741176149",
-      "ranAt": "2026-07-05T12:43:43Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28743019635",
+      "ranAt": "2026-07-05T13:52:04Z",
       "durationSec": 4
     }
   },
@@ -330,31 +336,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 125,
+      "latencyMs": 170,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 208,
+      "latencyMs": 265,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 674,
+      "latencyMs": 526,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 241,
+      "latencyMs": 316,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 293,
+      "latencyMs": 335,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },

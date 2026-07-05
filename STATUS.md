@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-05T12:44:50.746Z (just now)_
+_Last refresh: 2026-07-05T13:53:17.661Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.3 (build 75)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **10** |
+| DAU | **9** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -35,38 +35,38 @@ _None._
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 15d ago
 - REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 22d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 16d ago
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 10d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 11d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 19
+- `Application Backgrounded` — 23
 - `Application Opened` — 17
 - `prayer_marked_done` — 11
-- `Application Became Active` — 6
-- `mushaf_opened` — 3
-- `feature_opened` — 3
-- `Application Installed` — 3
+- `Application Became Active` — 9
+- `mushaf_opened` — 4
+- `feature_opened` — 4
+- `Application Installed` — 2
 
 ## GitHub — recent commits to main
 
-- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 2m ago
-- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 7m ago
-- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 8m ago
-- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 10m ago
-- `4bc96b4` — docs(field-notes): log store-still-1.8.0 + crash-on-launch (issue #1) · 10m ago
-- `5c6dd2a` — chore(dashboard): refresh state 2026-07-05T11:56:27Z · 48m ago
-- `8fa1b4d` — chore(dashboard): refresh state 2026-07-05T10:21:12Z · 2h ago
-- `cc7ecfd` — chore(dashboard): refresh state 2026-07-05T07:32:58Z · 5h ago
-- `429dbf9` — chore(dashboard): refresh state 2026-07-05T03:55:32Z · 9h ago
-- `73b8af4` — chore(dashboard): refresh state 2026-07-04T23:37:18Z · 13h ago
+- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 1h ago
+- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 1h ago
+- `9fcd22f` — docs(privacy): v1.8.3 privacy-diff gate record + public privacy changelog · 1h ago
+- `969133a` — chore(dashboard): refresh state 2026-07-05T12:37:14Z · 1h ago
+- `dfa4d54` — chore(release): bump to 1.8.3 (75) — complete the stalled 1.8.2 ship · 1h ago
+- `4bc96b4` — docs(field-notes): log store-still-1.8.0 + crash-on-launch (issue #1) · 1h ago
+- `5c6dd2a` — chore(dashboard): refresh state 2026-07-05T11:56:27Z · 2h ago
+- `8fa1b4d` — chore(dashboard): refresh state 2026-07-05T10:21:12Z · 4h ago
+- `cc7ecfd` — chore(dashboard): refresh state 2026-07-05T07:32:58Z · 6h ago
+- `429dbf9` — chore(dashboard): refresh state 2026-07-05T03:55:32Z · 10h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 125ms
-- OK  `rawGithub` — 200 · 208ms
-- OK  `everyayah` — 200 · 674ms
-- OK  `quranicaudio` — 200 · 241ms
-- OK  `qurancdn` — 200 · 293ms
+- OK  `jsdelivr` — 200 · 170ms
+- OK  `rawGithub` — 200 · 265ms
+- OK  `everyayah` — 200 · 526ms
+- OK  `quranicaudio` — 200 · 316ms
+- OK  `qurancdn` — 200 · 335ms
 
 ## EAS update channels
 
