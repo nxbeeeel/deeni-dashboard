@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-06T00:12:21.938Z (just now)_
+_Last refresh: 2026-07-06T04:53:54.376Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **—** |
-| DAU | **7** |
+| Crash-free (24h) | **100.00%** |
+| DAU | **6** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,39 +30,44 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-_Sentry pull failed: The operation was aborted due to timeout_
+- REACT-NATIVE-A — ApplicationNotResponding: Background ANR · 4 events · 1 users · last 25d ago
+- REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 11d ago
+- REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 16d ago
+- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 23d ago
+- REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 16d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 11d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 28
-- `Application Opened` — 15
-- `Application Became Active` — 13
+- `Application Backgrounded` — 22
+- `Application Became Active` — 11
+- `Application Opened` — 10
 - `prayer_marked_done` — 5
-- `feature_opened` — 5
+- `feature_opened` — 4
 - `mushaf_opened` — 3
 - `surah_opened` — 2
-- `Application Installed` — 2
+- `Application Installed` — 1
 
 ## GitHub — recent commits to main
 
-- `87ae6bb` — chore(dashboard): refresh state 2026-07-05T22:32:45Z · 2h ago
-- `e8a7e73` — chore(dashboard): refresh state 2026-07-05T21:08:09Z · 3h ago
-- `2b59486` — chore(dashboard): refresh state 2026-07-05T19:53:09Z · 4h ago
-- `af1c337` — chore(dashboard): refresh state 2026-07-05T18:08:43Z · 6h ago
-- `f25b3d7` — chore(dashboard): refresh state 2026-07-05T16:36:34Z · 8h ago
-- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 9h ago
-- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 10h ago
-- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 10h ago
-- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 11h ago
-- `ce99745` — chore: release v1.8.3 (iOS rendering + widgets fix pack; completes the 1.8.2 rollout) · 11h ago
+- `72d0ef2` — chore(dashboard): refresh state 2026-07-06T00:12:22Z · 5h ago
+- `87ae6bb` — chore(dashboard): refresh state 2026-07-05T22:32:45Z · 6h ago
+- `e8a7e73` — chore(dashboard): refresh state 2026-07-05T21:08:09Z · 8h ago
+- `2b59486` — chore(dashboard): refresh state 2026-07-05T19:53:09Z · 9h ago
+- `af1c337` — chore(dashboard): refresh state 2026-07-05T18:08:43Z · 11h ago
+- `f25b3d7` — chore(dashboard): refresh state 2026-07-05T16:36:34Z · 12h ago
+- `abcc466` — chore(dashboard): refresh state 2026-07-05T15:17:35Z · 14h ago
+- `e9c4024` — fix(ios): remove unnecessary App Tracking Transparency — unblocks App Store review · 15h ago
+- `ec14c7b` — chore(dashboard): refresh state 2026-07-05T13:53:18Z · 15h ago
+- `0aebd8c` — chore(dashboard): refresh state 2026-07-05T12:44:51Z · 16h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 163ms
-- OK  `rawGithub` — 200 · 222ms
-- OK  `everyayah` — 200 · 668ms
-- OK  `quranicaudio` — 200 · 318ms
-- OK  `qurancdn` — 200 · 299ms
+- OK  `jsdelivr` — 200 · 129ms
+- OK  `rawGithub` — 200 · 243ms
+- OK  `everyayah` — 200 · 486ms
+- OK  `quranicaudio` — 200 · 216ms
+- OK  `qurancdn` — 200 · 293ms
 
 ## EAS update channels
 
@@ -93,7 +98,3 @@ _Sentry pull failed: The operation was aborted due to timeout_
   Mohammed hit `App not installed as package conflicts with an existing package` when sideloading the v1.8.0 preview APK (build a087fabb) onto a phone already running Play Store v1.7.7. Both APKs used `applicationId 'in.deen.app'` but were signed by different EAS-managed keystores (one per channel), and Android refuses to side-replace a package whose signature doesn't match. Implemented Gradle **product flavors** with `applicationIdSuffix` per channel: `production` → `in.deen.app` (unchanged), `preview` → `in.deen.app.preview`, `internal` → `in.deen.app.internal`, `development` → `in.deen.app.dev`. Each flavor sets a `manifestPlaceholders.appLabel` so the launcher icon shows the variant name and users can tell which one they tapped — "deen.in (Preview)", "deen.in (Dev)", etc. WIDGET_CLICK action strings in `AndroidManifest.xml` swapped from hardcoded `in.deen.app.WIDGET_CLICK` to `${applicationId}.WIDGET_CLICK` so multi-variant installs don't fight over broadcasts; the application's `android:label` swapped to `${appLabel}` driven by the flavor's manifest placeholder. `eas.json` now sets explicit `gradleCommand` per profile (adding flavors removes the default `:app:bundleRelease`/`assembleRelease` tasks — they only exist scoped to a flavor) plus an `APP_VARIANT` env var that `app.config.js` reads to keep `name`, iOS `bundleIdentifier`, and the widget App Group identifier in sync. Production keystore verified unrotated — 5 most recent production AAB builds (v1.7.4 → v1.7.7) all completed with the same EAS-managed signing config. EAS auto-generated a new keystore for `in.deen.app.preview` on first build (correct: per-channel keystore isolation). Documented the new pattern in `README.md` under "Per-channel builds" with the suffix-to-launcher-label mapping. iOS variants still need an `expo prebuild --platform ios --clean` to land bundle-id changes in `ios/<scheme>.xcodeproj` — not needed for current Android testing, noted in `app.config.js` inline comments and the README for when iOS internal builds come up. The current preview APK Mohammed has (a087fabb, hardcoded `in.deen.app`) is now superseded — new preview build 2515c08f produces `in.deen.app.preview` which installs alongside Play Store production with no uninstall needed.
 - 2026-05-10 — Strategy + engineering uplift (PARTS 1–6)
   Commits: 587f793 (gitignore + LF enforcement), 49a1374 (release.yml graceful skip), 89a7a9f (v1.7.x plan docs + FIELD_NOTES), 81d4076 (1.7.0 release-notes tightened + locales/screenshots/banner), 375261a (ios widget entitlements + marketing site source), 0fcc0d5 (bug-solving playbook + Claude dev ecosystem brief), 6efa3ea (/ship slash command + tsc hook + INSTALL.md), e741961 (Q3-2026 strategy memo) Six-part pre-push and engineering uplift after the v1.7.3 hotfix landed. Cleaned the working tree (committed FIELD_NOTES, plan docs, store-listing tightening, site/, ios/ widget entitlements; gitignored 28MB of design assets + HLS chunks; added `.gitattributes` for LF-only normalization across Windows/Linux to stop EAS hash drift). Fixed `.github/workflows/release.yml` — replaced step-level `if: env.X` guards (which never worked because env was step-local) with a preflight that validates every credential end-to-end (presence + valid base64 + plausible content), writes ANDROID_READY/IOS_READY to GITHUB_ENV, and gates each downstream step. First green release-workflow run in project history (graceful-skipped both platforms with clear `::warning::` log messages instead of going red). Wrote two long engineering docs — `docs/engineering/bug-solving-playbook.md` (intake card format, severity ladder, Sentry→GH auto-ingest wiring, repro harness ladder, the iron 3-failed-fixes architecture-review rule, 5-min post-mortem template) and `docs/engineering/claude-dev-ecosystem.md` (3,800 words: install/evaluate/skip across plugins, MCPs, OSS agentic tooling, marketplaces, best-practice posts, with cost-routing advice — Sonnet default / Opus arch-only / Haiku one-shots → realistic 50-70% bill cut). Wired two concrete Claude Code additions: a `/ship` slash command at `.claude/commands/ship.md` that codifies the bump → CHANGELOG → 8-locale release notes → tag → push → workflow-watch dance (saves ~30 min per release), and a `PostToolUse` hook at `.claude/hooks/typecheck-after-edit.mjs` that runs `tsc --noEmit` after TS/TSX edits and feeds relevant errors back via additionalContext (smoke-tested clean + skip paths). Plus `.claude/INSTALL.md` listing the plugin checklist for the rest. Closed with `docs/strategy/Q3-2026-thinking.md` — 290-line memo ranking the next three product moves: iOS App Store launch (1, 4-6 days, biggest multiplier), Hifz mode with SM-2 spaced repetition (2, 3 weeks, defensible differentiator), "Support deen.in" patron flow (3, 1 week, story multiplier not revenue play). Includes alternatives considered and rejected, sequencing through Q3, and honest gaps a real team would close that we won't.
-
-## Refresh errors
-
-- **sentry** — The operation was aborted due to timeout

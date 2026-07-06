@@ -1,15 +1,99 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-06T00:12:21.938Z",
+  "refreshedAt": "2026-07-06T04:53:54.376Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "crashFree": 100,
+    "crashFreeTrend7d": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "openIssuesCount": 6,
+    "topIssues": [
+      {
+        "id": "7516374479",
+        "shortId": "REACT-NATIVE-A",
+        "title": "ApplicationNotResponding: Background ANR",
+        "events24h": 4,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-11T16:25:18.568000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7516374479/",
+        "release": null
+      },
+      {
+        "id": "7573142995",
+        "shortId": "REACT-NATIVE-E",
+        "title": "WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-24T18:23:25.948000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7573142995/",
+        "release": null
+      },
+      {
+        "id": "7564455365",
+        "shortId": "REACT-NATIVE-D",
+        "title": "NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a null object reference in method 'void android.view.ViewGroup.dispatchGetDisplayList()'",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-20T14:05:42.314000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7564455365/",
+        "release": null
+      },
+      {
+        "id": "7548218468",
+        "shortId": "REACT-NATIVE-C",
+        "title": "security_scan_validation_probe",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 0,
+        "lastSeen": "2026-06-13T05:37:58.610080Z",
+        "url": "https://beloop-1t.sentry.io/issues/7548218468/",
+        "release": null
+      },
+      {
+        "id": "7516974353",
+        "shortId": "REACT-NATIVE-B",
+        "title": "Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 \"The file “manifest.json” couldn’t be opened because you don’t have permission to view it.\" UserInfo={NSFilePath=/var/mobile/Containers/Data/Application/9AC17B92-8C7F-4E05-813C-C559C5B...",
+        "events24h": 2,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-19T20:46:10.232000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7516974353/",
+        "release": null
+      },
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 10,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-25T01:35:29.308000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app@1.8.3+32",
+      "newGroups": 0,
+      "sessions": null
+    }
   },
   "posthog": {
     "healthy": true,
-    "dau": 7,
+    "dau": 6,
     "dauTrend7d": [
       8,
       8,
@@ -17,20 +101,21 @@
       6,
       7,
       9,
-      7
+      7,
+      1
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 28
-      },
-      {
-        "event": "Application Opened",
-        "count": 15
+        "count": 22
       },
       {
         "event": "Application Became Active",
-        "count": 13
+        "count": 11
+      },
+      {
+        "event": "Application Opened",
+        "count": 10
       },
       {
         "event": "prayer_marked_done",
@@ -38,7 +123,7 @@
       },
       {
         "event": "feature_opened",
-        "count": 5
+        "count": 4
       },
       {
         "event": "mushaf_opened",
@@ -50,13 +135,20 @@
       },
       {
         "event": "Application Installed",
-        "count": 2
+        "count": 1
       }
     ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "72d0ef2",
+        "msg": "chore(dashboard): refresh state 2026-07-06T00:12:22Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-06T00:12:22Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/72d0ef2b16f06dd2f05c86e3d7b699e2f39ecbab"
+      },
       {
         "sha": "87ae6bb",
         "msg": "chore(dashboard): refresh state 2026-07-05T22:32:45Z",
@@ -189,13 +281,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-04T23:37:18Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/73b8af45eb9a7e5b3dc04f93b9f4ca03a4e1eb86"
-      },
-      {
-        "sha": "32a1549",
-        "msg": "chore(dashboard): refresh state 2026-07-04T22:30:03Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-04T22:30:03Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/32a15491e04a4eb17a73b7790aae0a6eb06cfeed"
       }
     ],
     "releases": [
@@ -241,13 +326,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 28759752564,
+      "id": 28768650863,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28759752564",
-      "ranAt": "2026-07-06T00:11:12Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/28768650863",
+      "ranAt": "2026-07-06T04:52:47Z",
       "durationSec": 3
     }
   },
@@ -255,31 +340,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 163,
+      "latencyMs": 129,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 222,
+      "latencyMs": 243,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 668,
+      "latencyMs": 486,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 318,
+      "latencyMs": 216,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 299,
+      "latencyMs": 293,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -483,12 +568,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "sentry",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {
