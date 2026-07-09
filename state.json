@@ -1,11 +1,95 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-09T20:01:16.301Z",
+  "refreshedAt": "2026-07-09T22:00:59.674Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "crashFree": 100,
+    "crashFreeTrend7d": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "openIssuesCount": 6,
+    "topIssues": [
+      {
+        "id": "7516374479",
+        "shortId": "REACT-NATIVE-A",
+        "title": "ApplicationNotResponding: Background ANR",
+        "events24h": 4,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-11T16:25:18.568000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7516374479/",
+        "release": null
+      },
+      {
+        "id": "7573142995",
+        "shortId": "REACT-NATIVE-E",
+        "title": "WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM.",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-24T18:23:25.948000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7573142995/",
+        "release": null
+      },
+      {
+        "id": "7564455365",
+        "shortId": "REACT-NATIVE-D",
+        "title": "NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a null object reference in method 'void android.view.ViewGroup.dispatchGetDisplayList()'",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-20T14:05:42.314000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7564455365/",
+        "release": null
+      },
+      {
+        "id": "7548218468",
+        "shortId": "REACT-NATIVE-C",
+        "title": "security_scan_validation_probe",
+        "events24h": 1,
+        "events1h": null,
+        "users24h": 0,
+        "lastSeen": "2026-06-13T05:37:58.610080Z",
+        "url": "https://beloop-1t.sentry.io/issues/7548218468/",
+        "release": null
+      },
+      {
+        "id": "7516974353",
+        "shortId": "REACT-NATIVE-B",
+        "title": "Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 \"The file “manifest.json” couldn’t be opened because you don’t have permission to view it.\" UserInfo={NSFilePath=/var/mobile/Containers/Data/Application/9AC17B92-8C7F-4E05-813C-C559C5B...",
+        "events24h": 2,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-19T20:46:10.232000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7516974353/",
+        "release": null
+      },
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 10,
+        "events1h": null,
+        "users24h": 1,
+        "lastSeen": "2026-06-25T01:35:29.308000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app@1.8.3+32",
+      "newGroups": 0,
+      "sessions": null
+    }
   },
   "posthog": {
     "healthy": true,
@@ -54,6 +138,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "d82f25a",
+        "msg": "chore(dashboard): refresh state 2026-07-09T20:01:17Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-09T20:01:17Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d82f25aa3f242e8c24b436e22006141dc3271448"
+      },
       {
         "sha": "13a9be7",
         "msg": "chore(dashboard): refresh state 2026-07-09T18:01:11Z",
@@ -186,13 +277,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-07T21:08:31Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/16e2abab51ef8d6bfe8436e7263c8c1b9590b403"
-      },
-      {
-        "sha": "ee82c3c",
-        "msg": "chore(dashboard): refresh state 2026-07-07T19:06:07Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-07T19:06:07Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ee82c3c01e19a9ca9c70d1e8c8032f6076c18221"
       }
     ],
     "releases": [
@@ -238,45 +322,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 29046337668,
+      "id": 29053185147,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/29046337668",
-      "ranAt": "2026-07-09T20:00:08Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/29053185147",
+      "ranAt": "2026-07-09T21:59:56Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 365,
+      "latencyMs": 225,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 346,
+      "latencyMs": 290,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
-      "status": 200,
-      "latencyMs": 566,
+      "status": 206,
+      "latencyMs": 8480,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 181,
+      "latencyMs": 288,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 273,
+      "latencyMs": 658,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -480,12 +564,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "sentry",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},
