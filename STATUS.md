@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-12T15:35:34.298Z (just now)_
+_Last refresh: 2026-07-12T17:04:36.699Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -38,39 +38,40 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 15
-- `Application Opened` — 11
+- `Application Backgrounded` — 13
 - `prayer_marked_done` — 9
+- `Application Opened` — 9
 - `Application Became Active` — 3
 - `feature_opened` — 1
 - `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `1b82378` — chore(dashboard): refresh state 2026-07-12T14:06:21Z · 1h ago
-- `36cf978` — chore(dashboard): refresh state 2026-07-12T12:04:22Z · 4h ago
-- `4059a20` — chore(dashboard): refresh state 2026-07-12T10:57:18Z · 5h ago
-- `b36b8bc` — chore(dashboard): refresh state 2026-07-12T09:28:00Z · 6h ago
-- `f2caadb` — chore(dashboard): refresh state 2026-07-12T07:08:21Z · 8h ago
-- `c02afce` — chore(dashboard): refresh state 2026-07-12T04:08:16Z · 11h ago
-- `08046a6` — chore(dashboard): refresh state 2026-07-12T00:03:15Z · 16h ago
-- `ed008fd` — chore(dashboard): refresh state 2026-07-11T22:57:38Z · 17h ago
-- `c23f8d8` — chore(dashboard): refresh state 2026-07-11T21:56:49Z · 18h ago
-- `3994a00` — chore(dashboard): refresh state 2026-07-11T20:56:38Z · 19h ago
+- `257cae5` — chore(dashboard): refresh state 2026-07-12T15:35:35Z · 1h ago
+- `1b82378` — chore(dashboard): refresh state 2026-07-12T14:06:21Z · 3h ago
+- `36cf978` — chore(dashboard): refresh state 2026-07-12T12:04:22Z · 5h ago
+- `4059a20` — chore(dashboard): refresh state 2026-07-12T10:57:18Z · 6h ago
+- `b36b8bc` — chore(dashboard): refresh state 2026-07-12T09:28:00Z · 8h ago
+- `f2caadb` — chore(dashboard): refresh state 2026-07-12T07:08:21Z · 10h ago
+- `c02afce` — chore(dashboard): refresh state 2026-07-12T04:08:16Z · 13h ago
+- `08046a6` — chore(dashboard): refresh state 2026-07-12T00:03:15Z · 17h ago
+- `ed008fd` — chore(dashboard): refresh state 2026-07-11T22:57:38Z · 18h ago
+- `c23f8d8` — chore(dashboard): refresh state 2026-07-11T21:56:49Z · 19h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 203ms
-- OK  `rawGithub` — 200 · 255ms
-- OK  `everyayah` — 200 · 490ms
-- OK  `quranicaudio` — 200 · 332ms
-- OK  `qurancdn` — 200 · 262ms
+- OK  `jsdelivr` — 200 · 122ms
+- OK  `rawGithub` — 200 · 395ms
+- OK  `everyayah` — 200 · 737ms
+- OK  `quranicaudio` — 200 · 276ms
+- OK  `qurancdn` — 200 · 235ms
 
 ## EAS update channels
 
 - `production` — ? · — · unknown
 - `internal` — ? · — · unknown
-- `preview` — ? · — · unknown
+- `preview` — pull failed: Command failed: npx --yes eas-cli@latest update:list --branch preview --json --non-interactive --limit 1
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use 
 - `development` — ? · — · unknown
 
 ## WORKLOG — last entries
