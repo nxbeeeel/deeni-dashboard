@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-12T17:04:36.699Z (just now)_
+_Last refresh: 2026-07-12T18:28:51.627Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -32,46 +32,45 @@ _None._
 
 - REACT-NATIVE-E — WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM · 1 events · 1 users · last 18d ago
 - REACT-NATIVE-D — NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a n · 1 events · 1 users · last 22d ago
-- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 29d ago
+- REACT-NATIVE-C — security_scan_validation_probe · 1 events · 0 users · last 30d ago
 - REACT-NATIVE-B — Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 "The file “man · 2 events · 1 users · last 23d ago
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 10 events · 1 users · last 18d ago
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 13
+- `Application Backgrounded` — 11
 - `prayer_marked_done` — 9
-- `Application Opened` — 9
+- `Application Opened` — 8
 - `Application Became Active` — 3
 - `feature_opened` — 1
 - `surah_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `257cae5` — chore(dashboard): refresh state 2026-07-12T15:35:35Z · 1h ago
-- `1b82378` — chore(dashboard): refresh state 2026-07-12T14:06:21Z · 3h ago
-- `36cf978` — chore(dashboard): refresh state 2026-07-12T12:04:22Z · 5h ago
-- `4059a20` — chore(dashboard): refresh state 2026-07-12T10:57:18Z · 6h ago
-- `b36b8bc` — chore(dashboard): refresh state 2026-07-12T09:28:00Z · 8h ago
-- `f2caadb` — chore(dashboard): refresh state 2026-07-12T07:08:21Z · 10h ago
-- `c02afce` — chore(dashboard): refresh state 2026-07-12T04:08:16Z · 13h ago
-- `08046a6` — chore(dashboard): refresh state 2026-07-12T00:03:15Z · 17h ago
-- `ed008fd` — chore(dashboard): refresh state 2026-07-11T22:57:38Z · 18h ago
-- `c23f8d8` — chore(dashboard): refresh state 2026-07-11T21:56:49Z · 19h ago
+- `8af6be2` — chore(dashboard): refresh state 2026-07-12T17:04:37Z · 1h ago
+- `257cae5` — chore(dashboard): refresh state 2026-07-12T15:35:35Z · 3h ago
+- `1b82378` — chore(dashboard): refresh state 2026-07-12T14:06:21Z · 4h ago
+- `36cf978` — chore(dashboard): refresh state 2026-07-12T12:04:22Z · 6h ago
+- `4059a20` — chore(dashboard): refresh state 2026-07-12T10:57:18Z · 8h ago
+- `b36b8bc` — chore(dashboard): refresh state 2026-07-12T09:28:00Z · 9h ago
+- `f2caadb` — chore(dashboard): refresh state 2026-07-12T07:08:21Z · 11h ago
+- `c02afce` — chore(dashboard): refresh state 2026-07-12T04:08:16Z · 14h ago
+- `08046a6` — chore(dashboard): refresh state 2026-07-12T00:03:15Z · 18h ago
+- `ed008fd` — chore(dashboard): refresh state 2026-07-11T22:57:38Z · 20h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 122ms
-- OK  `rawGithub` — 200 · 395ms
-- OK  `everyayah` — 200 · 737ms
-- OK  `quranicaudio` — 200 · 276ms
-- OK  `qurancdn` — 200 · 235ms
+- OK  `jsdelivr` — 200 · 640ms
+- OK  `rawGithub` — 200 · 236ms
+- OK  `everyayah` — 200 · 618ms
+- OK  `quranicaudio` — 200 · 171ms
+- OK  `qurancdn` — 200 · 209ms
 
 ## EAS update channels
 
 - `production` — ? · — · unknown
 - `internal` — ? · — · unknown
-- `preview` — pull failed: Command failed: npx --yes eas-cli@latest update:list --branch preview --json --non-interactive --limit 1
-npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use 
+- `preview` — ? · — · unknown
 - `development` — ? · — · unknown
 
 ## WORKLOG — last entries
