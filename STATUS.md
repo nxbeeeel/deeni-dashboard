@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-16T21:36:47.395Z (just now)_
+_Last refresh: 2026-07-16T23:01:59.541Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -13,7 +13,7 @@ _App version: 1.8.3 (build 75)_
 | In progress | **0** |
 | Fixed (14d) | **0** |
 | Last production deploy | **—** (unknown) |
-| Last CI on main | **in_progress** |
+| Last CI on main | — |
 | Active alerts | **0** |
 
 ## Open bugs (`triage`)
@@ -41,24 +41,21 @@ _No events._
 
 ## GitHub — recent commits to main
 
-- `e1f3fc8` — chore(dashboard): refresh state 2026-07-16T20:28:02Z · 1h ago
-- `8901007` — chore(dashboard): refresh state 2026-07-16T19:20:10Z · 2h ago
-- `669efa5` — chore(dashboard): refresh state 2026-07-16T17:47:31Z · 4h ago
-- `e13f7aa` — chore(dashboard): refresh state 2026-07-16T16:20:47Z · 5h ago
-- `0e69391` — chore(dashboard): refresh state 2026-07-16T14:34:41Z · 7h ago
-- `dbe1825` — chore(dashboard): refresh state 2026-07-16T12:05:15Z · 10h ago
-- `6d81596` — chore(dashboard): refresh state 2026-07-16T10:29:13Z · 11h ago
-- `acda2a3` — chore(dashboard): refresh state 2026-07-16T08:22:00Z · 13h ago
-- `17855ed` — chore(dashboard): refresh state 2026-07-16T05:46:34Z · 16h ago
-- `2b0a44a` — chore(dashboard): refresh state 2026-07-16T02:56:50Z · 19h ago
+_GitHub pull failed: GitHub /repos/nxbeeeel/Deen.in_APP → HTTP 503: <!DOCTYPE html>
+<!--
+
+Hello future GitHubber! I bet you're here to remove those nasty inline styles,
+DRY up these templates and make 'em nice and re-usable, right?
+
+Please, don't. https://github_
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 146ms
-- OK  `rawGithub` — 200 · 224ms
-- OK  `everyayah` — 200 · 480ms
-- OK  `quranicaudio` — 200 · 413ms
-- OK  `qurancdn` — 200 · 343ms
+- OK  `jsdelivr` — 200 · 104ms
+- OK  `rawGithub` — 200 · 387ms
+- OK  `everyayah` — 200 · 500ms
+- OK  `quranicaudio` — 200 · 202ms
+- OK  `qurancdn` — 200 · 151ms
 
 ## EAS update channels
 
@@ -89,3 +86,13 @@ _No events._
   Mohammed hit `App not installed as package conflicts with an existing package` when sideloading the v1.8.0 preview APK (build a087fabb) onto a phone already running Play Store v1.7.7. Both APKs used `applicationId 'in.deen.app'` but were signed by different EAS-managed keystores (one per channel), and Android refuses to side-replace a package whose signature doesn't match. Implemented Gradle **product flavors** with `applicationIdSuffix` per channel: `production` → `in.deen.app` (unchanged), `preview` → `in.deen.app.preview`, `internal` → `in.deen.app.internal`, `development` → `in.deen.app.dev`. Each flavor sets a `manifestPlaceholders.appLabel` so the launcher icon shows the variant name and users can tell which one they tapped — "deen.in (Preview)", "deen.in (Dev)", etc. WIDGET_CLICK action strings in `AndroidManifest.xml` swapped from hardcoded `in.deen.app.WIDGET_CLICK` to `${applicationId}.WIDGET_CLICK` so multi-variant installs don't fight over broadcasts; the application's `android:label` swapped to `${appLabel}` driven by the flavor's manifest placeholder. `eas.json` now sets explicit `gradleCommand` per profile (adding flavors removes the default `:app:bundleRelease`/`assembleRelease` tasks — they only exist scoped to a flavor) plus an `APP_VARIANT` env var that `app.config.js` reads to keep `name`, iOS `bundleIdentifier`, and the widget App Group identifier in sync. Production keystore verified unrotated — 5 most recent production AAB builds (v1.7.4 → v1.7.7) all completed with the same EAS-managed signing config. EAS auto-generated a new keystore for `in.deen.app.preview` on first build (correct: per-channel keystore isolation). Documented the new pattern in `README.md` under "Per-channel builds" with the suffix-to-launcher-label mapping. iOS variants still need an `expo prebuild --platform ios --clean` to land bundle-id changes in `ios/<scheme>.xcodeproj` — not needed for current Android testing, noted in `app.config.js` inline comments and the README for when iOS internal builds come up. The current preview APK Mohammed has (a087fabb, hardcoded `in.deen.app`) is now superseded — new preview build 2515c08f produces `in.deen.app.preview` which installs alongside Play Store production with no uninstall needed.
 - 2026-05-10 — Strategy + engineering uplift (PARTS 1–6)
   Commits: 587f793 (gitignore + LF enforcement), 49a1374 (release.yml graceful skip), 89a7a9f (v1.7.x plan docs + FIELD_NOTES), 81d4076 (1.7.0 release-notes tightened + locales/screenshots/banner), 375261a (ios widget entitlements + marketing site source), 0fcc0d5 (bug-solving playbook + Claude dev ecosystem brief), 6efa3ea (/ship slash command + tsc hook + INSTALL.md), e741961 (Q3-2026 strategy memo) Six-part pre-push and engineering uplift after the v1.7.3 hotfix landed. Cleaned the working tree (committed FIELD_NOTES, plan docs, store-listing tightening, site/, ios/ widget entitlements; gitignored 28MB of design assets + HLS chunks; added `.gitattributes` for LF-only normalization across Windows/Linux to stop EAS hash drift). Fixed `.github/workflows/release.yml` — replaced step-level `if: env.X` guards (which never worked because env was step-local) with a preflight that validates every credential end-to-end (presence + valid base64 + plausible content), writes ANDROID_READY/IOS_READY to GITHUB_ENV, and gates each downstream step. First green release-workflow run in project history (graceful-skipped both platforms with clear `::warning::` log messages instead of going red). Wrote two long engineering docs — `docs/engineering/bug-solving-playbook.md` (intake card format, severity ladder, Sentry→GH auto-ingest wiring, repro harness ladder, the iron 3-failed-fixes architecture-review rule, 5-min post-mortem template) and `docs/engineering/claude-dev-ecosystem.md` (3,800 words: install/evaluate/skip across plugins, MCPs, OSS agentic tooling, marketplaces, best-practice posts, with cost-routing advice — Sonnet default / Opus arch-only / Haiku one-shots → realistic 50-70% bill cut). Wired two concrete Claude Code additions: a `/ship` slash command at `.claude/commands/ship.md` that codifies the bump → CHANGELOG → 8-locale release notes → tag → push → workflow-watch dance (saves ~30 min per release), and a `PostToolUse` hook at `.claude/hooks/typecheck-after-edit.mjs` that runs `tsc --noEmit` after TS/TSX edits and feeds relevant errors back via additionalContext (smoke-tested clean + skip paths). Plus `.claude/INSTALL.md` listing the plugin checklist for the rest. Closed with `docs/strategy/Q3-2026-thinking.md` — 290-line memo ranking the next three product moves: iOS App Store launch (1, 4-6 days, biggest multiplier), Hifz mode with SM-2 spaced repetition (2, 3 weeks, defensible differentiator), "Support deen.in" patron flow (3, 1 week, story multiplier not revenue play). Includes alternatives considered and rejected, sequencing through Q3, and honest gaps a real team would close that we won't.
+
+## Refresh errors
+
+- **github** — GitHub /repos/nxbeeeel/Deen.in_APP → HTTP 503: <!DOCTYPE html>
+<!--
+
+Hello future GitHubber! I bet you're here to remove those nasty inline styles,
+DRY up these templates and make 'em nice and re-usable, right?
+
+Please, don't. https://github
