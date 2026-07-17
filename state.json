@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-16T23:01:59.541Z",
+  "refreshedAt": "2026-07-17T01:04:06.711Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -14,7 +14,7 @@
       100,
       100,
       100,
-      100
+      null
     ],
     "openIssuesCount": 4,
     "topIssues": [
@@ -81,38 +81,231 @@
     "topEvents24h": []
   },
   "github": {
-    "healthy": false,
-    "error": "GitHub /repos/nxbeeeel/Deen.in_APP → HTTP 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github"
+    "healthy": true,
+    "commits": [
+      {
+        "sha": "f0c9435",
+        "msg": "chore(dashboard): refresh state 2026-07-16T23:02:00Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T23:02:00Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f0c9435fc7269894e4476d56418744f49baac46e"
+      },
+      {
+        "sha": "46064bd",
+        "msg": "chore(dashboard): refresh state 2026-07-16T21:36:48Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T21:36:48Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/46064bdd9f72bd54f7f5c9e805291ed57b771784"
+      },
+      {
+        "sha": "e1f3fc8",
+        "msg": "chore(dashboard): refresh state 2026-07-16T20:28:02Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T20:28:02Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e1f3fc8c91391e256dda25fb14fa2de1c3d8f693"
+      },
+      {
+        "sha": "8901007",
+        "msg": "chore(dashboard): refresh state 2026-07-16T19:20:10Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T19:20:10Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8901007586ed7ec4ad71e7b6eed5368f86caad1e"
+      },
+      {
+        "sha": "669efa5",
+        "msg": "chore(dashboard): refresh state 2026-07-16T17:47:31Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T17:47:31Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/669efa53df40ecd56b48678122839b77bd10560b"
+      },
+      {
+        "sha": "e13f7aa",
+        "msg": "chore(dashboard): refresh state 2026-07-16T16:20:47Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T16:20:47Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e13f7aafd524214a721701cc45df739e80f7f110"
+      },
+      {
+        "sha": "0e69391",
+        "msg": "chore(dashboard): refresh state 2026-07-16T14:34:41Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T14:34:41Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0e6939187509a7023d15ea0f48a1238c47c54ddd"
+      },
+      {
+        "sha": "dbe1825",
+        "msg": "chore(dashboard): refresh state 2026-07-16T12:05:15Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T12:05:15Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dbe1825d7dfa8c4420fc2fd7c094cae81143a2be"
+      },
+      {
+        "sha": "6d81596",
+        "msg": "chore(dashboard): refresh state 2026-07-16T10:29:13Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T10:29:13Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6d8159641e500d90044f431da6817238bfe37b34"
+      },
+      {
+        "sha": "acda2a3",
+        "msg": "chore(dashboard): refresh state 2026-07-16T08:22:00Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T08:22:00Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/acda2a3972fd4445e5edb2d0888e4e8fb3165404"
+      },
+      {
+        "sha": "17855ed",
+        "msg": "chore(dashboard): refresh state 2026-07-16T05:46:34Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T05:46:34Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/17855ed9fa9adcdb91da1378b87c65800e71149f"
+      },
+      {
+        "sha": "2b0a44a",
+        "msg": "chore(dashboard): refresh state 2026-07-16T02:56:50Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-16T02:56:50Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2b0a44aa70419acf29afc5e2c2f2fbfb8000861d"
+      },
+      {
+        "sha": "da1df1a",
+        "msg": "chore(dashboard): refresh state 2026-07-15T23:31:19Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-15T23:31:19Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/da1df1a2e7b1c4fe04a5724f372203e01ca224c6"
+      },
+      {
+        "sha": "c762ebb",
+        "msg": "chore(dashboard): refresh state 2026-07-15T22:06:53Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-15T22:06:53Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c762ebb521951a48312ee007f13020e27bdac2f5"
+      },
+      {
+        "sha": "cda5b4d",
+        "msg": "chore(dashboard): refresh state 2026-07-15T20:35:38Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-15T20:35:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/cda5b4d0ae43f1154a8547f936258a3ed11e7211"
+      },
+      {
+        "sha": "fb16d1b",
+        "msg": "chore(dashboard): refresh state 2026-07-15T19:19:20Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-15T19:19:20Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fb16d1bb1ad3f27233ee15ec579285b6a84a1bed"
+      },
+      {
+        "sha": "96b8afc",
+        "msg": "chore(dashboard): refresh state 2026-07-15T17:49:33Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-15T17:49:33Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/96b8afce2f93fcbe4fc7647071025067581d860e"
+      },
+      {
+        "sha": "e1e0ee1",
+        "msg": "chore(dashboard): refresh state 2026-07-15T16:04:36Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-15T16:04:36Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e1e0ee191a81259703b1d92e7ba7ff9c4a092875"
+      },
+      {
+        "sha": "126fef2",
+        "msg": "chore(dashboard): refresh state 2026-07-15T14:21:37Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-15T14:21:37Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/126fef2a60d187ff13af8a6a09750cacf220b1a5"
+      },
+      {
+        "sha": "4339e32",
+        "msg": "chore(dashboard): refresh state 2026-07-15T12:19:53Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-15T12:19:53Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4339e32017e95b97e447fa0daab91121203451d5"
+      }
+    ],
+    "releases": [
+      {
+        "tag": "v1.8.3",
+        "name": "v1.8.3",
+        "publishedAt": "2026-07-05T12:44:13Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.8.3"
+      },
+      {
+        "tag": "v1.8.2",
+        "name": "v1.8.2 — Mushaf typography for everyone + travel-aware prayer times",
+        "publishedAt": "2026-07-02T15:49:04Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.8.2"
+      },
+      {
+        "tag": "v1.7.4",
+        "name": "v1.7.4",
+        "publishedAt": "2026-05-10T23:12:35Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.7.4"
+      },
+      {
+        "tag": "v1.7.3",
+        "name": "v1.7.3",
+        "publishedAt": "2026-05-10T19:21:51Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.7.3"
+      },
+      {
+        "tag": "v1.6.1",
+        "name": "v1.6.1 — Mushaf Hot Fixes",
+        "publishedAt": "2026-05-10T02:24:13Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.6.1"
+      },
+      {
+        "tag": "v1.6.0",
+        "name": "v1.6.0 — Reliability + Features Sprint",
+        "publishedAt": "2026-05-10T01:00:26Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.6.0"
+      }
+    ],
+    "openPRs": [],
+    "issuesOpen": [],
+    "issuesInProgress": [],
+    "issuesFixed14d": [],
+    "ciLastRun": {
+      "id": 29546422380,
+      "workflow": "Dashboard Refresh",
+      "status": "in_progress",
+      "conclusion": null,
+      "branch": "master",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/29546422380",
+      "ranAt": "2026-07-17T01:03:00Z",
+      "durationSec": 3
+    }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 104,
+      "latencyMs": 390,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 387,
+      "latencyMs": 308,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 500,
+      "latencyMs": 492,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 202,
+      "latencyMs": 298,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 151,
+      "latencyMs": 646,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -316,12 +509,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "github",
-      "error": "GitHub /repos/nxbeeeel/Deen.in_APP → HTTP 503: <!DOCTYPE html>\r\n<!--\r\n\r\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\r\nDRY up these templates and make 'em nice and re-usable, right?\r\n\r\nPlease, don't. https://github"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},
