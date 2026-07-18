@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-07-18T21:26:07.429Z (just now)_
+_Last refresh: 2026-07-18T22:25:38.022Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.3 (build 75)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **3** |
+| DAU | **2** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -37,32 +37,32 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 5
 - `quran_played` — 3
-- `Application Became Active` — 3
-- `Application Opened` — 3
+- `Application Backgrounded` — 3
+- `Application Became Active` — 2
+- `Application Opened` — 2
 - `mushaf_opened` — 1
 
 ## GitHub — recent commits to main
 
-- `1ff343a` — chore(dashboard): refresh state 2026-07-18T20:22:16Z · 1h ago
-- `d8cac4d` — chore(dashboard): refresh state 2026-07-18T19:18:16Z · 2h ago
-- `97d44de` — chore(dashboard): refresh state 2026-07-18T17:59:26Z · 3h ago
-- `d87481d` — chore(dashboard): refresh state 2026-07-18T16:31:53Z · 5h ago
-- `06d249f` — chore(dashboard): refresh state 2026-07-18T15:30:38Z · 6h ago
-- `1c2c1b1` — chore(dashboard): refresh state 2026-07-18T14:01:17Z · 7h ago
-- `a057b8d` — chore(dashboard): refresh state 2026-07-18T12:29:16Z · 9h ago
-- `db62089` — chore(dashboard): refresh state 2026-07-18T11:14:42Z · 10h ago
-- `24ad6ae` — chore(dashboard): refresh state 2026-07-18T09:59:48Z · 11h ago
-- `dc84eaa` — chore(dashboard): refresh state 2026-07-18T08:24:54Z · 13h ago
+- `63791df` — chore(dashboard): refresh state 2026-07-18T21:26:08Z · 1h ago
+- `1ff343a` — chore(dashboard): refresh state 2026-07-18T20:22:16Z · 2h ago
+- `d8cac4d` — chore(dashboard): refresh state 2026-07-18T19:18:16Z · 3h ago
+- `97d44de` — chore(dashboard): refresh state 2026-07-18T17:59:26Z · 4h ago
+- `d87481d` — chore(dashboard): refresh state 2026-07-18T16:31:53Z · 6h ago
+- `06d249f` — chore(dashboard): refresh state 2026-07-18T15:30:38Z · 7h ago
+- `1c2c1b1` — chore(dashboard): refresh state 2026-07-18T14:01:17Z · 8h ago
+- `a057b8d` — chore(dashboard): refresh state 2026-07-18T12:29:16Z · 10h ago
+- `db62089` — chore(dashboard): refresh state 2026-07-18T11:14:42Z · 11h ago
+- `24ad6ae` — chore(dashboard): refresh state 2026-07-18T09:59:48Z · 12h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 215ms
-- OK  `rawGithub` — 200 · 363ms
-- OK  `everyayah` — 200 · 524ms
-- OK  `quranicaudio` — 200 · 356ms
-- OK  `qurancdn` — 200 · 284ms
+- OK  `jsdelivr` — 200 · 153ms
+- OK  `rawGithub` — 200 · 242ms
+- OK  `everyayah` — 200 · 729ms
+- OK  `quranicaudio` — 200 · 191ms
+- OK  `qurancdn` — 200 · 200ms
 
 ## EAS update channels
 
