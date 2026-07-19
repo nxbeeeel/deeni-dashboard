@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-19T19:46:58.880Z",
+  "refreshedAt": "2026-07-19T20:56:48.440Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -16,7 +16,7 @@
       100,
       100
     ],
-    "openIssuesCount": 4,
+    "openIssuesCount": 3,
     "topIssues": [
       {
         "id": "7573142995",
@@ -41,17 +41,6 @@
         "release": null
       },
       {
-        "id": "7516974353",
-        "shortId": "REACT-NATIVE-B",
-        "title": "Error: Failed to read storage file.Error Domain=NSCocoaErrorDomain Code=257 \"The file “manifest.json” couldn’t be opened because you don’t have permission to view it.\" UserInfo={NSFilePath=/var/mobile/Containers/Data/Application/9AC17B92-8C7F-4E05-813C-C559C5B...",
-        "events24h": 2,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-06-19T20:46:10.232000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7516974353/",
-        "release": null
-      },
-      {
         "id": "7406195421",
         "shortId": "REACT-NATIVE-3",
         "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
@@ -71,7 +60,7 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 2,
+    "dau": 1,
     "dauTrend7d": [
       1,
       3,
@@ -83,23 +72,11 @@
     ],
     "topEvents24h": [
       {
-        "event": "quran_played",
-        "count": 3
-      },
-      {
         "event": "Application Backgrounded",
-        "count": 3
-      },
-      {
-        "event": "Application Became Active",
-        "count": 2
+        "count": 1
       },
       {
         "event": "Application Opened",
-        "count": 2
-      },
-      {
-        "event": "mushaf_opened",
         "count": 1
       }
     ]
@@ -107,6 +84,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "9c0f0b9",
+        "msg": "chore(dashboard): refresh state 2026-07-19T19:46:59Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-19T19:46:59Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/9c0f0b912e9d623d4ca41f9a2617cd8d5d5ebdfc"
+      },
       {
         "sha": "e959019",
         "msg": "chore(dashboard): refresh state 2026-07-19T18:29:55Z",
@@ -239,13 +223,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-18T14:01:17Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/1c2c1b16d515dafc67e915595ce20490ab702719"
-      },
-      {
-        "sha": "a057b8d",
-        "msg": "chore(dashboard): refresh state 2026-07-18T12:29:16Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-18T12:29:16Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a057b8d452d0be365008eab560f72960c4e4ee98"
       }
     ],
     "releases": [
@@ -291,13 +268,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 29701230230,
+      "id": 29703423499,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/29701230230",
-      "ranAt": "2026-07-19T19:45:49Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/29703423499",
+      "ranAt": "2026-07-19T20:55:41Z",
       "durationSec": 3
     }
   },
@@ -305,31 +282,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 218,
+      "latencyMs": 175,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 418,
+      "latencyMs": 188,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 559,
+      "latencyMs": 455,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 205,
+      "latencyMs": 310,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 246,
+      "latencyMs": 687,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
