@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-20T13:27:44.901Z",
+  "refreshedAt": "2026-07-20T15:31:14.866Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -16,7 +16,7 @@
       100,
       100
     ],
-    "openIssuesCount": 3,
+    "openIssuesCount": 2,
     "topIssues": [
       {
         "id": "7573142995",
@@ -27,17 +27,6 @@
         "users24h": 1,
         "lastSeen": "2026-06-24T18:23:25.948000Z",
         "url": "https://beloop-1t.sentry.io/issues/7573142995/",
-        "release": null
-      },
-      {
-        "id": "7564455365",
-        "shortId": "REACT-NATIVE-D",
-        "title": "NullPointerException: Attempt to read from field 'int android.view.View.mViewFlags' on a null object reference in method 'void android.view.ViewGroup.dispatchGetDisplayList()'",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-06-20T14:05:42.314000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7564455365/",
         "release": null
       },
       {
@@ -59,12 +48,38 @@
     }
   },
   "posthog": {
-    "healthy": false,
-    "error": "The operation was aborted due to timeout"
+    "healthy": true,
+    "dau": 2,
+    "dauTrend7d": [
+      1,
+      1,
+      1,
+      4,
+      2,
+      1,
+      1
+    ],
+    "topEvents24h": [
+      {
+        "event": "Application Backgrounded",
+        "count": 3
+      },
+      {
+        "event": "Application Opened",
+        "count": 3
+      }
+    ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "fbee7c5",
+        "msg": "chore(dashboard): refresh state 2026-07-20T13:27:45Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-20T13:27:45Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fbee7c5554a12e6e4a6b3d9f10540ab8da37a9a0"
+      },
       {
         "sha": "55a33b1",
         "msg": "chore(dashboard): refresh state 2026-07-20T11:23:56Z",
@@ -197,13 +212,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-18T23:29:03Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6ffe86cb848d81e1100f25e5aa34b585ade9f16d"
-      },
-      {
-        "sha": "fd72354",
-        "msg": "chore(dashboard): refresh state 2026-07-18T22:25:39Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-18T22:25:39Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fd72354a7b162028a6a2da9a98b63f2e46576f32"
       }
     ],
     "releases": [
@@ -249,45 +257,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 29746272025,
+      "id": 29755443680,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/29746272025",
-      "ranAt": "2026-07-20T13:26:40Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/29755443680",
+      "ranAt": "2026-07-20T15:30:08Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 152,
+      "latencyMs": 214,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 184,
+      "latencyMs": 204,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 657,
+      "latencyMs": 478,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 257,
+      "latencyMs": 362,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 664,
+      "latencyMs": 602,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -491,12 +499,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "posthog",
-      "error": "The operation was aborted due to timeout"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},
