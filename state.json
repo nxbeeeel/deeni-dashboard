@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-24T13:54:40.888Z",
+  "refreshedAt": "2026-07-24T15:28:57.550Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -48,12 +48,42 @@
     }
   },
   "posthog": {
-    "healthy": false,
-    "error": "PostHog query failed → HTTP 504: {\"type\":\"server_error\",\"code\":\"error\",\"detail\":\"Query has hit the max execution time before completing. See our docs for how to improve your query performance. You may need to materialize.\",\"attr\":nul"
+    "healthy": true,
+    "dau": 1,
+    "dauTrend7d": [
+      2,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    "topEvents24h": [
+      {
+        "event": "prayer_marked_done",
+        "count": 1
+      },
+      {
+        "event": "Application Backgrounded",
+        "count": 1
+      },
+      {
+        "event": "Application Opened",
+        "count": 1
+      }
+    ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "fd2eb53",
+        "msg": "chore(dashboard): refresh state 2026-07-24T13:54:41Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-24T13:54:41Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fd2eb5318654c525f7b576a6e517d6a6b37687a0"
+      },
       {
         "sha": "1a9d175",
         "msg": "chore(dashboard): refresh state 2026-07-24T11:49:23Z",
@@ -186,13 +216,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-22T19:53:38Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d80332b6d7ea808f237ed69cfd1c4cfd6b4b55bd"
-      },
-      {
-        "sha": "296c43a",
-        "msg": "chore(dashboard): refresh state 2026-07-22T18:15:58Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-22T18:15:58Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/296c43af64063cc5e6075f569015c0de67f0fde4"
       }
     ],
     "releases": [
@@ -238,45 +261,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 30098718991,
+      "id": 30105385471,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30098718991",
-      "ranAt": "2026-07-24T13:53:34Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30105385471",
+      "ranAt": "2026-07-24T15:27:50Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 147,
+      "latencyMs": 198,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 215,
+      "latencyMs": 312,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 423,
+      "latencyMs": 651,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 245,
+      "latencyMs": 297,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 303,
+      "latencyMs": 295,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -480,12 +503,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "posthog",
-      "error": "PostHog query failed → HTTP 504: {\"type\":\"server_error\",\"code\":\"error\",\"detail\":\"Query has hit the max execution time before completing. See our docs for how to improve your query performance. You may need to materialize.\",\"attr\":nul"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},
