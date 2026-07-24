@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-24T17:08:45.954Z",
+  "refreshedAt": "2026-07-24T19:00:34.445Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -16,7 +16,7 @@
       100,
       100
     ],
-    "openIssuesCount": 2,
+    "openIssuesCount": 1,
     "topIssues": [
       {
         "id": "7406195421",
@@ -27,17 +27,6 @@
         "users24h": 2,
         "lastSeen": "2026-07-21T18:31:20.884000Z",
         "url": "https://beloop-1t.sentry.io/issues/7406195421/",
-        "release": null
-      },
-      {
-        "id": "7573142995",
-        "shortId": "REACT-NATIVE-E",
-        "title": "WatchdogTermination: The OS watchdog terminated your app, possibly because it overused RAM.",
-        "events24h": 1,
-        "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-06-24T18:23:25.948000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7573142995/",
         "release": null
       }
     ],
@@ -51,7 +40,7 @@
     "healthy": true,
     "dau": 1,
     "dauTrend7d": [
-      2,
+      1,
       2,
       1,
       1,
@@ -77,6 +66,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "b0e59ae",
+        "msg": "chore(dashboard): refresh state 2026-07-24T17:08:46Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-24T17:08:46Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b0e59aec9c4e6b9b17d502728e1f1bd520d06c3f"
+      },
       {
         "sha": "21e9808",
         "msg": "chore(dashboard): refresh state 2026-07-24T15:28:58Z",
@@ -209,13 +205,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-22T22:34:37Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/a0c44ae376da5d2284238c7bbe4730812162aeae"
-      },
-      {
-        "sha": "04d8dce",
-        "msg": "chore(dashboard): refresh state 2026-07-22T21:14:27Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-22T21:14:27Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/04d8dcead23343a8c24939852e914d266b9dd561"
       }
     ],
     "releases": [
@@ -261,33 +250,33 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 30111781331,
+      "id": 30119059234,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30111781331",
-      "ranAt": "2026-07-24T17:07:42Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30119059234",
+      "ranAt": "2026-07-24T18:59:23Z",
+      "durationSec": 5
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 194,
+      "latencyMs": 199,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 209,
+      "latencyMs": 280,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 594,
+      "latencyMs": 712,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
@@ -299,7 +288,7 @@
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 608,
+      "latencyMs": 286,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
