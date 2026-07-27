@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-27T04:23:47.761Z",
+  "refreshedAt": "2026-07-27T08:03:33.460Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -22,10 +22,10 @@
         "id": "7406195421",
         "shortId": "REACT-NATIVE-3",
         "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 11,
+        "events24h": 12,
         "events1h": null,
-        "users24h": 1,
-        "lastSeen": "2026-07-21T18:31:20.884000Z",
+        "users24h": 2,
+        "lastSeen": "2026-07-27T08:00:57.702000Z",
         "url": "https://beloop-1t.sentry.io/issues/7406195421/",
         "release": null
       }
@@ -38,19 +38,44 @@
   },
   "posthog": {
     "healthy": true,
-    "dau": 0,
+    "dau": 1,
     "dauTrend7d": [
       1,
       1,
       2,
       1,
+      1,
       1
     ],
-    "topEvents24h": []
+    "topEvents24h": [
+      {
+        "event": "Application Backgrounded",
+        "count": 3
+      },
+      {
+        "event": "feature_opened",
+        "count": 2
+      },
+      {
+        "event": "Application Became Active",
+        "count": 2
+      },
+      {
+        "event": "Application Opened",
+        "count": 1
+      }
+    ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "fee96b8",
+        "msg": "chore(dashboard): refresh state 2026-07-27T04:23:48Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-27T04:23:48Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fee96b89a06b91eb543fa7804dc444909d558d6e"
+      },
       {
         "sha": "1be540d",
         "msg": "chore(dashboard): refresh state 2026-07-27T00:04:43Z",
@@ -183,13 +208,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-25T17:05:11Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0916cab37d979e0a8c362d30f0b5189ac02391e7"
-      },
-      {
-        "sha": "2c0a311",
-        "msg": "chore(dashboard): refresh state 2026-07-25T15:42:35Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-25T15:42:35Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2c0a311f3ff5f74b4dd889da2774051d8b05ca8f"
       }
     ],
     "releases": [
@@ -235,45 +253,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 30236925402,
+      "id": 30248338307,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30236925402",
-      "ranAt": "2026-07-27T04:22:42Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30248338307",
+      "ranAt": "2026-07-27T08:02:25Z",
+      "durationSec": 5
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 152,
+      "latencyMs": 88,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 217,
+      "latencyMs": 218,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 592,
+      "latencyMs": 563,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 255,
+      "latencyMs": 203,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 609,
+      "latencyMs": 221,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -479,8 +497,18 @@
   "fieldNotes": [],
   "errors": [],
   "alerts": {
-    "active": [],
-    "fired": {},
+    "active": [
+      {
+        "id": "A2:REACT-NATIVE-3",
+        "severity": "high",
+        "title": "Issue spike: Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "body": "12 events in last 24h, last seen <1h ago. https://beloop-1t.sentry.io/issues/7406195421/",
+        "firedAt": "2026-07-27T08:03:33.460Z"
+      }
+    ],
+    "fired": {
+      "A2:REACT-NATIVE-3": 1785139413460
+    },
     "recent": [
       {
         "id": "A1:24h-crashfree",
