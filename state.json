@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-07-27T08:03:33.460Z",
+  "refreshedAt": "2026-07-27T11:53:21.768Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -50,18 +50,22 @@
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
-        "count": 3
-      },
-      {
-        "event": "feature_opened",
-        "count": 2
+        "count": 7
       },
       {
         "event": "Application Became Active",
-        "count": 2
+        "count": 5
+      },
+      {
+        "event": "feature_opened",
+        "count": 3
       },
       {
         "event": "Application Opened",
+        "count": 2
+      },
+      {
+        "event": "prayer_marked_done",
         "count": 1
       }
     ]
@@ -69,6 +73,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "4efc7aa",
+        "msg": "chore(dashboard): refresh state 2026-07-27T08:03:34Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-07-27T08:03:34Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4efc7aa84d7b66922b85ae9904be002ffcedf6a7"
+      },
       {
         "sha": "fee96b8",
         "msg": "chore(dashboard): refresh state 2026-07-27T04:23:48Z",
@@ -201,13 +212,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-07-25T18:28:35Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/adc5ef8ccd19d56bdee2267bd7002b21d8aed6b8"
-      },
-      {
-        "sha": "0916cab",
-        "msg": "chore(dashboard): refresh state 2026-07-25T17:05:11Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-07-25T17:05:11Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/0916cab37d979e0a8c362d30f0b5189ac02391e7"
       }
     ],
     "releases": [
@@ -253,45 +257,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 30248338307,
+      "id": 30263587768,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30248338307",
-      "ranAt": "2026-07-27T08:02:25Z",
-      "durationSec": 5
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30263587768",
+      "ranAt": "2026-07-27T11:52:21Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 88,
+      "latencyMs": 321,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 218,
+      "latencyMs": 206,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 563,
+      "latencyMs": 532,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 203,
+      "latencyMs": 331,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 221,
+      "latencyMs": 523,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -497,19 +501,17 @@
   "fieldNotes": [],
   "errors": [],
   "alerts": {
-    "active": [
-      {
-        "id": "A2:REACT-NATIVE-3",
-        "severity": "high",
-        "title": "Issue spike: Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "body": "12 events in last 24h, last seen <1h ago. https://beloop-1t.sentry.io/issues/7406195421/",
-        "firedAt": "2026-07-27T08:03:33.460Z"
-      }
-    ],
+    "active": [],
     "fired": {
       "A2:REACT-NATIVE-3": 1785139413460
     },
     "recent": [
+      {
+        "id": "A2:REACT-NATIVE-3",
+        "title": "Issue spike: Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "firedAt": "2026-07-27T08:03:33.460Z",
+        "resolvedAt": "2026-07-27T11:53:21.768Z"
+      },
       {
         "id": "A1:24h-crashfree",
         "title": "Crash-free dipped to 97.14%",
