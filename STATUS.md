@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-01T20:27:59.132Z (just now)_
+_Last refresh: 2026-08-01T21:28:14.778Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -41,24 +41,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `3a3b7b8` — chore(dashboard): refresh state 2026-08-01T19:16:29Z · 1h ago
-- `f1d7cf7` — chore(dashboard): refresh state 2026-08-01T17:33:10Z · 3h ago
-- `d7e476d` — chore(dashboard): refresh state 2026-08-01T16:04:49Z · 4h ago
-- `5c7ff64` — chore(dashboard): refresh state 2026-08-01T14:37:06Z · 6h ago
-- `83981de` — chore(dashboard): refresh state 2026-08-01T12:34:15Z · 8h ago
-- `8364634` — chore(dashboard): refresh state 2026-08-01T11:21:23Z · 9h ago
-- `b2f5a0f` — chore(dashboard): refresh state 2026-08-01T09:34:30Z · 11h ago
-- `4c93d53` — chore(dashboard): refresh state 2026-08-01T07:30:45Z · 13h ago
-- `f085f47` — chore(dashboard): refresh state 2026-08-01T04:55:34Z · 16h ago
-- `8db1d5c` — chore(dashboard): refresh state 2026-08-01T01:05:23Z · 19h ago
+- `8f61033` — chore(dashboard): refresh state 2026-08-01T20:27:59Z · 1h ago
+- `3a3b7b8` — chore(dashboard): refresh state 2026-08-01T19:16:29Z · 2h ago
+- `f1d7cf7` — chore(dashboard): refresh state 2026-08-01T17:33:10Z · 4h ago
+- `d7e476d` — chore(dashboard): refresh state 2026-08-01T16:04:49Z · 5h ago
+- `5c7ff64` — chore(dashboard): refresh state 2026-08-01T14:37:06Z · 7h ago
+- `83981de` — chore(dashboard): refresh state 2026-08-01T12:34:15Z · 9h ago
+- `8364634` — chore(dashboard): refresh state 2026-08-01T11:21:23Z · 10h ago
+- `b2f5a0f` — chore(dashboard): refresh state 2026-08-01T09:34:30Z · 12h ago
+- `4c93d53` — chore(dashboard): refresh state 2026-08-01T07:30:45Z · 14h ago
+- `f085f47` — chore(dashboard): refresh state 2026-08-01T04:55:34Z · 17h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 117ms
-- OK  `rawGithub` — 200 · 164ms
-- OK  `everyayah` — 200 · 529ms
-- OK  `quranicaudio` — 200 · 398ms
-- OK  `qurancdn` — 200 · 274ms
+- OK  `jsdelivr` — 200 · 139ms
+- OK  `rawGithub` — 200 · 147ms
+- OK  `everyayah` — 200 · 463ms
+- OK  `quranicaudio` — 200 · 468ms
+- OK  `qurancdn` — 200 · 674ms
 
 ## EAS update channels
 
