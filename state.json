@@ -1,40 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-08-03T03:27:26.989Z",
+  "refreshedAt": "2026-08-03T06:46:36.188Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
-    "healthy": true,
-    "crashFree": 100,
-    "crashFreeTrend7d": [
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100
-    ],
-    "openIssuesCount": 1,
-    "topIssues": [
-      {
-        "id": "7406195421",
-        "shortId": "REACT-NATIVE-3",
-        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 12,
-        "events1h": null,
-        "users24h": 2,
-        "lastSeen": "2026-07-27T08:00:57.702000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
-        "release": null
-      }
-    ],
-    "latestRelease": {
-      "version": "in.deen.app@1.8.3+32",
-      "newGroups": 0,
-      "sessions": null
-    }
+    "healthy": false,
+    "error": "Sentry /projects/beloop-1t/react-native/issues/?statsPeriod=24h&query=is%3Aunresolved&sort=freq&limit=10 → HTTP 500: {\"detail\":\"Internal Error\",\"errorId\":\"07e9f337b3f74598b07484d29fe35a12\"}"
   },
   "posthog": {
     "healthy": true,
@@ -65,6 +36,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "e76c8b5",
+        "msg": "chore(dashboard): refresh state 2026-08-03T03:27:27Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-03T03:27:27Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e76c8b5a8c08d260f0607438744e855f7d3d56c8"
+      },
       {
         "sha": "14e6582",
         "msg": "chore(dashboard): refresh state 2026-08-02T23:33:42Z",
@@ -197,13 +175,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-08-01T17:33:10Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f1d7cf7e2f03241b39a04ffcb6eecc5705ac5682"
-      },
-      {
-        "sha": "d7e476d",
-        "msg": "chore(dashboard): refresh state 2026-08-01T16:04:49Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-08-01T16:04:49Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d7e476d8670327c2fd23f7758bab28ae948e2b6a"
       }
     ],
     "releases": [
@@ -249,45 +220,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 30781812418,
+      "id": 30791210564,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30781812418",
-      "ranAt": "2026-08-03T03:26:17Z",
-      "durationSec": 4
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30791210564",
+      "ranAt": "2026-08-03T06:45:00Z",
+      "durationSec": 11
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 166,
+      "latencyMs": 192,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 242,
+      "latencyMs": 478,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 766,
+      "latencyMs": 734,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 346,
+      "latencyMs": 229,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 369,
+      "latencyMs": 302,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -491,7 +462,12 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [],
+  "errors": [
+    {
+      "source": "sentry",
+      "error": "Sentry /projects/beloop-1t/react-native/issues/?statsPeriod=24h&query=is%3Aunresolved&sort=freq&limit=10 → HTTP 500: {\"detail\":\"Internal Error\",\"errorId\":\"07e9f337b3f74598b07484d29fe35a12\"}"
+    }
+  ],
   "alerts": {
     "active": [],
     "fired": {
