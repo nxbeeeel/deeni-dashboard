@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-08-04T01:01:32.876Z",
+  "refreshedAt": "2026-08-04T04:46:04.311Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -14,7 +14,7 @@
       100,
       100,
       100,
-      null
+      100
     ],
     "openIssuesCount": 1,
     "topIssues": [
@@ -37,12 +37,37 @@
     }
   },
   "posthog": {
-    "healthy": false,
-    "error": "PostHog query failed → HTTP 503: {\"type\":\"server_error\",\"code\":\"error\",\"detail\":\"Queries are a little too busy right now. We're working to free up resources. Please try again later.\",\"attr\":null}"
+    "healthy": true,
+    "dau": 1,
+    "dauTrend7d": [
+      2,
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    "topEvents24h": [
+      {
+        "event": "Application Installed",
+        "count": 1
+      },
+      {
+        "event": "Application Opened",
+        "count": 1
+      }
+    ]
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "89f78b6",
+        "msg": "chore(dashboard): refresh state 2026-08-04T01:01:33Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-04T01:01:33Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/89f78b6b02f1be5e4f26e29babe55e0525b4c493"
+      },
       {
         "sha": "bb3d201",
         "msg": "chore(dashboard): refresh state 2026-08-03T23:07:26Z",
@@ -175,13 +200,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-08-02T10:45:14Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/942de94f0692aa8d8a7a23f90e2bb287b12e31d9"
-      },
-      {
-        "sha": "8e21e71",
-        "msg": "chore(dashboard): refresh state 2026-08-02T08:56:42Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-08-02T08:56:42Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8e21e71538d53621733913e0a764abe62713fdbb"
       }
     ],
     "releases": [
@@ -227,13 +245,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 30867376974,
+      "id": 30878580115,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30867376974",
-      "ranAt": "2026-08-04T01:00:28Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/30878580115",
+      "ranAt": "2026-08-04T04:44:56Z",
       "durationSec": 4
     }
   },
@@ -241,7 +259,7 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 133,
+      "latencyMs": 148,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
@@ -253,19 +271,19 @@
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 666,
+      "latencyMs": 760,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 226,
+      "latencyMs": 182,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 233,
+      "latencyMs": 205,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -469,12 +487,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "posthog",
-      "error": "PostHog query failed → HTTP 503: {\"type\":\"server_error\",\"code\":\"error\",\"detail\":\"Queries are a little too busy right now. We're working to free up resources. Please try again later.\",\"attr\":null}"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {
