@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-07T07:23:26.332Z (just now)_
+_Last refresh: 2026-08-07T08:35:10.447Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -30,7 +30,7 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 13 events · 3 users · last 3d ago
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 13 events · 3 users · last 4d ago
 
 ## PostHog — top events (24h)
 
@@ -41,24 +41,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `b31696f` — chore(dashboard): refresh state 2026-08-07T05:44:22Z · 2h ago
-- `a9bc3d8` — chore(dashboard): refresh state 2026-08-07T03:31:20Z · 4h ago
-- `fadd16c` — chore(dashboard): refresh state 2026-08-07T00:26:09Z · 7h ago
-- `d506383` — chore(dashboard): refresh state 2026-08-06T14:57:17Z · 16h ago
-- `44e20b1` — chore(dashboard): refresh state 2026-08-06T12:27:31Z · 19h ago
-- `603e732` — chore(dashboard): refresh state 2026-08-06T10:10:50Z · 21h ago
+- `717173c` — chore(dashboard): refresh state 2026-08-07T07:23:27Z · 1h ago
+- `b31696f` — chore(dashboard): refresh state 2026-08-07T05:44:22Z · 3h ago
+- `a9bc3d8` — chore(dashboard): refresh state 2026-08-07T03:31:20Z · 5h ago
+- `fadd16c` — chore(dashboard): refresh state 2026-08-07T00:26:09Z · 8h ago
+- `d506383` — chore(dashboard): refresh state 2026-08-06T14:57:17Z · 18h ago
+- `44e20b1` — chore(dashboard): refresh state 2026-08-06T12:27:31Z · 20h ago
+- `603e732` — chore(dashboard): refresh state 2026-08-06T10:10:50Z · 22h ago
 - `65d80c4` — chore(dashboard): refresh state 2026-08-06T07:17:52Z · 1d ago
 - `ff4e75c` — chore(dashboard): refresh state 2026-08-06T04:16:53Z · 1d ago
 - `fcdae84` — chore(dashboard): refresh state 2026-08-06T00:52:56Z · 1d ago
-- `b085e1c` — chore(dashboard): refresh state 2026-08-05T23:05:28Z · 1d ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 411ms
-- OK  `rawGithub` — 200 · 344ms
-- OK  `everyayah` — 200 · 575ms
-- OK  `quranicaudio` — 200 · 286ms
-- OK  `qurancdn` — 200 · 571ms
+- OK  `jsdelivr` — 200 · 159ms
+- OK  `rawGithub` — 200 · 174ms
+- OK  `everyayah` — 200 · 488ms
+- OK  `quranicaudio` — 200 · 257ms
+- OK  `qurancdn` — 200 · 504ms
 
 ## EAS update channels
 
