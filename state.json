@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-08-07T20:47:00.390Z",
+  "refreshedAt": "2026-08-07T21:43:34.286Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -68,6 +68,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "c03c2d4",
+        "msg": "chore(dashboard): refresh state 2026-08-07T20:47:01Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-07T20:47:01Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c03c2d422fb4eddd7664b580eda6c1ae0dcde086"
+      },
       {
         "sha": "ed4ddf7",
         "msg": "chore(dashboard): refresh state 2026-08-07T19:31:58Z",
@@ -200,13 +207,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-08-06T04:16:53Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ff4e75cbea06804f2915f6b5b447fb4c1b0f499c"
-      },
-      {
-        "sha": "fcdae84",
-        "msg": "chore(dashboard): refresh state 2026-08-06T00:52:56Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-08-06T00:52:56Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fcdae844d6122d4108b89a25e875ecf1b3be36f6"
       }
     ],
     "releases": [
@@ -252,45 +252,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 31217261405,
+      "id": 31221071606,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31217261405",
-      "ranAt": "2026-08-07T20:45:56Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31221071606",
+      "ranAt": "2026-08-07T21:42:24Z",
+      "durationSec": 11
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 135,
+      "latencyMs": 211,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 259,
+      "latencyMs": 228,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 539,
+      "latencyMs": 527,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 330,
+      "latencyMs": 328,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 554,
+      "latencyMs": 278,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
