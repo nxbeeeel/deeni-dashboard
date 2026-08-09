@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-09T09:45:15.753Z (just now)_
+_Last refresh: 2026-08-09T10:39:40.931Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -38,24 +38,24 @@ _No events._
 
 ## GitHub — recent commits to main
 
-- `6baf976` — chore(dashboard): refresh state 2026-08-09T08:50:11Z · 55m ago
-- `8a4d581` — chore(dashboard): refresh state 2026-08-09T07:34:56Z · 2h ago
+- `25146f2` — chore(dashboard): refresh state 2026-08-09T09:45:17Z · 54m ago
+- `6baf976` — chore(dashboard): refresh state 2026-08-09T08:50:11Z · 2h ago
+- `8a4d581` — chore(dashboard): refresh state 2026-08-09T07:34:56Z · 3h ago
 - `8c81b6d` — chore(dashboard): refresh state 2026-08-09T06:10:17Z · 4h ago
 - `9be08d8` — chore(dashboard): refresh state 2026-08-09T05:14:23Z · 5h ago
-- `d6803a1` — chore(dashboard): refresh state 2026-08-09T04:00:21Z · 6h ago
-- `646f309` — chore(dashboard): refresh state 2026-08-09T02:03:53Z · 8h ago
-- `247f885` — chore(dashboard): refresh state 2026-08-08T23:33:36Z · 10h ago
-- `44be6bd` — chore(dashboard): refresh state 2026-08-08T22:34:34Z · 11h ago
-- `785b4e2` — chore(dashboard): refresh state 2026-08-08T21:35:24Z · 12h ago
-- `d3058c7` — chore(dashboard): refresh state 2026-08-08T20:35:56Z · 13h ago
+- `d6803a1` — chore(dashboard): refresh state 2026-08-09T04:00:21Z · 7h ago
+- `646f309` — chore(dashboard): refresh state 2026-08-09T02:03:53Z · 9h ago
+- `247f885` — chore(dashboard): refresh state 2026-08-08T23:33:36Z · 11h ago
+- `44be6bd` — chore(dashboard): refresh state 2026-08-08T22:34:34Z · 12h ago
+- `785b4e2` — chore(dashboard): refresh state 2026-08-08T21:35:24Z · 13h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 87ms
-- OK  `rawGithub` — 200 · 129ms
-- OK  `everyayah` — 200 · 356ms
-- OK  `quranicaudio` — 200 · 165ms
-- OK  `qurancdn` — 200 · 454ms
+- OK  `jsdelivr` — 200 · 117ms
+- OK  `rawGithub` — 200 · 176ms
+- OK  `everyayah` — 200 · 466ms
+- OK  `quranicaudio` — 200 · 270ms
+- OK  `qurancdn` — 200 · 361ms
 
 ## EAS update channels
 
