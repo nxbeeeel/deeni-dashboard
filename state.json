@@ -1,32 +1,54 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-08-11T04:02:24.436Z",
+  "refreshedAt": "2026-08-11T05:37:10.213Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
-    "healthy": false,
-    "error": "Sentry /organizations/beloop-1t/projects/ → HTTP 403: \n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>403 Forbidden</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Forbidden</h1>\n<h2>Your client does"
+    "healthy": true,
+    "crashFree": 100,
+    "crashFreeTrend7d": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "openIssuesCount": 1,
+    "topIssues": [
+      {
+        "id": "7406195421",
+        "shortId": "REACT-NATIVE-3",
+        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
+        "events24h": 13,
+        "events1h": null,
+        "users24h": 3,
+        "lastSeen": "2026-08-03T20:13:22.850000Z",
+        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
+        "release": null
+      }
+    ],
+    "latestRelease": {
+      "version": "in.deen.app@1.8.3+32",
+      "newGroups": 0,
+      "sessions": null
+    }
   },
   "posthog": {
     "healthy": true,
-    "dau": 1,
+    "dau": 2,
     "dauTrend7d": [
       1,
       2,
-      2
+      2,
+      1
     ],
     "topEvents24h": [
       {
         "event": "Application Backgrounded",
         "count": 2
-      },
-      {
-        "event": "mushaf_opened",
-        "count": 1
-      },
-      {
-        "event": "Application Became Active",
-        "count": 1
       },
       {
         "event": "Application Opened",
@@ -37,6 +59,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "645e546",
+        "msg": "chore(dashboard): refresh state 2026-08-11T04:02:25Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T04:02:25Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/645e54688360225a62369df02e778c4e89cd2104"
+      },
       {
         "sha": "dd4195a",
         "msg": "chore(dashboard): refresh state 2026-08-11T02:03:33Z",
@@ -169,13 +198,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-08-09T23:36:29Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/bcd2d78558764dfdd31fe245179a338ff6fe6489"
-      },
-      {
-        "sha": "fb53947",
-        "msg": "chore(dashboard): refresh state 2026-08-09T22:36:20Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-08-09T22:36:20Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fb539470e12997d201b959199640ffca16695f22"
       }
     ],
     "releases": [
@@ -221,45 +243,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 31457163606,
+      "id": 31462170042,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31457163606",
-      "ranAt": "2026-08-11T04:01:20Z",
-      "durationSec": 3
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31462170042",
+      "ranAt": "2026-08-11T05:35:53Z",
+      "durationSec": 4
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 149,
+      "latencyMs": 387,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 174,
+      "latencyMs": 300,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 517,
+      "latencyMs": 524,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 267,
+      "latencyMs": 313,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 636,
+      "latencyMs": 385,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -463,12 +485,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "sentry",
-      "error": "Sentry /organizations/beloop-1t/projects/ → HTTP 403: \n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>403 Forbidden</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Forbidden</h1>\n<h2>Your client does"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},

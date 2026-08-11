@@ -1,14 +1,14 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-11T04:02:24.436Z (just now)_
+_Last refresh: 2026-08-11T05:37:10.213Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
 
 | | |
 |--|--|
-| Crash-free (24h) | **—** |
-| DAU | **1** |
+| Crash-free (24h) | **100.00%** |
+| DAU | **2** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -30,42 +30,33 @@ _None._
 
 ## Sentry — top 10 issues (24h)
 
-_Sentry pull failed: Sentry /organizations/beloop-1t/projects/ → HTTP 403: 
-<html><head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8">
-<title>403 Forbidden</title>
-</head>
-<body text=#000000 bgcolor=#ffffff>
-<h1>Error: Forbidden</h1>
-<h2>Your client does_
+- REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 13 events · 3 users · last 7d ago
 
 ## PostHog — top events (24h)
 
 - `Application Backgrounded` — 2
-- `mushaf_opened` — 1
-- `Application Became Active` — 1
 - `Application Opened` — 1
 
 ## GitHub — recent commits to main
 
-- `dd4195a` — chore(dashboard): refresh state 2026-08-11T02:03:33Z · 2h ago
-- `6af2f8c` — chore(dashboard): refresh state 2026-08-10T23:39:51Z · 4h ago
-- `b832923` — chore(dashboard): refresh state 2026-08-10T22:42:53Z · 5h ago
-- `2a5968a` — chore(dashboard): refresh state 2026-08-10T21:47:18Z · 6h ago
-- `616f0ed` — chore(dashboard): refresh state 2026-08-10T20:49:46Z · 7h ago
-- `e3f5c96` — chore(dashboard): refresh state 2026-08-10T19:33:38Z · 8h ago
-- `f12991e` — chore(dashboard): refresh state 2026-08-10T18:26:20Z · 10h ago
-- `00cb4bd` — chore(dashboard): refresh state 2026-08-10T17:27:31Z · 11h ago
-- `4ad237d` — chore(dashboard): refresh state 2026-08-10T16:03:50Z · 12h ago
-- `b3212ae` — chore(dashboard): refresh state 2026-08-10T14:37:54Z · 13h ago
+- `645e546` — chore(dashboard): refresh state 2026-08-11T04:02:25Z · 2h ago
+- `dd4195a` — chore(dashboard): refresh state 2026-08-11T02:03:33Z · 4h ago
+- `6af2f8c` — chore(dashboard): refresh state 2026-08-10T23:39:51Z · 6h ago
+- `b832923` — chore(dashboard): refresh state 2026-08-10T22:42:53Z · 7h ago
+- `2a5968a` — chore(dashboard): refresh state 2026-08-10T21:47:18Z · 8h ago
+- `616f0ed` — chore(dashboard): refresh state 2026-08-10T20:49:46Z · 9h ago
+- `e3f5c96` — chore(dashboard): refresh state 2026-08-10T19:33:38Z · 10h ago
+- `f12991e` — chore(dashboard): refresh state 2026-08-10T18:26:20Z · 11h ago
+- `00cb4bd` — chore(dashboard): refresh state 2026-08-10T17:27:31Z · 12h ago
+- `4ad237d` — chore(dashboard): refresh state 2026-08-10T16:03:50Z · 14h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 149ms
-- OK  `rawGithub` — 200 · 174ms
-- OK  `everyayah` — 200 · 517ms
-- OK  `quranicaudio` — 200 · 267ms
-- OK  `qurancdn` — 200 · 636ms
+- OK  `jsdelivr` — 200 · 387ms
+- OK  `rawGithub` — 200 · 300ms
+- OK  `everyayah` — 200 · 524ms
+- OK  `quranicaudio` — 200 · 313ms
+- OK  `qurancdn` — 200 · 385ms
 
 ## EAS update channels
 
@@ -96,14 +87,3 @@ _Sentry pull failed: Sentry /organizations/beloop-1t/projects/ → HTTP 403:
   Mohammed hit `App not installed as package conflicts with an existing package` when sideloading the v1.8.0 preview APK (build a087fabb) onto a phone already running Play Store v1.7.7. Both APKs used `applicationId 'in.deen.app'` but were signed by different EAS-managed keystores (one per channel), and Android refuses to side-replace a package whose signature doesn't match. Implemented Gradle **product flavors** with `applicationIdSuffix` per channel: `production` → `in.deen.app` (unchanged), `preview` → `in.deen.app.preview`, `internal` → `in.deen.app.internal`, `development` → `in.deen.app.dev`. Each flavor sets a `manifestPlaceholders.appLabel` so the launcher icon shows the variant name and users can tell which one they tapped — "deen.in (Preview)", "deen.in (Dev)", etc. WIDGET_CLICK action strings in `AndroidManifest.xml` swapped from hardcoded `in.deen.app.WIDGET_CLICK` to `${applicationId}.WIDGET_CLICK` so multi-variant installs don't fight over broadcasts; the application's `android:label` swapped to `${appLabel}` driven by the flavor's manifest placeholder. `eas.json` now sets explicit `gradleCommand` per profile (adding flavors removes the default `:app:bundleRelease`/`assembleRelease` tasks — they only exist scoped to a flavor) plus an `APP_VARIANT` env var that `app.config.js` reads to keep `name`, iOS `bundleIdentifier`, and the widget App Group identifier in sync. Production keystore verified unrotated — 5 most recent production AAB builds (v1.7.4 → v1.7.7) all completed with the same EAS-managed signing config. EAS auto-generated a new keystore for `in.deen.app.preview` on first build (correct: per-channel keystore isolation). Documented the new pattern in `README.md` under "Per-channel builds" with the suffix-to-launcher-label mapping. iOS variants still need an `expo prebuild --platform ios --clean` to land bundle-id changes in `ios/<scheme>.xcodeproj` — not needed for current Android testing, noted in `app.config.js` inline comments and the README for when iOS internal builds come up. The current preview APK Mohammed has (a087fabb, hardcoded `in.deen.app`) is now superseded — new preview build 2515c08f produces `in.deen.app.preview` which installs alongside Play Store production with no uninstall needed.
 - 2026-05-10 — Strategy + engineering uplift (PARTS 1–6)
   Commits: 587f793 (gitignore + LF enforcement), 49a1374 (release.yml graceful skip), 89a7a9f (v1.7.x plan docs + FIELD_NOTES), 81d4076 (1.7.0 release-notes tightened + locales/screenshots/banner), 375261a (ios widget entitlements + marketing site source), 0fcc0d5 (bug-solving playbook + Claude dev ecosystem brief), 6efa3ea (/ship slash command + tsc hook + INSTALL.md), e741961 (Q3-2026 strategy memo) Six-part pre-push and engineering uplift after the v1.7.3 hotfix landed. Cleaned the working tree (committed FIELD_NOTES, plan docs, store-listing tightening, site/, ios/ widget entitlements; gitignored 28MB of design assets + HLS chunks; added `.gitattributes` for LF-only normalization across Windows/Linux to stop EAS hash drift). Fixed `.github/workflows/release.yml` — replaced step-level `if: env.X` guards (which never worked because env was step-local) with a preflight that validates every credential end-to-end (presence + valid base64 + plausible content), writes ANDROID_READY/IOS_READY to GITHUB_ENV, and gates each downstream step. First green release-workflow run in project history (graceful-skipped both platforms with clear `::warning::` log messages instead of going red). Wrote two long engineering docs — `docs/engineering/bug-solving-playbook.md` (intake card format, severity ladder, Sentry→GH auto-ingest wiring, repro harness ladder, the iron 3-failed-fixes architecture-review rule, 5-min post-mortem template) and `docs/engineering/claude-dev-ecosystem.md` (3,800 words: install/evaluate/skip across plugins, MCPs, OSS agentic tooling, marketplaces, best-practice posts, with cost-routing advice — Sonnet default / Opus arch-only / Haiku one-shots → realistic 50-70% bill cut). Wired two concrete Claude Code additions: a `/ship` slash command at `.claude/commands/ship.md` that codifies the bump → CHANGELOG → 8-locale release notes → tag → push → workflow-watch dance (saves ~30 min per release), and a `PostToolUse` hook at `.claude/hooks/typecheck-after-edit.mjs` that runs `tsc --noEmit` after TS/TSX edits and feeds relevant errors back via additionalContext (smoke-tested clean + skip paths). Plus `.claude/INSTALL.md` listing the plugin checklist for the rest. Closed with `docs/strategy/Q3-2026-thinking.md` — 290-line memo ranking the next three product moves: iOS App Store launch (1, 4-6 days, biggest multiplier), Hifz mode with SM-2 spaced repetition (2, 3 weeks, defensible differentiator), "Support deen.in" patron flow (3, 1 week, story multiplier not revenue play). Includes alternatives considered and rejected, sequencing through Q3, and honest gaps a real team would close that we won't.
-
-## Refresh errors
-
-- **sentry** — Sentry /organizations/beloop-1t/projects/ → HTTP 403: 
-<html><head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8">
-<title>403 Forbidden</title>
-</head>
-<body text=#000000 bgcolor=#ffffff>
-<h1>Error: Forbidden</h1>
-<h2>Your client does
