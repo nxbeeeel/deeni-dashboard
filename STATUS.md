@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-10T23:39:51.488Z (just now)_
+_Last refresh: 2026-08-11T02:03:33.058Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -8,7 +8,7 @@ _App version: 1.8.3 (build 75)_
 | | |
 |--|--|
 | Crash-free (24h) | **100.00%** |
-| DAU | **2** |
+| DAU | **1** |
 | Open bugs (`triage`) | **0** |
 | In progress | **0** |
 | Fixed (14d) | **0** |
@@ -34,37 +34,36 @@ _None._
 
 ## PostHog — top events (24h)
 
-- `Application Backgrounded` — 17
-- `Application Became Active` — 15
-- `Application Opened` — 2
+- `Application Backgrounded` — 2
 - `mushaf_opened` — 1
+- `Application Became Active` — 1
+- `Application Opened` — 1
 
 ## GitHub — recent commits to main
 
-- `b832923` — chore(dashboard): refresh state 2026-08-10T22:42:53Z · 57m ago
-- `2a5968a` — chore(dashboard): refresh state 2026-08-10T21:47:18Z · 2h ago
-- `616f0ed` — chore(dashboard): refresh state 2026-08-10T20:49:46Z · 3h ago
-- `e3f5c96` — chore(dashboard): refresh state 2026-08-10T19:33:38Z · 4h ago
-- `f12991e` — chore(dashboard): refresh state 2026-08-10T18:26:20Z · 5h ago
-- `00cb4bd` — chore(dashboard): refresh state 2026-08-10T17:27:31Z · 6h ago
-- `4ad237d` — chore(dashboard): refresh state 2026-08-10T16:03:50Z · 8h ago
-- `b3212ae` — chore(dashboard): refresh state 2026-08-10T14:37:54Z · 9h ago
-- `eb247dc` — chore(dashboard): refresh state 2026-08-10T13:19:16Z · 10h ago
-- `5c9ba86` — chore(dashboard): refresh state 2026-08-10T11:52:04Z · 12h ago
+- `6af2f8c` — chore(dashboard): refresh state 2026-08-10T23:39:51Z · 2h ago
+- `b832923` — chore(dashboard): refresh state 2026-08-10T22:42:53Z · 3h ago
+- `2a5968a` — chore(dashboard): refresh state 2026-08-10T21:47:18Z · 4h ago
+- `616f0ed` — chore(dashboard): refresh state 2026-08-10T20:49:46Z · 5h ago
+- `e3f5c96` — chore(dashboard): refresh state 2026-08-10T19:33:38Z · 7h ago
+- `f12991e` — chore(dashboard): refresh state 2026-08-10T18:26:20Z · 8h ago
+- `00cb4bd` — chore(dashboard): refresh state 2026-08-10T17:27:31Z · 9h ago
+- `4ad237d` — chore(dashboard): refresh state 2026-08-10T16:03:50Z · 10h ago
+- `b3212ae` — chore(dashboard): refresh state 2026-08-10T14:37:54Z · 11h ago
+- `eb247dc` — chore(dashboard): refresh state 2026-08-10T13:19:16Z · 13h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 156ms
-- OK  `rawGithub` — 200 · 213ms
-- OK  `everyayah` — 200 · 513ms
-- OK  `quranicaudio` — 200 · 363ms
-- OK  `qurancdn` — 200 · 431ms
+- OK  `jsdelivr` — 200 · 176ms
+- OK  `rawGithub` — 200 · 194ms
+- OK  `everyayah` — 200 · 592ms
+- OK  `quranicaudio` — 200 · 183ms
+- OK  `qurancdn` — 200 · 216ms
 
 ## EAS update channels
 
 - `production` — ? · — · unknown
-- `internal` — pull failed: Command failed: npx --yes eas-cli@latest update:list --branch internal --json --non-interactive --limit 1
-npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use
+- `internal` — ? · — · unknown
 - `preview` — ? · — · unknown
 - `development` — ? · — · unknown
 
