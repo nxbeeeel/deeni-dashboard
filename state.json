@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-08-11T19:40:05.209Z",
+  "refreshedAt": "2026-08-11T20:52:38.601Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -57,38 +57,231 @@
     ]
   },
   "github": {
-    "healthy": false,
-    "error": "fetch failed"
+    "healthy": true,
+    "commits": [
+      {
+        "sha": "bea0375",
+        "msg": "chore(dashboard): refresh state 2026-08-11T19:40:06Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T19:40:06Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/bea0375380f03ef9957312318b3d90116029ea95"
+      },
+      {
+        "sha": "d1eaff6",
+        "msg": "chore(dashboard): refresh state 2026-08-11T18:29:27Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T18:29:27Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d1eaff6eac2d97284cb0bc56d5038df93a8279cc"
+      },
+      {
+        "sha": "e24c319",
+        "msg": "chore(dashboard): refresh state 2026-08-11T17:30:32Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T17:30:32Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e24c3199555cc1d322bae0d857a3f17c261fc45f"
+      },
+      {
+        "sha": "35deb79",
+        "msg": "chore(dashboard): refresh state 2026-08-11T16:25:23Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T16:25:23Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/35deb79bbadc04b4cd30df549b1b5b8b916fb626"
+      },
+      {
+        "sha": "e3c70c4",
+        "msg": "chore(dashboard): refresh state 2026-08-11T15:04:24Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T15:04:24Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e3c70c43e3ceba30c2054df640e085ba0fc26ba7"
+      },
+      {
+        "sha": "205aa24",
+        "msg": "chore(dashboard): refresh state 2026-08-11T13:56:32Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T13:56:32Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/205aa248fce62413676aacf65a3aeddb9d545b4f"
+      },
+      {
+        "sha": "2eea1fe",
+        "msg": "chore(dashboard): refresh state 2026-08-11T12:11:24Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T12:11:24Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2eea1fe3280f96750f0d6fa8333ecd7c015ec98a"
+      },
+      {
+        "sha": "2d24777",
+        "msg": "chore(dashboard): refresh state 2026-08-11T11:22:49Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T11:22:49Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2d24777f6b12190399c4441b2f5494258a148575"
+      },
+      {
+        "sha": "c11c859",
+        "msg": "chore(dashboard): refresh state 2026-08-11T10:03:41Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T10:03:41Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/c11c859cf0972b1d847edc1428c6df897ad4b38f"
+      },
+      {
+        "sha": "195ed3e",
+        "msg": "chore(dashboard): refresh state 2026-08-11T08:31:09Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T08:31:09Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/195ed3e215b3da984bde524dd30f073d9b3637e2"
+      },
+      {
+        "sha": "d648729",
+        "msg": "chore(dashboard): refresh state 2026-08-11T07:15:39Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T07:15:39Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/d64872952acc94fabe66192de0704d2dab074725"
+      },
+      {
+        "sha": "ce5df85",
+        "msg": "chore(dashboard): refresh state 2026-08-11T05:37:11Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T05:37:11Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/ce5df8540a20c664eda5653503e522ef0a793779"
+      },
+      {
+        "sha": "645e546",
+        "msg": "chore(dashboard): refresh state 2026-08-11T04:02:25Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T04:02:25Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/645e54688360225a62369df02e778c4e89cd2104"
+      },
+      {
+        "sha": "dd4195a",
+        "msg": "chore(dashboard): refresh state 2026-08-11T02:03:33Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T02:03:33Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dd4195a3ce78a831d0aa780f4f191ecfde44f47d"
+      },
+      {
+        "sha": "6af2f8c",
+        "msg": "chore(dashboard): refresh state 2026-08-10T23:39:51Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-10T23:39:51Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6af2f8c4f3c71dc6090d8b959e93926240689423"
+      },
+      {
+        "sha": "b832923",
+        "msg": "chore(dashboard): refresh state 2026-08-10T22:42:53Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-10T22:42:53Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b832923ee5c1f0cda01591ae5e31ef7ab57c28df"
+      },
+      {
+        "sha": "2a5968a",
+        "msg": "chore(dashboard): refresh state 2026-08-10T21:47:18Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-10T21:47:18Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/2a5968ab2a0b325b55455d10fa41695fd242bcae"
+      },
+      {
+        "sha": "616f0ed",
+        "msg": "chore(dashboard): refresh state 2026-08-10T20:49:46Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-10T20:49:46Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/616f0ed9464ecf395073bfb45d5357e13782d416"
+      },
+      {
+        "sha": "e3f5c96",
+        "msg": "chore(dashboard): refresh state 2026-08-10T19:33:38Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-10T19:33:38Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/e3f5c96154006f308be298fb24c0931d48e980c1"
+      },
+      {
+        "sha": "f12991e",
+        "msg": "chore(dashboard): refresh state 2026-08-10T18:26:20Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-10T18:26:20Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/f12991e23acc99f849f0aa5cb2a60456848efcb6"
+      }
+    ],
+    "releases": [
+      {
+        "tag": "v1.8.3",
+        "name": "v1.8.3",
+        "publishedAt": "2026-07-05T12:44:13Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.8.3"
+      },
+      {
+        "tag": "v1.8.2",
+        "name": "v1.8.2 — Mushaf typography for everyone + travel-aware prayer times",
+        "publishedAt": "2026-07-02T15:49:04Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.8.2"
+      },
+      {
+        "tag": "v1.7.4",
+        "name": "v1.7.4",
+        "publishedAt": "2026-05-10T23:12:35Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.7.4"
+      },
+      {
+        "tag": "v1.7.3",
+        "name": "v1.7.3",
+        "publishedAt": "2026-05-10T19:21:51Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.7.3"
+      },
+      {
+        "tag": "v1.6.1",
+        "name": "v1.6.1 — Mushaf Hot Fixes",
+        "publishedAt": "2026-05-10T02:24:13Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.6.1"
+      },
+      {
+        "tag": "v1.6.0",
+        "name": "v1.6.0 — Reliability + Features Sprint",
+        "publishedAt": "2026-05-10T01:00:26Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/releases/tag/v1.6.0"
+      }
+    ],
+    "openPRs": [],
+    "issuesOpen": [],
+    "issuesInProgress": [],
+    "issuesFixed14d": [],
+    "ciLastRun": {
+      "id": 31535043317,
+      "workflow": "Dashboard Refresh",
+      "status": "in_progress",
+      "conclusion": null,
+      "branch": "master",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31535043317",
+      "ranAt": "2026-08-11T20:51:30Z",
+      "durationSec": 4
+    }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 154,
+      "latencyMs": 107,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 270,
+      "latencyMs": 147,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 683,
+      "latencyMs": 644,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 238,
+      "latencyMs": 197,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 276,
+      "latencyMs": 351,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -292,12 +485,7 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [
-    {
-      "source": "github",
-      "error": "fetch failed"
-    }
-  ],
+  "errors": [],
   "alerts": {
     "active": [],
     "fired": {},
