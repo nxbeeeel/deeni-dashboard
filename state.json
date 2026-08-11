@@ -1,40 +1,11 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-08-11T02:03:33.058Z",
+  "refreshedAt": "2026-08-11T04:02:24.436Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
-    "healthy": true,
-    "crashFree": 100,
-    "crashFreeTrend7d": [
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100
-    ],
-    "openIssuesCount": 1,
-    "topIssues": [
-      {
-        "id": "7406195421",
-        "shortId": "REACT-NATIVE-3",
-        "title": "Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected.",
-        "events24h": 13,
-        "events1h": null,
-        "users24h": 3,
-        "lastSeen": "2026-08-03T20:13:22.850000Z",
-        "url": "https://beloop-1t.sentry.io/issues/7406195421/",
-        "release": null
-      }
-    ],
-    "latestRelease": {
-      "version": "in.deen.app@1.8.3+32",
-      "newGroups": 0,
-      "sessions": null
-    }
+    "healthy": false,
+    "error": "Sentry /organizations/beloop-1t/projects/ → HTTP 403: \n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>403 Forbidden</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Forbidden</h1>\n<h2>Your client does"
   },
   "posthog": {
     "healthy": true,
@@ -66,6 +37,13 @@
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "dd4195a",
+        "msg": "chore(dashboard): refresh state 2026-08-11T02:03:33Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-11T02:03:33Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/dd4195a3ce78a831d0aa780f4f191ecfde44f47d"
+      },
       {
         "sha": "6af2f8c",
         "msg": "chore(dashboard): refresh state 2026-08-10T23:39:51Z",
@@ -198,13 +176,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-08-09T22:36:20Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/fb539470e12997d201b959199640ffca16695f22"
-      },
-      {
-        "sha": "8d7641a",
-        "msg": "chore(dashboard): refresh state 2026-08-09T21:37:38Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-08-09T21:37:38Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/8d7641ab39a6eb10b5db897b91c74c2309d31cf1"
       }
     ],
     "releases": [
@@ -250,45 +221,45 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 31451147702,
+      "id": 31457163606,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31451147702",
-      "ranAt": "2026-08-11T02:02:26Z",
-      "durationSec": 5
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31457163606",
+      "ranAt": "2026-08-11T04:01:20Z",
+      "durationSec": 3
     }
   },
   "cdn": {
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 176,
+      "latencyMs": 149,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 194,
+      "latencyMs": 174,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 592,
+      "latencyMs": 517,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 183,
+      "latencyMs": 267,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 216,
+      "latencyMs": 636,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -492,7 +463,12 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [],
+  "errors": [
+    {
+      "source": "sentry",
+      "error": "Sentry /organizations/beloop-1t/projects/ → HTTP 403: \n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>403 Forbidden</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Forbidden</h1>\n<h2>Your client does"
+    }
+  ],
   "alerts": {
     "active": [],
     "fired": {},
