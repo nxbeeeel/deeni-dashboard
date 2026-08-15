@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-15T16:30:23.479Z (just now)_
+_Last refresh: 2026-08-15T16:55:06.024Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -31,7 +31,7 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 13 events · 3 users · last 12d ago
-- REACT-NATIVE-F — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 15h ago
+- REACT-NATIVE-F — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 16h ago
 
 ## PostHog — top events (24h)
 
@@ -40,24 +40,24 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `225fcaa` — chore(dashboard): refresh state 2026-08-15T15:48:48Z · 42m ago
+- `fdf4932` — chore(dashboard): refresh state 2026-08-15T16:30:24Z · 25m ago
+- `225fcaa` — chore(dashboard): refresh state 2026-08-15T15:48:48Z · 1h ago
 - `e5f3626` — chore(dashboard): refresh state 2026-08-15T15:26:46Z · 1h ago
 - `3e3fa5f` — chore(dashboard): refresh state 2026-08-15T14:52:13Z · 2h ago
 - `5c90657` — chore(dashboard): refresh state 2026-08-15T14:27:58Z · 2h ago
 - `e77cdd1` — chore(dashboard): refresh state 2026-08-15T13:34:24Z · 3h ago
 - `8aeb517` — chore(dashboard): refresh state 2026-08-15T12:46:01Z · 4h ago
 - `346212c` — chore(dashboard): refresh state 2026-08-15T11:47:22Z · 5h ago
-- `cc55691` — chore(dashboard): refresh state 2026-08-15T11:25:01Z · 5h ago
+- `cc55691` — chore(dashboard): refresh state 2026-08-15T11:25:01Z · 6h ago
 - `6b44eb8` — chore(dashboard): refresh state 2026-08-15T10:51:08Z · 6h ago
-- `496998f` — chore(dashboard): refresh state 2026-08-15T10:27:31Z · 6h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 176ms
-- OK  `rawGithub` — 200 · 183ms
-- OK  `everyayah` — 200 · 488ms
-- OK  `quranicaudio` — 200 · 270ms
-- OK  `qurancdn` — 200 · 255ms
+- OK  `jsdelivr` — 200 · 112ms
+- OK  `rawGithub` — 200 · 208ms
+- OK  `everyayah` — 200 · 512ms
+- OK  `quranicaudio` — 200 · 193ms
+- OK  `qurancdn` — 200 · 169ms
 
 ## EAS update channels
 
