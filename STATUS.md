@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-15T10:27:30.206Z (just now)_
+_Last refresh: 2026-08-15T10:51:07.754Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -31,7 +31,7 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 13 events · 3 users · last 12d ago
-- REACT-NATIVE-F — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 9h ago
+- REACT-NATIVE-F — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 10h ago
 
 ## PostHog — top events (24h)
 
@@ -39,8 +39,9 @@ _No events._
 
 ## GitHub — recent commits to main
 
-- `a81118a` — chore(dashboard): refresh state 2026-08-15T09:54:05Z · 33m ago
-- `fe7d0dd` — chore(dashboard): refresh state 2026-08-15T09:30:48Z · 57m ago
+- `496998f` — chore(dashboard): refresh state 2026-08-15T10:27:31Z · 24m ago
+- `a81118a` — chore(dashboard): refresh state 2026-08-15T09:54:05Z · 57m ago
+- `fe7d0dd` — chore(dashboard): refresh state 2026-08-15T09:30:48Z · 1h ago
 - `0ecbb57` — chore(dashboard): refresh state 2026-08-15T08:35:03Z · 2h ago
 - `2a2507b` — chore(dashboard): refresh state 2026-08-15T07:34:45Z · 3h ago
 - `9ca2a84` — chore(dashboard): refresh state 2026-08-15T06:46:01Z · 4h ago
@@ -48,20 +49,18 @@ _No events._
 - `93ae53b` — chore(dashboard): refresh state 2026-08-15T05:29:36Z · 5h ago
 - `6c20e1a` — chore(dashboard): refresh state 2026-08-15T04:36:30Z · 6h ago
 - `a5c9619` — chore(dashboard): refresh state 2026-08-15T03:44:03Z · 7h ago
-- `8f93757` — chore(dashboard): refresh state 2026-08-15T02:36:42Z · 8h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 663ms
-- OK  `rawGithub` — 200 · 307ms
-- OK  `everyayah` — 200 · 649ms
-- OK  `quranicaudio` — 200 · 437ms
-- OK  `qurancdn` — 200 · 490ms
+- OK  `jsdelivr` — 200 · 219ms
+- OK  `rawGithub` — 200 · 177ms
+- OK  `everyayah` — 200 · 457ms
+- OK  `quranicaudio` — 200 · 222ms
+- OK  `qurancdn` — 200 · 271ms
 
 ## EAS update channels
 
-- `production` — pull failed: Command failed: npx --yes eas-cli@latest update:list --branch production --json --non-interactive --limit 1
-npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not u
+- `production` — ? · — · unknown
 - `internal` — ? · — · unknown
 - `preview` — ? · — · unknown
 - `development` — ? · — · unknown
