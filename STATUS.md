@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-15T09:54:04.303Z (just now)_
+_Last refresh: 2026-08-15T10:27:30.206Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -39,28 +39,29 @@ _No events._
 
 ## GitHub — recent commits to main
 
-- `fe7d0dd` — chore(dashboard): refresh state 2026-08-15T09:30:48Z · 23m ago
-- `0ecbb57` — chore(dashboard): refresh state 2026-08-15T08:35:03Z · 1h ago
-- `2a2507b` — chore(dashboard): refresh state 2026-08-15T07:34:45Z · 2h ago
-- `9ca2a84` — chore(dashboard): refresh state 2026-08-15T06:46:01Z · 3h ago
-- `9da27e5` — chore(dashboard): refresh state 2026-08-15T05:55:23Z · 4h ago
-- `93ae53b` — chore(dashboard): refresh state 2026-08-15T05:29:36Z · 4h ago
-- `6c20e1a` — chore(dashboard): refresh state 2026-08-15T04:36:30Z · 5h ago
-- `a5c9619` — chore(dashboard): refresh state 2026-08-15T03:44:03Z · 6h ago
-- `8f93757` — chore(dashboard): refresh state 2026-08-15T02:36:42Z · 7h ago
-- `869dfde` — chore(dashboard): refresh state 2026-08-15T01:28:21Z · 8h ago
+- `a81118a` — chore(dashboard): refresh state 2026-08-15T09:54:05Z · 33m ago
+- `fe7d0dd` — chore(dashboard): refresh state 2026-08-15T09:30:48Z · 57m ago
+- `0ecbb57` — chore(dashboard): refresh state 2026-08-15T08:35:03Z · 2h ago
+- `2a2507b` — chore(dashboard): refresh state 2026-08-15T07:34:45Z · 3h ago
+- `9ca2a84` — chore(dashboard): refresh state 2026-08-15T06:46:01Z · 4h ago
+- `9da27e5` — chore(dashboard): refresh state 2026-08-15T05:55:23Z · 5h ago
+- `93ae53b` — chore(dashboard): refresh state 2026-08-15T05:29:36Z · 5h ago
+- `6c20e1a` — chore(dashboard): refresh state 2026-08-15T04:36:30Z · 6h ago
+- `a5c9619` — chore(dashboard): refresh state 2026-08-15T03:44:03Z · 7h ago
+- `8f93757` — chore(dashboard): refresh state 2026-08-15T02:36:42Z · 8h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 102ms
-- OK  `rawGithub` — 200 · 525ms
-- OK  `everyayah` — 200 · 567ms
-- OK  `quranicaudio` — 200 · 303ms
-- OK  `qurancdn` — 200 · 444ms
+- OK  `jsdelivr` — 200 · 663ms
+- OK  `rawGithub` — 200 · 307ms
+- OK  `everyayah` — 200 · 649ms
+- OK  `quranicaudio` — 200 · 437ms
+- OK  `qurancdn` — 200 · 490ms
 
 ## EAS update channels
 
-- `production` — ? · — · unknown
+- `production` — pull failed: Command failed: npx --yes eas-cli@latest update:list --branch production --json --non-interactive --limit 1
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not u
 - `internal` — ? · — · unknown
 - `preview` — ? · — · unknown
 - `development` — ? · — · unknown
