@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-15T05:55:21.600Z (just now)_
+_Last refresh: 2026-08-15T06:45:59.944Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -31,7 +31,7 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 13 events · 3 users · last 11d ago
-- REACT-NATIVE-F — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 5h ago
+- REACT-NATIVE-F — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 6h ago
 
 ## PostHog — top events (24h)
 
@@ -39,24 +39,24 @@ _No events._
 
 ## GitHub — recent commits to main
 
-- `93ae53b` — chore(dashboard): refresh state 2026-08-15T05:29:36Z · 26m ago
-- `6c20e1a` — chore(dashboard): refresh state 2026-08-15T04:36:30Z · 1h ago
-- `a5c9619` — chore(dashboard): refresh state 2026-08-15T03:44:03Z · 2h ago
-- `8f93757` — chore(dashboard): refresh state 2026-08-15T02:36:42Z · 3h ago
-- `869dfde` — chore(dashboard): refresh state 2026-08-15T01:28:21Z · 4h ago
-- `208c119` — chore(dashboard): refresh state 2026-08-14T23:51:03Z · 6h ago
-- `f2e8b3b` — chore(dashboard): refresh state 2026-08-14T23:26:58Z · 6h ago
-- `d2fa86f` — chore(dashboard): refresh state 2026-08-14T22:53:43Z · 7h ago
-- `61bdb9f` — chore(dashboard): refresh state 2026-08-14T22:28:51Z · 7h ago
-- `a07aa31` — chore(dashboard): refresh state 2026-08-14T21:33:39Z · 8h ago
+- `9da27e5` — chore(dashboard): refresh state 2026-08-15T05:55:23Z · 51m ago
+- `93ae53b` — chore(dashboard): refresh state 2026-08-15T05:29:36Z · 1h ago
+- `6c20e1a` — chore(dashboard): refresh state 2026-08-15T04:36:30Z · 2h ago
+- `a5c9619` — chore(dashboard): refresh state 2026-08-15T03:44:03Z · 3h ago
+- `8f93757` — chore(dashboard): refresh state 2026-08-15T02:36:42Z · 4h ago
+- `869dfde` — chore(dashboard): refresh state 2026-08-15T01:28:21Z · 5h ago
+- `208c119` — chore(dashboard): refresh state 2026-08-14T23:51:03Z · 7h ago
+- `f2e8b3b` — chore(dashboard): refresh state 2026-08-14T23:26:58Z · 7h ago
+- `d2fa86f` — chore(dashboard): refresh state 2026-08-14T22:53:43Z · 8h ago
+- `61bdb9f` — chore(dashboard): refresh state 2026-08-14T22:28:51Z · 8h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 180ms
-- OK  `rawGithub` — 200 · 213ms
-- OK  `everyayah` — 200 · 557ms
-- OK  `quranicaudio` — 200 · 299ms
-- OK  `qurancdn` — 200 · 327ms
+- OK  `jsdelivr` — 200 · 189ms
+- OK  `rawGithub` — 200 · 288ms
+- OK  `everyayah` — 200 · 519ms
+- OK  `quranicaudio` — 200 · 278ms
+- OK  `qurancdn` — 200 · 293ms
 
 ## EAS update channels
 
