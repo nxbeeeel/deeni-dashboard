@@ -1,6 +1,6 @@
 # deen.in — operations status
 
-_Last refresh: 2026-08-15T17:25:01.149Z (just now)_
+_Last refresh: 2026-08-15T17:48:54.419Z (just now)_
 _App version: 1.8.3 (build 75)_
 
 ## Headline
@@ -31,7 +31,7 @@ _None._
 ## Sentry — top 10 issues (24h)
 
 - REACT-NATIVE-3 — Error: Call to function 'ExpoLocation.removeWatchAsync' has been rejected. · 13 events · 3 users · last 12d ago
-- REACT-NATIVE-F — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 16h ago
+- REACT-NATIVE-F — App Hanging: App hanging for at least 2000 ms. · 1 events · 1 users · last 17h ago
 
 ## PostHog — top events (24h)
 
@@ -40,8 +40,9 @@ _None._
 
 ## GitHub — recent commits to main
 
-- `75916a2` — chore(dashboard): refresh state 2026-08-15T16:55:07Z · 30m ago
-- `fdf4932` — chore(dashboard): refresh state 2026-08-15T16:30:24Z · 55m ago
+- `44457b0` — chore(dashboard): refresh state 2026-08-15T17:25:01Z · 24m ago
+- `75916a2` — chore(dashboard): refresh state 2026-08-15T16:55:07Z · 54m ago
+- `fdf4932` — chore(dashboard): refresh state 2026-08-15T16:30:24Z · 1h ago
 - `225fcaa` — chore(dashboard): refresh state 2026-08-15T15:48:48Z · 2h ago
 - `e5f3626` — chore(dashboard): refresh state 2026-08-15T15:26:46Z · 2h ago
 - `3e3fa5f` — chore(dashboard): refresh state 2026-08-15T14:52:13Z · 3h ago
@@ -49,15 +50,14 @@ _None._
 - `e77cdd1` — chore(dashboard): refresh state 2026-08-15T13:34:24Z · 4h ago
 - `8aeb517` — chore(dashboard): refresh state 2026-08-15T12:46:01Z · 5h ago
 - `346212c` — chore(dashboard): refresh state 2026-08-15T11:47:22Z · 6h ago
-- `cc55691` — chore(dashboard): refresh state 2026-08-15T11:25:01Z · 6h ago
 
 ## CDN probes
 
-- OK  `jsdelivr` — 200 · 103ms
-- OK  `rawGithub` — 200 · 201ms
-- OK  `everyayah` — 200 · 601ms
-- OK  `quranicaudio` — 200 · 210ms
-- OK  `qurancdn` — 200 · 505ms
+- OK  `jsdelivr` — 200 · 129ms
+- OK  `rawGithub` — 200 · 319ms
+- OK  `everyayah` — 200 · 658ms
+- OK  `quranicaudio` — 200 · 328ms
+- OK  `qurancdn` — 200 · 383ms
 
 ## EAS update channels
 
