@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "refreshedAt": "2026-08-15T10:51:07.754Z",
+  "refreshedAt": "2026-08-15T11:25:00.163Z",
   "appVersion": "1.8.3",
   "buildNumber": 75,
   "sentry": {
@@ -48,19 +48,19 @@
     }
   },
   "posthog": {
-    "healthy": true,
-    "dau": 0,
-    "dauTrend7d": [
-      2,
-      1,
-      1,
-      1
-    ],
-    "topEvents24h": []
+    "healthy": false,
+    "error": "PostHog query failed → HTTP 503: upstream connect error or disconnect/reset before headers. reset reason: connection termination"
   },
   "github": {
     "healthy": true,
     "commits": [
+      {
+        "sha": "6b44eb8",
+        "msg": "chore(dashboard): refresh state 2026-08-15T10:51:08Z",
+        "author": "deeni-dashboard-bot",
+        "at": "2026-08-15T10:51:08Z",
+        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/6b44eb8737d20e5618ae86665297d8febcb8a7a5"
+      },
       {
         "sha": "496998f",
         "msg": "chore(dashboard): refresh state 2026-08-15T10:27:31Z",
@@ -193,13 +193,6 @@
         "author": "deeni-dashboard-bot",
         "at": "2026-08-14T20:04:50Z",
         "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/4355b85ba58fcffb922165515666c74f2df4b015"
-      },
-      {
-        "sha": "b5620b2",
-        "msg": "chore(dashboard): refresh state 2026-08-14T19:07:13Z",
-        "author": "deeni-dashboard-bot",
-        "at": "2026-08-14T19:07:13Z",
-        "url": "https://github.com/nxbeeeel/Deen.in_APP/commit/b5620b2d3ea29edb891e282d6b32fcaa1a3145a2"
       }
     ],
     "releases": [
@@ -245,13 +238,13 @@
     "issuesInProgress": [],
     "issuesFixed14d": [],
     "ciLastRun": {
-      "id": 31880505770,
+      "id": 31881928407,
       "workflow": "Dashboard Refresh",
       "status": "in_progress",
       "conclusion": null,
       "branch": "master",
-      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31880505770",
-      "ranAt": "2026-08-15T10:50:00Z",
+      "url": "https://github.com/nxbeeeel/Deen.in_APP/actions/runs/31881928407",
+      "ranAt": "2026-08-15T11:23:47Z",
       "durationSec": 4
     }
   },
@@ -259,31 +252,31 @@
     "jsdelivr": {
       "ok": true,
       "status": 200,
-      "latencyMs": 219,
+      "latencyMs": 175,
       "label": "jsDelivr — editions.json"
     },
     "rawGithub": {
       "ok": true,
       "status": 200,
-      "latencyMs": 177,
+      "latencyMs": 356,
       "label": "raw.githubusercontent — editions.json"
     },
     "everyayah": {
       "ok": true,
       "status": 200,
-      "latencyMs": 457,
+      "latencyMs": 540,
       "label": "everyayah — per-ayah MP3"
     },
     "quranicaudio": {
       "ok": true,
       "status": 200,
-      "latencyMs": 222,
+      "latencyMs": 308,
       "label": "quranicaudio — full surah MP3"
     },
     "qurancdn": {
       "ok": true,
       "status": 200,
-      "latencyMs": 271,
+      "latencyMs": 390,
       "label": "audio.qurancdn — word-by-word MP3"
     }
   },
@@ -487,7 +480,12 @@
     }
   ],
   "fieldNotes": [],
-  "errors": [],
+  "errors": [
+    {
+      "source": "posthog",
+      "error": "PostHog query failed → HTTP 503: upstream connect error or disconnect/reset before headers. reset reason: connection termination"
+    }
+  ],
   "alerts": {
     "active": [],
     "fired": {},
